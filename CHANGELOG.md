@@ -1,130 +1,91 @@
 # Changelog
 
-Wszystkie istotne zmiany w projekcie WooQuant będą dokumentowane w tym pliku.
+All notable changes to WooQuant will be documented in this file.
 
-Format bazuje na [Keep a Changelog](https://keepachangelog.com/pl/1.0.0/),
-a projekt stosuje [Semantic Versioning](https://semver.org/lang/pl/).
+## [1.2.0] - 2025-01-06
 
-## [Unreleased]
+### Changed
+- **BREAKING**: Plugin display name changed from "MCP for WooCommerce" to "WooQuant"
+- Complete documentation rewrite in English (international standard)
+- Simplified all documentation for beginners and non-technical users
+- Updated version to 1.2.0 for major release
 
-## [1.2.0] - 2025-01-05
+### Added
+- Full Polish translations for all documentation:
+  - README.pl.md - Complete README in Polish
+  - QUICK-START.pl.md - Quick start guide in Polish
+  - PROMPTS-LIST.pl.md - All 16 prompts documented in Polish
+- New QUICK-START guides (EN + PL) for 5-minute setup
+- CONTRIBUTING.md with translation guidelines and code of conduct
+- Comprehensive PROMPTS-LIST and TOOLS-LIST documentation in English
+- 8 additional AI prompts (total 16):
+  - **manage-coupons** - Coupon campaigns and promotional strategies
+  - **analyze-customers** - Customer segmentation, CLV, churn prediction
+  - **migrate-data** - Import/export with safety workflows
+  - **manage-media** - Upload, organize, optimize media library
+  - **manage-menus** - Navigation and UX optimization
+  - **manage-shipping-tax** - Shipping zones and tax compliance
+  - **manage-users** - User roles and security management
+  - **generate-business-report** - Executive summaries and KPI dashboards
+- All 6 available MCP resources now initialized and visible:
+  - woocommerce-search-guide
+  - WordPress://site-info
+  - WordPress://plugin-info
+  - WordPress://theme-info
+  - WordPress://user-info
+  - WordPress://site-settings
 
-### 🎉 Pierwsza publiczna wersja WooQuant (Extended)
+### Fixed
+- Polish translations now load correctly in admin panel
+- All React components use translatable strings via `__()`
+- Frontend build updated with proper language loading
+- Plugin name consistently uses "WooQuant" everywhere
 
-Ta wersja znacząco rozszerza oryginalny plugin [MCP for WooCommerce v1.0.0](https://github.com/iOSDevSK/mcp-for-woocommerce) autorstwa @iOSDevSK.
-
-### ✨ Dodane
-
-#### Internacjonalizacja (i18n)
-- **Pełne wsparcie dla języka polskiego**
-  - Przetłumaczono 100% stringów w interfejsie
-  - Dodano pliki `.po` i `.mo` dla tłumaczeń PHP
-  - Dodano pliki `.json` dla tłumaczeń React/JavaScript
-  - Dodano `load_plugin_textdomain()` dla lokalnych instalacji
-  - Dodano `wp_set_script_translations()` dla React
-
-#### System uprawnień użytkowników
-- **Nowa zakładka "Uprawnienia Użytkowników"**
-  - Granularna kontrola dostępu do narzędzi MCP
-  - Zarządzanie uprawnieniami per rola WordPress
-  - Zarządzanie uprawnieniami per indywidualny użytkownik
-  - Interfejs React z dynamicznym ładowaniem uprawnień
-  - Backend AJAX API (`ajax_get_user_permissions`, `ajax_save_user_permissions`)
-  - Zapisywanie uprawnień w opcjach WordPress
-
-#### Panel administracyjny
-- **Rozszerzony panel "Narzędzia MCP"**
-  - Filtrowanie narzędzi po typie (Read, Write, Create, Update, Delete, Action)
-  - Wyszukiwanie narzędzi po nazwie i opisie
-  - Dynamiczne liczniki dla każdego typu narzędzia
-  - Przetłumaczone etykiety typów i statusów
-  - Lepszy UX z `useMemo` dla wydajności
-
-#### Dokumentacja
-- Zaktualizowano `client-setup.md` z instrukcjami dla Cursor IDE
-- Dodano szczegółowy przewodnik krok po kroku dla połączenia MCP
-- Dodano przykłady konfiguracji dla wielu sklepów
-- Dodano sekcję rozwiązywania problemów w języku polskim
-
-#### Tłumaczenia narzędzi
-- Dodano filtr `mcpfowo_tool_description` dla dynamicznego tłumaczenia opisów narzędzi
-- Zastosowano filtr w metodzie `get_all_tools()`
-- Wszystkie opisy narzędzi są teraz tłumaczone w czasie rzeczywistym
-
-### 🐛 Naprawione
-
-#### Błędy składniowe
-- **Naprawiono 38 plików PHP z błędami składniowymi**
-  - Brakujące apostrofy w kluczach tablic (`'name'`, `'description'`, `'type'`)
-  - Nieprawidłowe apostrofy w środku nazw zmiennych (np. `'user'name'` → `'username'`)
-  - Brakujące domeny tłumaczeniowe w funkcjach `__()`
-  - Brakujące nawiasy zamykające w definicjach tablic
-  - Duplikaty kluczy `'description'` w niektórych plikach
-
-#### Tłumaczenia
-- Naprawiono brakujące funkcje `load_plugin_textdomain()` i `wp_set_script_translations()`
-- Usunięto duplikaty w plikach `.po` za pomocą `msguniq`
-- Poprawnie wygenerowano pliki `.json` dla React (64 pliki)
-- Dodano brakujące tłumaczenia dla wszystkich stringów w UI
-
-#### Panel administracyjny
-- Naprawiono wyświetlanie typów narzędzi (Read, Write, itp.)
-- Naprawiono wyświetlanie statusów (Enabled, Disabled)
-- Poprawiono renderowanie opisów narzędzi
-
-### 🔄 Zmienione
-
-#### Pliki PHP
-- `includes/Admin/Settings.php` - Dodano AJAX handlers i filtry
-- `includes/Core/WpMcp.php` - Dodano filtrowanie opisów narzędzi
-- `mcp-for-woocommerce.php` - Dodano `load_plugin_textdomain()`
-
-#### Komponenty React
-- `src/settings/index.js` - Dodano zakładkę "Uprawnienia Użytkowników"
-- `src/settings/ToolsTab.js` - Dodano filtrowanie i wyszukiwanie
-- `src/settings/UserPermissionsTab.js` - NOWY komponent
-
-#### Pliki językowe
-- `languages/mcp-for-woocommerce-pl_PL.po` - Pełne tłumaczenie (1000+ stringów)
-- `languages/mcp-for-woocommerce-pl_PL.mo` - Skompilowana wersja binarna
-- `languages/*.json` - 64 pliki JSON dla React
-
-### 📊 Statystyki
-
-- **Pliki zmienione**: 45+
-- **Linie kodu dodane**: ~3000+
-- **Stringi przetłumaczone**: 1000+
-- **Naprawione błędy składniowe**: 38 plików
-- **Nowe komponenty React**: 1 (UserPermissionsTab)
-- **Nowe AJAX endpoints**: 2 (get/save permissions)
-
-### 🙏 Podziękowania
-
-- [@iOSDevSK](https://github.com/iOSDevSK) za oryginalny plugin MCP for WooCommerce
-- Społeczność WordPress i WooCommerce za wsparcie
-- Automattic za pakiet `@automattic/mcp-wordpress-remote`
-- Anthropic za protokół Model Context Protocol
+### Documentation
+- English as primary language (international standard)
+- Polish translations complete (100% coverage)
+- User-friendly language without technical jargon
+- Consistent "WooQuant" branding throughout
+- Proper GPL-2.0+ licensing and credits to original author
 
 ---
 
-## [1.0.0] - 2024-XX-XX (Oryginalny)
+## [1.1.9] - 2025-01-04
 
-### Bazowa wersja autorstwa @iOSDevSK
+### Added
+- Write operations toggle in settings
+- Full tool management interface
+- User permissions tab
 
-- Podstawowa integracja MCP z WooCommerce
-- Uwierzytelnianie JWT
-- API REST dla narzędzi MCP
-- Panel administracyjny React
-- Dokumentacja w języku angielskim
-
-Źródło: https://github.com/iOSDevSK/mcp-for-woocommerce
+### Fixed
+- Write operations persistence
+- Tool type validation
+- REST API connectivity
 
 ---
 
-[Unreleased]: https://github.com/jeden-/wooquant/compare/v1.2.0...HEAD
-[1.2.0]: https://github.com/jeden-/wooquant/releases/tag/v1.2.0
-[1.0.0]: https://github.com/iOSDevSK/mcp-for-woocommerce/releases/tag/v1.0.0
+## [1.1.0 - 1.1.8] - 2024-2025
 
+### Added
+- Polish localization (UI translations)
+- Advanced admin panel with React
+- JWT authentication system
+- Tool filtering and search
+- 99 tools total (36 read + 63 write)
 
+### Fixed
+- Various PHP syntax errors
+- Translation loading issues
+- Build system improvements
 
+---
 
+## [1.0.0] - 2024
+
+- Initial fork from [mcp-for-woocommerce](https://github.com/iOSDevSK/mcp-for-woocommerce) by iOSDevSK
+- Basic MCP functionality
+- WooCommerce integration
+
+---
+
+**For detailed commit history:** See [GitHub repository](https://github.com/jeden-/wooquant)

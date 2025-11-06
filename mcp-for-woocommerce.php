@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin name:       WooQuant - MCP for WooCommerce (Extended)
- * Description:       Extended version of MCP for WooCommerce with enhanced features including full Polish localization, advanced admin panel, user permissions management, and comprehensive tool management. Based on the original plugin by iOSDevSK. Community-developed AI integration plugin that connects WooCommerce & WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. Provides comprehensive AI-accessible interfaces to WooCommerce products, orders, categories, shipping, payments, and WordPress posts/pages through standardized tools, resources, and prompts. Enables AI assistants to seamlessly interact with your e-commerce data and content. Acts as a WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a WooCommerce AI Chatbot/Agent to your site.
- * Version:           1.1.9
+ * Plugin name:       WooQuant
+ * Description:       AI-powered WooCommerce & WordPress management through Model Context Protocol (MCP). Extended community version with full internationalization (EN/PL), 16 intelligent prompts, 99 tools, advanced admin panel, and user permissions. Connect with Claude Desktop, Cursor IDE, or any MCP client. Based on mcp-for-woocommerce by iOSDevSK.
+ * Version:           1.2.0
  * Requires at least: 6.4
  * Tested up to:      6.8
  * Requires PHP:      8.0
