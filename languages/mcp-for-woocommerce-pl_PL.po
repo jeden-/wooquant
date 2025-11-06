@@ -908,6 +908,8 @@ msgid ""
 "Grant or revoke MCP access for specific users. These settings override role-"
 "based permissions."
 msgstr ""
+"Przyznaj lub odbierz dostęp do MCP dla konkretnych użytkowników. Te ustawienia nadpisują uprawnienia "
+"oparte na rolach."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:268
 msgid "hours"
@@ -1039,6 +1041,8 @@ msgid ""
 "List of all registered tools in the system. Use the toggles to enable or "
 "disable individual tools."
 msgstr ""
+"Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników aby włączyć lub "
+"wyłączyć poszczególne narzędzia."
 
 #: build/index.js:1 src/settings/DocumentationTab.js:155
 msgid "Loading documentation..."
@@ -1080,6 +1084,10 @@ msgid ""
 "If no revoked tokens exist, new token generation will be blocked - you must "
 "revoke some existing active tokens first."
 msgstr ""
+"Maksymalnie 10 aktywnych tokenów dozwolonych na użytkownika. Przy generowaniu nowego tokenu przy "
+"limicie, najstarsze odwołane tokeny zostaną automatycznie usunięte aby zrobić miejsce. "
+"Jeśli nie ma odwołanych tokenów, generowanie nowego tokenu zostanie zablokowane - musisz "
+"najpierw odwołać niektóre istniejące aktywne tokeny."
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:120
 #: includes/Tools/Write/McpWooCouponsWrite.php:221
@@ -1096,6 +1104,8 @@ msgid ""
 "MCP authentication tokens are secure, temporary credentials that allow "
 "external MCP clients to the WordPress MCP server"
 msgstr ""
+"Tokeny uwierzytelniania MCP to bezpieczne, tymczasowe dane uwierzytelniające które umożliwiają "
+"zewnętrznym klientom MCP dostęp do serwera WordPress MCP"
 
 #. Plugin Name of the plugin
 #: mcp-for-woocommerce.php includes/Admin/Settings.php:72
