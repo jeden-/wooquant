@@ -50,7 +50,7 @@ This guide will help you set up the WooQuant MCP plugin and connect it to Claude
 {
   "mcpServers": {
     "woocommerce": {
-      "url": "{{your-website.com}}/wp-json/mcpfowo/v1/mcp",
+      "url": "{{your-website.com}}/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer YOUR_JWT_TOKEN_HERE"
       }
@@ -77,7 +77,7 @@ This guide will help you set up the WooQuant MCP plugin and connect it to Claude
 ```json
 {
   "woocommerce-mystore": {
-    "url": "{{your-website.com}}/wp-json/mcpfowo/v1/mcp",
+    "url": "{{your-website.com}}/wp-json/wp/v2/wpmcp/streamable",
     "headers": {
       "Authorization": "Bearer YOUR_JWT_TOKEN_HERE"
     }
@@ -140,13 +140,13 @@ Want to connect multiple WooCommerce sites? Easy!
 {
   "mcpServers": {
     "woocommerce-store1": {
-      "url": "https://store1.com/wp-json/mcpfowo/v1/mcp",
+      "url": "https://store1.com/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TOKEN_FROM_STORE1"
       }
     },
     "woocommerce-store2": {
-      "url": "https://store2.com/wp-json/mcpfowo/v1/mcp",
+      "url": "https://store2.com/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TOKEN_FROM_STORE2"
       }
@@ -252,5 +252,10 @@ Segment customers by purchase behavior
 **Happy AI-powered WooCommerce management!** 🚀
 
 *Questions? Issues? Contributions? Visit [github.com/jeden-/wooquant](https://github.com/jeden-/wooquant)*
+
+
+
+
+
 
 

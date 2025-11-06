@@ -45,7 +45,7 @@ Przejdź do: **Panel WordPress → MCP dla WooCommerce → Ustawienia**
 {
   "mcpServers": {
     "woocommerce": {
-      "url": "https://twoja-strona.pl/wp-json/mcpfowo/v1/mcp",
+      "url": "https://twoja-strona.pl/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TWOJ_TOKEN_JWT_TUTAJ"
       }
@@ -59,7 +59,7 @@ Dodaj w ustawieniach Cursor → Serwery MCP:
 ```json
 {
   "woocommerce-mojsklep": {
-    "url": "https://twoja-strona.pl/wp-json/mcpfowo/v1/mcp",
+    "url": "https://twoja-strona.pl/wp-json/wp/v2/wpmcp/streamable",
     "headers": {
       "Authorization": "Bearer TWOJ_TOKEN_JWT_TUTAJ"
     }
@@ -221,5 +221,10 @@ Ta wtyczka jest projektem społecznościowym i **nie jest powiązana z Automatti
 Stworzone z ❤️ dla społeczności WordPress i WooCommerce
 
 **[🌟 Daj gwiazdkę na GitHub](https://github.com/jeden-/wooquant)** jeśli uznasz to za przydatne!
+
+
+
+
+
 
 

@@ -45,7 +45,7 @@ Navigate to: **WordPress Admin → MCP for WooCommerce → Settings**
 {
   "mcpServers": {
     "woocommerce": {
-      "url": "https://your-site.com/wp-json/mcpfowo/v1/mcp",
+      "url": "https://your-site.com/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer YOUR_JWT_TOKEN_HERE"
       }
@@ -59,7 +59,7 @@ Add to your Cursor settings → MCP Servers:
 ```json
 {
   "woocommerce-mystore": {
-    "url": "https://your-site.com/wp-json/mcpfowo/v1/mcp",
+    "url": "https://your-site.com/wp-json/wp/v2/wpmcp/streamable",
     "headers": {
       "Authorization": "Bearer YOUR_JWT_TOKEN_HERE"
     }

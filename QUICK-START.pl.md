@@ -50,7 +50,7 @@ Ten przewodnik pomoże Ci skonfigurować wtyczkę WooQuant MCP i połączyć ją
 {
   "mcpServers": {
     "woocommerce": {
-      "url": "{{twoja-witryna.com}}/wp-json/mcpfowo/v1/mcp",
+      "url": "{{twoja-witryna.com}}/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TWOJ_TOKEN_JWT_TUTAJ"
       }
@@ -77,7 +77,7 @@ Ten przewodnik pomoże Ci skonfigurować wtyczkę WooQuant MCP i połączyć ją
 ```json
 {
   "woocommerce-mojsklep": {
-    "url": "{{twoja-witryna.com}}/wp-json/mcpfowo/v1/mcp",
+    "url": "{{twoja-witryna.com}}/wp-json/wp/v2/wpmcp/streamable",
     "headers": {
       "Authorization": "Bearer TWOJ_TOKEN_JWT_TUTAJ"
     }
@@ -140,13 +140,13 @@ Chcesz połączyć wiele witryn WooCommerce? Łatwe!
 {
   "mcpServers": {
     "woocommerce-sklep1": {
-      "url": "https://sklep1.com/wp-json/mcpfowo/v1/mcp",
+      "url": "https://sklep1.com/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TOKEN_ZE_SKLEPU1"
       }
     },
     "woocommerce-sklep2": {
-      "url": "https://sklep2.com/wp-json/mcpfowo/v1/mcp",
+      "url": "https://sklep2.com/wp-json/wp/v2/wpmcp/streamable",
       "headers": {
         "Authorization": "Bearer TOKEN_ZE_SKLEPU2"
       }
