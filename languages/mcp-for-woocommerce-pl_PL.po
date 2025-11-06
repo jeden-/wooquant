@@ -76,6 +76,10 @@ msgstr "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP.
 msgid "Save Settings"
 msgstr "Zapisz ustawienia"
 
+#: build/index.js:1 src/settings/SettingsTab.js:75
+msgid "Allow tools to create, update, or delete data. Use with caution."
+msgstr "Pozwól narzędziom tworzyć, aktualizować lub usuwać dane. Używaj ostrożnie."
+
 #: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
 msgid "Settings saved successfully!"
 msgstr "Ustawienia zapisane pomyślnie!"
