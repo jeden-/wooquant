@@ -10,6 +10,11 @@ use McpForWoo\Tools\McpRestApiCrud;
 use McpForWoo\Tools\McpWooProducts;
 // use McpForWoo\Prompts\McpAnalyzeSales; // Disabled - not used in MCP for WooCommerce
 use McpForWoo\Resources\McpWooSearchGuide;
+use McpForWoo\Resources\McpGeneralSiteInfo;
+use McpForWoo\Resources\McpPluginInfoResource;
+use McpForWoo\Resources\McpThemeInfoResource;
+use McpForWoo\Resources\McpUserInfoResource;
+use McpForWoo\Resources\McpSiteSettingsResource;
 
 use InvalidArgumentException;
 
@@ -193,7 +198,15 @@ class WpMcp {
 	 * Initialize the default resources (WooCommerce only).
 	 */
 	private function init_default_resources(): void {
+		// WooCommerce-specific resources
 		new McpWooSearchGuide();
+		
+		// WordPress general resources
+		new McpGeneralSiteInfo();
+		new McpPluginInfoResource();
+		new McpThemeInfoResource();
+		new McpUserInfoResource();
+		new McpSiteSettingsResource();
 	}
 
 	/**
