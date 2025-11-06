@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mcp-for-"
 "woocommerce\n"
 "POT-Creation-Date: 2025-11-04T07:31:27+00:00\n"
-"PO-Revision-Date: 2025-01-04 12:00+0000\n"
+"PO-Revision-Date: 2025-11-06 14:16+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -18,18 +18,307 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Generator: Manual\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Domain: mcp-for-woocommerce\n"
 
-#. Plugin Name of the plugin
-#: mcp-for-woocommerce.php includes/Admin/Settings.php:72
-msgid "MCP for WooCommerce"
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:263
+msgid "1 day"
+msgstr "1 dzień"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:25
+#: src/settings/AuthenticationTokensTab.js:267
+msgid "1 hour"
+msgstr "1 godzina"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:28
+msgid "12 hours"
+msgstr "12 godzin"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:26
+msgid "2 hours"
+msgstr "2 godziny"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:29
+msgid "24 hours (1 day)"
+msgstr "24 godziny (1 dzień)"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:27
+msgid "6 hours"
+msgstr "6 godzin"
+
+#: build/index.js:1 src/settings/ToolsTab.js:123
+msgid "Action"
+msgstr "Akcja"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:632
+#: src/settings/PromptsTab.js:149 src/settings/ResourcesTab.js:214
+msgid "Actions"
+msgstr "Akcje"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:673
+msgid "Active"
+msgstr "Aktywny"
+
+#: includes/Admin/Settings.php:170 build/index.js:1
+#: src/settings/AuthenticationTokensTab.js:664
+msgid "Active (Never expires)"
+msgstr "Aktywny (Nigdy nie wygasa)"
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:62
+msgid "Add a menu item to a WordPress navigation menu."
+msgstr "Dodaj element do menu nawigacyjnego WordPress."
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:150
+msgid "Add a note to an existing WooCommerce order."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:111
+msgid ""
+"Add terms (values) to a product attribute (e.g., add Red, Blue, Green to "
+"Color attribute)."
+msgstr "Dodaj terminy (wartości) do atrybutu produktu (np. dodaj Czerwony, Niebieski, Zielony do atrybutu Kolor)."
+
+#: includes/Tools/Write/McpSettingsWrite.php:78
+msgid "Administrator email"
+msgstr "Email administratora"
+
+#: build/index.js:1 src/settings/ToolsTab.js:133
+msgid "All Types"
+msgstr "Wszystkie Typy"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:180
+msgid "Alt text"
+msgstr "Tekst alternatywny"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:62
+msgid "Alt text for the image"
+msgstr "Tekst alternatywny dla obrazu"
+
+# Narzędzia WooCommerce
+#: includes/Tools/Write/McpWooReviewsWrite.php:161
+msgid "Approve a WooCommerce product review (change status to approved)."
+msgstr "Wyszukaj produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:114
+#: includes/Tools/Write/McpWooProductsWrite.php:231
+msgid "Array of category IDs"
+msgstr "Tablica ID kategorii"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:197
+msgid "Array of category IDs in desired order"
+msgstr "Tablica ID kategorii w pożądanej kolejności"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:124
+msgid "Array of image URLs or attachment IDs"
+msgstr "Tablica URL obrazów lub ID załączników"
+
+#: includes/Tools/Write/McpSettingsWrite.php:121
+msgid "Array of location codes (e.g., [\"US\", \"CA\"])"
 msgstr ""
 
-#. Plugin URI of the plugin
-#: mcp-for-woocommerce.php
-msgid "https://github.com/iOSDevSK/mcp-for-woocommerce"
+#: includes/Tools/Write/McpWordPressMenuWrite.php:138
+msgid "Array of menu item IDs in desired order"
+msgstr "Tablica ID elementów menu w pożądanej kolejności"
+
+#: includes/Tools/Write/McpWooImportExport.php:146
+msgid "Array of order IDs to export (optional, empty for all)"
+msgstr "Tablica ID zamówień do eksportu (opcjonalne, puste dla wszystkich)"
+
+#: includes/Tools/Write/McpWooBulkOperations.php:55
+msgid "Array of product data objects (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpBackupRestore.php:52
+msgid "Array of product IDs to backup (optional, empty for all products)"
+msgstr "Tablica ID produktów do kopii zapasowej (opcjonalne, puste dla wszystkich produktów)"
+
+#: includes/Tools/Write/McpWooBulkOperations.php:101
+msgid "Array of product IDs to delete (required)"
+msgstr "Tablica ID produktów do usunięcia (wymagane)"
+
+#: includes/Tools/Write/McpWooImportExport.php:87
+msgid "Array of product IDs to export (optional, empty for all)"
+msgstr "Tablica ID produktów do eksportu (opcjonalne, puste dla wszystkich)"
+
+#: includes/Tools/Write/McpWooBulkOperations.php:134
+#: includes/Tools/Write/McpWooBulkOperations.php:176
+msgid "Array of product IDs to update (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:58
+msgid "Array of products to add to order"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooProductsWrite.php:298
+msgid "Array of products to update with their IDs and fields"
+msgstr "Tablica produktów do aktualizacji z ich ID i polami"
+
+#: includes/Tools/Write/McpSettingsWrite.php:126
+msgid "Array of shipping method configurations"
+msgstr "Tablica konfiguracji metod wysyłki"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:119
+#: includes/Tools/Write/McpWooProductsWrite.php:236
+msgid "Array of tag IDs"
+msgstr "Tablica ID tagów"
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:127
+msgid "Array of term names to add (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#. translators: %s: Property name.
+#: includes/Core/RegisterMcpTool.php:311
+#, php-format
+msgid "Array property '%s' must have an items field."
+msgstr "Właściwość tablicowa '%s' musi mieć pole items."
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:73
+#: includes/Tools/Write/McpWooAttributesWrite.php:101
+#: includes/Tools/Write/McpWooAttributesWrite.php:124
+msgid "Attribute ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:74
+msgid "Attribute name"
+msgstr "Nazwa atrybutu"
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:45
+msgid "Attribute name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:46
+#: includes/Tools/Write/McpWooAttributesWrite.php:75
+msgid "Attribute slug"
+msgstr "Slug atrybutu"
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:47
+msgid "Attribute type"
+msgstr "Typ atrybutu"
+
+#: build/index.js:1 src/settings/SettingsTab.js:80
+msgid "Authentication Settings"
+msgstr "Uwierzytelnienie"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:275
+#: src/settings/index.js:53
+msgid "Authentication Tokens"
+msgstr "Tokeny Uwierzytelniania"
+
+#: build/index.js:1 src/settings/index.js:321
+msgid ""
+"Authentication tokens are only available when JWT authentication is enabled."
 msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:76
+#: includes/Tools/Write/McpWordPressContentWrite.php:246
+msgid "Author user ID"
+msgstr "ID użytkownika autora"
+
+#: build/index.js:1 src/settings/PromptsTab.js:115
+msgid "Available Prompts"
+msgstr "Dostępne Prompty"
+
+#: build/index.js:1 src/settings/ResourcesTab.js:179
+msgid "Available Resources"
+msgstr "Dostępne Zasoby"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:101
+msgid "Base64 encoded file data or file URL (required)"
+msgstr "Dane pliku zakodowane Base64 lub URL pliku (wymagane)"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:50
+msgid "Base64 encoded image data or image URL (required)"
+msgstr "Dane obrazu zakodowane Base64 lub URL obrazu (wymagane)"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:75
+#: includes/Tools/Write/McpWooCustomersWrite.php:146
+#: includes/Tools/Write/McpWooOrdersWrite.php:71
+msgid "Billing address"
+msgstr "Adres rozliczeniowy"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:282
+msgid ""
+"Bulk update multiple products at once. Useful for updating prices, stock, or "
+"other fields for multiple products."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:184
+msgid "Caption"
+msgstr "Akcja"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:67
+#: includes/Tools/Write/McpWooCategoriesWrite.php:125
+msgid "Category description"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:72
+#: includes/Tools/Write/McpWooCategoriesWrite.php:130
+msgid "Category display type"
+msgstr "Typ wyświetlania kategorii"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:165
+msgid "Category ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:109
+msgid "Category ID to update (required)"
+msgstr "ID kategorii do aktualizacji (wymagane)"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:62
+#: includes/Tools/Write/McpWordPressContentWrite.php:124
+msgid "Category IDs"
+msgstr "ID kategorii"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:101
+#: includes/Tools/Write/McpWooCouponsWrite.php:203
+msgid "Category IDs that the coupon applies to"
+msgstr "ID kategorii, do których kupon ma zastosowanie"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:106
+#: includes/Tools/Write/McpWooCouponsWrite.php:208
+msgid "Category IDs that the coupon does not apply to"
+msgstr "ID kategorii, do których kupon nie ma zastosowania"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:77
+#: includes/Tools/Write/McpWooCategoriesWrite.php:134
+msgid "Category image attachment ID"
+msgstr "ID załącznika obrazu kategorii"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:113
+msgid "Category name"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:54
+msgid "Category name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:117
+msgid "Category slug"
+msgstr "Slug kategorii"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:58
+msgid "Category slug (URL-friendly name)"
+msgstr "Slug kategorii (przyjazna dla URL nazwa)"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:157
+msgid "Change a WordPress user role."
+msgstr "Zmień rolę użytkownika WordPress."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:182
+msgid "Change the order of product categories for display."
+msgstr "Zmień kolejność kategorii produktów do wyświetlenia."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:508
+msgid "Choose how long the token will remain valid"
+msgstr "Wybierz jak długo token będzie ważny"
+
+#: includes/Admin/Settings.php:178
+msgid "Claude.ai Desktop Connector:"
+msgstr "Konektor Claude.ai Desktop:"
+
+#: build/index.js:1 src/settings/PromptsTab.js:249
+msgid "Close"
+msgstr "Zamknij"
 
 #. Description of the plugin
 #: mcp-for-woocommerce.php
@@ -43,23 +332,316 @@ msgid ""
 "WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a "
 "WooCommerce AI Chatbot/Agent to your site."
 msgstr ""
-"Plugin integracji AI rozwijany przez społeczność, który łączy WooCommerce i "
-"WordPress z protokołem Model Context Protocol (MCP). Niezależny od "
-"Automattic. Zapewnia kompleksowe interfejsy dostępne dla AI do produktów "
-"WooCommerce, zamówień, kategorii, wysyłki, płatności oraz postów/stron "
-"WordPress poprzez standaryzowane narzędzia, zasoby i podpowiedzi. Umożliwia "
-"asystentom AI płynną interakcję z danymi i treścią Twojego e-commerce. "
-"Działa jako serwer WooCommerce MCP dla klientów MCP; połącz z Webtalkbot, "
-"aby dodać chatbota/agenta AI WooCommerce do swojej witryny."
 
-#. Author of the plugin
-#: mcp-for-woocommerce.php
-msgid "Filip Dvoran"
+#: build/index.js:1 src/settings/DocumentationTab.js:201
+msgid "Configuration copied to clipboard!"
+msgstr "Konfiguracja skopiowana do schowka!"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:414
+msgid "Consider using long-lived tokens (24 hours) instead"
+msgstr "Zamiast tego rozważ użycie tokenów o długim czasie życia (24 godziny)"
+
+#: build/index.js:1 src/settings/PromptsTab.js:217
+msgid "Content:"
+msgstr "Treść:"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:158
+msgid ""
+"Control which users and roles can access MCP functionality. By default, only "
+"administrators have access."
 msgstr ""
 
-#. Author URI of the plugin
-#: mcp-for-woocommerce.php
-msgid "https://github.com/iOSDevSK"
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:580
+msgid "Copy"
+msgstr "Kopiuj"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:160
+msgid "Coupon code"
+msgstr "Kod kuponu"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:55
+msgid "Coupon code (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:129
+#: includes/Tools/Write/McpWooCouponsWrite.php:230
+msgid "Coupon expiration date (YYYY-MM-DD format)"
+msgstr "Data wygaśnięcia kuponu (format YYYY-MM-DD)"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:257
+msgid "Coupon ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:156
+msgid "Coupon ID to update (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: build/index.js:1 src/settings/ToolsTab.js:119
+msgid "Create"
+msgstr "Utwórz"
+
+#: includes/Tools/Write/McpBackupRestore.php:37
+msgid ""
+"Create a backup of WooCommerce products. Returns JSON data with all product "
+"information that can be restored later."
+msgstr "Create a backup of WooCommerce products. Returns JSON data with all product information that can be restored later."
+
+#: includes/Tools/Write/McpBackupRestore.php:102
+msgid ""
+"Create a backup of WordPress content (posts, pages, media). Returns JSON "
+"data with all content that can be restored later."
+msgstr ""
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:32
+msgid "Create a new global product attribute (e.g., Color, Size)."
+msgstr "Utwórz nowy globalny atrybut produktu (np. Kolor, Rozmiar)."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:40
+msgid ""
+"Create a new WooCommerce coupon with discount rules, usage limits, and "
+"restrictions."
+msgstr ""
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:40
+msgid "Create a new WooCommerce customer with billing and shipping addresses."
+msgstr "Utwórz nowego klienta WooCommerce z adresami rozliczeniowymi i wysyłkowymi."
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:33
+msgid ""
+"Create a new WooCommerce order with customer information, products, and "
+"payment details."
+msgstr "Create a new WooCommerce order with customer information, products, and payment details."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:39
+msgid ""
+"Create a new WooCommerce product category with name, slug, description, "
+"parent category, and image."
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:39
+msgid ""
+"Create a new WooCommerce product review with rating, content, and reviewer "
+"information."
+msgstr "Create a new WooCommerce product review with rating, content, and reviewer information."
+
+#: includes/Tools/Write/McpWooTagsWrite.php:42
+msgid "Create a new WooCommerce product tag with name, slug, and description."
+msgstr "Utwórz nowy tag produktu WooCommerce z nazwą, slugiem i opisem."
+
+#: includes/Tools/Write/McpWooProductsWrite.php:47
+msgid ""
+"Create a new WooCommerce product. Supports simple and variable products with "
+"full configuration including pricing, inventory, images, categories, tags, "
+"and attributes."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:35
+msgid "Create a new WordPress navigation menu."
+msgstr "Utwórz nowe menu nawigacyjne WordPress."
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:205
+msgid ""
+"Create a new WordPress page with content, featured image, and parent page."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:29
+msgid ""
+"Create a new WordPress post with content, categories, tags, and featured "
+"image."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:35
+msgid "Create a new WordPress user with username, email, password, and role."
+msgstr "Utwórz nowego użytkownika WordPress z nazwą użytkownika, emailem, hasłem i rolą."
+
+#: includes/Tools/Write/McpWooBulkOperations.php:40
+msgid ""
+"Create multiple WooCommerce products at once. Accepts array of product data."
+msgstr ""
+
+#: includes/Tools/Write/McpWooImportExport.php:55
+#: includes/Tools/Write/McpWooImportExport.php:114
+msgid "CSV content as string (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:134
+msgid "Customer email"
+msgstr "Email klienta"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:55
+msgid "Customer email (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:67
+#: includes/Tools/Write/McpWooCustomersWrite.php:138
+msgid "Customer first name"
+msgstr "Imię klienta"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:130
+msgid "Customer ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:201
+msgid "Customer ID to delete (required)"
+msgstr "ID klienta do usunięcia (wymagane)"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:71
+#: includes/Tools/Write/McpWooCustomersWrite.php:142
+msgid "Customer last name"
+msgstr "Nazwisko klienta"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:63
+msgid "Customer password"
+msgstr "Hasło klienta"
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:48
+msgid "Customer user ID (0 for guest)"
+msgstr "ID użytkownika klienta (0 dla gościa)"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:59
+msgid "Customer username"
+msgstr "Nazwa użytkownika klienta"
+
+#: includes/Tools/Write/McpSettingsWrite.php:79
+msgid "Date format"
+msgstr "Format daty"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:264
+msgid "days"
+msgstr "dni"
+
+#: build/index.js:1 src/settings/ToolsTab.js:121
+msgid "Delete"
+msgstr "Usuń"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:125
+msgid "Delete a media file from WordPress. DESTRUCTIVE OPERATION."
+msgstr "Usuń plik mediów z WordPress. OPERACJA DESTRUKCYJNA."
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:89
+msgid "Delete a product attribute. DESTRUCTIVE OPERATION."
+msgstr "Usuń atrybut produktu. OPERACJA DESTRUKCYJNA."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:242
+msgid "Delete a WooCommerce coupon. DESTRUCTIVE OPERATION."
+msgstr "Usuń kupon WooCommerce. OPERACJA DESTRUKCYJNA."
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:186
+msgid ""
+"Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes "
+"associated WordPress user."
+msgstr ""
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:150
+msgid ""
+"Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will "
+"be uncategorized."
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:134
+msgid "Delete a WooCommerce product review. DESTRUCTIVE OPERATION."
+msgstr "Usuń recenzję produktu WooCommerce. OPERACJA DESTRUKCYJNA."
+
+#: includes/Tools/Write/McpWooTagsWrite.php:118
+msgid ""
+"Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose "
+"this tag."
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:249
+msgid ""
+"Delete a WooCommerce product. Can permanently delete or move to trash. "
+"DESTRUCTIVE OPERATION - use with caution."
+msgstr ""
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressMenuWrite.php:151
+msgid "Delete a WordPress navigation menu. DESTRUCTIVE OPERATION."
+msgstr "Wyświetl posty WordPress"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:319
+msgid "Delete a WordPress page. DESTRUCTIVE OPERATION."
+msgstr "Usuń stronę WordPress. OPERACJA DESTRUKCYJNA."
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressContentWrite.php:146
+msgid "Delete a WordPress post. DESTRUCTIVE OPERATION."
+msgstr "Wyświetl posty WordPress"
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressUsersWrite.php:126
+msgid "Delete a WordPress user. DESTRUCTIVE OPERATION."
+msgstr "Wyświetl posty WordPress"
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWooBulkOperations.php:86
+msgid "Delete multiple WooCommerce products at once. DESTRUCTIVE OPERATION."
+msgstr "Wyświetl posty WordPress"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:188 build/index.js:1
+#: src/settings/PromptsTab.js:147 src/settings/ResourcesTab.js:212
+#: src/settings/ToolsTab.js:220
+msgid "Description"
+msgstr "Opis"
+
+#: build/index.js:1 src/settings/PromptsTab.js:203
+msgid "Description:"
+msgstr "Opis"
+
+#: build/index.js:1 src/settings/ToolsTab.js:264
+msgid "Disabled"
+msgstr "Wyłączony"
+
+#: includes/Admin/Settings.php:310
+msgid "disabled"
+msgstr "wyłączone"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:169
+msgid "Discount amount"
+msgstr "Kwota rabatu"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:65
+msgid "Discount amount (required)"
+msgstr "Kwota rabatu (wymagane)"
+
+#: build/index.js:1 src/settings/DocumentationTab.js:170
+#: src/settings/DocumentationTab.js:196 src/settings/index.js:65
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:322
+msgid "Each token is unique and can be revoked individually if compromised"
+msgstr "Każdy token jest unikalny i może być odwołany indywidualnie jeśli został naruszony"
+
+#: build/index.js:1 src/settings/ToolsTab.js:124
+msgid "Edit"
+msgstr ""
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:207
+msgid "Email"
+msgstr "Email"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:102
+msgid "Email address"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:54
+msgid "Email address (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:124
+#: includes/Tools/Write/McpWooCouponsWrite.php:225
+msgid "Email addresses that can use the coupon"
+msgstr "Adresy email które mogą użyć kuponu"
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:49
+msgid "Enable archives"
+msgstr "Włącz archiwa"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:163
+msgid ""
+"Enable MCP access for entire user roles. Individual user permissions "
+"override role permissions."
 msgstr ""
 
 #: includes/Admin/Settings.php:158 build/index.js:1
@@ -67,29 +649,485 @@ msgstr ""
 msgid "Enable MCP functionality"
 msgstr "Włącz funkcjonalność MCP"
 
-#: includes/Admin/Settings.php:159 build/index.js:1
-#: src/settings/SettingsTab.js:61
-msgid "Toggle to enable or disable the MCP plugin functionality."
-msgstr "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP."
+#: includes/Tools/Write/McpWooProductsWrite.php:99
+#: includes/Tools/Write/McpWooProductsWrite.php:218
+msgid "Enable stock management"
+msgstr "Włącz zarządzanie magazynem"
 
-#: includes/Admin/Settings.php:160
-msgid "Save Settings"
-msgstr "Zapisz ustawienia"
+#: build/index.js:1 src/settings/ToolsTab.js:260
+msgid "Enabled"
+msgstr "Włączony"
 
-#: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
-msgid "Settings saved successfully!"
-msgstr "Ustawienia zapisane pomyślnie!"
+#: includes/Admin/Settings.php:310
+msgid "enabled"
+msgstr "włączone"
+
+#: includes/Tools/McpWooReports.php:60
+msgid "End date (required if period is \"custom\")"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:88
+msgid "Error fetching tokens"
+msgstr "Błąd pobierania tokenów"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:143
+msgid "Error generating token"
+msgstr "Błąd generowania tokenu"
+
+#: build/index.js:1 src/settings/DocumentationTab.js:175
+msgid "Error loading documentation:"
+msgstr "Błąd ładowania dokumentacji:"
+
+#: build/index.js:1 src/settings/PromptsTab.js:98
+msgid "Error loading prompt details: "
+msgstr "Błąd ładowania szczegółów promptu: "
+
+#: build/index.js:1 src/settings/PromptsTab.js:51
+msgid "Error loading prompts: "
+msgstr "Błąd ładowania promptów: "
+
+#: build/index.js:1 src/settings/ResourcesTab.js:148
+msgid "Error loading resource details: "
+msgstr "Błąd ładowania szczegółów zasobu: "
+
+#: build/index.js:1 src/settings/ResourcesTab.js:93
+msgid "Error loading resources: "
+msgstr "Błąd ładowania zasobów: "
+
+#: build/index.js:1 src/settings/ToolsTab.js:50
+msgid "Error loading tools: "
+msgstr "Błąd ładowania narzędzi: "
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:194
+msgid "Error revoking token"
+msgstr "Błąd odwoływania tokenu"
 
 #: includes/Admin/Settings.php:162
 msgid "Error saving settings. Please try again."
 msgstr "Błąd podczas zapisywania ustawień. Spróbuj ponownie."
 
-#. translators: %1$s is the tool name, %2$s is the status (enabled/disabled).
-#: includes/Admin/Settings.php:164 includes/Admin/Settings.php:166
-#: includes/Admin/Settings.php:308
-#, php-format
-msgid "Tool %1$s has been %2$s."
-msgstr "Narzędzie %1$s zostało %2$s."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:669
+msgid "Expired"
+msgstr "Wygasł"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:628
+msgid "Expires At"
+msgstr "Wygasa"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:596
+msgid "Expires in"
+msgstr "Wygasa"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:602
+msgid "Expires in 1 hour"
+msgstr "Wygasa za 1 godzinę"
+
+#: includes/Tools/Write/McpWooImportExport.php:131
+msgid "Export WooCommerce orders to CSV format. Returns CSV content as string."
+msgstr "Export WooCommerce orders to CSV format. Returns CSV content as string."
+
+#: includes/Tools/Write/McpWooImportExport.php:72
+msgid ""
+"Export WooCommerce products to CSV format. Returns CSV content as string."
+msgstr "Export WooCommerce products to CSV format. Returns CSV content as string."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:237
+#: src/settings/DocumentationTab.js:141
+msgid "Failed to copy to clipboard"
+msgstr "Token skopiowany do schowka!"
+
+#: build/index.js:1 src/settings/PromptsTab.js:93
+msgid "Failed to load prompt details"
+msgstr "Pobierz szczegóły produktu"
+
+#: build/index.js:1 src/settings/PromptsTab.js:46
+msgid "Failed to load prompts data"
+msgstr "Nie udało się załadować danych promptów"
+
+#: build/index.js:1 src/settings/ResourcesTab.js:143
+msgid "Failed to load resource details"
+msgstr "Pobierz szczegóły zamówienia"
+
+#: build/index.js:1 src/settings/ResourcesTab.js:88
+msgid "Failed to load resources data"
+msgstr "Nie udało się załadować danych zasobów"
+
+#: build/index.js:1 src/settings/ToolsTab.js:45
+msgid "Failed to load tools data"
+msgstr "Nie udało się załadować danych narzędzi"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:52
+#: src/settings/UserPermissionsTab.js:59
+msgid "Failed to load user permissions."
+msgstr "Nie udało się załadować uprawnień użytkowników."
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:117
+#: src/settings/UserPermissionsTab.js:124
+msgid "Failed to save user permissions."
+msgstr "Nie udało się zapisać uprawnień użytkowników."
+
+#: includes/Admin/Settings.php:301
+msgid "Failed to toggle tool state."
+msgstr "Nie udało się przełączyć stanu narzędzia."
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:72
+#: includes/Tools/Write/McpWordPressContentWrite.php:134
+#: includes/Tools/Write/McpWordPressContentWrite.php:242
+#: includes/Tools/Write/McpWordPressContentWrite.php:303
+msgid "Featured image attachment ID"
+msgstr "ID załącznika obrazu wyróżnionego"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:109
+msgid "File title"
+msgstr "Tytuł pliku"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:105
+msgid "Filename for the file"
+msgstr "Nazwa pliku dla pliku"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:54
+msgid "Filename for the image"
+msgstr "Nazwa pliku dla obrazu"
+
+#. Author of the plugin
+#: mcp-for-woocommerce.php
+msgid "Filip Dvoran"
+msgstr ""
+
+#: includes/Tools/McpWooReports.php:92
+msgid "Filter by stock status"
+msgstr "Stan"
+
+#: build/index.js:1 src/settings/ToolsTab.js:170
+msgid "Filter by Type"
+msgstr "Filtruj po Typie"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:62
+#: includes/Tools/Write/McpWordPressUsersWrite.php:106
+msgid "First name"
+msgstr "Imię"
+
+#: build/index.js:1 src/settings/ResourcesTab.js:270
+msgid "Full Resource Data"
+msgstr "Pełne Dane Zasobu"
+
+#: build/index.js:1 src/settings/ToolsTab.js:223
+msgid "Functionality Type"
+msgstr "Typ Funkcjonalności"
+
+#: includes/Tools/Write/McpSettingsWrite.php:169
+msgid "Gateway-specific settings (title, description, etc.)"
+msgstr "Ustawienia specyficzne dla bramki (tytuł, opis, itp.)"
+
+#: build/index.js:1 src/settings/SettingsTab.js:22
+msgid "General Settings"
+msgstr "Zapisz ustawienia"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:548
+msgid "Generate New Token"
+msgstr "Wygeneruj Nowy Token"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:469
+msgid ""
+"Generate tokens below to allow secure access to your WordPress content "
+"through the MCP protocol."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
+msgid "Generated Token"
+msgstr "Wygeneruj token"
+
+#: includes/Tools/McpWooReports.php:34
+msgid ""
+"Get detailed WooCommerce sales report with totals, order counts, average "
+"order value, and period breakdown."
+msgstr ""
+
+#: includes/Tools/McpWooReports.php:109
+msgid ""
+"Get WooCommerce customer report with purchase statistics, lifetime value, "
+"and order history."
+msgstr ""
+
+#: includes/Tools/McpWooReports.php:77
+msgid ""
+"Get WooCommerce stock status report with low stock alerts, out of stock "
+"items, and stock levels."
+msgstr ""
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:198
+msgid ""
+"Grant or revoke MCP access for specific users. These settings override role-"
+"based permissions."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:268
+msgid "hours"
+msgstr "godziny"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:84
+#: includes/Tools/Write/McpWooCouponsWrite.php:187
+msgid "How many times the coupon can be used in total"
+msgstr "Ile razy kupon może być użyty łącznie"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:88
+#: includes/Tools/Write/McpWooCouponsWrite.php:191
+msgid "How many times the coupon can be used per user"
+msgstr "Ile razy kupon może być użyty na użytkownika"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:307
+msgid "How They Work"
+msgstr "Jak działają"
+
+#. Author URI of the plugin
+#: mcp-for-woocommerce.php
+msgid "https://github.com/iOSDevSK"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: mcp-for-woocommerce.php
+msgid "https://github.com/iOSDevSK/mcp-for-woocommerce"
+msgstr ""
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:69
+#: includes/Tools/Write/McpWooCouponsWrite.php:173
+msgid "If true, coupon cannot be used with other coupons"
+msgstr "Jeśli prawda, kupon nie może być używany z innymi kuponami"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:96
+#: includes/Tools/Write/McpWooCouponsWrite.php:199
+msgid "If true, enables free shipping"
+msgstr ""
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:111
+#: includes/Tools/Write/McpWooCouponsWrite.php:213
+msgid "If true, sale items are excluded from coupon"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:66
+msgid "Image caption"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:70
+msgid "Image description"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:58
+msgid "Image title"
+msgstr ""
+
+#: includes/Tools/Write/McpWooImportExport.php:99
+msgid ""
+"Import WooCommerce orders from CSV file. CSV should contain order data "
+"(customer, products, amounts, etc.)."
+msgstr ""
+
+#: includes/Tools/Write/McpWooImportExport.php:40
+msgid ""
+"Import WooCommerce products from CSV file. CSV should contain product data "
+"(name, SKU, price, stock, etc.)."
+msgstr ""
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:196
+msgid "Individual User Permissions"
+msgstr "Indywidualne Uprawnienia Użytkowników"
+
+#: includes/Admin/Settings.php:388 includes/Admin/Settings.php:456
+msgid "Invalid nonce"
+msgstr "Nieprawidłowe dane uwierzytelniające."
+
+#: includes/Admin/Settings.php:197 includes/Admin/Settings.php:288
+msgid "Invalid nonce. Please refresh the page and try again."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:625
+msgid "Issued At"
+msgstr "Wydany"
+
+#: includes/Tools/Write/McpBackupRestore.php:84
+#: includes/Tools/Write/McpBackupRestore.php:150
+msgid "JSON string containing backup data (required)"
+msgstr ""
+
+#: build/index.js:1 src/settings/SettingsTab.js:86
+msgid ""
+"JWT Authentication is recommended if you want to create a WooCommerce AI "
+"Agent in"
+msgstr ""
+
+#: includes/Admin/Settings.php:177
+msgid ""
+"JWT Authentication must be enabled if you want to create a WooCommerce AI "
+"Agent in"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:50
+msgid "Key-value pairs of WooCommerce settings to update (required)"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:66
+#: includes/Tools/Write/McpWordPressUsersWrite.php:110
+msgid "Last name"
+msgstr "Nazwisko"
+
+#: build/index.js:1 src/settings/PromptsTab.js:119
+msgid "List of all available prompts in the system."
+msgstr "Lista wszystkich dostępnych zasobów w systemie."
+
+#: build/index.js:1 src/settings/ResourcesTab.js:183
+msgid "List of all available resources in the system."
+msgstr "Lista wszystkich dostępnych zasobów w systemie."
+
+#: build/index.js:1 src/settings/ToolsTab.js:159
+msgid ""
+"List of all registered tools in the system. Use the toggles to enable or "
+"disable individual tools."
+msgstr ""
+
+#: build/index.js:1 src/settings/DocumentationTab.js:155
+msgid "Loading documentation..."
+msgstr "Ładowanie dokumentacji..."
+
+#: build/index.js:1 src/settings/PromptsTab.js:189
+msgid "Loading prompt details..."
+msgstr "Ładowanie szczegółów promptu..."
+
+#: build/index.js:1 src/settings/PromptsTab.js:128
+msgid "Loading prompts..."
+msgstr "Ładowanie promptów..."
+
+#: build/index.js:1 src/settings/ResourcesTab.js:251
+msgid "Loading resource details..."
+msgstr "Ładowanie szczegółów zasobu..."
+
+#: build/index.js:1 src/settings/ResourcesTab.js:192
+msgid "Loading resources..."
+msgstr "Ładowanie zasobów..."
+
+#: build/index.js:1 src/settings/ToolsTab.js:194
+msgid "Loading tools..."
+msgstr "Ładowanie narzędzi..."
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:135
+msgid "Loading user permissions..."
+msgstr "Ładowanie uprawnień użytkowników..."
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:92
+#: includes/Tools/Write/McpWooCouponsWrite.php:195
+msgid "Max number of items in cart the coupon can apply to"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:492
+msgid ""
+"Maximum 10 active tokens allowed per user. When generating a new token at "
+"the limit, oldest revoked tokens will be automatically removed to make room. "
+"If no revoked tokens exist, new token generation will be blocked - you must "
+"revoke some existing active tokens first."
+msgstr ""
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:120
+#: includes/Tools/Write/McpWooCouponsWrite.php:221
+msgid "Maximum order amount allowed to use coupon"
+msgstr ""
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:171
+#: src/settings/UserPermissionsTab.js:208
+msgid "MCP Access"
+msgstr "Dostęp do MCP"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:294
+msgid ""
+"MCP authentication tokens are secure, temporary credentials that allow "
+"external MCP clients to the WordPress MCP server"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: mcp-for-woocommerce.php includes/Admin/Settings.php:72
+msgid "MCP for WooCommerce"
+msgstr ""
+
+#: includes/Admin/Settings.php:180
+msgid "MCP Proxy file generated at:"
+msgstr "Plik proxy MCP wygenerowany w:"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:172
+msgid "Media attachment ID (required)"
+msgstr "Media attachment ID (wymagane)"
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:140
+msgid "Media attachment ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:176
+msgid "Media title"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:77
+#: includes/Tools/Write/McpWordPressMenuWrite.php:130
+msgid "Menu ID (required)"
+msgstr "Menu ID (wymagane)"
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:166
+msgid "Menu ID to delete (required)"
+msgstr "Menu ID to delete (wymagane)"
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:81
+msgid "Menu item title (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:50
+msgid "Menu name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:81
+#: includes/Tools/Write/McpWooCategoriesWrite.php:138
+msgid "Menu order for sorting"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:103
+msgid "Menu order position"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:130
+msgid "Method ID (e.g., \"flat_rate\")"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:131
+msgid "Method title"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:133
+msgid "Method-specific settings"
+msgstr ""
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:116
+#: includes/Tools/Write/McpWooCouponsWrite.php:217
+msgid "Minimum order amount required to use coupon"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:408
+msgid "Must be manually revoked if compromised"
+msgstr "Muszą być ręcznie unieważniane w przypadku naruszenia"
+
+#: build/index.js:1 src/settings/PromptsTab.js:145
+#: src/settings/ResourcesTab.js:209 src/settings/ToolsTab.js:218
+msgid "Name"
+msgstr "Nazwa"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:30
+msgid "Never expire"
+msgstr "Nigdy nie wygasa"
+
+#: includes/Admin/Settings.php:169 build/index.js:1
+#: src/settings/AuthenticationTokensTab.js:251
+#: src/settings/AuthenticationTokensTab.js:256
+#: src/settings/AuthenticationTokensTab.js:652
+msgid "Never expires"
+msgstr "Nigdy nie wygasa"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:360
+msgid "Never share tokens in public repositories, emails, or chat messages"
+msgstr ""
 
 #: includes/Admin/Settings.php:168 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:533
@@ -99,142 +1137,334 @@ msgid ""
 "understand the security implications and have proper token management "
 "procedures in place."
 msgstr ""
-"Tokeny bez daty wygaśnięcia stanowią poważne zagrożenie bezpieczeństwa. W "
-"przypadku kompromitacji nie można ich unieważnić poprzez wygaśnięcie. Używaj "
-"tej opcji tylko wtedy, gdy w pełni rozumiesz implikacje bezpieczeństwa i "
-"masz odpowiednie procedury zarządzania tokenami."
-
-#: includes/Admin/Settings.php:169 build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:251
-#: src/settings/AuthenticationTokensTab.js:256
-#: src/settings/AuthenticationTokensTab.js:652
-msgid "Never expires"
-msgstr "Nigdy nie wygasa"
-
-#: includes/Admin/Settings.php:170 build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:664
-msgid "Active (Never expires)"
-msgstr "Aktywny (Nigdy nie wygasa)"
-
-#: includes/Admin/Settings.php:171 build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:594
-msgid "This token never expires"
-msgstr "Ten token nigdy nie wygasa"
-
-#: includes/Admin/Settings.php:172
-msgid "Security Warning"
-msgstr "Ostrzeżenie bezpieczeństwa"
 
 #: includes/Admin/Settings.php:173
 msgid "Never-Expiring Tokens:"
 msgstr "Tokeny bez wygaśnięcia:"
 
-#: includes/Admin/Settings.php:174 build/index.js:1
-#: src/settings/SettingsTab.js:102
-msgid "Require JWT Authentication"
-msgstr "Wymagaj uwierzytelnienia JWT"
-
-#: includes/Admin/Settings.php:175
-msgid ""
-"When enabled, all MCP requests must include a valid JWT token. When "
-"disabled, MCP endpoints are accessible without authentication (readonly mode "
-"only) and can be used as a Claude.ai Desktop connector."
+#: includes/Tools/Write/McpWordPressMenuWrite.php:134
+msgid "New menu name"
 msgstr ""
-"Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy "
-"wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb "
-"tylko do odczytu) i mogą być używane jako konektor Claude.ai Desktop."
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:129
+msgid "New order status (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:114
+msgid "New password"
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:145
+msgid ""
+"New price (for set), amount to add/subtract (for fixed), or percentage (for "
+"percentage, e.g., \"10\" for +10%, \"-5\" for -5%)"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:176
+msgid "New role (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooBulkOperations.php:149
+msgid ""
+"New sale price (for set), amount to add/subtract (for fixed), or percentage "
+"(for percentage)"
+msgstr ""
+
+#: build/index.js:1 src/settings/PromptsTab.js:209
+msgid "No description available"
+msgstr "Brak dostępnego opisu"
+
+#: build/index.js:1 src/settings/ResourcesTab.js:282
+msgid "No details available for this resource."
+msgstr "Brak dostępnych szczegółów dla tego zasobu."
+
+#: build/index.js:1 src/settings/PromptsTab.js:136
+msgid "No prompts are currently available."
+msgstr "Obecnie nie ma dostępnych promptów."
+
+#: build/index.js:1 src/settings/ResourcesTab.js:200
+msgid "No resources are currently available."
+msgstr "Obecnie nie ma dostępnych zasobów."
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:192
+msgid "No roles found."
+msgstr "Nie znaleziono ról."
+
+#: build/index.js:1 src/settings/ToolsTab.js:202
+msgid "No tools are currently registered."
+msgstr "Obecnie nie ma zarejestrowanych narzędzi."
+
+#: build/index.js:1 src/settings/ToolsTab.js:209
+msgid "No tools match your filters."
+msgstr "Brak narzędzi pasujących do filtrów."
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:233
+msgid "No users found."
+msgstr "Nie znaleziono użytkowników."
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:169
+msgid "Note content (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: includes/Admin/Settings.php:176 build/index.js:1
 #: src/settings/SettingsTab.js:86
 msgid "Note for Webtalkbot users:"
 msgstr "Uwaga dla użytkowników Webtalkbot:"
 
-#: includes/Admin/Settings.php:177
-msgid ""
-"JWT Authentication must be enabled if you want to create a WooCommerce AI "
-"Agent in"
-msgstr ""
-"Uwierzytelnienie JWT musi być włączone, jeśli chcesz utworzyć agenta AI "
-"WooCommerce w"
+#: includes/Tools/McpWooReports.php:127
+msgid "Number of customers to include in report"
+msgstr "Wyświetl zamówienia WooCommerce"
 
-#: includes/Admin/Settings.php:178
-msgid "Claude.ai Desktop Connector:"
-msgstr "Konektor Claude.ai Desktop:"
-
-#: includes/Admin/Settings.php:179
-msgid ""
-"When JWT Authentication is disabled, this plugin can be used as a connector "
-"in Claude.ai Desktop. A proxy file will be automatically generated for easy "
-"setup."
+#: includes/Tools/Write/McpWordPressMenuWrite.php:94
+msgid "Object type"
 msgstr ""
 
-#: includes/Admin/Settings.php:180
-msgid "MCP Proxy file generated at:"
-msgstr "Plik proxy MCP wygenerowany w:"
+#: includes/Tools/Write/McpWooOrdersWrite.php:133
+msgid "Optional order note to add"
+msgstr "Optional order note to add"
 
-#: includes/Admin/Settings.php:181
-msgid ""
-"To use with Claude.ai Desktop, add this configuration to your "
-"claude_desktop_config.json:"
+#: includes/Tools/McpWooReports.php:133
+msgid "Order customers by"
 msgstr ""
 
-#: includes/Admin/Settings.php:192 includes/Admin/Settings.php:283
-msgid "You do not have permission to perform this action."
-msgstr "Nie masz uprawnień do zarządzania tokenami."
+#: includes/Tools/Write/McpWooOrdersWrite.php:124
+#: includes/Tools/Write/McpWooOrdersWrite.php:165
+msgid "Order ID (required)"
+msgstr "Order ID (wymagane)"
 
-#: includes/Admin/Settings.php:197 includes/Admin/Settings.php:288
-msgid "Invalid nonce. Please refresh the page and try again."
+#: includes/Tools/Write/McpWooOrdersWrite.php:53
+msgid "Order status (default: pending)"
 msgstr ""
-"Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
 
-#: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
-msgid "Settings"
-msgstr "Ustawienia MCP"
+#: includes/Tools/McpWooReports.php:64
+msgid "Order statuses to include"
+msgstr "Statusy zamówień do uwzględnienia"
 
-#: includes/Admin/Settings.php:295
-msgid "Tool name is required."
-msgstr "Nazwa narzędzia jest wymagana."
-
-#: includes/Admin/Settings.php:301
-msgid "Failed to toggle tool state."
-msgstr "Nie udało się przełączyć stanu narzędzia."
-
-#: includes/Admin/Settings.php:310
-msgid "enabled"
-msgstr "włączone"
-
-#: includes/Admin/Settings.php:310
-msgid "disabled"
-msgstr "wyłączone"
-
-#: includes/Admin/Settings.php:388 includes/Admin/Settings.php:456
-msgid "Invalid nonce"
-msgstr "Nieprawidłowe dane uwierzytelniające."
-
-#: includes/Admin/Settings.php:394 includes/Admin/Settings.php:462
-msgid "You do not have permission to access this."
-msgstr "Nie masz uprawnień do zarządzania tokenami."
-
-#: includes/Admin/Settings.php:486 build/index.js:1
-#: src/settings/UserPermissionsTab.js:112
-msgid "User permissions saved successfully."
-msgstr "Ustawienia zapisane pomyślnie!"
-
-#: includes/Auth/JwtAuth.php:212 build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:82
-msgid "You need to be logged in as an administrator to access JWT tokens."
+#: includes/Tools/Write/McpWordPressContentWrite.php:224
+#: includes/Tools/Write/McpWordPressContentWrite.php:286
+msgid "Page content"
 msgstr ""
-"Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT."
 
-#: includes/Core/RegisterMcpTool.php:286
-msgid "The input schema must be an object type."
-msgstr "Schemat wejściowy musi być typem obiektu."
+#: includes/Tools/Write/McpWordPressContentWrite.php:228
+#: includes/Tools/Write/McpWordPressContentWrite.php:290
+msgid "Page excerpt"
+msgstr ""
 
-#. translators: %s: Property name.
-#: includes/Core/RegisterMcpTool.php:298
-#, php-format
-msgid "Property '%s' must have a type field."
-msgstr "Właściwość '%s' musi mieć pole typu."
+#: includes/Tools/Write/McpWordPressContentWrite.php:278
+msgid "Page ID (required)"
+msgstr "Page ID (wymagane)"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:334
+msgid "Page ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:250
+#: includes/Tools/Write/McpWordPressContentWrite.php:307
+msgid "Page order"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:233
+#: includes/Tools/Write/McpWordPressContentWrite.php:295
+msgid "Page status"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:282
+msgid "Page title"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:220
+msgid "Page title (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: build/index.js:1 src/settings/PromptsTab.js:228
+msgid "Parameters:"
+msgstr "Nieprawidłowe parametry."
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:121
+msgid "Parent category ID"
+msgstr "ID kategorii nadrzędnej"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:62
+msgid "Parent category ID (0 for top-level)"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:99
+msgid "Parent menu item ID (for submenu items)"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:238
+#: includes/Tools/Write/McpWordPressContentWrite.php:299
+msgid "Parent page ID"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:58
+msgid "Password (auto-generated if not provided)"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:161
+msgid "Payment gateway ID (e.g., \"bacs\", \"paypal\", \"stripe\") (required)"
+msgstr "Payment gateway ID (e.g., \"bacs\", \"paypal\", \"stripe\") (wymagane)"
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:97
+msgid "Payment method ID"
+msgstr ""
+
+#: build/index.js:1 src/settings/DocumentationTab.js:182
+msgid "Please check that the documentation file exists and is accessible."
+msgstr "Sprawdź, czy plik dokumentacji istnieje i jest dostępny."
+
+#: build/index.js:1 src/settings/index.js:325
+msgid "Please enable \"Require JWT Authentication\" in the Settings tab first."
+msgstr ""
+
+#: build/index.js:1 src/settings/index.js:334
+msgid "Please enable MCP in the Settings tab first."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:48
+#: includes/Tools/Write/McpWordPressContentWrite.php:111
+msgid "Post content"
+msgstr "Treść wpisu"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:52
+#: includes/Tools/Write/McpWordPressContentWrite.php:115
+msgid "Post excerpt"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:103
+msgid "Post ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:113
+msgid "Post ID to attach file to"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:74
+msgid "Post ID to attach image to"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:161
+msgid "Post ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:193
+msgid "Post ID to publish (required)"
+msgstr "Post ID to publish (wymagane)"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:57
+#: includes/Tools/Write/McpWordPressContentWrite.php:120
+msgid "Post status"
+msgstr "Wyświetl tagi produktów"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:107
+msgid "Post title"
+msgstr "Tytuł wpisu"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:44
+msgid "Post title (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpBackupRestore.php:117
+msgid "Post types to backup (default: post, page)"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:89
+msgid "Post, page, or custom post type ID"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:135
+msgid "Product attributes"
+msgstr "Wyświetl tagi produktów"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:152
+msgid "Product dimensions"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:54
+msgid "Product ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooProductsWrite.php:265
+msgid "Product ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooProductsWrite.php:185
+msgid "Product ID to update (required)"
+msgstr "Product ID to update (wymagane)"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:74
+#: includes/Tools/Write/McpWooCouponsWrite.php:177
+msgid "Product IDs that the coupon applies to"
+msgstr ""
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:79
+#: includes/Tools/Write/McpWooCouponsWrite.php:182
+msgid "Product IDs that the coupon does not apply to"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:79
+#: includes/Tools/Write/McpWooProductsWrite.php:198
+msgid "Product long description"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWooBulkOperations.php:59
+msgid "Product name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooProductsWrite.php:189
+msgid "Product name/title"
+msgstr "Wyświetl atrybuty produktów"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:63
+msgid "Product name/title (required)"
+msgstr "Wyświetl atrybuty produktów"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:91
+#: includes/Tools/Write/McpWooProductsWrite.php:206
+msgid "Product regular price"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:95
+#: includes/Tools/Write/McpWooProductsWrite.php:210
+msgid "Product sale price"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:83
+#: includes/Tools/Write/McpWooProductsWrite.php:202
+msgid "Product short description"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:214
+msgid "Product SKU"
+msgstr "Wyświetl tagi produktów"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:87
+msgid "Product SKU (Stock Keeping Unit)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:194
+msgid "Product status"
+msgstr "Wyświetl tagi produktów"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:74
+msgid "Product status (default: publish)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:68
+msgid "Product type (default: simple)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:148
+msgid "Product weight"
+msgstr "Wyświetl atrybuty produktów"
+
+#: build/index.js:1 src/settings/PromptsTab.js:180
+msgid "Prompt Details"
+msgstr "Szczegóły Promptu"
+
+#: build/index.js:1 src/settings/index.js:82
+msgid "Prompts"
+msgstr "Prompty"
 
 #. translators: 1: Property name, 2: Property type.
 #: includes/Core/RegisterMcpTool.php:305
@@ -243,14 +1473,47 @@ msgid "Property '%1$s' has invalid type '%2$s'."
 msgstr "Właściwość '%1$s' ma nieprawidłowy typ '%2$s'."
 
 #. translators: %s: Property name.
-#: includes/Core/RegisterMcpTool.php:311
+#: includes/Core/RegisterMcpTool.php:298
 #, php-format
-msgid "Array property '%s' must have an items field."
-msgstr "Właściwość tablicowa '%s' musi mieć pole items."
+msgid "Property '%s' must have a type field."
+msgstr "Właściwość '%s' musi mieć pole typu."
 
-#: includes/Core/RegisterMcpTool.php:319
-msgid "The required field must be an array."
-msgstr "Pole wymagane musi być tablicą."
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressContentWrite.php:178
+msgid "Publish a WordPress post (change status to publish)."
+msgstr "Wyświetl posty WordPress"
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:70
+#: includes/Tools/Write/McpWooReviewsWrite.php:120
+msgid "Rating (1-5)"
+msgstr ""
+
+#: build/index.js:1 src/settings/ToolsTab.js:118
+msgid "Read"
+msgstr "Odczyt"
+
+#: build/index.js:1 src/settings/ToolsTab.js:155
+msgid "Registered Tools"
+msgstr "Zarejestrowane Narzędzia"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:420
+msgid "Regularly audit and rotate never-expiring tokens"
+msgstr "Regularnie audytuj i rotuj tokeny bez terminu ważności"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:378
+msgid "Regularly review and clean up unused or expired tokens"
+msgstr "Regularnie przeglądaj i usuwaj nieużywane lub wygasłe tokeny"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:461
+msgid ""
+"Remember: These tokens provide access based on your user permissions. If you "
+"can see it in WordPress, applications using your token can see it too."
+msgstr ""
+
+#: includes/Admin/Settings.php:174 build/index.js:1
+#: src/settings/SettingsTab.js:102
+msgid "Require JWT Authentication"
+msgstr "Wymagaj uwierzytelnienia JWT"
 
 #. translators: %s: Required property.
 #: includes/Core/RegisterMcpTool.php:326
@@ -258,73 +1521,13 @@ msgstr "Pole wymagane musi być tablicą."
 msgid "Required property '%s' does not exist in properties."
 msgstr "Wymagana właściwość '%s' nie istnieje we właściwościach."
 
-#: includes/Tools/McpWooReports.php:34
-msgid ""
-"Get detailed WooCommerce sales report with totals, order counts, average "
-"order value, and period breakdown."
-msgstr ""
+#: build/index.js:1 src/settings/ResourcesTab.js:243
+msgid "Resource Details"
+msgstr "Szczegóły Zasobu"
 
-#: includes/Tools/McpWooReports.php:49
-msgid "Time period for the report"
-msgstr "Okres czasu dla raportu"
-
-#: includes/Tools/McpWooReports.php:55
-msgid "Start date (required if period is \"custom\")"
-msgstr ""
-
-#: includes/Tools/McpWooReports.php:60
-msgid "End date (required if period is \"custom\")"
-msgstr ""
-
-#: includes/Tools/McpWooReports.php:64
-msgid "Order statuses to include"
-msgstr "Statusy zamówień do uwzględnienia"
-
-#: includes/Tools/McpWooReports.php:77
-msgid ""
-"Get WooCommerce stock status report with low stock alerts, out of stock "
-"items, and stock levels."
-msgstr ""
-
-#: includes/Tools/McpWooReports.php:92
-msgid "Filter by stock status"
-msgstr "Stan"
-
-#: includes/Tools/McpWooReports.php:97
-msgid "Threshold for low stock alert"
-msgstr "Próg dla alertu niskiego stanu magazynowego"
-
-#: includes/Tools/McpWooReports.php:109
-msgid ""
-"Get WooCommerce customer report with purchase statistics, lifetime value, "
-"and order history."
-msgstr ""
-
-#: includes/Tools/McpWooReports.php:123
-msgid "Specific customer ID (optional, for single customer report)"
-msgstr "Konkretne ID klienta (opcjonalne, dla raportu pojedynczego klienta)"
-
-#: includes/Tools/McpWooReports.php:127
-msgid "Number of customers to include in report"
-msgstr "Wyświetl zamówienia WooCommerce"
-
-#: includes/Tools/McpWooReports.php:133
-msgid "Order customers by"
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:37
-msgid ""
-"Create a backup of WooCommerce products. Returns JSON data with all product "
-"information that can be restored later."
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:52
-msgid "Array of product IDs to backup (optional, empty for all products)"
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:57
-msgid "Whether to include product metadata"
-msgstr ""
+#: build/index.js:1 src/settings/index.js:76
+msgid "Resources"
+msgstr "Zasoby"
 
 #: includes/Tools/Write/McpBackupRestore.php:69
 msgid ""
@@ -332,35 +1535,384 @@ msgid ""
 "or update existing ones."
 msgstr ""
 
-#: includes/Tools/Write/McpBackupRestore.php:84
-#: includes/Tools/Write/McpBackupRestore.php:150
-msgid "JSON string containing backup data (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:88
-msgid "Whether to update existing products by SKU"
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:102
-msgid ""
-"Create a backup of WordPress content (posts, pages, media). Returns JSON "
-"data with all content that can be restored later."
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:117
-msgid "Post types to backup (default: post, page)"
-msgstr ""
-
-#: includes/Tools/Write/McpBackupRestore.php:123
-msgid "Whether to include media metadata"
-msgstr ""
-
 #: includes/Tools/Write/McpBackupRestore.php:135
 msgid "Restore WordPress content (posts, pages) from backup JSON data."
 msgstr ""
 
-#: includes/Tools/Write/McpBackupRestore.php:154
-msgid "Whether to update existing posts/pages by title"
+#: includes/Tools/Write/McpWooReviewsWrite.php:116
+msgid "Review content"
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:66
+msgid "Review content (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:104
+msgid "Review ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:176
+msgid "Review ID to approve (required)"
+msgstr "Review ID to approve (wymagane)"
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:149
+msgid "Review ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:112
+msgid "Reviewer email"
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:62
+msgid "Reviewer email (required)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:108
+msgid "Reviewer name"
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:58
+msgid "Reviewer name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:690
+msgid "Revoke"
+msgstr "Unieważnij"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:372
+msgid "Revoke tokens immediately if you suspect they may be compromised"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:659
+msgid "Revoked"
+msgstr "Unieważniony"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:170
+#: src/settings/UserPermissionsTab.js:206
+msgid "Role"
+msgstr "Rola"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:161
+msgid "Role-Based Permissions"
+msgstr "Uprawnienia Oparte na Rolach"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:243
+msgid "Save Permissions"
+msgstr "Zapisz Uprawnienia"
+
+#: includes/Admin/Settings.php:160
+msgid "Save Settings"
+msgstr "Zapisz ustawienia"
+
+#: build/index.js:1 src/settings/SettingsTab.js:122
+msgid "Saving..."
+msgstr "Zapisywanie..."
+
+#: build/index.js:1 src/settings/ToolsTab.js:179
+msgid "Search tools..."
+msgstr "Szukaj narzędzi..."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:336
+msgid "Security Best Practices"
+msgstr ""
+
+#: includes/Admin/Settings.php:172
+msgid "Security Warning"
+msgstr "Ostrzeżenie bezpieczeństwa"
+
+#: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
+msgid "Settings"
+msgstr "Ustawienia MCP"
+
+#: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
+msgid "Settings saved successfully!"
+msgstr "Ustawienia zapisane pomyślnie!"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:92
+#: includes/Tools/Write/McpWooCustomersWrite.php:163
+#: includes/Tools/Write/McpWooOrdersWrite.php:85
+msgid "Shipping address"
+msgstr "Adres wysyłkowy"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:402
+msgid "Should only be used in highly controlled environments"
+msgstr "Powinny być używane tylko w wysoce kontrolowanych środowiskach"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:705
+msgid "Showing first 10 tokens. Total tokens:"
+msgstr "Wyświetlanie pierwszych 10 tokenów. Łączna liczba tokenów:"
+
+#: includes/Tools/Write/McpSettingsWrite.php:77
+msgid "Site tagline"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:76
+msgid "Site title"
+msgstr ""
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:48
+msgid "Sort order"
+msgstr ""
+
+#: includes/Tools/McpWooReports.php:123
+msgid "Specific customer ID (optional, for single customer report)"
+msgstr "Konkretne ID klienta (opcjonalne, dla raportu pojedynczego klienta)"
+
+#: includes/Tools/McpWooReports.php:55
+msgid "Start date (required if period is \"custom\")"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:82
+msgid "Start of week (0=Sunday, 1=Monday, etc.)"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:630
+#: src/settings/ToolsTab.js:228
+msgid "Status"
+msgstr "Stan"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:222
+msgid "Stock quantity"
+msgstr "Stan"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:104
+msgid "Stock quantity (if manage_stock is true)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:181
+msgid "Stock quantity to set (or null to only update status)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:109
+#: includes/Tools/Write/McpWooProductsWrite.php:227
+msgid "Stock status"
+msgstr "Stan"
+
+#: includes/Tools/Write/McpWooBulkOperations.php:186
+msgid "Stock status to set"
+msgstr "Stan"
+
+#: includes/Tools/Write/McpWooTagsWrite.php:66
+#: includes/Tools/Write/McpWooTagsWrite.php:106
+msgid "Tag description"
+msgstr "Opis"
+
+#: includes/Tools/Write/McpWooTagsWrite.php:134
+msgid "Tag ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooTagsWrite.php:94
+msgid "Tag ID to update (required)"
+msgstr "Tag ID to update (wymagane)"
+
+#: includes/Tools/Write/McpWordPressContentWrite.php:67
+#: includes/Tools/Write/McpWordPressContentWrite.php:129
+msgid "Tag IDs or names"
+msgstr ""
+
+#: includes/Tools/Write/McpWooTagsWrite.php:98
+msgid "Tag name"
+msgstr "Nazwa tagu"
+
+#: includes/Tools/Write/McpWooTagsWrite.php:58
+msgid "Tag name (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooTagsWrite.php:102
+msgid "Tag slug"
+msgstr "Slug tagu"
+
+#: includes/Tools/Write/McpWooTagsWrite.php:62
+msgid "Tag slug (URL-friendly name). Auto-generated from name if not provided."
+msgstr ""
+
+#: includes/Core/RegisterMcpTool.php:286
+msgid "The input schema must be an object type."
+msgstr "Schemat wejściowy musi być typem obiektu."
+
+#: includes/Core/RegisterMcpTool.php:319
+msgid "The required field must be an array."
+msgstr "Pole wymagane musi być tablicą."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:447
+msgid ""
+"These tokens are exclusively for MCP protocol access (stdio and "
+"streamable/HTTP). They will not work with WordPress REST API endpoints or "
+"other authentication systems."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:301
+msgid ""
+"These tokens are implemented using JWT (JSON Web Tokens), providing secure "
+"and stateless authentication."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:316
+msgid "They provide access to MCP route endpoints for your WordPress content"
+msgstr ""
+
+#: build/index.js:1 src/settings/index.js:330
+msgid "This feature is only available when MCP functionality is enabled."
+msgstr ""
+
+#: includes/Admin/Settings.php:171 build/index.js:1
+#: src/settings/AuthenticationTokensTab.js:594
+msgid "This token never expires"
+msgstr "Ten token nigdy nie wygasa"
+
+#: includes/Tools/McpWooReports.php:97
+msgid "Threshold for low stock alert"
+msgstr "Próg dla alertu niskiego stanu magazynowego"
+
+#: includes/Tools/Write/McpSettingsWrite.php:80
+msgid "Time format"
+msgstr "Time format"
+
+#: includes/Tools/McpWooReports.php:49
+msgid "Time period for the report"
+msgstr "Okres czasu dla raportu"
+
+#: includes/Tools/Write/McpSettingsWrite.php:81
+msgid "Timezone string"
+msgstr ""
+
+#: includes/Admin/Settings.php:181
+msgid ""
+"To use with Claude.ai Desktop, add this configuration to your "
+"claude_desktop_config.json:"
+msgstr ""
+
+#: includes/Admin/Settings.php:159 build/index.js:1
+#: src/settings/SettingsTab.js:61
+msgid "Toggle to enable or disable the MCP plugin functionality."
+msgstr "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:584
+msgid "Token copied!"
+msgstr "Token skopiowany do schowka!"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:501
+msgid "Token Duration"
+msgstr "Czas Trwania Tokenu"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:310
+msgid ""
+"Tokens are generated with your current user permissions and expire "
+"automatically"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:328
+msgid "Tokens automatically inherit your user role and capabilities"
+msgstr "Tokeny automatycznie dziedziczą Twoją rolę użytkownika i uprawnienia"
+
+#. translators: %1$s is the tool name, %2$s is the status (enabled/disabled).
+#: includes/Admin/Settings.php:164 includes/Admin/Settings.php:166
+#: includes/Admin/Settings.php:308
+#, php-format
+msgid "Tool %1$s has been %2$s."
+msgstr "Narzędzie %1$s zostało %2$s."
+
+#: includes/Admin/Settings.php:295
+msgid "Tool name is required."
+msgstr "Nazwa narzędzia jest wymagana."
+
+#: build/index.js:1 src/settings/index.js:70
+msgid "Tools"
+msgstr "Narzędzia"
+
+#: build/index.js:1 src/settings/ToolsTab.js:186
+msgid "Total:"
+msgstr "Razem:"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:60
+#: includes/Tools/Write/McpWooCouponsWrite.php:165
+msgid "Type of discount"
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:140
+msgid ""
+"Type of price update: percentage (increase/decrease by %), fixed "
+"(add/subtract amount), or set (set exact price)"
+msgstr ""
+
+#: build/index.js:1 src/settings/ToolsTab.js:120
+msgid "Update"
+msgstr "Aktualizuj"
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:115
+msgid "Update a WordPress navigation menu (rename or change menu items order)."
+msgstr ""
+
+#: includes/Tools/Write/McpWooAttributesWrite.php:60
+msgid "Update an existing product attribute."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooCouponsWrite.php:141
+msgid "Update an existing WooCommerce coupon."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:115
+msgid "Update an existing WooCommerce customer."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:94
+msgid "Update an existing WooCommerce product category."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:89
+msgid "Update an existing WooCommerce product review."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooTagsWrite.php:78
+msgid ""
+"Update an existing WooCommerce product tag. Can update name, slug, and "
+"description."
+msgstr "Wyświetl produkty WooCommerce"
+
+#: includes/Tools/Write/McpWooProductsWrite.php:169
+msgid ""
+"Update an existing WooCommerce product. Can update any product field "
+"including name, description, price, stock, images, categories, etc."
+msgstr ""
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressContentWrite.php:263
+msgid "Update an existing WordPress page."
+msgstr "Wyświetl posty WordPress"
+
+# Narzędzia WordPress
+#: includes/Tools/Write/McpWordPressContentWrite.php:88
+msgid "Update an existing WordPress post."
+msgstr "Wyświetl posty WordPress"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:83
+msgid "Update an existing WordPress user."
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:157
+msgid "Update media metadata (title, alt text, caption, description)."
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:119
+msgid ""
+"Update prices for multiple products at once. Supports percentage or fixed "
+"amount changes."
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:161
+msgid "Update stock quantities or stock status for multiple products at once."
+msgstr ""
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:109
+msgid ""
+"Update WooCommerce order status. Can add order notes and trigger customer "
+"notifications."
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:146
+msgid ""
+"Update WooCommerce payment gateway settings. Enable/disable and configure "
+"payment gateways."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:35
@@ -368,8 +1920,10 @@ msgid ""
 "Update WooCommerce settings. Accepts settings key-value pairs to update."
 msgstr ""
 
-#: includes/Tools/Write/McpSettingsWrite.php:50
-msgid "Key-value pairs of WooCommerce settings to update (required)"
+#: includes/Tools/Write/McpSettingsWrite.php:93
+msgid ""
+"Update WooCommerce shipping zone settings. Create or update shipping zone "
+"with methods."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:63
@@ -377,39 +1931,224 @@ msgid ""
 "Update WordPress general settings (site title, tagline, admin email, etc.)."
 msgstr ""
 
-#: includes/Tools/Write/McpSettingsWrite.php:76
-msgid "Site title"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:77
-msgid "Site tagline"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:78
-msgid "Administrator email"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:79
-msgid "Date format"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:80
-msgid "Time format"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:81
-msgid "Timezone string"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:82
-msgid "Start of week (0=Sunday, 1=Monday, etc.)"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:93
+#: includes/Tools/Write/McpWordPressMediaWrite.php:86
 msgid ""
-"Update WooCommerce shipping zone settings. Create or update shipping zone "
-"with methods."
+"Upload a file to WordPress media library. Accepts base64 encoded file data "
+"or URL."
 msgstr ""
+
+#: includes/Tools/Write/McpWordPressMediaWrite.php:35
+msgid ""
+"Upload an image file to WordPress media library. Accepts base64 encoded "
+"image data or URL."
+msgstr ""
+
+#: build/index.js:1 src/settings/ResourcesTab.js:210
+msgid "URI"
+msgstr ""
+
+#: includes/Tools/Write/McpWordPressMenuWrite.php:85
+msgid "URL for the menu item"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:366
+msgid "Use the shortest expiration time that meets your needs"
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:623
+#: src/settings/UserPermissionsTab.js:205
+msgid "User"
+msgstr "Użytkownik"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:98
+#: includes/Tools/Write/McpWordPressUsersWrite.php:172
+msgid "User ID (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:141
+msgid "User ID to delete (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: includes/Tools/Write/McpWooCustomersWrite.php:205
+msgid "User ID to reassign orders to (optional)"
+msgstr "User ID to reassign orders to (opcjonalne)"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:145
+msgid "User ID to reassign posts and comments to"
+msgstr ""
+
+#: build/index.js:1 src/settings/index.js:59
+msgid "User Permissions"
+msgstr "Uprawnienia Użytkowników"
+
+#: build/index.js:1 src/settings/UserPermissionsTab.js:154
+msgid "User Permissions for MCP"
+msgstr "Uprawnienia Użytkowników dla MCP"
+
+#: includes/Admin/Settings.php:486 build/index.js:1
+#: src/settings/UserPermissionsTab.js:112
+msgid "User permissions saved successfully."
+msgstr "Ustawienia zapisane pomyślnie!"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:70
+msgid "User role"
+msgstr "Użytkownik"
+
+#: includes/Tools/Write/McpWordPressUsersWrite.php:50
+msgid "Username (required)"
+msgstr "Nazwa użytkownika i hasło są wymagane."
+
+#: build/index.js:1 src/settings/PromptsTab.js:166
+#: src/settings/ResourcesTab.js:232
+msgid "View"
+msgstr "Zobacz"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:288
+msgid "What are Authentication Tokens?"
+msgstr "Czym są Tokeny Uwierzytelniania?"
+
+#: includes/Admin/Settings.php:175
+msgid ""
+"When enabled, all MCP requests must include a valid JWT token. When disabled,"
+" MCP endpoints are accessible without authentication (readonly mode only) "
+"and can be used as a Claude.ai Desktop connector."
+msgstr ""
+
+#: build/index.js:1 src/settings/SettingsTab.js:106
+msgid ""
+"When enabled, all MCP requests must include a valid JWT token. When disabled,"
+" MCP endpoints are accessible without authentication (readonly mode only)."
+msgstr ""
+
+#: includes/Admin/Settings.php:179
+msgid ""
+"When JWT Authentication is disabled, this plugin can be used as a connector "
+"in Claude.ai Desktop. A proxy file will be automatically generated for easy "
+"setup."
+msgstr ""
+
+#: includes/Tools/Write/McpWooImportExport.php:59
+#: includes/Tools/Write/McpWooImportExport.php:118
+msgid "Whether CSV has header row"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:165
+msgid "Whether gateway is enabled"
+msgstr ""
+
+#: includes/Tools/Write/McpSettingsWrite.php:132
+msgid "Whether method is enabled"
+msgstr ""
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:173
+msgid "Whether note is for customer (default: false)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooReviewsWrite.php:76
+msgid "Whether the review is approved"
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:190
+msgid "Whether to enable stock management"
+msgstr ""
+
+#: includes/Tools/Write/McpWooCategoriesWrite.php:169
+msgid "Whether to force delete even if category has products"
+msgstr ""
+
+#: includes/Tools/Write/McpWooTagsWrite.php:138
+msgid "Whether to force delete even if tag is used by products"
+msgstr ""
+
+#: includes/Tools/Write/McpWooBulkOperations.php:106
+#: includes/Tools/Write/McpWooCouponsWrite.php:261
+#: includes/Tools/Write/McpWordPressContentWrite.php:165
+#: includes/Tools/Write/McpWordPressContentWrite.php:338
+#: includes/Tools/Write/McpWordPressMediaWrite.php:144
+msgid "Whether to force delete permanently"
+msgstr ""
+
+#: includes/Tools/Write/McpBackupRestore.php:123
+msgid "Whether to include media metadata"
+msgstr ""
+
+#: includes/Tools/Write/McpBackupRestore.php:57
+msgid "Whether to include product metadata"
+msgstr ""
+
+#: includes/Tools/Write/McpWooOrdersWrite.php:137
+msgid "Whether to notify customer (default: false)"
+msgstr ""
+
+#: includes/Tools/Write/McpWooProductsWrite.php:269
+msgid "Whether to permanently delete (true) or move to trash (false, default)"
+msgstr ""
+
+#: includes/Tools/Write/McpBackupRestore.php:154
+msgid "Whether to update existing posts/pages by title"
+msgstr ""
+
+#: includes/Tools/Write/McpBackupRestore.php:88
+msgid "Whether to update existing products by SKU"
+msgstr ""
+
+#: build/index.js:1 src/settings/SettingsTab.js:47
+msgid ""
+"WordPress permalinks are not set to \"Post name\" structure. For proper "
+"product link generation, please go to WordPress Admin → Settings → "
+"Permalinks and select \"Post name\" structure."
+msgstr ""
+
+#: build/index.js:1 src/settings/SettingsTab.js:35
+msgid ""
+"WordPress REST API appears to be disabled. This plugin requires REST API to "
+"function properly. Please contact your administrator to ensure the WordPress "
+"REST API is enabled."
+msgstr ""
+
+#: build/index.js:1 src/settings/ToolsTab.js:122
+msgid "Write"
+msgstr "Zapis"
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:85
+msgid ""
+"You do not have permission to access JWT tokens. Admin privileges required."
+msgstr ""
+
+#: includes/Admin/Settings.php:394 includes/Admin/Settings.php:462
+msgid "You do not have permission to access this."
+msgstr "Nie masz uprawnień do zarządzania tokenami."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:140
+msgid ""
+"You do not have permission to generate JWT tokens. Admin privileges required."
+msgstr ""
+
+#: includes/Admin/Settings.php:192 includes/Admin/Settings.php:283
+msgid "You do not have permission to perform this action."
+msgstr "Nie masz uprawnień do zarządzania tokenami."
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:191
+msgid ""
+"You do not have permission to revoke JWT tokens. Admin privileges required."
+msgstr ""
+
+#: includes/Auth/JwtAuth.php:212 build/index.js:1
+#: src/settings/AuthenticationTokensTab.js:82
+msgid "You need to be logged in as an administrator to access JWT tokens."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:137
+msgid "You need to be logged in as an administrator to generate JWT tokens."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:188
+msgid "You need to be logged in as an administrator to revoke JWT tokens."
+msgstr ""
+
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:619
+msgid "Your Active Tokens"
+msgstr "Twoje Aktywne Tokeny"
 
 #: includes/Tools/Write/McpSettingsWrite.php:108
 msgid "Zone ID (0 to create new zone)"
@@ -423,1889 +2162,32 @@ msgstr "Nazwa użytkownika i hasło są wymagane."
 msgid "Zone order"
 msgstr ""
 
-#: includes/Tools/Write/McpSettingsWrite.php:121
-msgid "Array of location codes (e.g., [\"US\", \"CA\"])"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:126
-msgid "Array of shipping method configurations"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:130
-msgid "Method ID (e.g., \"flat_rate\")"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:131
-msgid "Method title"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:132
-msgid "Whether method is enabled"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:133
-msgid "Method-specific settings"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:146
-msgid ""
-"Update WooCommerce payment gateway settings. Enable/disable and configure "
-"payment gateways."
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:161
-msgid "Payment gateway ID (e.g., \"bacs\", \"paypal\", \"stripe\") (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:165
-msgid "Whether gateway is enabled"
-msgstr ""
-
-#: includes/Tools/Write/McpSettingsWrite.php:169
-msgid "Gateway-specific settings (title, description, etc.)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:32
-msgid "Create a new global product attribute (e.g., Color, Size)."
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:45
-msgid "Attribute name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:46
-#: includes/Tools/Write/McpWooAttributesWrite.php:75
-msgid "Attribute slug"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:47
-msgid "Attribute type"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:48
-msgid "Sort order"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:49
-msgid "Enable archives"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:60
-msgid "Update an existing product attribute."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:73
-#: includes/Tools/Write/McpWooAttributesWrite.php:101
-#: includes/Tools/Write/McpWooAttributesWrite.php:124
-msgid "Attribute ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:74
-msgid "Attribute name"
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:89
-msgid "Delete a product attribute. DESTRUCTIVE OPERATION."
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:111
-msgid ""
-"Add terms (values) to a product attribute (e.g., add Red, Blue, Green to "
-"Color attribute)."
-msgstr ""
-
-#: includes/Tools/Write/McpWooAttributesWrite.php:127
-msgid "Array of term names to add (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooBulkOperations.php:40
-msgid ""
-"Create multiple WooCommerce products at once. Accepts array of product data."
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:55
-msgid "Array of product data objects (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooBulkOperations.php:59
-msgid "Product name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWooBulkOperations.php:86
-msgid "Delete multiple WooCommerce products at once. DESTRUCTIVE OPERATION."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWooBulkOperations.php:101
-msgid "Array of product IDs to delete (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:106
-#: includes/Tools/Write/McpWooCouponsWrite.php:261
-#: includes/Tools/Write/McpWordPressContentWrite.php:165
-#: includes/Tools/Write/McpWordPressContentWrite.php:338
-#: includes/Tools/Write/McpWordPressMediaWrite.php:144
-msgid "Whether to force delete permanently"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:119
-msgid ""
-"Update prices for multiple products at once. Supports percentage or fixed "
-"amount changes."
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:134
-#: includes/Tools/Write/McpWooBulkOperations.php:176
-msgid "Array of product IDs to update (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooBulkOperations.php:140
-msgid ""
-"Type of price update: percentage (increase/decrease by %), fixed (add/"
-"subtract amount), or set (set exact price)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:145
-msgid ""
-"New price (for set), amount to add/subtract (for fixed), or percentage (for "
-"percentage, e.g., \"10\" for +10%, \"-5\" for -5%)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:149
-msgid ""
-"New sale price (for set), amount to add/subtract (for fixed), or percentage "
-"(for percentage)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:161
-msgid "Update stock quantities or stock status for multiple products at once."
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:181
-msgid "Stock quantity to set (or null to only update status)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooBulkOperations.php:186
-msgid "Stock status to set"
-msgstr "Stan"
-
-#: includes/Tools/Write/McpWooBulkOperations.php:190
-msgid "Whether to enable stock management"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:39
-msgid ""
-"Create a new WooCommerce product category with name, slug, description, "
-"parent category, and image."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:54
-msgid "Category name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:58
-msgid "Category slug (URL-friendly name)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:62
-msgid "Parent category ID (0 for top-level)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:67
-#: includes/Tools/Write/McpWooCategoriesWrite.php:125
-msgid "Category description"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:72
-#: includes/Tools/Write/McpWooCategoriesWrite.php:130
-msgid "Category display type"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:77
-#: includes/Tools/Write/McpWooCategoriesWrite.php:134
-msgid "Category image attachment ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:81
-#: includes/Tools/Write/McpWooCategoriesWrite.php:138
-msgid "Menu order for sorting"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:94
-msgid "Update an existing WooCommerce product category."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:109
-msgid "Category ID to update (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:113
-msgid "Category name"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:117
-msgid "Category slug"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:121
-msgid "Parent category ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:150
-msgid ""
-"Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will "
-"be uncategorized."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:165
-msgid "Category ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:169
-msgid "Whether to force delete even if category has products"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:182
-msgid "Change the order of product categories for display."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCategoriesWrite.php:197
-msgid "Array of category IDs in desired order"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:40
-msgid ""
-"Create a new WooCommerce coupon with discount rules, usage limits, and "
-"restrictions."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:55
-msgid "Coupon code (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:60
-#: includes/Tools/Write/McpWooCouponsWrite.php:165
-msgid "Type of discount"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:65
-msgid "Discount amount (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:69
-#: includes/Tools/Write/McpWooCouponsWrite.php:173
-msgid "If true, coupon cannot be used with other coupons"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:74
-#: includes/Tools/Write/McpWooCouponsWrite.php:177
-msgid "Product IDs that the coupon applies to"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:79
-#: includes/Tools/Write/McpWooCouponsWrite.php:182
-msgid "Product IDs that the coupon does not apply to"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:84
-#: includes/Tools/Write/McpWooCouponsWrite.php:187
-msgid "How many times the coupon can be used in total"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:88
-#: includes/Tools/Write/McpWooCouponsWrite.php:191
-msgid "How many times the coupon can be used per user"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:92
-#: includes/Tools/Write/McpWooCouponsWrite.php:195
-msgid "Max number of items in cart the coupon can apply to"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:96
-#: includes/Tools/Write/McpWooCouponsWrite.php:199
-msgid "If true, enables free shipping"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:101
-#: includes/Tools/Write/McpWooCouponsWrite.php:203
-msgid "Category IDs that the coupon applies to"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:106
-#: includes/Tools/Write/McpWooCouponsWrite.php:208
-msgid "Category IDs that the coupon does not apply to"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:111
-#: includes/Tools/Write/McpWooCouponsWrite.php:213
-msgid "If true, sale items are excluded from coupon"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:116
-#: includes/Tools/Write/McpWooCouponsWrite.php:217
-msgid "Minimum order amount required to use coupon"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:120
-#: includes/Tools/Write/McpWooCouponsWrite.php:221
-msgid "Maximum order amount allowed to use coupon"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:124
-#: includes/Tools/Write/McpWooCouponsWrite.php:225
-msgid "Email addresses that can use the coupon"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:129
-#: includes/Tools/Write/McpWooCouponsWrite.php:230
-msgid "Coupon expiration date (YYYY-MM-DD format)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:141
-msgid "Update an existing WooCommerce coupon."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:156
-msgid "Coupon ID to update (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:160
-msgid "Coupon code"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:169
-msgid "Discount amount"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:242
-msgid "Delete a WooCommerce coupon. DESTRUCTIVE OPERATION."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCouponsWrite.php:257
-msgid "Coupon ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:40
-msgid "Create a new WooCommerce customer with billing and shipping addresses."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:55
-msgid "Customer email (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:59
-msgid "Customer username"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:63
-msgid "Customer password"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:67
-#: includes/Tools/Write/McpWooCustomersWrite.php:138
-msgid "Customer first name"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:71
-#: includes/Tools/Write/McpWooCustomersWrite.php:142
-msgid "Customer last name"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:75
-#: includes/Tools/Write/McpWooCustomersWrite.php:146
-#: includes/Tools/Write/McpWooOrdersWrite.php:71
-msgid "Billing address"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:92
-#: includes/Tools/Write/McpWooCustomersWrite.php:163
-#: includes/Tools/Write/McpWooOrdersWrite.php:85
-msgid "Shipping address"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:115
-msgid "Update an existing WooCommerce customer."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:130
-msgid "Customer ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:134
-msgid "Customer email"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:186
-msgid ""
-"Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes "
-"associated WordPress user."
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:201
-msgid "Customer ID to delete (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooCustomersWrite.php:205
-msgid "User ID to reassign orders to (optional)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:40
-msgid ""
-"Import WooCommerce products from CSV file. CSV should contain product data "
-"(name, SKU, price, stock, etc.)."
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:55
-#: includes/Tools/Write/McpWooImportExport.php:114
-msgid "CSV content as string (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooImportExport.php:59
-#: includes/Tools/Write/McpWooImportExport.php:118
-msgid "Whether CSV has header row"
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:72
-msgid ""
-"Export WooCommerce products to CSV format. Returns CSV content as string."
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:87
-msgid "Array of product IDs to export (optional, empty for all)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:99
-msgid ""
-"Import WooCommerce orders from CSV file. CSV should contain order data "
-"(customer, products, amounts, etc.)."
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:131
-msgid "Export WooCommerce orders to CSV format. Returns CSV content as string."
-msgstr ""
-
-#: includes/Tools/Write/McpWooImportExport.php:146
-msgid "Array of order IDs to export (optional, empty for all)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:33
-msgid ""
-"Create a new WooCommerce order with customer information, products, and "
-"payment details."
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:48
-msgid "Customer user ID (0 for guest)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:53
-msgid "Order status (default: pending)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:58
-msgid "Array of products to add to order"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:97
-msgid "Payment method ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:109
-msgid ""
-"Update WooCommerce order status. Can add order notes and trigger customer "
-"notifications."
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:124
-#: includes/Tools/Write/McpWooOrdersWrite.php:165
-msgid "Order ID (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:129
-msgid "New order status (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:133
-msgid "Optional order note to add"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:137
-msgid "Whether to notify customer (default: false)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:150
-msgid "Add a note to an existing WooCommerce order."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:169
-msgid "Note content (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooOrdersWrite.php:173
-msgid "Whether note is for customer (default: false)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:47
-msgid ""
-"Create a new WooCommerce product. Supports simple and variable products with "
-"full configuration including pricing, inventory, images, categories, tags, "
-"and attributes."
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:63
-msgid "Product name/title (required)"
-msgstr "Wyświetl atrybuty produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:68
-msgid "Product type (default: simple)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:74
-msgid "Product status (default: publish)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:79
-#: includes/Tools/Write/McpWooProductsWrite.php:198
-msgid "Product long description"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:83
-#: includes/Tools/Write/McpWooProductsWrite.php:202
-msgid "Product short description"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:87
-msgid "Product SKU (Stock Keeping Unit)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:91
-#: includes/Tools/Write/McpWooProductsWrite.php:206
-msgid "Product regular price"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:95
-#: includes/Tools/Write/McpWooProductsWrite.php:210
-msgid "Product sale price"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:99
-#: includes/Tools/Write/McpWooProductsWrite.php:218
-msgid "Enable stock management"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:104
-msgid "Stock quantity (if manage_stock is true)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:109
-#: includes/Tools/Write/McpWooProductsWrite.php:227
-msgid "Stock status"
-msgstr "Stan"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:114
-#: includes/Tools/Write/McpWooProductsWrite.php:231
-msgid "Array of category IDs"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:119
-#: includes/Tools/Write/McpWooProductsWrite.php:236
-msgid "Array of tag IDs"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:124
-msgid "Array of image URLs or attachment IDs"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:135
-msgid "Product attributes"
-msgstr "Wyświetl tagi produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:148
-msgid "Product weight"
-msgstr "Wyświetl atrybuty produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:152
-msgid "Product dimensions"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:169
-msgid ""
-"Update an existing WooCommerce product. Can update any product field "
-"including name, description, price, stock, images, categories, etc."
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:185
-msgid "Product ID to update (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:189
-msgid "Product name/title"
-msgstr "Wyświetl atrybuty produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:194
-msgid "Product status"
-msgstr "Wyświetl tagi produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:214
-msgid "Product SKU"
-msgstr "Wyświetl tagi produktów"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:222
-msgid "Stock quantity"
-msgstr "Stan"
-
-#: includes/Tools/Write/McpWooProductsWrite.php:249
-msgid ""
-"Delete a WooCommerce product. Can permanently delete or move to trash. "
-"DESTRUCTIVE OPERATION - use with caution."
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:265
-msgid "Product ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooProductsWrite.php:269
-msgid "Whether to permanently delete (true) or move to trash (false, default)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:282
-msgid ""
-"Bulk update multiple products at once. Useful for updating prices, stock, or "
-"other fields for multiple products."
-msgstr ""
-
-#: includes/Tools/Write/McpWooProductsWrite.php:298
-msgid "Array of products to update with their IDs and fields"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:39
-msgid ""
-"Create a new WooCommerce product review with rating, content, and reviewer "
-"information."
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:54
-msgid "Product ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:58
-msgid "Reviewer name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:62
-msgid "Reviewer email (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:66
-msgid "Review content (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:70
-#: includes/Tools/Write/McpWooReviewsWrite.php:120
-msgid "Rating (1-5)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:76
-msgid "Whether the review is approved"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:89
-msgid "Update an existing WooCommerce product review."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:104
-msgid "Review ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:108
-msgid "Reviewer name"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:112
-msgid "Reviewer email"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:116
-msgid "Review content"
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:134
-msgid "Delete a WooCommerce product review. DESTRUCTIVE OPERATION."
-msgstr ""
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:149
-msgid "Review ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-# Narzędzia WooCommerce
-#: includes/Tools/Write/McpWooReviewsWrite.php:161
-msgid "Approve a WooCommerce product review (change status to approved)."
-msgstr "Wyszukaj produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooReviewsWrite.php:176
-msgid "Review ID to approve (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:42
-msgid "Create a new WooCommerce product tag with name, slug, and description."
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:58
-msgid "Tag name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooTagsWrite.php:62
-msgid "Tag slug (URL-friendly name). Auto-generated from name if not provided."
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:66
-#: includes/Tools/Write/McpWooTagsWrite.php:106
-msgid "Tag description"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWooTagsWrite.php:78
-msgid ""
-"Update an existing WooCommerce product tag. Can update name, slug, and "
-"description."
-msgstr "Wyświetl produkty WooCommerce"
-
-#: includes/Tools/Write/McpWooTagsWrite.php:94
-msgid "Tag ID to update (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:98
-msgid "Tag name"
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:102
-msgid "Tag slug"
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:118
-msgid ""
-"Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose "
-"this tag."
-msgstr ""
-
-#: includes/Tools/Write/McpWooTagsWrite.php:134
-msgid "Tag ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWooTagsWrite.php:138
-msgid "Whether to force delete even if tag is used by products"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:29
-msgid ""
-"Create a new WordPress post with content, categories, tags, and featured "
-"image."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:44
-msgid "Post title (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:48
-#: includes/Tools/Write/McpWordPressContentWrite.php:111
-msgid "Post content"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:52
-#: includes/Tools/Write/McpWordPressContentWrite.php:115
-msgid "Post excerpt"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:57
-#: includes/Tools/Write/McpWordPressContentWrite.php:120
-msgid "Post status"
-msgstr "Wyświetl tagi produktów"
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:62
-#: includes/Tools/Write/McpWordPressContentWrite.php:124
-msgid "Category IDs"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:67
-#: includes/Tools/Write/McpWordPressContentWrite.php:129
-msgid "Tag IDs or names"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:72
-#: includes/Tools/Write/McpWordPressContentWrite.php:134
-#: includes/Tools/Write/McpWordPressContentWrite.php:242
-#: includes/Tools/Write/McpWordPressContentWrite.php:303
-msgid "Featured image attachment ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:76
-#: includes/Tools/Write/McpWordPressContentWrite.php:246
-msgid "Author user ID"
-msgstr ""
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressContentWrite.php:88
-msgid "Update an existing WordPress post."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:103
-msgid "Post ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:107
-msgid "Post title"
-msgstr ""
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressContentWrite.php:146
-msgid "Delete a WordPress post. DESTRUCTIVE OPERATION."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:161
-msgid "Post ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressContentWrite.php:178
-msgid "Publish a WordPress post (change status to publish)."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:193
-msgid "Post ID to publish (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:205
-msgid ""
-"Create a new WordPress page with content, featured image, and parent page."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:220
-msgid "Page title (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:224
-#: includes/Tools/Write/McpWordPressContentWrite.php:286
-msgid "Page content"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:228
-#: includes/Tools/Write/McpWordPressContentWrite.php:290
-msgid "Page excerpt"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:233
-#: includes/Tools/Write/McpWordPressContentWrite.php:295
-msgid "Page status"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:238
-#: includes/Tools/Write/McpWordPressContentWrite.php:299
-msgid "Parent page ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:250
-#: includes/Tools/Write/McpWordPressContentWrite.php:307
-msgid "Page order"
-msgstr ""
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressContentWrite.php:263
-msgid "Update an existing WordPress page."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:278
-msgid "Page ID (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:282
-msgid "Page title"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:319
-msgid "Delete a WordPress page. DESTRUCTIVE OPERATION."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressContentWrite.php:334
-msgid "Page ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:35
-msgid ""
-"Upload an image file to WordPress media library. Accepts base64 encoded "
-"image data or URL."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:50
-msgid "Base64 encoded image data or image URL (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:54
-msgid "Filename for the image"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:58
-msgid "Image title"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:62
-msgid "Alt text for the image"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:66
-msgid "Image caption"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:70
-msgid "Image description"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:74
-msgid "Post ID to attach image to"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:86
-msgid ""
-"Upload a file to WordPress media library. Accepts base64 encoded file data "
-"or URL."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:101
-msgid "Base64 encoded file data or file URL (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:105
-msgid "Filename for the file"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:109
-msgid "File title"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:113
-msgid "Post ID to attach file to"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:125
-msgid "Delete a media file from WordPress. DESTRUCTIVE OPERATION."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:140
-msgid "Media attachment ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:157
-msgid "Update media metadata (title, alt text, caption, description)."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:172
-msgid "Media attachment ID (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:176
-msgid "Media title"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:180
-msgid "Alt text"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:184
-msgid "Caption"
-msgstr "Akcja"
-
-#: includes/Tools/Write/McpWordPressMediaWrite.php:188 build/index.js:1
-#: src/settings/PromptsTab.js:147 src/settings/ResourcesTab.js:212
-#: src/settings/ToolsTab.js:220
-msgid "Description"
-msgstr "Opis"
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:35
-msgid "Create a new WordPress navigation menu."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:50
-msgid "Menu name (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:62
-msgid "Add a menu item to a WordPress navigation menu."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:77
-#: includes/Tools/Write/McpWordPressMenuWrite.php:130
-msgid "Menu ID (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:81
-msgid "Menu item title (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:85
-msgid "URL for the menu item"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:89
-msgid "Post, page, or custom post type ID"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:94
-msgid "Object type"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:99
-msgid "Parent menu item ID (for submenu items)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:103
-msgid "Menu order position"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:115
-msgid "Update a WordPress navigation menu (rename or change menu items order)."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:134
-msgid "New menu name"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:138
-msgid "Array of menu item IDs in desired order"
-msgstr ""
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressMenuWrite.php:151
-msgid "Delete a WordPress navigation menu. DESTRUCTIVE OPERATION."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressMenuWrite.php:166
-msgid "Menu ID to delete (required)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:35
-msgid "Create a new WordPress user with username, email, password, and role."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:50
-msgid "Username (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:54
-msgid "Email address (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:58
-msgid "Password (auto-generated if not provided)"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:62
-#: includes/Tools/Write/McpWordPressUsersWrite.php:106
-msgid "First name"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:66
-#: includes/Tools/Write/McpWordPressUsersWrite.php:110
-msgid "Last name"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:70
-msgid "User role"
-msgstr "Użytkownik"
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:83
-msgid "Update an existing WordPress user."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:98
-#: includes/Tools/Write/McpWordPressUsersWrite.php:172
-msgid "User ID (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:102
-msgid "Email address"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:114
-msgid "New password"
-msgstr ""
-
-# Narzędzia WordPress
-#: includes/Tools/Write/McpWordPressUsersWrite.php:126
-msgid "Delete a WordPress user. DESTRUCTIVE OPERATION."
-msgstr "Wyświetl posty WordPress"
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:141
-msgid "User ID to delete (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:145
-msgid "User ID to reassign posts and comments to"
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:157
-msgid "Change a WordPress user role."
-msgstr ""
-
-#: includes/Tools/Write/McpWordPressUsersWrite.php:176
-msgid "New role (required)"
-msgstr "Nazwa użytkownika i hasło są wymagane."
-
-#: build/index.js:1 src/settings/SettingsTab.js:80
-msgid "Authentication Settings"
-msgstr "Uwierzytelnienie"
-
-#: build/index.js:1 src/settings/SettingsTab.js:86
-msgid ""
-"JWT Authentication is recommended if you want to create a WooCommerce AI "
-"Agent in"
-msgstr ""
-"Uwierzytelnienie JWT musi być włączone, jeśli chcesz utworzyć agenta AI "
-"WooCommerce w"
-
-#: build/index.js:1 src/settings/SettingsTab.js:106
-msgid ""
-"When enabled, all MCP requests must include a valid JWT token. When "
-"disabled, MCP endpoints are accessible without authentication (readonly mode "
-"only)."
-msgstr ""
-"Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy "
-"wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb "
-"tylko do odczytu) i mogą być używane jako konektor Claude.ai Desktop."
-
-#: build/index.js:1 src/settings/SettingsTab.js:122
-msgid "Saving..."
-msgstr "Zapisywanie..."
-
-#: build/index.js:1 src/settings/SettingsTab.js:22
-msgid "General Settings"
-msgstr "Zapisz ustawienia"
-
-#: build/index.js:1 src/settings/SettingsTab.js:32
-msgid "⚠️ WordPress REST API Disabled"
-msgstr ""
-
-#: build/index.js:1 src/settings/SettingsTab.js:35
-msgid ""
-"WordPress REST API appears to be disabled. This plugin requires REST API to "
-"function properly. Please contact your administrator to ensure the WordPress "
-"REST API is enabled."
-msgstr ""
-
-#: build/index.js:1 src/settings/SettingsTab.js:44
-msgid "⚠️ Incorrect Permalinks Configuration"
-msgstr ""
-
-#: build/index.js:1 src/settings/SettingsTab.js:47
-msgid ""
-"WordPress permalinks are not set to \"Post name\" structure. For proper "
-"product link generation, please go to WordPress Admin → Settings → "
-"Permalinks and select \"Post name\" structure."
-msgstr ""
-
-#: build/index.js:1 src/settings/ToolsTab.js:45
-msgid "Failed to load tools data"
-msgstr ""
-
-#: build/index.js:1 src/settings/ToolsTab.js:50
-msgid "Error loading tools: "
-msgstr "Błąd ładowania narzędzi: "
-
-#: build/index.js:1 src/settings/ToolsTab.js:118
-msgid "Read"
-msgstr "Odczyt"
-
-#: build/index.js:1 src/settings/ToolsTab.js:119
-msgid "Create"
-msgstr "Utwórz"
-
-#: build/index.js:1 src/settings/ToolsTab.js:120
-msgid "Update"
-msgstr "Aktualizuj"
-
-#: build/index.js:1 src/settings/ToolsTab.js:121
-msgid "Delete"
-msgstr "Usuń"
-
-#: build/index.js:1 src/settings/ToolsTab.js:122
-msgid "Write"
-msgstr "Zapis"
-
-#: build/index.js:1 src/settings/ToolsTab.js:123
-msgid "Action"
-msgstr "Akcja"
-
-#: build/index.js:1 src/settings/ToolsTab.js:124
-msgid "Edit"
-msgstr ""
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Edytuj\n"
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Edycja"
-
-#: build/index.js:1 src/settings/ToolsTab.js:133
-msgid "All Types"
-msgstr "Wszystkie Typy"
-
-#: build/index.js:1 src/settings/ToolsTab.js:155
-msgid "Registered Tools"
-msgstr "Zarejestrowane Narzędzia"
-
-#: build/index.js:1 src/settings/ToolsTab.js:159
-msgid ""
-"List of all registered tools in the system. Use the toggles to enable or "
-"disable individual tools."
-msgstr ""
-"Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników, "
-"aby włączyć lub wyłączyć poszczególne narzędzia."
-
-#: build/index.js:1 src/settings/ToolsTab.js:170
-msgid "Filter by Type"
-msgstr "Filtruj po Typie"
-
-#: build/index.js:1 src/settings/ToolsTab.js:179
-msgid "Search tools..."
-msgstr "Szukaj narzędzi..."
-
-#: build/index.js:1 src/settings/ToolsTab.js:186
-msgid "Total:"
-msgstr "Razem:"
-
-#: build/index.js:1 src/settings/ToolsTab.js:194
-msgid "Loading tools..."
-msgstr "Ładowanie narzędzi..."
-
-#: build/index.js:1 src/settings/ToolsTab.js:202
-msgid "No tools are currently registered."
-msgstr "Obecnie nie ma zarejestrowanych narzędzi."
-
-#: build/index.js:1 src/settings/ToolsTab.js:209
-msgid "No tools match your filters."
-msgstr "Brak narzędzi pasujących do filtrów."
-
-#: build/index.js:1 src/settings/PromptsTab.js:145
-#: src/settings/ResourcesTab.js:209 src/settings/ToolsTab.js:218
-msgid "Name"
-msgstr "Nazwa"
-
-#: build/index.js:1 src/settings/ToolsTab.js:223
-msgid "Functionality Type"
-msgstr "Typ Funkcjonalności"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:630
-#: src/settings/ToolsTab.js:228
-msgid "Status"
-msgstr "Stan"
-
-#: build/index.js:1 src/settings/ToolsTab.js:260
-msgid "Enabled"
-msgstr "Włączony"
-
-#: build/index.js:1 src/settings/ToolsTab.js:264
-msgid "Disabled"
-msgstr "Wyłączony"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:88
-msgid "Failed to load resources data"
-msgstr ""
-
-#: build/index.js:1 src/settings/ResourcesTab.js:93
-msgid "Error loading resources: "
-msgstr ""
-
-#: build/index.js:1 src/settings/ResourcesTab.js:179
-msgid "Available Resources"
-msgstr "Dostępne Zasoby"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:183
-msgid "List of all available resources in the system."
-msgstr "Lista wszystkich dostępnych zasobów w systemie."
-
-#: build/index.js:1 src/settings/ResourcesTab.js:192
-msgid "Loading resources..."
-msgstr "Ładowanie zasobów..."
-
-#: build/index.js:1 src/settings/ResourcesTab.js:200
-msgid "No resources are currently available."
-msgstr "Obecnie nie ma dostępnych zasobów."
-
-#: build/index.js:1 src/settings/ResourcesTab.js:210
-msgid "URI"
-msgstr ""
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:632
-#: src/settings/PromptsTab.js:149 src/settings/ResourcesTab.js:214
-msgid "Actions"
-msgstr "Akcje"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:143
-msgid "Failed to load resource details"
-msgstr "Pobierz szczegóły zamówienia"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:148
-msgid "Error loading resource details: "
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:166
-#: src/settings/ResourcesTab.js:232
-msgid "View"
-msgstr "Zobacz"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:243
-msgid "Resource Details"
-msgstr "Szczegóły Zasobu"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:251
-msgid "Loading resource details..."
-msgstr "Ładowanie szczegółów zasobu..."
-
-#: build/index.js:1 src/settings/ResourcesTab.js:270
-msgid "Full Resource Data"
-msgstr "Pełne Dane Zasobu"
-
-#: build/index.js:1 src/settings/ResourcesTab.js:282
-msgid "No details available for this resource."
-msgstr "Brak dostępnych szczegółów dla tego zasobu."
-
-#: build/index.js:1 src/settings/PromptsTab.js:46
-msgid "Failed to load prompts data"
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:51
-msgid "Error loading prompts: "
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:115
-msgid "Available Prompts"
-msgstr "Dostępne Prompty"
-
-#: build/index.js:1 src/settings/PromptsTab.js:119
-msgid "List of all available prompts in the system."
-msgstr "Lista wszystkich dostępnych zasobów w systemie."
-
-#: build/index.js:1 src/settings/PromptsTab.js:128
-msgid "Loading prompts..."
-msgstr "Ładowanie promptów..."
-
-#: build/index.js:1 src/settings/PromptsTab.js:136
-msgid "No prompts are currently available."
-msgstr "Obecnie nie ma dostępnych promptów."
-
-#: build/index.js:1 src/settings/PromptsTab.js:93
-msgid "Failed to load prompt details"
-msgstr "Pobierz szczegóły produktu"
-
-#: build/index.js:1 src/settings/PromptsTab.js:98
-msgid "Error loading prompt details: "
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:180
-msgid "Prompt Details"
-msgstr "Szczegóły Promptu"
-
-#: build/index.js:1 src/settings/PromptsTab.js:189
-msgid "Loading prompt details..."
-msgstr "Ładowanie szczegółów promptu..."
-
-#: build/index.js:1 src/settings/PromptsTab.js:203
-msgid "Description:"
-msgstr "Opis"
-
-#: build/index.js:1 src/settings/PromptsTab.js:209
-msgid "No description available"
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:217
-msgid "Content:"
-msgstr ""
-
-#: build/index.js:1 src/settings/PromptsTab.js:228
-msgid "Parameters:"
-msgstr "Nieprawidłowe parametry."
-
-#: build/index.js:1 src/settings/PromptsTab.js:249
-msgid "Close"
-msgstr "Zamknij"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:25
-#: src/settings/AuthenticationTokensTab.js:267
-msgid "1 hour"
-msgstr "1 godzina"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:26
-msgid "2 hours"
-msgstr "2 godziny"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:27
-msgid "6 hours"
-msgstr "6 godzin"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:28
-msgid "12 hours"
-msgstr "12 godzin"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:29
-msgid "24 hours (1 day)"
-msgstr "24 godziny (1 dzień)"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:30
-msgid "Never expire"
-msgstr "Nigdy nie wygasa"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:85
-msgid ""
-"You do not have permission to access JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do dostępu do tokenów JWT. Wymagane są uprawnienia "
-"administratora."
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:88
-msgid "Error fetching tokens"
-msgstr "Błąd pobierania tokenów"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:237
-#: src/settings/DocumentationTab.js:141
-msgid "Failed to copy to clipboard"
-msgstr "Token skopiowany do schowka!"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:275
-#: src/settings/index.js:53
-msgid "Authentication Tokens"
-msgstr "Tokeny Uwierzytelniania"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:288
-msgid "What are Authentication Tokens?"
-msgstr "Czym są Tokeny Uwierzytelniania?"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:294
-msgid ""
-"MCP authentication tokens are secure, temporary credentials that allow "
-"external MCP clients to the WordPress MCP server"
-msgstr ""
-"Tokeny uwierzytelniania MCP to bezpieczne, tymczasowe dane "
-"uwierzytelniające, które umożliwiają zewnętrznym klientom MCP dostęp do "
-"serwera WordPress MCP"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:301
-msgid ""
-"These tokens are implemented using JWT (JSON Web Tokens), providing secure "
-"and stateless authentication."
-msgstr ""
-"Tokeny te są implementowane przy użyciu JWT (JSON Web Tokens), zapewniając "
-"bezpieczne uwierzytelnianie bezstanowe."
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:307
-msgid "How They Work"
-msgstr ""
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:310
-msgid ""
-"Tokens are generated with your current user permissions and expire "
-"automatically"
-msgstr ""
-"Tokeny są generowane z Twoimi obecnymi uprawnieniami użytkownika i wygasają "
-"automatycznie"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:316
-msgid "They provide access to MCP route endpoints for your WordPress content"
-msgstr ""
-"Zapewniają dostęp do punktów końcowych tras MCP dla Twojej treści WordPress"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:322
-msgid "Each token is unique and can be revoked individually if compromised"
-msgstr ""
-"Każdy token jest unikalny i może zostać indywidualnie unieważniony w "
-"przypadku naruszenia"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:328
-msgid "Tokens automatically inherit your user role and capabilities"
-msgstr "Tokeny automatycznie dziedziczą Twoją rolę użytkownika i uprawnienia"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:336
-msgid "Security Best Practices"
-msgstr ""
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:348
-msgid "⚠️ Important Security Notes:"
-msgstr "Ważne Wskazówki Bezpieczeństwa:"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:360
-msgid "Never share tokens in public repositories, emails, or chat messages"
-msgstr ""
-"Nigdy nie udostępniaj tokenów w publicznych repozytoriach, e-mailach ani "
-"wiadomościach czatu"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:366
-msgid "Use the shortest expiration time that meets your needs"
-msgstr ""
-"Używaj najkrótszego możliwego czasu wygaśnięcia, który spełnia Twoje potrzeby"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:372
-msgid "Revoke tokens immediately if you suspect they may be compromised"
-msgstr ""
-"Natychmiast unieważniaj tokeny, jeśli podejrzewasz, że mogły zostać naruszone"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:378
-msgid "Regularly review and clean up unused or expired tokens"
-msgstr "Regularnie przeglądaj i usuwaj nieużywane lub wygasłe tokeny"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:398
-msgid "🚨 Never-Expiring Tokens:"
-msgstr "Tokeny bez wygaśnięcia:"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:402
-msgid "Should only be used in highly controlled environments"
-msgstr "Powinny być używane tylko w wysoce kontrolowanych środowiskach"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:408
-msgid "Must be manually revoked if compromised"
-msgstr "Muszą być ręcznie unieważniane w przypadku naruszenia"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:414
-msgid "Consider using long-lived tokens (24 hours) instead"
-msgstr "Zamiast tego rozważ użycie tokenów o długim czasie życia (24 godziny)"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:420
-msgid "Regularly audit and rotate never-expiring tokens"
-msgstr "Regularnie audytuj i rotuj tokeny bez terminu ważności"
-
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:439
 msgid "ℹ️ Important Note:"
 msgstr "Ważna uwaga:"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:447
-msgid ""
-"These tokens are exclusively for MCP protocol access (stdio and streamable/"
-"HTTP). They will not work with WordPress REST API endpoints or other "
-"authentication systems."
-msgstr ""
-"Tokeny te są przeznaczone wyłącznie do dostępu przez protokół MCP (stdio i "
-"streamable/HTTP). Nie będą działać z punktami końcowymi WordPress REST API "
-"ani innymi systemami uwierzytelniania."
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:461
-msgid ""
-"Remember: These tokens provide access based on your user permissions. If you "
-"can see it in WordPress, applications using your token can see it too."
-msgstr ""
-"Pamiętaj: Te tokeny zapewniają dostęp na podstawie Twoich uprawnień "
-"użytkownika. Jeśli możesz coś zobaczyć w WordPressie, aplikacje używające "
-"Twojego tokenu również to zobaczą."
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:469
-msgid ""
-"Generate tokens below to allow secure access to your WordPress content "
-"through the MCP protocol."
-msgstr ""
-"Wygeneruj poniżej tokeny, aby umożliwić bezpieczny dostęp do treści "
-"WordPressa za pośrednictwem protokołu MCP."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:486
 msgid "ℹ️ Token Limit:"
 msgstr "Limit tokenów:"
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:492
-msgid ""
-"Maximum 10 active tokens allowed per user. When generating a new token at "
-"the limit, oldest revoked tokens will be automatically removed to make room. "
-"If no revoked tokens exist, new token generation will be blocked - you must "
-"revoke some existing active tokens first."
-msgstr ""
-"Maksymalnie 10 aktywnych tokenów na użytkownika. Gdy generujesz nowy token "
-"po osiągnięciu limitu, najstarsze unieważnione tokeny zostaną automatycznie "
-"usunięte, aby zrobić miejsce. Jeśli nie ma unieważnionych tokenów, "
-"generowanie nowych tokenów zostanie zablokowane - musisz najpierw unieważnić "
-"niektóre z istniejących aktywnych tokenów."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:348
+msgid "⚠️ Important Security Notes:"
+msgstr "Ważne Wskazówki Bezpieczeństwa:"
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:501
-msgid "Token Duration"
-msgstr "Czas Trwania Tokenu"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:508
-msgid "Choose how long the token will remain valid"
+#: build/index.js:1 src/settings/SettingsTab.js:44
+msgid "⚠️ Incorrect Permalinks Configuration"
 msgstr ""
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:527
 msgid "⚠️ Security Warning:"
 msgstr "Ostrzeżenie bezpieczeństwa"
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:137
-msgid "You need to be logged in as an administrator to generate JWT tokens."
+#: build/index.js:1 src/settings/SettingsTab.js:32
+msgid "⚠️ WordPress REST API Disabled"
 msgstr ""
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:140
-msgid ""
-"You do not have permission to generate JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do generowania tokenów JWT. Wymagane są uprawnienia "
-"administratora."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:398
+msgid "🚨 Never-Expiring Tokens:"
+msgstr "Tokeny bez wygaśnięcia:"
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:143
-msgid "Error generating token"
-msgstr ""
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Błąd podczas generowania tokenu\n"
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Błąd generowania tokenu"
 
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:548
-msgid "Generate New Token"
-msgstr "Wygeneruj Nowy Token"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
-msgid "Generated Token"
-msgstr "Wygeneruj token"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:580
-msgid "Copy"
-msgstr "Kopiuj"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:584
-msgid "Token copied!"
-msgstr "Token skopiowany do schowka!"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:596
-msgid "Expires in"
-msgstr "Wygasa"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:263
-msgid "1 day"
-msgstr "1 dzień"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:264
-msgid "days"
-msgstr "dni"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:268
-msgid "hours"
-msgstr "godziny"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:602
-msgid "Expires in 1 hour"
-msgstr ""
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:619
-msgid "Your Active Tokens"
-msgstr "Twoje Aktywne Tokeny"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:623
-#: src/settings/UserPermissionsTab.js:205
-msgid "User"
-msgstr "Użytkownik"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:625
-msgid "Issued At"
-msgstr "Wydany"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:628
-msgid "Expires At"
-msgstr "Wygasa"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:659
-msgid "Revoked"
-msgstr "Unieważniony"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:669
-msgid "Expired"
-msgstr ""
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Wygasły\n"
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Wygasł"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:673
-msgid "Active"
-msgstr "Aktywny"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:188
-msgid "You need to be logged in as an administrator to revoke JWT tokens."
-msgstr ""
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:191
-msgid ""
-"You do not have permission to revoke JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do unieważniania tokenów JWT. Wymagane są uprawnienia "
-"administratora."
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:194
-msgid "Error revoking token"
-msgstr ""
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Błąd podczas unieważniania tokenu\n"
-"#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
-"Błąd unieważniania tokenu"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:690
-msgid "Revoke"
-msgstr "Unieważnij"
-
-#: build/index.js:1 src/settings/AuthenticationTokensTab.js:705
-msgid "Showing first 10 tokens. Total tokens:"
-msgstr "Wyświetlanie pierwszych 10 tokenów. Łączna liczba tokenów:"
-
-#: build/index.js:1 src/settings/DocumentationTab.js:155
-msgid "Loading documentation..."
-msgstr "Ładowanie dokumentacji..."
-
-#: build/index.js:1 src/settings/DocumentationTab.js:170
-#: src/settings/DocumentationTab.js:196 src/settings/index.js:65
-msgid "Documentation"
-msgstr "Dokumentacja"
-
-#: build/index.js:1 src/settings/DocumentationTab.js:175
-msgid "Error loading documentation:"
-msgstr "Błąd ładowania dokumentacji:"
-
-#: build/index.js:1 src/settings/DocumentationTab.js:182
-msgid "Please check that the documentation file exists and is accessible."
-msgstr "Sprawdź, czy plik dokumentacji istnieje i jest dostępny."
-
-#: build/index.js:1 src/settings/DocumentationTab.js:201
-msgid "Configuration copied to clipboard!"
-msgstr "Konfiguracja skopiowana do schowka!"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:52
-#: src/settings/UserPermissionsTab.js:59
-msgid "Failed to load user permissions."
-msgstr "Nie udało się załadować uprawnień użytkowników."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:135
-msgid "Loading user permissions..."
-msgstr "Ładowanie uprawnień użytkowników..."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:154
-msgid "User Permissions for MCP"
-msgstr "Uprawnienia Użytkowników dla MCP"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:158
-msgid ""
-"Control which users and roles can access MCP functionality. By default, only "
-"administrators have access."
-msgstr ""
-"Kontroluj, którzy użytkownicy i role mogą mieć dostęp do funkcjonalności "
-"MCP. Domyślnie tylko administratorzy mają dostęp."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:161
-msgid "Role-Based Permissions"
-msgstr "Uprawnienia Oparte na Rolach"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:163
-msgid ""
-"Enable MCP access for entire user roles. Individual user permissions "
-"override role permissions."
-msgstr ""
-"Włącz dostęp do MCP dla całych ról użytkowników. Indywidualne uprawnienia "
-"użytkowników nadpisują uprawnienia ról."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:170
-#: src/settings/UserPermissionsTab.js:206
-msgid "Role"
-msgstr "Rola"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:171
-#: src/settings/UserPermissionsTab.js:208
-msgid "MCP Access"
-msgstr "Dostęp do MCP"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:192
-msgid "No roles found."
-msgstr "Nie znaleziono ról."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:196
-msgid "Individual User Permissions"
-msgstr "Indywidualne Uprawnienia Użytkowników"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:198
-msgid ""
-"Grant or revoke MCP access for specific users. These settings override role-"
-"based permissions."
-msgstr ""
-"Przyznaj lub odbierz dostęp do MCP dla konkretnych użytkowników. Te "
-"ustawienia nadpisują uprawnienia oparte na rolach."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:207
-msgid "Email"
-msgstr "Email"
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:233
-msgid "No users found."
-msgstr "Nie znaleziono użytkowników."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:117
-#: src/settings/UserPermissionsTab.js:124
-msgid "Failed to save user permissions."
-msgstr "Nie udało się zapisać uprawnień użytkowników."
-
-#: build/index.js:1 src/settings/UserPermissionsTab.js:243
-msgid "Save Permissions"
-msgstr "Zapisz Uprawnienia"
-
-#: build/index.js:1 src/settings/index.js:59
-msgid "User Permissions"
-msgstr "Uprawnienia Użytkowników"
-
-#: build/index.js:1 src/settings/index.js:70
-msgid "Tools"
-msgstr "Narzędzia"
-
-#: build/index.js:1 src/settings/index.js:76
-msgid "Resources"
-msgstr "Zasoby"
-
-#: build/index.js:1 src/settings/index.js:82
-msgid "Prompts"
-msgstr "Prompty"
-
-#: build/index.js:1 src/settings/index.js:321
-msgid ""
-"Authentication tokens are only available when JWT authentication is enabled."
-msgstr ""
-
-#: build/index.js:1 src/settings/index.js:325
-msgid "Please enable \"Require JWT Authentication\" in the Settings tab first."
-msgstr ""
-
-#: build/index.js:1 src/settings/index.js:330
-msgid "This feature is only available when MCP functionality is enabled."
-msgstr ""
-
-#: build/index.js:1 src/settings/index.js:334
-msgid "Please enable MCP in the Settings tab first."
-msgstr ""
-
-#~ msgid "WooQuant"
-#~ msgstr "WooQuant"
-
-#: build/index.js:1 src/settings/SettingsTab.js:75
-msgid "Allow tools to create, update, or delete data. Use with caution."
-msgstr "Pozwól narzędziom tworzyć, aktualizować lub usuwać dane. Używaj ostrożnie."
-
-#: build/index.js:1 src/settings/PromptsTab.js:119
-msgid ""
-"Ready-to-use AI workflows and scenarios. Use prompts to quickly perform "
-"complex tasks like sales analysis, SEO optimization, or inventory "
-"management. Click \"View\" to see detailed instructions and parameters "
-"for each prompt."
-msgstr ""
-"Gotowe przepływy pracy i scenariusze dla AI. Używaj promptów, aby szybko "
-"wykonywać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO "
-"czy zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe "
-"instrukcje i parametry dla każdego promptu."
-
-#: build/index.js:1 src/settings/SettingsTab.js:73
-msgid "Enable Write Operations"
-msgstr "Włącz operacje zapisu"
-
-#~ msgid ""
-#~ "If you want to use this plugin for local development without JWT, you can "
-#~ "disable JWT authentication. A local proxy file will be generated for "
-#~ "Claude Desktop."
-#~ msgstr ""
-#~ "Jeśli chcesz używać tej wtyczki do lokalnego rozwoju bez JWT, możesz "
-#~ "wyłączyć uwierzytelnianie JWT. Zostanie wygenerowany lokalny plik proxy "
-#~ "dla Claude Desktop."
-
-#~ msgid ""
-#~ "Settings saved successfully! The page will refresh to load Write tools."
-#~ msgstr ""
-#~ "Ustawienia zapisane pomyślnie! Strona odświeży się automatycznie, aby "
-#~ "załadować narzędzia zapisu."
