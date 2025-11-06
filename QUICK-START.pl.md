@@ -255,3 +255,4 @@ Segmentuj klientów według zachowań zakupowych
 
 *Pytania? Problemy? Chcesz współtworzyć? Odwiedź [github.com/jeden-/wooquant](https://github.com/jeden-/wooquant)*
 
+

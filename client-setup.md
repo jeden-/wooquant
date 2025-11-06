@@ -159,8 +159,8 @@ Dodaj do pliku `claude_desktop_config.json`:
    - Otwórz ustawienia: `Settings` → `Cursor Settings` → `Features` → `MCP Servers`
    - Lub stwórz plik `.cursorrules` w katalogu projektu
    - Dodaj konfigurację:
-   ```json
-   {
+```json
+{
      "mcpServers": {
        "moj-sklep": {
          "command": "npx",
@@ -168,11 +168,11 @@ Dodaj do pliku `claude_desktop_config.json`:
          "env": {
            "WP_API_URL": "http://wooquant.local",
            "JWT_TOKEN": "TUTAJ-WKLEJ-SKOPIOWANY-TOKEN"
-         }
-       }
-     }
-   }
-   ```
+			}
+		}
+	}
+}
+```
 
 3. **Zrestartuj Cursor**
 
@@ -187,7 +187,7 @@ Dodaj do pliku `claude_desktop_config.json`:
 
 ```json
 {
-  "mcpServers": {
+	"mcpServers": {
     "wooquant-local": {
       "command": "npx",
       "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
@@ -207,12 +207,12 @@ Dodaj do pliku `claude_desktop_config.json`:
     "wooquant-prod": {
       "command": "npx",
       "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
-      "env": {
+			"env": {
         "WP_API_URL": "https://wooquant.com",
         "JWT_TOKEN": "token-z-prod-site"
-      }
-    }
-  }
+			}
+		}
+	}
 }
 ```
 

@@ -222,3 +222,4 @@ Stworzone z ❤️ dla społeczności WordPress i WooCommerce
 
 **[🌟 Daj gwiazdkę na GitHub](https://github.com/jeden-/wooquant)** jeśli uznasz to za przydatne!
 
+

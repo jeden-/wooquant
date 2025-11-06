@@ -115,9 +115,9 @@ const PromptsTab = () => {
 				<h2>{ __( 'Available Prompts', 'mcp-for-woocommerce' ) }</h2>
 			</CardHeader>
 			<CardBody>
-				<p>
+				<p className="description">
 					{ __(
-						'List of all available prompts in the system.',
+						'Ready-to-use AI workflows and scenarios. Use prompts to quickly perform complex tasks like sales analysis, SEO optimization, or inventory management. Click "View" to see detailed instructions and parameters for each prompt.',
 						'mcp-for-woocommerce'
 					) }
 				</p>

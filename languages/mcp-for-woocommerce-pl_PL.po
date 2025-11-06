@@ -1859,19 +1859,19 @@ msgstr ""
 
 #: build/index.js:1 src/settings/PromptsTab.js:115
 msgid "Available Prompts"
-msgstr "Dostępne Podpowiedzi"
+msgstr "Dostępne Prompty"
 
 #: build/index.js:1 src/settings/PromptsTab.js:119
-msgid "List of all available prompts in the system."
-msgstr "Lista wszystkich dostępnych podpowiedzi w systemie."
+msgid "Ready-to-use AI workflows and scenarios. Use prompts to quickly perform complex tasks like sales analysis, SEO optimization, or inventory management. Click \"View\" to see detailed instructions and parameters for each prompt."
+msgstr "Gotowe przepływy pracy i scenariusze dla AI. Używaj promptów, aby szybko wykonywać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO czy zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe instrukcje i parametry dla każdego promptu."
 
 #: build/index.js:1 src/settings/PromptsTab.js:128
 msgid "Loading prompts..."
-msgstr "Ładowanie podpowiedzi..."
+msgstr "Ładowanie promptów..."
 
 #: build/index.js:1 src/settings/PromptsTab.js:136
 msgid "No prompts are currently available."
-msgstr "Obecnie nie ma dostępnych podpowiedzi."
+msgstr "Obecnie nie ma dostępnych promptów."
 
 #: build/index.js:1 src/settings/PromptsTab.js:93
 #, fuzzy
@@ -1884,11 +1884,11 @@ msgstr ""
 
 #: build/index.js:1 src/settings/PromptsTab.js:180
 msgid "Prompt Details"
-msgstr "Szczegóły Podpowiedzi"
+msgstr "Szczegóły Promptu"
 
 #: build/index.js:1 src/settings/PromptsTab.js:189
 msgid "Loading prompt details..."
-msgstr "Ładowanie szczegółów podpowiedzi..."
+msgstr "Ładowanie szczegółów promptu..."
 
 #: build/index.js:1 src/settings/PromptsTab.js:203
 #, fuzzy
@@ -2352,7 +2352,7 @@ msgstr "Zasoby"
 
 #: build/index.js:1 src/settings/index.js:82
 msgid "Prompts"
-msgstr "Podpowiedzi"
+msgstr "Prompty"
 
 #: build/index.js:1 src/settings/index.js:321
 msgid ""
