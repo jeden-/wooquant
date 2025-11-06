@@ -8,7 +8,14 @@ use McpForWoo\Tools\McpWordPressPages;
 
 use McpForWoo\Tools\McpRestApiCrud;
 use McpForWoo\Tools\McpWooProducts;
-// use McpForWoo\Prompts\McpAnalyzeSales; // Disabled - not used in MCP for WooCommerce
+use McpForWoo\Prompts\McpGetSiteInfo;
+use McpForWoo\Prompts\McpAnalyzeSales;
+use McpForWoo\Prompts\McpProductSearch;
+use McpForWoo\Prompts\McpOrderAnalysis;
+use McpForWoo\Prompts\McpCustomerSupport;
+use McpForWoo\Prompts\McpInventoryManagement;
+use McpForWoo\Prompts\McpContentCreation;
+use McpForWoo\Prompts\McpSeoAnalysis;
 use McpForWoo\Resources\McpWooSearchGuide;
 use McpForWoo\Resources\McpGeneralSiteInfo;
 use McpForWoo\Resources\McpPluginInfoResource;
@@ -241,9 +248,17 @@ class WpMcp {
 	 * Initialize the default prompts (WooCommerce only).
 	 */
 	private function init_default_prompts(): void {
-		// new McpAnalyzeSales(); // Disabled - sales analysis prompt not used in MCP for WooCommerce
+		// WordPress general prompts
+		new McpGetSiteInfo();
+		new McpContentCreation();
+		new McpSeoAnalysis();
 		
-		// Add future prompts here when needed
+		// WooCommerce prompts
+		new McpAnalyzeSales();
+		new McpProductSearch();
+		new McpOrderAnalysis();
+		new McpCustomerSupport();
+		new McpInventoryManagement();
 	}
 
 	/**
