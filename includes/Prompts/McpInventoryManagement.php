@@ -34,17 +34,17 @@ class McpInventoryManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-inventory',
-				'description' => 'Analyze and manage WooCommerce product inventory',
+				'description' => __( 'Analyze and manage WooCommerce product inventory', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'action',
-						'description' => 'Action to perform: "check_low_stock", "check_out_of_stock", "analyze_all", "update_stock"',
+						'description' => __( 'Action to perform: "check_low_stock", "check_out_of_stock", "analyze_all", "update_stock"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'threshold',
-						'description' => 'Low stock threshold (default: 5)',
+						'description' => __( 'Low stock threshold (default: 5)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'number',
 					),

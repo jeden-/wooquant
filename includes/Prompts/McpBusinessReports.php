@@ -34,17 +34,17 @@ class McpBusinessReports {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'generate-business-report',
-				'description' => 'Generate comprehensive business reports with insights and recommendations',
+				'description' => __( 'Generate comprehensive business reports with insights and recommendations', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'report_type',
-						'description' => 'Report type: "executive_summary", "sales_performance", "inventory_status", "customer_insights", "marketing_effectiveness", "operational_health"',
+						'description' => __( 'Report type: "executive_summary", "sales_performance", "inventory_status", "customer_insights", "marketing_effectiveness", "operational_health"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'time_period',
-						'description' => 'Time period: "today", "last_7_days", "last_30_days", "this_month", "last_month", "this_quarter", "this_year"',
+						'description' => __( 'Time period: "today", "last_7_days", "last_30_days", "this_month", "last_month", "this_quarter", "this_year"', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

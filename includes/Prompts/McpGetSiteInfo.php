@@ -34,11 +34,11 @@ class McpGetSiteInfo {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'get-site-info',
-				'description' => 'Get detailed information about the WordPress site',
+				'description' => __( 'Get detailed information about the WordPress site', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'info_type',
-						'description' => 'The type of information to retrieve (e.g., general, plugins, theme, users, settings)',
+						'description' => __( 'The type of information to retrieve (e.g., general, plugins, theme, users, settings)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

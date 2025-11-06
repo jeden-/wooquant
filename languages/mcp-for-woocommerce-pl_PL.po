@@ -688,6 +688,14 @@ msgstr ""
 msgid "Enable MCP functionality"
 msgstr "Włącz funkcjonalność MCP"
 
+#: build/index.js:1 src/settings/SettingsTab.js:73
+msgid "Enable Write Operations"
+msgstr "Włącz operacje zapisu"
+
+#: build/index.js:1 src/settings/SettingsTab.js:75
+msgid "Allow tools to create, update, or delete data. Use with caution."
+msgstr "Zezwól narzędziom na tworzenie, aktualizację lub usuwanie danych. Używaj ostrożnie."
+
 #: includes/Tools/Write/McpWooProductsWrite.php:99
 #: includes/Tools/Write/McpWooProductsWrite.php:218
 msgid "Enable stock management"
@@ -1030,7 +1038,18 @@ msgstr "Nazwisko"
 
 #: build/index.js:1 src/settings/PromptsTab.js:119
 msgid "List of all available prompts in the system."
-msgstr "Lista wszystkich dostępnych zasobów w systemie."
+msgstr "Lista wszystkich dostępnych promptów w systemie."
+
+#: build/index.js:1 src/settings/PromptsTab.js:120
+msgid ""
+"Ready-to-use AI workflows and scenarios. Use prompts to quickly perform "
+"complex tasks like sales analysis, SEO optimization, or inventory management. "
+"Click \"View\" to see detailed instructions and parameters for each prompt."
+msgstr ""
+"Gotowe do użycia przepływy pracy AI i scenariusze. Użyj promptów, aby szybko "
+"wykonać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO lub "
+"zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe instrukcje "
+"i parametry dla każdego promptu."
 
 #: build/index.js:1 src/settings/ResourcesTab.js:183
 msgid "List of all available resources in the system."

@@ -34,17 +34,17 @@ class McpOrderAnalysis {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'analyze-orders',
-				'description' => 'Analyze WooCommerce orders with filtering and insights',
+				'description' => __( 'Analyze WooCommerce orders with filtering and insights', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'status',
-						'description' => 'Filter by order status (e.g., pending, processing, completed, cancelled)',
+						'description' => __( 'Filter by order status (e.g., pending, processing, completed, cancelled)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'time_period',
-						'description' => 'Time period to analyze (e.g., today, last_7_days, last_30_days, this_month)',
+						'description' => __( 'Time period to analyze (e.g., today, last_7_days, last_30_days, this_month)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

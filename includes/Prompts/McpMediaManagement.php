@@ -34,17 +34,17 @@ class McpMediaManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-media',
-				'description' => 'Upload, organize, optimize, and manage WordPress media library',
+				'description' => __( 'Upload, organize, optimize, and manage WordPress media library', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'task',
-						'description' => 'Task: "upload", "organize", "optimize", "audit", "cleanup", "batch_upload"',
+						'description' => __( 'Task: "upload", "organize", "optimize", "audit", "cleanup", "batch_upload"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'details',
-						'description' => 'Task-specific details (file path, organization criteria, etc.)',
+						'description' => __( 'Task-specific details (file path, organization criteria, etc.)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

@@ -34,17 +34,17 @@ class McpCouponManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-coupons',
-				'description' => 'Create and manage WooCommerce coupons and promotional campaigns',
+				'description' => __( 'Create and manage WooCommerce coupons and promotional campaigns', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'action',
-						'description' => 'Action: "create_campaign", "analyze_performance", "optimize_existing", "seasonal_promotion"',
+						'description' => __( 'Action: "create_campaign", "analyze_performance", "optimize_existing", "seasonal_promotion"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'details',
-						'description' => 'Campaign details or analysis criteria',
+						'description' => __( 'Campaign details or analysis criteria', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

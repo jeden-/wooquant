@@ -34,11 +34,11 @@ class McpProductSearch {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'search-products',
-				'description' => 'Search for WooCommerce products intelligently with filters and sorting',
+				'description' => __( 'Search for WooCommerce products intelligently with filters and sorting', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'query',
-						'description' => 'The product search query (e.g., "cheapest laptops on sale", "newest shoes")',
+						'description' => __( 'The product search query (e.g., "cheapest laptops on sale", "newest shoes")', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),

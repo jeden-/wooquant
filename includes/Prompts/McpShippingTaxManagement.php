@@ -34,17 +34,17 @@ class McpShippingTaxManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-shipping-tax',
-				'description' => 'Configure and optimize WooCommerce shipping zones, methods, and tax settings',
+				'description' => __( 'Configure and optimize WooCommerce shipping zones, methods, and tax settings', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'focus',
-						'description' => 'Focus area: "shipping", "tax", "both", "audit", "optimize"',
+						'description' => __( 'Focus area: "shipping", "tax", "both", "audit", "optimize"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'region',
-						'description' => 'Specific region or zone (optional)',
+						'description' => __( 'Specific region or zone (optional)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

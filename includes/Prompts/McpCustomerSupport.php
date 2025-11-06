@@ -34,17 +34,17 @@ class McpCustomerSupport {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'customer-support',
-				'description' => 'Provide customer support for WooCommerce store inquiries',
+				'description' => __( 'Provide customer support for WooCommerce store inquiries', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'customer_query',
-						'description' => 'The customer question or issue (e.g., "Where is my order?", "Do you have this in blue?", "What are shipping options?")',
+						'description' => __( 'The customer question or issue (e.g., "Where is my order?", "Do you have this in blue?", "What are shipping options?")', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'order_id',
-						'description' => 'Order ID if the query is about a specific order',
+						'description' => __( 'Order ID if the query is about a specific order', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

@@ -2,6 +2,32 @@
 
 All notable changes to WooQuant will be documented in this file.
 
+## [1.2.1] - 2025-01-06
+
+### Fixed
+- **Critical**: Fixed PHP syntax errors in all 16 prompt definition files (`includes/Prompts/*.php`)
+  - Removed nested quotes in `__()` translation function calls
+  - Fixed `Parse error: syntax error, unexpected identifier "description"` errors
+- **Translation fixes**: Corrected Polish translations in admin panel
+  - "Prompts" tab now correctly displays "Prompty" instead of "Podpowiedzi"
+  - "Available Prompts" now displays "Dostępne Prompty"
+  - Added missing translations for:
+    - "Enable Write Operations" → "Włącz operacje zapisu"
+    - "Allow tools to create, update, or delete data. Use with caution." → "Zezwól narzędziom na tworzenie, aktualizację lub usuwanie danych. Używaj ostrożnie."
+    - "Ready-to-use AI workflows and scenarios..." → "Gotowe do użycia przepływy pracy AI i scenariusze..."
+- Fixed JSON translation files domain from "messages" to "mcp-for-woocommerce"
+- Updated all JSON translation files to use correct translations
+- Created missing JSON translation file for current build hash (`db0c054ea21d82558cce`)
+
+### Changed
+- Updated translation JSON files to ensure WordPress loads correct translations
+- Cleaned up temporary translation files from `languages/` directory
+
+### Technical Details
+- Fixed nested quote issue: `__( ''description' => 'text'', 'domain' )` → `__( 'text', 'domain' )`
+- All prompt files now use correct translation function syntax
+- WordPress now correctly loads Polish translations for React components
+
 ## [1.2.0] - 2025-01-06
 
 ### Changed

@@ -34,17 +34,17 @@ class McpUserManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-users',
-				'description' => 'Manage WordPress users, roles, permissions, and security',
+				'description' => __( 'Manage WordPress users, roles, permissions, and security', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'task',
-						'description' => 'Task: "create", "audit", "security_review", "role_optimization", "bulk_update"',
+						'description' => __( 'Task: "create", "audit", "security_review", "role_optimization", "bulk_update"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'details',
-						'description' => 'Task-specific details (user info, role, criteria)',
+						'description' => __( 'Task-specific details (user info, role, criteria)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

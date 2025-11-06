@@ -34,17 +34,17 @@ class McpSeoAnalysis {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'analyze-seo',
-				'description' => 'Analyze and optimize SEO for WordPress content and WooCommerce products',
+				'description' => __( 'Analyze and optimize SEO for WordPress content and WooCommerce products', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'target',
-						'description' => 'What to analyze: "site", "products", "posts", "pages", or specific URL/ID',
+						'description' => __( 'What to analyze: "site", "products", "posts", "pages", or specific URL/ID', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'focus_keyword',
-						'description' => 'Target keyword for optimization (optional)',
+						'description' => __( 'Target keyword for optimization (optional)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

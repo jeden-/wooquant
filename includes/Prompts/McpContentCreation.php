@@ -34,23 +34,23 @@ class McpContentCreation {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'create-content',
-				'description' => 'Create or optimize WordPress content (posts, pages)',
+				'description' => __( 'Create or optimize WordPress content (posts, pages)', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'content_type',
-						'description' => 'Type of content: "post" or "page"',
+						'description' => __( 'Type of content: "post" or "page"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'topic',
-						'description' => 'Topic or title for the content',
+						'description' => __( 'Topic or title for the content', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'tone',
-						'description' => 'Writing tone: "professional", "casual", "friendly", "formal"',
+						'description' => __( 'Writing tone: "professional", "casual", "friendly", "formal"', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

@@ -34,23 +34,23 @@ class McpDataMigration {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'migrate-data',
-				'description' => 'Import, export, backup, and migrate WooCommerce and WordPress data',
+				'description' => __( 'Import, export, backup, and migrate WooCommerce and WordPress data', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'operation',
-						'description' => 'Operation: "import", "export", "backup", "restore", "migrate", "validate"',
+						'description' => __( 'Operation: "import", "export", "backup", "restore", "migrate", "validate"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'data_type',
-						'description' => 'Data type: "products", "orders", "customers", "content", "all"',
+						'description' => __( 'Data type: "products", "orders", "customers", "content", "all"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'source',
-						'description' => 'Source file path or description (for import/restore)',
+						'description' => __( 'Source file path or description (for import/restore)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

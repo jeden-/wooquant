@@ -34,17 +34,17 @@ class McpMenuManagement {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'manage-menus',
-				'description' => 'Create and optimize WordPress navigation menus for better UX',
+				'description' => __( 'Create and optimize WordPress navigation menus for better UX', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'action',
-						'description' => 'Action: "create", "optimize", "analyze", "restructure"',
+						'description' => __( 'Action: "create", "optimize", "analyze", "restructure"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'menu_location',
-						'description' => 'Menu location: "primary", "footer", "mobile", "sidebar"',
+						'description' => __( 'Menu location: "primary", "footer", "mobile", "sidebar"', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

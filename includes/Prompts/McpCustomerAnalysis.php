@@ -34,17 +34,17 @@ class McpCustomerAnalysis {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'analyze-customers',
-				'description' => 'Analyze customer behavior, create segments, and personalize marketing',
+				'description' => __( 'Analyze customer behavior, create segments, and personalize marketing', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'analysis_type',
-						'description' => 'Type: "segmentation", "lifetime_value", "churn_risk", "purchase_patterns", "loyalty_analysis"',
+						'description' => __( 'Type: "segmentation", "lifetime_value", "churn_risk", "purchase_patterns", "loyalty_analysis"', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
 					array(
 						'name'        => 'segment',
-						'description' => 'Specific customer segment to focus on (optional)',
+						'description' => __( 'Specific customer segment to focus on (optional)', 'mcp-for-woocommerce' ),
 						'required'    => false,
 						'type'        => 'string',
 					),

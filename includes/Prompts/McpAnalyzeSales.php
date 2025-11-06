@@ -34,11 +34,11 @@ class McpAnalyzeSales {
 		new RegisterMcpPrompt(
 			array(
 				'name'        => 'analyze-sales',
-				'description' => 'Analyze WooCommerce sales data',
+				'description' => __( 'Analyze WooCommerce sales data', 'mcp-for-woocommerce' ),
 				'arguments'   => array(
 					array(
 						'name'        => 'time_span',
-						'description' => 'The time period to analyze (e.g., last_7_days, last_30_days, last_month, last_quarter, last_year)',
+						'description' => __( 'The time period to analyze (e.g., last_7_days, last_30_days, last_month, last_quarter, last_year)', 'mcp-for-woocommerce' ),
 						'required'    => true,
 						'type'        => 'string',
 					),
