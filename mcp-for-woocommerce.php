@@ -1,19 +1,35 @@
 <?php
 /**
- * Plugin name:       MCP for WooCommerce
- * Description:       Community-developed AI integration plugin that connects WooCommerce & WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. Provides comprehensive AI-accessible interfaces to WooCommerce products, orders, categories, shipping, payments, and WordPress posts/pages through standardized tools, resources, and prompts. Enables AI assistants to seamlessly interact with your e-commerce data and content. Acts as a WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a WooCommerce AI Chatbot/Agent to your site.
+ * Plugin name:       WooQuant - MCP for WooCommerce (Extended)
+ * Description:       Extended version of MCP for WooCommerce with enhanced features including full Polish localization, advanced admin panel, user permissions management, and comprehensive tool management. Based on the original plugin by iOSDevSK. Community-developed AI integration plugin that connects WooCommerce & WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. Provides comprehensive AI-accessible interfaces to WooCommerce products, orders, categories, shipping, payments, and WordPress posts/pages through standardized tools, resources, and prompts. Enables AI assistants to seamlessly interact with your e-commerce data and content. Acts as a WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a WooCommerce AI Chatbot/Agent to your site.
  * Version:           1.1.9
  * Requires at least: 6.4
  * Tested up to:      6.8
  * Requires PHP:      8.0
  * Requires Plugins:  woocommerce
- * Author:            Filip Dvoran
- * Author URI:        https://github.com/iOSDevSK
- * Plugin URI:        https://github.com/iOSDevSK/mcp-for-woocommerce
+ * Author:            @jeden- (Extended version)
+ * Author URI:        https://github.com/jeden-
+ * Plugin URI:        https://github.com/jeden-/wooquant
+ * Original Author:   Filip Dvoran (iOSDevSK)
+ * Original Plugin URI: https://github.com/iOSDevSK/mcp-for-woocommerce
  * License:           GPL-2.0-or-later
  * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
  * Text Domain:       mcp-for-woocommerce
  * Domain Path:       /languages
+ *
+ * This plugin is an extended version of mcp-for-woocommerce by iOSDevSK.
+ * Original work Copyright (C) 2024 Filip Dvoran (iOSDevSK)
+ * Extended work Copyright (C) 2025 @jeden- and contributors
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  *
  * @package WordPress MCP
  */
