@@ -170,7 +170,7 @@ msgstr ""
 
 #: includes/Admin/Settings.php:180
 msgid "MCP Proxy file generated at:"
-msgstr ""
+msgstr "Plik proxy MCP wygenerowany w:"
 
 #: includes/Admin/Settings.php:181
 msgid ""
@@ -185,7 +185,7 @@ msgstr "Nie masz uprawnień do zarządzania tokenami."
 
 #: includes/Admin/Settings.php:197 includes/Admin/Settings.php:288
 msgid "Invalid nonce. Please refresh the page and try again."
-msgstr ""
+msgstr "Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
 
 #: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
 #, fuzzy
@@ -194,11 +194,11 @@ msgstr "Ustawienia MCP"
 
 #: includes/Admin/Settings.php:295
 msgid "Tool name is required."
-msgstr ""
+msgstr "Nazwa narzędzia jest wymagana."
 
 #: includes/Admin/Settings.php:301
 msgid "Failed to toggle tool state."
-msgstr ""
+msgstr "Nie udało się przełączyć stanu narzędzia."
 
 #: includes/Admin/Settings.php:310
 msgid "enabled"
@@ -227,39 +227,39 @@ msgstr "Ustawienia zapisane pomyślnie!"
 #: includes/Auth/JwtAuth.php:212 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:82
 msgid "You need to be logged in as an administrator to access JWT tokens."
-msgstr ""
+msgstr "Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT."
 
 #: includes/Core/RegisterMcpTool.php:286
 msgid "The input schema must be an object type."
-msgstr ""
+msgstr "Schemat wejściowy musi być typem obiektu."
 
 #. translators: %s: Property name.
 #: includes/Core/RegisterMcpTool.php:298
 #, php-format
 msgid "Property '%s' must have a type field."
-msgstr ""
+msgstr "Właściwość '%s' musi mieć pole typu."
 
 #. translators: 1: Property name, 2: Property type.
 #: includes/Core/RegisterMcpTool.php:305
 #, php-format
 msgid "Property '%1$s' has invalid type '%2$s'."
-msgstr ""
+msgstr "Właściwość '%1$s' ma nieprawidłowy typ '%2$s'."
 
 #. translators: %s: Property name.
 #: includes/Core/RegisterMcpTool.php:311
 #, php-format
 msgid "Array property '%s' must have an items field."
-msgstr ""
+msgstr "Właściwość tablicowa '%s' musi mieć pole items."
 
 #: includes/Core/RegisterMcpTool.php:319
 msgid "The required field must be an array."
-msgstr ""
+msgstr "Pole wymagane musi być tablicą."
 
 #. translators: %s: Required property.
 #: includes/Core/RegisterMcpTool.php:326
 #, php-format
 msgid "Required property '%s' does not exist in properties."
-msgstr ""
+msgstr "Wymagana właściwość '%s' nie istnieje we właściwościach."
 
 #: includes/Tools/McpWooReports.php:34
 msgid ""
@@ -269,7 +269,7 @@ msgstr ""
 
 #: includes/Tools/McpWooReports.php:49
 msgid "Time period for the report"
-msgstr ""
+msgstr "Okres czasu dla raportu"
 
 #: includes/Tools/McpWooReports.php:55
 msgid "Start date (required if period is \"custom\")"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: includes/Tools/McpWooReports.php:64
 msgid "Order statuses to include"
-msgstr ""
+msgstr "Statusy zamówień do uwzględnienia"
 
 #: includes/Tools/McpWooReports.php:77
 msgid ""
@@ -296,7 +296,7 @@ msgstr "Stan"
 
 #: includes/Tools/McpWooReports.php:97
 msgid "Threshold for low stock alert"
-msgstr ""
+msgstr "Próg dla alertu niskiego stanu magazynowego"
 
 #: includes/Tools/McpWooReports.php:109
 msgid ""
@@ -306,7 +306,7 @@ msgstr ""
 
 #: includes/Tools/McpWooReports.php:123
 msgid "Specific customer ID (optional, for single customer report)"
-msgstr ""
+msgstr "Konkretne ID klienta (opcjonalne, dla raportu pojedynczego klienta)"
 
 #: includes/Tools/McpWooReports.php:127
 #, fuzzy
