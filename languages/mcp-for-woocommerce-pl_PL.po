@@ -179,7 +179,6 @@ msgid ""
 msgstr ""
 
 #: includes/Admin/Settings.php:192 includes/Admin/Settings.php:283
-#, fuzzy
 msgid "You do not have permission to perform this action."
 msgstr "Nie masz uprawnień do zarządzania tokenami."
 
@@ -188,7 +187,6 @@ msgid "Invalid nonce. Please refresh the page and try again."
 msgstr "Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
 
 #: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
-#, fuzzy
 msgid "Settings"
 msgstr "Ustawienia MCP"
 
@@ -209,18 +207,15 @@ msgid "disabled"
 msgstr "wyłączone"
 
 #: includes/Admin/Settings.php:388 includes/Admin/Settings.php:456
-#, fuzzy
 msgid "Invalid nonce"
 msgstr "Nieprawidłowe dane uwierzytelniające."
 
 #: includes/Admin/Settings.php:394 includes/Admin/Settings.php:462
-#, fuzzy
 msgid "You do not have permission to access this."
 msgstr "Nie masz uprawnień do zarządzania tokenami."
 
 #: includes/Admin/Settings.php:486 build/index.js:1
 #: src/settings/UserPermissionsTab.js:112
-#, fuzzy
 msgid "User permissions saved successfully."
 msgstr "Ustawienia zapisane pomyślnie!"
 
@@ -290,7 +285,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:92
-#, fuzzy
 msgid "Filter by stock status"
 msgstr "Stan"
 
@@ -309,7 +303,6 @@ msgid "Specific customer ID (optional, for single customer report)"
 msgstr "Konkretne ID klienta (opcjonalne, dla raportu pojedynczego klienta)"
 
 #: includes/Tools/McpWooReports.php:127
-#, fuzzy
 msgid "Number of customers to include in report"
 msgstr "Wyświetl zamówienia WooCommerce"
 
@@ -421,7 +414,6 @@ msgid "Zone ID (0 to create new zone)"
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:113
-#, fuzzy
 msgid "Zone name (required for new zones)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -476,7 +468,6 @@ msgid "Create a new global product attribute (e.g., Color, Size)."
 msgstr ""
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:45
-#, fuzzy
 msgid "Attribute name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -498,14 +489,12 @@ msgid "Enable archives"
 msgstr ""
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:60
-#, fuzzy
 msgid "Update an existing product attribute."
 msgstr "Wyświetl produkty WooCommerce"
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:73
 #: includes/Tools/Write/McpWooAttributesWrite.php:101
 #: includes/Tools/Write/McpWooAttributesWrite.php:124
-#, fuzzy
 msgid "Attribute ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -524,7 +513,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:127
-#, fuzzy
 msgid "Array of term names to add (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -534,18 +522,15 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:55
-#, fuzzy
 msgid "Array of product data objects (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: includes/Tools/Write/McpWooBulkOperations.php:59
-#, fuzzy
 msgid "Product name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWooBulkOperations.php:86
-#, fuzzy
 msgid "Delete multiple WooCommerce products at once. DESTRUCTIVE OPERATION."
 msgstr "Wyświetl posty WordPress"
 
@@ -569,7 +554,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:134
 #: includes/Tools/Write/McpWooBulkOperations.php:176
-#, fuzzy
 msgid "Array of product IDs to update (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -600,7 +584,6 @@ msgid "Stock quantity to set (or null to only update status)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:186
-#, fuzzy
 msgid "Stock status to set"
 msgstr "Stan"
 
@@ -615,7 +598,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:54
-#, fuzzy
 msgid "Category name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -629,7 +611,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:67
 #: includes/Tools/Write/McpWooCategoriesWrite.php:125
-#, fuzzy
 msgid "Category description"
 msgstr "Opis"
 
@@ -649,7 +630,6 @@ msgid "Menu order for sorting"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:94
-#, fuzzy
 msgid "Update an existing WooCommerce product category."
 msgstr "Wyświetl produkty WooCommerce"
 
@@ -658,7 +638,6 @@ msgid "Category ID to update (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:113
-#, fuzzy
 msgid "Category name"
 msgstr "Opis"
 
@@ -677,7 +656,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:165
-#, fuzzy
 msgid "Category ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -700,7 +678,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:55
-#, fuzzy
 msgid "Coupon code (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -784,12 +761,10 @@ msgid "Coupon expiration date (YYYY-MM-DD format)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:141
-#, fuzzy
 msgid "Update an existing WooCommerce coupon."
 msgstr "Wyświetl produkty WooCommerce"
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:156
-#, fuzzy
 msgid "Coupon ID to update (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -806,7 +781,6 @@ msgid "Delete a WooCommerce coupon. DESTRUCTIVE OPERATION."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:257
-#, fuzzy
 msgid "Coupon ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -815,7 +789,6 @@ msgid "Create a new WooCommerce customer with billing and shipping addresses."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:55
-#, fuzzy
 msgid "Customer email (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -850,12 +823,10 @@ msgid "Shipping address"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:115
-#, fuzzy
 msgid "Update an existing WooCommerce customer."
 msgstr "Wyświetl produkty WooCommerce"
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:130
-#, fuzzy
 msgid "Customer ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -885,7 +856,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:55
 #: includes/Tools/Write/McpWooImportExport.php:114
-#, fuzzy
 msgid "CSV content as string (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -932,7 +902,6 @@ msgid "Order status (default: pending)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:58
-#, fuzzy
 msgid "Array of products to add to order"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -952,7 +921,6 @@ msgid "Order ID (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:129
-#, fuzzy
 msgid "New order status (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -965,12 +933,10 @@ msgid "Whether to notify customer (default: false)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:150
-#, fuzzy
 msgid "Add a note to an existing WooCommerce order."
 msgstr "Wyświetl produkty WooCommerce"
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:169
-#, fuzzy
 msgid "Note content (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -986,7 +952,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:63
-#, fuzzy
 msgid "Product name/title (required)"
 msgstr "Wyświetl atrybuty produktów"
 
@@ -1000,7 +965,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:79
 #: includes/Tools/Write/McpWooProductsWrite.php:198
-#, fuzzy
 msgid "Product long description"
 msgstr "Opis"
 
@@ -1034,7 +998,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:109
 #: includes/Tools/Write/McpWooProductsWrite.php:227
-#, fuzzy
 msgid "Stock status"
 msgstr "Stan"
 
@@ -1053,17 +1016,14 @@ msgid "Array of image URLs or attachment IDs"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:135
-#, fuzzy
 msgid "Product attributes"
 msgstr "Wyświetl tagi produktów"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:148
-#, fuzzy
 msgid "Product weight"
 msgstr "Wyświetl atrybuty produktów"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:152
-#, fuzzy
 msgid "Product dimensions"
 msgstr "Opis"
 
@@ -1078,22 +1038,18 @@ msgid "Product ID to update (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:189
-#, fuzzy
 msgid "Product name/title"
 msgstr "Wyświetl atrybuty produktów"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:194
-#, fuzzy
 msgid "Product status"
 msgstr "Wyświetl tagi produktów"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:214
-#, fuzzy
 msgid "Product SKU"
 msgstr "Wyświetl tagi produktów"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:222
-#, fuzzy
 msgid "Stock quantity"
 msgstr "Stan"
 
@@ -1104,7 +1060,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:265
-#, fuzzy
 msgid "Product ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1129,12 +1084,10 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:54
-#, fuzzy
 msgid "Product ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:58
-#, fuzzy
 msgid "Reviewer name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1143,7 +1096,6 @@ msgid "Reviewer email (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:66
-#, fuzzy
 msgid "Review content (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1157,12 +1109,10 @@ msgid "Whether the review is approved"
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:89
-#, fuzzy
 msgid "Update an existing WooCommerce product review."
 msgstr "Wyświetl produkty WooCommerce"
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:104
-#, fuzzy
 msgid "Review ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1183,13 +1133,11 @@ msgid "Delete a WooCommerce product review. DESTRUCTIVE OPERATION."
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:149
-#, fuzzy
 msgid "Review ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 # Narzędzia WooCommerce
 #: includes/Tools/Write/McpWooReviewsWrite.php:161
-#, fuzzy
 msgid "Approve a WooCommerce product review (change status to approved)."
 msgstr "Wyszukaj produkty WooCommerce"
 
@@ -1202,7 +1150,6 @@ msgid "Create a new WooCommerce product tag with name, slug, and description."
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:58
-#, fuzzy
 msgid "Tag name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1212,12 +1159,10 @@ msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:66
 #: includes/Tools/Write/McpWooTagsWrite.php:106
-#, fuzzy
 msgid "Tag description"
 msgstr "Opis"
 
 #: includes/Tools/Write/McpWooTagsWrite.php:78
-#, fuzzy
 msgid ""
 "Update an existing WooCommerce product tag. Can update name, slug, and "
 "description."
@@ -1242,7 +1187,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:134
-#, fuzzy
 msgid "Tag ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1257,7 +1201,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:44
-#, fuzzy
 msgid "Post title (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1273,7 +1216,6 @@ msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:57
 #: includes/Tools/Write/McpWordPressContentWrite.php:120
-#, fuzzy
 msgid "Post status"
 msgstr "Wyświetl tagi produktów"
 
@@ -1301,12 +1243,10 @@ msgstr ""
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressContentWrite.php:88
-#, fuzzy
 msgid "Update an existing WordPress post."
 msgstr "Wyświetl posty WordPress"
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:103
-#, fuzzy
 msgid "Post ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1316,18 +1256,15 @@ msgstr ""
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressContentWrite.php:146
-#, fuzzy
 msgid "Delete a WordPress post. DESTRUCTIVE OPERATION."
 msgstr "Wyświetl posty WordPress"
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:161
-#, fuzzy
 msgid "Post ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressContentWrite.php:178
-#, fuzzy
 msgid "Publish a WordPress post (change status to publish)."
 msgstr "Wyświetl posty WordPress"
 
@@ -1341,7 +1278,6 @@ msgid ""
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:220
-#, fuzzy
 msgid "Page title (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1372,7 +1308,6 @@ msgstr ""
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressContentWrite.php:263
-#, fuzzy
 msgid "Update an existing WordPress page."
 msgstr "Wyświetl posty WordPress"
 
@@ -1389,7 +1324,6 @@ msgid "Delete a WordPress page. DESTRUCTIVE OPERATION."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:334
-#, fuzzy
 msgid "Page ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1420,7 +1354,6 @@ msgid "Image caption"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:70
-#, fuzzy
 msgid "Image description"
 msgstr "Opis"
 
@@ -1455,7 +1388,6 @@ msgid "Delete a media file from WordPress. DESTRUCTIVE OPERATION."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:140
-#, fuzzy
 msgid "Media attachment ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1476,7 +1408,6 @@ msgid "Alt text"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:184
-#, fuzzy
 msgid "Caption"
 msgstr "Akcja"
 
@@ -1491,7 +1422,6 @@ msgid "Create a new WordPress navigation menu."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMenuWrite.php:50
-#, fuzzy
 msgid "Menu name (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1505,7 +1435,6 @@ msgid "Menu ID (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMenuWrite.php:81
-#, fuzzy
 msgid "Menu item title (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1543,7 +1472,6 @@ msgstr ""
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressMenuWrite.php:151
-#, fuzzy
 msgid "Delete a WordPress navigation menu. DESTRUCTIVE OPERATION."
 msgstr "Wyświetl posty WordPress"
 
@@ -1556,12 +1484,10 @@ msgid "Create a new WordPress user with username, email, password, and role."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:50
-#, fuzzy
 msgid "Username (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:54
-#, fuzzy
 msgid "Email address (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1580,7 +1506,6 @@ msgid "Last name"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:70
-#, fuzzy
 msgid "User role"
 msgstr "Użytkownik"
 
@@ -1590,12 +1515,10 @@ msgstr ""
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:98
 #: includes/Tools/Write/McpWordPressUsersWrite.php:172
-#, fuzzy
 msgid "User ID (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:102
-#, fuzzy
 msgid "Email address"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1605,12 +1528,10 @@ msgstr ""
 
 # Narzędzia WordPress
 #: includes/Tools/Write/McpWordPressUsersWrite.php:126
-#, fuzzy
 msgid "Delete a WordPress user. DESTRUCTIVE OPERATION."
 msgstr "Wyświetl posty WordPress"
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:141
-#, fuzzy
 msgid "User ID to delete (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
@@ -1623,17 +1544,14 @@ msgid "Change a WordPress user role."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:176
-#, fuzzy
 msgid "New role (required)"
 msgstr "Nazwa użytkownika i hasło są wymagane."
 
 #: build/index.js:1 src/settings/SettingsTab.js:80
-#, fuzzy
 msgid "Authentication Settings"
 msgstr "Uwierzytelnienie"
 
 #: build/index.js:1 src/settings/SettingsTab.js:86
-#, fuzzy
 msgid ""
 "JWT Authentication is recommended if you want to create a WooCommerce AI "
 "Agent in"
@@ -1642,7 +1560,6 @@ msgstr ""
 "WooCommerce w"
 
 #: build/index.js:1 src/settings/SettingsTab.js:106
-#, fuzzy
 msgid ""
 "When enabled, all MCP requests must include a valid JWT token. When "
 "disabled, MCP endpoints are accessible without authentication (readonly mode "
@@ -1657,7 +1574,6 @@ msgid "Saving..."
 msgstr "Zapisywanie..."
 
 #: build/index.js:1 src/settings/SettingsTab.js:22
-#, fuzzy
 msgid "General Settings"
 msgstr "Zapisz ustawienia"
 
@@ -1716,7 +1632,6 @@ msgid "Action"
 msgstr "Akcja"
 
 #: build/index.js:1 src/settings/ToolsTab.js:124
-#, fuzzy
 msgid "Edit"
 msgstr ""
 "#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
@@ -1820,7 +1735,6 @@ msgid "Actions"
 msgstr "Akcje"
 
 #: build/index.js:1 src/settings/ResourcesTab.js:143
-#, fuzzy
 msgid "Failed to load resource details"
 msgstr "Pobierz szczegóły zamówienia"
 
@@ -1874,7 +1788,6 @@ msgid "No prompts are currently available."
 msgstr "Obecnie nie ma dostępnych promptów."
 
 #: build/index.js:1 src/settings/PromptsTab.js:93
-#, fuzzy
 msgid "Failed to load prompt details"
 msgstr "Pobierz szczegóły produktu"
 
@@ -1891,7 +1804,6 @@ msgid "Loading prompt details..."
 msgstr "Ładowanie szczegółów promptu..."
 
 #: build/index.js:1 src/settings/PromptsTab.js:203
-#, fuzzy
 msgid "Description:"
 msgstr "Opis"
 
@@ -1904,7 +1816,6 @@ msgid "Content:"
 msgstr ""
 
 #: build/index.js:1 src/settings/PromptsTab.js:228
-#, fuzzy
 msgid "Parameters:"
 msgstr "Nieprawidłowe parametry."
 
@@ -1950,18 +1861,15 @@ msgstr "Błąd pobierania tokenów"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:237
 #: src/settings/DocumentationTab.js:141
-#, fuzzy
 msgid "Failed to copy to clipboard"
 msgstr "Token skopiowany do schowka!"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:275
 #: src/settings/index.js:53
-#, fuzzy
 msgid "Authentication Tokens"
 msgstr "Tokeny Uwierzytelniania"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:288
-#, fuzzy
 msgid "What are Authentication Tokens?"
 msgstr "Czym są Tokeny Uwierzytelniania?"
 
@@ -2038,7 +1946,6 @@ msgid "Regularly review and clean up unused or expired tokens"
 msgstr "Regularnie przeglądaj i usuwaj nieużywane lub wygasłe tokeny"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:398
-#, fuzzy
 msgid "🚨 Never-Expiring Tokens:"
 msgstr "Tokeny bez wygaśnięcia:"
 
@@ -2094,7 +2001,6 @@ msgid "ℹ️ Token Limit:"
 msgstr "Limit tokenów:"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:492
-#, fuzzy
 msgid ""
 "Maximum 10 active tokens allowed per user. When generating a new token at "
 "the limit, oldest revoked tokens will be automatically removed to make room. "
@@ -2116,7 +2022,6 @@ msgid "Choose how long the token will remain valid"
 msgstr ""
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:527
-#, fuzzy
 msgid "⚠️ Security Warning:"
 msgstr "Ostrzeżenie bezpieczeństwa"
 
@@ -2132,7 +2037,6 @@ msgstr ""
 "administratora."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:143
-#, fuzzy
 msgid "Error generating token"
 msgstr ""
 "#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
@@ -2145,7 +2049,6 @@ msgid "Generate New Token"
 msgstr "Wygeneruj Nowy Token"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
-#, fuzzy
 msgid "Generated Token"
 msgstr "Wygeneruj token"
 
@@ -2154,12 +2057,10 @@ msgid "Copy"
 msgstr "Kopiuj"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:584
-#, fuzzy
 msgid "Token copied!"
 msgstr "Token skopiowany do schowka!"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:596
-#, fuzzy
 msgid "Expires in"
 msgstr "Wygasa"
 
@@ -2201,7 +2102,6 @@ msgid "Revoked"
 msgstr "Unieważniony"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:669
-#, fuzzy
 msgid "Expired"
 msgstr ""
 "#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
@@ -2225,7 +2125,6 @@ msgstr ""
 "administratora."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:194
-#, fuzzy
 msgid "Error revoking token"
 msgstr ""
 "#-#-#-#-#  working.po (MCP for WooCommerce 1.1.9)  #-#-#-#-#\n"
