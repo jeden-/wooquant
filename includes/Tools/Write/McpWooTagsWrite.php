@@ -40,7 +40,7 @@ class McpWooTagsWrite {
 			array(
 				'name'        => 'wc_create_tag',
 				'description' => __(  'Create a new WooCommerce product tag with name, slug, and description.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_tag' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -76,7 +76,7 @@ class McpWooTagsWrite {
 			array(
 				'name'        => 'wc_update_tag',
 				'description' => __(  'Update an existing WooCommerce product tag. Can update name, slug, and description.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_tag' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -116,7 +116,7 @@ class McpWooTagsWrite {
 			array(
 				'name'        => 'wc_delete_tag',
 				'description' => __(  'Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose this tag.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_tag' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

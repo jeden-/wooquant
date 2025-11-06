@@ -45,7 +45,7 @@ class McpWooProductsWrite {
 			array(
 				'name'        => 'wc_create_product',
 				'description' => __(  'Create a new WooCommerce product. Supports simple and variable products with full configuration including pricing, inventory, images, categories, tags, and attributes.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_product' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -167,7 +167,7 @@ class McpWooProductsWrite {
 			array(
 				'name'        => 'wc_update_product',
 				'description' => __(  'Update an existing WooCommerce product. Can update any product field including name, description, price, stock, images, categories, etc.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_product' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -247,7 +247,7 @@ class McpWooProductsWrite {
 			array(
 				'name'        => 'wc_delete_product',
 				'description' => __(  'Delete a WooCommerce product. Can permanently delete or move to trash. DESTRUCTIVE OPERATION - use with caution.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_product' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -280,7 +280,7 @@ class McpWooProductsWrite {
 			array(
 				'name'        => 'wc_bulk_update_products',
 				'description' => __(  'Bulk update multiple products at once. Useful for updating prices, stock, or other fields for multiple products.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'bulk_update_products' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

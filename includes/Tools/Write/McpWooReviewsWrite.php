@@ -37,7 +37,7 @@ class McpWooReviewsWrite {
 			array(
 				'name'        => 'wc_create_review',
 				'description' => __(  'Create a new WooCommerce product review with rating, content, and reviewer information.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_review' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -87,7 +87,7 @@ class McpWooReviewsWrite {
 			array(
 				'name'        => 'wc_update_review',
 				'description' => __(  'Update an existing WooCommerce product review.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_review' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -132,7 +132,7 @@ class McpWooReviewsWrite {
 			array(
 				'name'        => 'wc_delete_review',
 				'description' => __(  'Delete a WooCommerce product review. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_review' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -159,7 +159,7 @@ class McpWooReviewsWrite {
 			array(
 				'name'        => 'wc_approve_review',
 				'description' => __(  'Approve a WooCommerce product review (change status to approved).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'approve_review' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

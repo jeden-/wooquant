@@ -37,7 +37,7 @@ class McpWooCategoriesWrite {
 			array(
 				'name'        => 'wc_create_category',
 				'description' => __(  'Create a new WooCommerce product category with name, slug, description, parent category, and image.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_category' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -92,7 +92,7 @@ class McpWooCategoriesWrite {
 			array(
 				'name'        => 'wc_update_category',
 				'description' => __(  'Update an existing WooCommerce product category.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_category' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -148,7 +148,7 @@ class McpWooCategoriesWrite {
 			array(
 				'name'        => 'wc_delete_category',
 				'description' => __(  'Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will be uncategorized.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_category' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -180,7 +180,7 @@ class McpWooCategoriesWrite {
 			array(
 				'name'        => 'wc_reorder_categories',
 				'description' => __(  'Change the order of product categories for display.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'reorder_categories' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

@@ -31,7 +31,7 @@ class McpWooOrdersWrite {
 			array(
 				'name'        => 'wc_create_order',
 				'description' => __(  'Create a new WooCommerce order with customer information, products, and payment details.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_order' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -107,7 +107,7 @@ class McpWooOrdersWrite {
 			array(
 				'name'        => 'wc_update_order_status',
 				'description' => __(  'Update WooCommerce order status. Can add order notes and trigger customer notifications.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_order_status' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -148,7 +148,7 @@ class McpWooOrdersWrite {
 			array(
 				'name'        => 'wc_add_order_note',
 				'description' => __(  'Add a note to an existing WooCommerce order.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'add_order_note' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

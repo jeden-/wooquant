@@ -33,7 +33,7 @@ class McpWordPressMenuWrite {
 			array(
 				'name'        => 'wp_create_menu',
 				'description' => __(  'Create a new WordPress navigation menu.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_menu' ),
 				'permission_callback' => array( $this, 'check_edit_theme_options_permission' ),
 				'annotations' => array(
@@ -60,7 +60,7 @@ class McpWordPressMenuWrite {
 			array(
 				'name'        => 'wp_add_menu_item',
 				'description' => __(  'Add a menu item to a WordPress navigation menu.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'add_menu_item' ),
 				'permission_callback' => array( $this, 'check_edit_theme_options_permission' ),
 				'annotations' => array(
@@ -113,7 +113,7 @@ class McpWordPressMenuWrite {
 			array(
 				'name'        => 'wp_update_menu',
 				'description' => __(  'Update a WordPress navigation menu (rename or change menu items order).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_menu' ),
 				'permission_callback' => array( $this, 'check_edit_theme_options_permission' ),
 				'annotations' => array(
@@ -149,7 +149,7 @@ class McpWordPressMenuWrite {
 			array(
 				'name'        => 'wp_delete_menu',
 				'description' => __(  'Delete a WordPress navigation menu. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_menu' ),
 				'permission_callback' => array( $this, 'check_edit_theme_options_permission' ),
 				'annotations' => array(

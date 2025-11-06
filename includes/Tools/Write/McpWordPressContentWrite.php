@@ -27,7 +27,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_create_post',
 				'description' => __(  'Create a new WordPress post with content, categories, tags, and featured image.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_post' ),
 				'permission_callback' => array( $this, 'check_edit_posts_permission' ),
 				'annotations' => array(
@@ -86,7 +86,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_update_post',
 				'description' => __(  'Update an existing WordPress post.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_post' ),
 				'permission_callback' => array( $this, 'check_edit_posts_permission' ),
 				'annotations' => array(
@@ -144,7 +144,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_delete_post',
 				'description' => __(  'Delete a WordPress post. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_post' ),
 				'permission_callback' => array( $this, 'check_delete_posts_permission' ),
 				'annotations' => array(
@@ -176,7 +176,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_publish_post',
 				'description' => __(  'Publish a WordPress post (change status to publish).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'publish_post' ),
 				'permission_callback' => array( $this, 'check_publish_posts_permission' ),
 				'annotations' => array(
@@ -203,7 +203,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_create_page',
 				'description' => __(  'Create a new WordPress page with content, featured image, and parent page.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_page' ),
 				'permission_callback' => array( $this, 'check_edit_pages_permission' ),
 				'annotations' => array(
@@ -261,7 +261,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_update_page',
 				'description' => __(  'Update an existing WordPress page.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_page' ),
 				'permission_callback' => array( $this, 'check_edit_pages_permission' ),
 				'annotations' => array(
@@ -317,7 +317,7 @@ class McpWordPressContentWrite {
 			array(
 				'name'        => 'wp_delete_page',
 				'description' => __(  'Delete a WordPress page. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_page' ),
 				'permission_callback' => array( $this, 'check_delete_pages_permission' ),
 				'annotations' => array(

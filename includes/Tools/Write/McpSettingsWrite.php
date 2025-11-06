@@ -33,7 +33,7 @@ class McpSettingsWrite {
 			array(
 				'name'        => 'wc_update_settings',
 				'description' => __(  'Update WooCommerce settings. Accepts settings key-value pairs to update.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_woocommerce_settings' ),
 				'permission_callback' => array( $this, 'check_manage_options_permission' ),
 				'annotations' => array(
@@ -61,7 +61,7 @@ class McpSettingsWrite {
 			array(
 				'name'        => 'wp_update_settings',
 				'description' => __(  'Update WordPress general settings (site title, tagline, admin email, etc.).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_wordpress_settings' ),
 				'permission_callback' => array( $this, 'check_manage_options_permission' ),
 				'annotations' => array(
@@ -91,7 +91,7 @@ class McpSettingsWrite {
 				array(
 					'name'        => 'wc_update_shipping_zone',
 					'description' => __(  'Update WooCommerce shipping zone settings. Create or update shipping zone with methods.', 'mcp-for-woocommerce' ),
-					'type'        => 'write',
+					'type'        => 'update',
 					'callback'    => array( $this, 'update_shipping_zone' ),
 					'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 					'annotations' => array(
@@ -144,7 +144,7 @@ class McpSettingsWrite {
 				array(
 					'name'        => 'wc_update_payment_gateway',
 					'description' => __(  'Update WooCommerce payment gateway settings. Enable/disable and configure payment gateways.', 'mcp-for-woocommerce' ),
-					'type'        => 'write',
+					'type'        => 'update',
 					'callback'    => array( $this, 'update_payment_gateway' ),
 					'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 					'annotations' => array(

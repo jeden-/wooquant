@@ -38,7 +38,7 @@ class McpWooBulkOperations {
 			array(
 				'name'        => 'wc_bulk_create_products',
 				'description' => __(  'Create multiple WooCommerce products at once. Accepts array of product data.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'bulk_create_products' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -84,7 +84,7 @@ class McpWooBulkOperations {
 			array(
 				'name'        => 'wc_bulk_delete_products',
 				'description' => __(  'Delete multiple WooCommerce products at once. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'bulk_delete_products' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -117,7 +117,7 @@ class McpWooBulkOperations {
 			array(
 				'name'        => 'wc_bulk_update_prices',
 				'description' => __(  'Update prices for multiple products at once. Supports percentage or fixed amount changes.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'bulk_update_prices' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -159,7 +159,7 @@ class McpWooBulkOperations {
 			array(
 				'name'        => 'wc_bulk_update_stock',
 				'description' => __(  'Update stock quantities or stock status for multiple products at once.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'bulk_update_stock' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

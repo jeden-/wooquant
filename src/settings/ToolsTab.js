@@ -39,8 +39,6 @@ const ToolsTab = () => {
 				} );
 
 			if ( response && response.tools ) {
-				// Debug: Log first 3 tools to see their structure
-				console.log( '🔍 DEBUG: First 3 tools from API:', response.tools.slice( 0, 3 ) );
 				setTools( response.tools );
 			} else {
 					setError(
@@ -121,9 +119,7 @@ const ToolsTab = () => {
 			create: __( 'Create', 'mcp-for-woocommerce' ),
 			update: __( 'Update', 'mcp-for-woocommerce' ),
 			delete: __( 'Delete', 'mcp-for-woocommerce' ),
-			write: __( 'Write', 'mcp-for-woocommerce' ),
 			action: __( 'Action', 'mcp-for-woocommerce' ),
-			edit: __( 'Edit', 'mcp-for-woocommerce' ),
 		};
 		return labels[ type ] || type;
 	};

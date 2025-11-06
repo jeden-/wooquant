@@ -33,7 +33,7 @@ class McpWordPressUsersWrite {
 			array(
 				'name'        => 'wp_create_user',
 				'description' => __(  'Create a new WordPress user with username, email, password, and role.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_user' ),
 				'permission_callback' => array( $this, 'check_create_users_permission' ),
 				'annotations' => array(
@@ -81,7 +81,7 @@ class McpWordPressUsersWrite {
 			array(
 				'name'        => 'wp_update_user',
 				'description' => __(  'Update an existing WordPress user.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_user' ),
 				'permission_callback' => array( $this, 'check_edit_users_permission' ),
 				'annotations' => array(
@@ -124,7 +124,7 @@ class McpWordPressUsersWrite {
 			array(
 				'name'        => 'wp_delete_user',
 				'description' => __(  'Delete a WordPress user. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_user' ),
 				'permission_callback' => array( $this, 'check_delete_users_permission' ),
 				'annotations' => array(
@@ -155,7 +155,7 @@ class McpWordPressUsersWrite {
 			array(
 				'name'        => 'wp_change_user_role',
 				'description' => __(  'Change a WordPress user role.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'change_user_role' ),
 				'permission_callback' => array( $this, 'check_promote_users_permission' ),
 				'annotations' => array(

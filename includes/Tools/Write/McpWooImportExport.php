@@ -38,7 +38,7 @@ class McpWooImportExport {
 			array(
 				'name'        => 'wc_import_products_csv',
 				'description' => __(  'Import WooCommerce products from CSV file. CSV should contain product data (name, SKU, price, stock, etc.).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'import_products_csv' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -70,7 +70,7 @@ class McpWooImportExport {
 			array(
 				'name'        => 'wc_export_products_csv',
 				'description' => __(  'Export WooCommerce products to CSV format. Returns CSV content as string.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'export_products_csv' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -97,7 +97,7 @@ class McpWooImportExport {
 			array(
 				'name'        => 'wc_import_orders_csv',
 				'description' => __(  'Import WooCommerce orders from CSV file. CSV should contain order data (customer, products, amounts, etc.).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'import_orders_csv' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -129,7 +129,7 @@ class McpWooImportExport {
 			array(
 				'name'        => 'wc_export_orders_csv',
 				'description' => __(  'Export WooCommerce orders to CSV format. Returns CSV content as string.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'export_orders_csv' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

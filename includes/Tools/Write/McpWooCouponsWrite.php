@@ -38,7 +38,7 @@ class McpWooCouponsWrite {
 			array(
 				'name'        => 'wc_create_coupon',
 				'description' => __(  'Create a new WooCommerce coupon with discount rules, usage limits, and restrictions.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_coupon' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -139,7 +139,7 @@ class McpWooCouponsWrite {
 			array(
 				'name'        => 'wc_update_coupon',
 				'description' => __(  'Update an existing WooCommerce coupon.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_coupon' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -240,7 +240,7 @@ class McpWooCouponsWrite {
 			array(
 				'name'        => 'wc_delete_coupon',
 				'description' => __(  'Delete a WooCommerce coupon. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_coupon' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

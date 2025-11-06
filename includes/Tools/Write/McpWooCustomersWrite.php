@@ -38,7 +38,7 @@ class McpWooCustomersWrite {
 			array(
 				'name'        => 'wc_create_customer',
 				'description' => __(  'Create a new WooCommerce customer with billing and shipping addresses.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_customer' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -113,7 +113,7 @@ class McpWooCustomersWrite {
 			array(
 				'name'        => 'wc_update_customer',
 				'description' => __(  'Update an existing WooCommerce customer.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_customer' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -184,7 +184,7 @@ class McpWooCustomersWrite {
 			array(
 				'name'        => 'wc_delete_customer',
 				'description' => __(  'Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes associated WordPress user.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_customer' ),
 				'permission_callback' => array( $this, 'check_delete_users_permission' ),
 				'annotations' => array(

@@ -33,7 +33,7 @@ class McpWordPressMediaWrite {
 			array(
 				'name'        => 'wp_upload_image',
 				'description' => __(  'Upload an image file to WordPress media library. Accepts base64 encoded image data or URL.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'upload_image' ),
 				'permission_callback' => array( $this, 'check_upload_files_permission' ),
 				'annotations' => array(
@@ -84,7 +84,7 @@ class McpWordPressMediaWrite {
 			array(
 				'name'        => 'wp_upload_file',
 				'description' => __(  'Upload a file to WordPress media library. Accepts base64 encoded file data or URL.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'upload_file' ),
 				'permission_callback' => array( $this, 'check_upload_files_permission' ),
 				'annotations' => array(
@@ -123,7 +123,7 @@ class McpWordPressMediaWrite {
 			array(
 				'name'        => 'wp_delete_media',
 				'description' => __(  'Delete a media file from WordPress. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_media' ),
 				'permission_callback' => array( $this, 'check_delete_media_permission' ),
 				'annotations' => array(
@@ -155,7 +155,7 @@ class McpWordPressMediaWrite {
 			array(
 				'name'        => 'wp_update_media_metadata',
 				'description' => __(  'Update media metadata (title, alt text, caption, description).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_media_metadata' ),
 				'permission_callback' => array( $this, 'check_edit_media_permission' ),
 				'annotations' => array(

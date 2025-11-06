@@ -30,7 +30,7 @@ class McpWooAttributesWrite {
 			array(
 				'name'        => 'wc_create_attribute',
 				'description' => __(  'Create a new global product attribute (e.g., Color, Size).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'create_attribute' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -58,7 +58,7 @@ class McpWooAttributesWrite {
 			array(
 				'name'        => 'wc_update_attribute',
 				'description' => __(  'Update an existing product attribute.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'update',
 				'callback'    => array( $this, 'update_attribute' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -87,7 +87,7 @@ class McpWooAttributesWrite {
 			array(
 				'name'        => 'wc_delete_attribute',
 				'description' => __(  'Delete a product attribute. DESTRUCTIVE OPERATION.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'delete',
 				'callback'    => array( $this, 'delete_attribute' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(
@@ -109,7 +109,7 @@ class McpWooAttributesWrite {
 			array(
 				'name'        => 'wc_add_attribute_terms',
 				'description' => __(  'Add terms (values) to a product attribute (e.g., add Red, Blue, Green to Color attribute).', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'create',
 				'callback'    => array( $this, 'add_attribute_terms' ),
 				'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 				'annotations' => array(

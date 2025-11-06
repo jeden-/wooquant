@@ -35,7 +35,7 @@ class McpBackupRestore {
 				array(
 					'name'        => 'wc_backup_products',
 					'description' => __(  'Create a backup of WooCommerce products. Returns JSON data with all product information that can be restored later.', 'mcp-for-woocommerce' ),
-					'type'        => 'write',
+					'type'        => 'action',
 					'callback'    => array( $this, 'backup_products' ),
 					'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 					'annotations' => array(
@@ -67,7 +67,7 @@ class McpBackupRestore {
 				array(
 					'name'        => 'wc_restore_products',
 					'description' => __(  'Restore WooCommerce products from backup JSON data. Can create new products or update existing ones.', 'mcp-for-woocommerce' ),
-					'type'        => 'write',
+					'type'        => 'action',
 					'callback'    => array( $this, 'restore_products' ),
 					'permission_callback' => array( $this, 'check_manage_woocommerce_permission' ),
 					'annotations' => array(
@@ -100,7 +100,7 @@ class McpBackupRestore {
 			array(
 				'name'        => 'wp_backup_content',
 				'description' => __(  'Create a backup of WordPress content (posts, pages, media). Returns JSON data with all content that can be restored later.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'backup_content' ),
 				'permission_callback' => array( $this, 'check_manage_options_permission' ),
 				'annotations' => array(
@@ -133,7 +133,7 @@ class McpBackupRestore {
 			array(
 				'name'        => 'wp_restore_content',
 				'description' => __(  'Restore WordPress content (posts, pages) from backup JSON data.', 'mcp-for-woocommerce' ),
-				'type'        => 'write',
+				'type'        => 'action',
 				'callback'    => array( $this, 'restore_content' ),
 				'permission_callback' => array( $this, 'check_manage_options_permission' ),
 				'annotations' => array(
