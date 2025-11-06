@@ -23,8 +23,8 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: mcp-for-woocommerce.php includes/Admin/Settings.php:72
-msgid "WooQuant"
-msgstr "WooQuant"
+msgid "MCP for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: mcp-for-woocommerce.php
@@ -75,10 +75,6 @@ msgstr "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP.
 #: includes/Admin/Settings.php:160
 msgid "Save Settings"
 msgstr "Zapisz ustawienia"
-
-#: build/index.js:1 src/settings/SettingsTab.js:75
-msgid "Allow tools to create, update, or delete data. Use with caution."
-msgstr "Pozwól narzędziom tworzyć, aktualizować lub usuwać dane. Używaj ostrożnie."
 
 #: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
 msgid "Settings saved successfully!"
@@ -188,7 +184,8 @@ msgstr "Nie masz uprawnień do zarządzania tokenami."
 
 #: includes/Admin/Settings.php:197 includes/Admin/Settings.php:288
 msgid "Invalid nonce. Please refresh the page and try again."
-msgstr "Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
+msgstr ""
+"Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
 
 #: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
 msgid "Settings"
@@ -226,7 +223,8 @@ msgstr "Ustawienia zapisane pomyślnie!"
 #: includes/Auth/JwtAuth.php:212 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:82
 msgid "You need to be logged in as an administrator to access JWT tokens."
-msgstr "Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT."
+msgstr ""
+"Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT."
 
 #: includes/Core/RegisterMcpTool.php:286
 msgid "The input schema must be an object type."
@@ -1780,8 +1778,8 @@ msgid "Available Prompts"
 msgstr "Dostępne Prompty"
 
 #: build/index.js:1 src/settings/PromptsTab.js:119
-msgid "Ready-to-use AI workflows and scenarios. Use prompts to quickly perform complex tasks like sales analysis, SEO optimization, or inventory management. Click \"View\" to see detailed instructions and parameters for each prompt."
-msgstr "Gotowe przepływy pracy i scenariusze dla AI. Używaj promptów, aby szybko wykonywać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO czy zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe instrukcje i parametry dla każdego promptu."
+msgid "List of all available prompts in the system."
+msgstr "Lista wszystkich dostępnych zasobów w systemie."
 
 #: build/index.js:1 src/settings/PromptsTab.js:128
 msgid "Loading prompts..."
@@ -2274,15 +2272,40 @@ msgstr ""
 msgid "Please enable MCP in the Settings tab first."
 msgstr ""
 
-#: src/settings/SettingsTab.js:46
+#~ msgid "WooQuant"
+#~ msgstr "WooQuant"
+
+#: build/index.js:1 src/settings/SettingsTab.js:75
+msgid "Allow tools to create, update, or delete data. Use with caution."
+msgstr "Pozwól narzędziom tworzyć, aktualizować lub usuwać dane. Używaj ostrożnie."
+
+#: build/index.js:1 src/settings/PromptsTab.js:119
+msgid ""
+"Ready-to-use AI workflows and scenarios. Use prompts to quickly perform "
+"complex tasks like sales analysis, SEO optimization, or inventory "
+"management. Click \"View\" to see detailed instructions and parameters "
+"for each prompt."
+msgstr ""
+"Gotowe przepływy pracy i scenariusze dla AI. Używaj promptów, aby szybko "
+"wykonywać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO "
+"czy zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe "
+"instrukcje i parametry dla każdego promptu."
+
+#: build/index.js:1 src/settings/SettingsTab.js:73
 msgid "Enable Write Operations"
 msgstr "Włącz operacje zapisu"
 
-#: src/settings/SettingsTab.js:120
-msgid "If you want to use this plugin for local development without JWT, you can disable JWT authentication. A local proxy file will be generated for Claude Desktop."
-msgstr "Jeśli chcesz używać tej wtyczki do lokalnego rozwoju bez JWT, możesz wyłączyć uwierzytelnianie JWT. Zostanie wygenerowany lokalny plik proxy dla Claude Desktop."
+#~ msgid ""
+#~ "If you want to use this plugin for local development without JWT, you can "
+#~ "disable JWT authentication. A local proxy file will be generated for "
+#~ "Claude Desktop."
+#~ msgstr ""
+#~ "Jeśli chcesz używać tej wtyczki do lokalnego rozwoju bez JWT, możesz "
+#~ "wyłączyć uwierzytelnianie JWT. Zostanie wygenerowany lokalny plik proxy "
+#~ "dla Claude Desktop."
 
-#: includes/Admin/Settings.php:230
-msgid "Settings saved successfully! The page will refresh to load Write tools."
-msgstr "Ustawienia zapisane pomyślnie! Strona odświeży się automatycznie, aby załadować narzędzia zapisu."
-
+#~ msgid ""
+#~ "Settings saved successfully! The page will refresh to load Write tools."
+#~ msgstr ""
+#~ "Ustawienia zapisane pomyślnie! Strona odświeży się automatycznie, aby "
+#~ "załadować narzędzia zapisu."
