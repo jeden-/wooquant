@@ -372,7 +372,7 @@ export const SettingsApp = () => {
 						case 'documentation':
 							return <DocumentationTab />;
 						case 'tools':
-							return <ToolsTab />;
+							return <ToolsTab settings={ settings } />;
 						case 'resources':
 							return <ResourcesTab />;
 						case 'prompts':
