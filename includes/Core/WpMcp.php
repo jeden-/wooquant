@@ -16,6 +16,14 @@ use McpForWoo\Prompts\McpCustomerSupport;
 use McpForWoo\Prompts\McpInventoryManagement;
 use McpForWoo\Prompts\McpContentCreation;
 use McpForWoo\Prompts\McpSeoAnalysis;
+use McpForWoo\Prompts\McpCouponManagement;
+use McpForWoo\Prompts\McpCustomerAnalysis;
+use McpForWoo\Prompts\McpDataMigration;
+use McpForWoo\Prompts\McpMediaManagement;
+use McpForWoo\Prompts\McpMenuManagement;
+use McpForWoo\Prompts\McpBusinessReports;
+use McpForWoo\Prompts\McpShippingTaxManagement;
+use McpForWoo\Prompts\McpUserManagement;
 use McpForWoo\Resources\McpWooSearchGuide;
 use McpForWoo\Resources\McpGeneralSiteInfo;
 use McpForWoo\Resources\McpPluginInfoResource;
@@ -252,6 +260,9 @@ class WpMcp {
 		new McpGetSiteInfo();
 		new McpContentCreation();
 		new McpSeoAnalysis();
+		new McpMediaManagement();
+		new McpMenuManagement();
+		new McpUserManagement();
 		
 		// WooCommerce prompts
 		new McpAnalyzeSales();
@@ -259,6 +270,13 @@ class WpMcp {
 		new McpOrderAnalysis();
 		new McpCustomerSupport();
 		new McpInventoryManagement();
+		new McpCouponManagement();
+		new McpCustomerAnalysis();
+		new McpShippingTaxManagement();
+		
+		// Data & reporting prompts
+		new McpDataMigration();
+		new McpBusinessReports();
 	}
 
 	/**
