@@ -1,102 +1,70 @@
-## Overview
+# Przewodnik Konfiguracyjny MCP for WooCommerce
 
-MCP for WooCommerce provides a secure, read-only interface to your WooCommerce store data through the Model Context Protocol (MCP). This enables AI assistants to access and understand your store information including:
+## 🚀 Przegląd
 
-- **Products** - Access product catalog, descriptions, pricing, and inventory
-- **Categories** - Browse product categories and hierarchies  
-- **Orders** - View order information and customer data
-- **Reviews** - Access customer reviews and ratings
-- **Store Settings** - Retrieve basic store configuration
+Wtyczka **MCP for WooCommerce** integruje Twój sklep WooCommerce z protokołem **Model Context Protocol (MCP)**, umożliwiając asystentom AI bezpieczny dostęp do danych i interakcję z Twoim sklepem.
 
-## Features
+### Kluczowe Funkcje (Wersja 1.1.9 - Zmodyfikowana)
 
-- ✅ **Read-only access** - No data modification capabilities for security
-- ✅ **JWT Authentication** - Secure token-based authentication
-- ✅ **Multiple protocols** - STDIO and HTTP transport support
-- ✅ **WordPress integration** - Full WordPress + WooCommerce compatibility
+- ✅ **Pełne Wsparcie dla Języka Polskiego**: Zarówno panel administracyjny, jak i wszystkie komunikaty są w pełni przetłumaczone.
+- ✅ **Zaktualizowany Panel Administracyjny**: Nowoczesny interfejs oparty na React, umożliwiający pełne zarządzanie wtyczką.
+- ✅ **Uwierzytelnianie JWT**: Bezpieczny dostęp do danych za pomocą tokenów.
+- ✅ **Poprawiony System Testów**: Zapewniona stabilność i jakość kodu dzięki testom jednostkowym PHPUnit.
+- ✅ **Dostęp Tylko do Odczytu**: Gwarancja bezpieczeństwa – AI nie może modyfikować danych w Twoim sklepie.
 
-## Transport Protocols
+---
 
-MCP for WooCommerce supports two transport protocols:
+## ⚙️ Panel Administracyjny
 
--   **STDIO Transport**: Traditional transport via `mcp-wordpress-remote` proxy
--   **Streamable Transport**: Direct HTTP-based transport with JSON-RPC 2.0
+Panel znajdziesz w menu WordPressa: `Ustawienia` → `MCP dla WooCommerce`.
 
-## Authentication Methods
+### Zakładka: Ustawienia MCP
 
-### JWT Tokens (Recommended)
+Główna sekcja konfiguracyjna.
 
--   Generate tokens from `Settings > MCP > Authentication Tokens`
--   Tokens expire in 1-24 hours (configurable) or never
--   More secure than application passwords
--   Required for Streamable transport
+- **Włącz funkcjonalność MCP**: Globalny przełącznik aktywujący lub dezaktywujący całą wtyczkę.
+- **Wymagaj uwierzytelniania JWT**:
+  - **Włączone (Zalecane)**: Wszystkie zapytania do MCP muszą zawierać ważny token JWT. Niezbędne do pełnej funkcjonalności i bezpieczeństwa.
+  - **Wyłączone**: Dostęp do danych jest możliwy bez uwierzytelniania (tylko w trybie do odczytu).
 
+### Zakładka: Uwierzytelnienie
 
-## Client Configurations
+Zarządzanie tokenami dostępowymi.
 
-### Claude Code
+- **Generowanie Tokenów**: Stwórz nowe, bezpieczne tokeny JWT.
+- **Ustawienia Ważności**: Określ, jak długo token ma być aktywny (od 1 godziny do opcji "nigdy nie wygasa").
+- **Lista Aktywnych Tokenów**: Przeglądaj i unieważniaj aktywne tokeny.
 
-#### Using HTTP Transport with JWT Token (Recommended)
+> **Wskazówka Bezpieczeństwa**: Używaj tokenów o jak najkrótszym czasie życia. Unieważniaj nieużywane tokeny.
 
-Add your MCP for WooCommerce server directly to Claude Code using the HTTP transport:
+### Zakładka: Narzędzia MCP
 
-```bash
-claude mcp add --transport http mcp-for-woocommerce {{your-website.com}}/wp-json/wp/v2/wpmcp/streamable --header "Authorization: Bearer your-jwt-token-here"
-```
+Zarządzaj narzędziami, które udostępniasz asystentom AI. Możesz tu włączać i wyłączać poszczególne funkcje, takie jak wyszukiwanie produktów, sprawdzanie kategorii czy odczytywanie recenzji.
 
-For more information about Claude Code MCP configuration, see the [Claude Code MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp).
+### Pozostałe Zakładki
 
-### Claude Desktop
+- **Dokumentacja**: Ta strona, którą właśnie czytasz.
+- **Resources**: Lista dostępnych zasobów systemowych.
+- **Prompts**: Lista dostępnych podpowiedzi dla AI.
 
-#### Using JWT Token with mcp-wordpress-remote (Recommended)
+---
 
-Add to your Claude Desktop `claude_desktop_config.json`:
+## 🔌 Konfiguracja Klientów MCP
 
-```json
-{
-	"mcpServers": {
-		"mcp-for-woocommerce": {
-			"command": "npx",
-			"args": [ "-y", "@automattic/mcp-wordpress-remote@latest" ],
-			"env": {
-				"WP_API_URL": "{{your-website.com}}",
-				"JWT_TOKEN": "your-jwt-token-here"
-			}
-		}
-	}
-}
-```
-
-
-#### Local Development Configuration
-
-To use with Claude Desktop for local development, add this configuration to your claude_desktop_config.json:
-
-```json
-{
-	"mcpServers": {
-		"woocommerce": {
-			"command": "php",
-			"args": [ "/path/to/your/mcp-for-woocommerce/mcp-proxy.php" ]
-		}
-	}
-}
-```
+Aby połączyć się z serwerem MCP Twojego sklepu, użyj poniższych konfiguracji. Pamiętaj, aby zastąpić `{{your-website.com}}` adresem Twojej strony (np. `http://wooquant.local`) oraz `your-jwt-token-here` wygenerowanym tokenem.
 
 ### Cursor IDE
 
-#### Using mcp-wordpress-remote proxy
-
-Add to your Cursor MCP configuration file:
+Dodaj do pliku `.cursorrules` w głównym katalogu projektu lub w ustawieniach Cursor (`Settings` → `Cursor Settings` → `Features` → `MCP Servers`):
 
 ```json
 {
 	"mcpServers": {
-		"mcp-for-woocommerce": {
+		"wooquant-shop": {
 			"command": "npx",
-			"args": [ "-y", "@automattic/mcp-wordpress-remote@latest" ],
+			"args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
 			"env": {
-				"WP_API_URL": "{{your-website.com}}",
+				"WP_API_URL": "http://wooquant.local",
 				"JWT_TOKEN": "your-jwt-token-here"
 			}
 		}
@@ -104,15 +72,46 @@ Add to your Cursor MCP configuration file:
 }
 ```
 
-### VS Code MCP Extension
-
-#### Direct Streamable Transport (JWT Only)
-
-Add to your VS Code MCP settings:
+**Dla wielu sklepów:**
 
 ```json
 {
-	"servers": {
+	"mcpServers": {
+		"wooquant-local": {
+			"command": "npx",
+			"args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+			"env": {
+				"WP_API_URL": "http://wooquant.local",
+				"JWT_TOKEN": "token-dla-wooquant"
+			}
+		},
+		"sklep-produkcyjny": {
+			"command": "npx",
+			"args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+			"env": {
+				"WP_API_URL": "https://twojsklep.pl",
+				"JWT_TOKEN": "token-dla-sklepu-produkcyjnego"
+			}
+		},
+		"sklep-testowy": {
+			"command": "npx",
+			"args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+			"env": {
+				"WP_API_URL": "https://test.twojsklep.pl",
+				"JWT_TOKEN": "token-dla-sklepu-testowego"
+			}
+		}
+	}
+}
+```
+
+### VS Code (Rozszerzenie MCP)
+
+Dodaj w ustawieniach VS Code:
+
+```json
+{
+	"mcp.servers": {
 		"mcp-for-woocommerce": {
 			"type": "http",
 			"url": "{{your-website.com}}/wp-json/wp/v2/wpmcp/streamable",
@@ -124,131 +123,106 @@ Add to your VS Code MCP settings:
 }
 ```
 
-### MCP Inspector (Development/Testing)
+### Claude Desktop
 
-#### Using JWT Token with proxy
-
-```bash
-npx @modelcontextprotocol/inspector \
-  -e WP_API_URL={{your-website.com}} \
-  -e JWT_TOKEN=your-jwt-token-here \
-  -e WOO_CUSTOMER_KEY=optional-woo-customer-key \
-  -e WOO_CUSTOMER_SECRET=optional-woo-customer-secret \
-  npx @automattic/mcp-wordpress-remote@latest
-```
-
-## Transport Protocol Details
-
-### STDIO Transport
-
--   **Endpoint**: `/wp-json/wp/v2/wpmcp`
--   **Format**: WordPress-style REST API
--   **Authentication**: JWT tokens only
--   **Use Case**: Legacy compatibility, works with most MCP clients
--   **Proxy Required**: Yes (`mcp-wordpress-remote`)
-
-#### Advantages:
-
--   Compatible with all MCP clients
--   Secure JWT authentication
--   Enhanced features via proxy (WooCommerce, logging)
-
-#### Example Tools Available:
-
--   `wc_products_search` - Universal product search for ANY store type
--   `wc_get_product_variations` - Get all variations (colors, sizes, etc.) for a variable WooCommerce product
--   `wc_get_categories` - Get a specific product variation by ID
--   `wordpress_posts_get` - Get a single WordPress post by ID
--   `wordpress_pages_get` - Get a single WordPress page by ID
--   And many more...
-
-### Streamable Transport
-
--   **Endpoint**: `/wp-json/wp/v2/wpmcp/streamable`
--   **Format**: JSON-RPC 2.0 compliant
--   **Authentication**: JWT tokens only
--   **Use Case**: Modern AI clients, direct integration
--   **Proxy Required**: No
-
-#### Advantages:
-
--   Direct connection (no proxy needed)
--   Standard JSON-RPC 2.0 protocol
--   Lower latency
--   Modern implementation
-
-#### Example Methods:
-
--   `tools/list` - List available tools
--   `tools/call` - Execute a tool
--   `resources/list` - List available resources
--   `resources/read` - Read resource content
--   `prompts/list` - List available prompts
--   `prompts/get` - Get prompt template
-
-## Local Development Setup
-
-### WordPress Local Environment
+Dodaj do pliku `claude_desktop_config.json`:
 
 ```json
 {
 	"mcpServers": {
-		"wordpress-local": {
-			"command": "node",
-			"args": [ "/path/to/mcp-wordpress-remote/dist/proxy.js" ],
+		"mcp-for-woocommerce": {
+			"command": "npx",
+			"args": [ "-y", "@automattic/mcp-wordpress-remote@latest" ],
 			"env": {
-				"WP_API_URL": "http://localhost:8080/",
-				"JWT_TOKEN": "your-local-jwt-token"
+				"WP_API_URL": "{{your-website.com}}",
+				"JWT_TOKEN": "your-jwt-token-here"
 			}
 		}
 	}
 }
 ```
+---
 
-## Troubleshooting
+## 📝 Krok po kroku: Jak połączyć Cursor z WooCommerce
 
-### Common Issues
+### Dla jednego sklepu:
 
-#### JWT Token Expired
+1. **W WordPress:**
+   - Przejdź do `Ustawienia` → `MCP dla WooCommerce`
+   - Włącz "Funkcjonalność MCP"
+   - Włącz "Wymagaj uwierzytelniania JWT"
+   - Przejdź do zakładki "Uwierzytelnienie"
+   - Kliknij "Generuj Token"
+   - **Skopiuj wygenerowany token** (zachowaj go bezpiecznie!)
 
--   Generate a new token from WordPress admin
--   Check token expiration time in settings
--   Ensure system clock is synchronized
+2. **W Cursor:**
+   - Otwórz ustawienia: `Settings` → `Cursor Settings` → `Features` → `MCP Servers`
+   - Lub stwórz plik `.cursorrules` w katalogu projektu
+   - Dodaj konfigurację:
+   ```json
+   {
+     "mcpServers": {
+       "moj-sklep": {
+         "command": "npx",
+         "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+         "env": {
+           "WP_API_URL": "http://wooquant.local",
+           "JWT_TOKEN": "TUTAJ-WKLEJ-SKOPIOWANY-TOKEN"
+         }
+       }
+     }
+   }
+   ```
 
-#### Authentication Failed
+3. **Zrestartuj Cursor**
 
--   Verify JWT token is correctly copied
--   Ensure user has appropriate permissions
--   Check token expiration time
+4. **Gotowe!** Cursor może teraz komunikować się z Twoim sklepem WooCommerce.
 
-#### Connection Timeout
+### Dla wielu sklepów (Local, Testowy, Produkcyjny):
 
--   Verify WordPress site is accessible
--   Check firewall settings
--   Ensure proper SSL certificate if using HTTPS
+**TAK - musisz dodać każdy sklep osobno**, ale możesz to zrobić w jednej konfiguracji:
 
-#### Proxy Issues
+1. Wygeneruj osobny token JWT dla każdego sklepu
+2. Dodaj wszystkie sklepy do jednej konfiguracji:
 
--   Update mcp-wordpress-remote to latest version:
-    ```bash
-    npm install -g @automattic/mcp-wordpress-remote@latest
-    ```
--   Check proxy logs for error details
--   Verify environment variables are set correctly
+```json
+{
+  "mcpServers": {
+    "wooquant-local": {
+      "command": "npx",
+      "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+      "env": {
+        "WP_API_URL": "http://wooquant.local",
+        "JWT_TOKEN": "token-z-local-site"
+      }
+    },
+    "wooquant-test": {
+      "command": "npx",
+      "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+      "env": {
+        "WP_API_URL": "https://test.wooquant.com",
+        "JWT_TOKEN": "token-z-test-site"
+      }
+    },
+    "wooquant-prod": {
+      "command": "npx",
+      "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+      "env": {
+        "WP_API_URL": "https://wooquant.com",
+        "JWT_TOKEN": "token-z-prod-site"
+      }
+    }
+  }
+}
+```
 
-## Security Best Practices
+Cursor automatycznie rozpozna wszystkie 3 serwery i będzie mógł się z nimi łączyć!
 
-1. **Use JWT tokens** instead of application passwords when possible
-2. **Set appropriate expiration time** for your use case (1-24 hours or never)
-3. **Revoke unused tokens** promptly from the admin interface
-4. **Never commit tokens** to version control systems
-5. **Use HTTPS** for production environments
-6. **Regularly rotate tokens**
+---
+## 💡 Rozwiązywanie Problemów
 
-## Support
+- **Brak tłumaczeń lub stary wygląd panelu**: Wykonaj "twarde odświeżenie" przeglądarki (`Cmd/Ctrl + Shift + R`), aby wyczyścić pamięć podręczną.
+- **Błędy uwierzytelniania**: Upewnij się, że token JWT jest poprawnie skopiowany i nie wygasł.
+- **Problemy z połączeniem**: Sprawdź, czy Twoja strona WordPress jest dostępna i czy nie blokuje jej zapora sieciowa (firewall).
 
-For additional help:
-
--   Check the <a href="https://github.com/iOSDevSK/mcp-for-woocommerce" target="_blank">Github repository</a>
--   Visit the <a href="https://github.com/Automattic/mcp-wordpress-remote" target="_blank">mcp-wordpress-remote repository</a>
--   Report issues on <a href="https://github.com/iOSDevSK/mcp-for-woocommerce/issues" target="_blank">GitHub Issues</a>
+W razie dalszych problemów, zgłoś je w [repozytorium GitHub](https://github.com/iOSDevSK/mcp-for-woocommerce/issues).

@@ -36,10 +36,15 @@ class Settings {
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		add_action( 'wp_ajax_mcpfowo_save_settings', array( $this, 'ajax_save_settings' ) );
 		add_action( 'wp_ajax_mcpfowo_toggle_tool', array( $this, 'ajax_toggle_tool' ) );
+		add_action( 'wp_ajax_mcpfowo_get_user_permissions', array( $this, 'ajax_get_user_permissions' ) );
+		add_action( 'wp_ajax_mcpfowo_save_user_permissions', array( $this, 'ajax_save_user_permissions' ) );
 		add_filter( 'plugin_action_links_' . plugin_basename( MCPFOWO_PATH . 'mcp-for-woocommerce.php' ), array( $this, 'plugin_action_links' ) );
 		
 		// Initialize JWT required option with default value if not exists
 		add_action( 'init', array( $this, 'init_jwt_option' ) );
+		
+		// Translate tool descriptions
+		add_filter( 'mcpfowo_tool_description', array( $this, 'translate_tool_description' ), 10, 2 );
 	}
 	
 	/**
@@ -97,15 +102,23 @@ class Settings {
 			return;
 		}
 
+		// Get the asset file
 		$asset_file = include MCPFOWO_PATH . 'build/index.asset.php';
 
-		// Enqueue our React app.
+		// Enqueue the script
 		wp_enqueue_script(
 			'mcpfowo-settings',
 			MCPFOWO_URL . 'build/index.js',
 			$asset_file['dependencies'],
-			$asset_file['version'],
+			$asset_file['version'], // Use version from asset file for cache busting
 			true
+		);
+
+		// Set script translations for JavaScript i18n.
+		wp_set_script_translations(
+			'mcpfowo-settings',
+			'mcp-for-woocommerce',
+			MCPFOWO_PATH . 'languages'
 		);
 
 		// Enqueue the WordPress components styles CSS.
@@ -352,5 +365,126 @@ class Settings {
 		$permalink_structure = get_option( 'permalink_structure' );
 		// Check if permalink structure is set to "Post name" (/%postname%/)
 		return ( $permalink_structure === '/%postname%/' );
+	}
+
+	/**
+	 * Translate tool descriptions.
+	 *
+	 * @param string $description Original description.
+	 * @param string $tool_name Tool name.
+	 * @return string Translated description.
+	 */
+	public function translate_tool_description( string $description, string $tool_name ): string {
+		// Use WordPress translation function for tool descriptions.
+		// This allows descriptions to be translated via .po/.mo files.
+		return __( $description, 'mcp-for-woocommerce' );
+	}
+
+	/**
+	 * AJAX handler to get user permissions.
+	 */
+	public function ajax_get_user_permissions(): void {
+		// Verify nonce
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'mcpfowo_settings' ) ) {
+			wp_send_json_error( array( 'message' => __( 'Invalid nonce', 'mcp-for-woocommerce' ) ) );
+			return;
+		}
+
+		// Check user permissions
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_send_json_error( array( 'message' => __( 'You do not have permission to access this.', 'mcp-for-woocommerce' ) ) );
+			return;
+		}
+
+		// Get all users
+		$users = get_users( array(
+			'fields' => array( 'ID', 'user_login', 'display_name', 'user_email' ),
+		) );
+
+		// Format users data
+		$formatted_users = array();
+		foreach ( $users as $user ) {
+			$user_obj = get_userdata( $user->ID );
+			$formatted_users[] = array(
+				'id'           => $user->ID,
+				'username'     => $user->user_login,
+				'display_name' => $user->display_name,
+				'email'        => $user->user_email,
+				'roles'        => $user_obj->roles,
+			);
+		}
+
+		// Get WordPress roles
+		global $wp_roles;
+		$all_roles = $wp_roles->roles;
+		$formatted_roles = array();
+		foreach ( $all_roles as $role_key => $role_data ) {
+			$formatted_roles[ $role_key ] = array(
+				'name'         => $role_data['name'],
+				'capabilities' => $role_data['capabilities'],
+			);
+		}
+
+		// Get stored permissions
+		$user_permissions = get_option( 'mcpfowo_user_permissions', array() );
+		$role_permissions = get_option( 'mcpfowo_role_permissions', array() );
+
+		// Format permissions as boolean values
+		$formatted_permissions = array();
+		foreach ( $formatted_users as $user ) {
+			$formatted_permissions[ $user['id'] ] = isset( $user_permissions[ $user['id'] ] ) && $user_permissions[ $user['id'] ];
+		}
+
+		$formatted_role_permissions = array();
+		foreach ( array_keys( $formatted_roles ) as $role_key ) {
+			$formatted_role_permissions[ $role_key ] = isset( $role_permissions[ $role_key ] ) && $role_permissions[ $role_key ];
+		}
+
+		wp_send_json_success( array(
+			'users'            => $formatted_users,
+			'roles'            => $formatted_roles,
+			'permissions'      => $formatted_permissions,
+			'role_permissions' => $formatted_role_permissions,
+		) );
+	}
+
+	/**
+	 * AJAX handler to save user permissions.
+	 */
+	public function ajax_save_user_permissions(): void {
+		// Verify nonce
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'mcpfowo_settings' ) ) {
+			wp_send_json_error( array( 'message' => __( 'Invalid nonce', 'mcp-for-woocommerce' ) ) );
+			return;
+		}
+
+		// Check user permissions
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_send_json_error( array( 'message' => __( 'You do not have permission to access this.', 'mcp-for-woocommerce' ) ) );
+			return;
+		}
+
+		// Get permissions from POST data
+		$permissions = isset( $_POST['permissions'] ) ? json_decode( stripslashes( sanitize_text_field( wp_unslash( $_POST['permissions'] ) ) ), true ) : array();
+		$role_permissions = isset( $_POST['role_permissions'] ) ? json_decode( stripslashes( sanitize_text_field( wp_unslash( $_POST['role_permissions'] ) ) ), true ) : array();
+
+		// Sanitize permissions (ensure boolean values)
+		$sanitized_permissions = array();
+		foreach ( $permissions as $user_id => $has_permission ) {
+			$sanitized_permissions[ intval( $user_id ) ] = (bool) $has_permission;
+		}
+
+		$sanitized_role_permissions = array();
+		foreach ( $role_permissions as $role_key => $has_permission ) {
+			$sanitized_role_permissions[ sanitize_key( $role_key ) ] = (bool) $has_permission;
+		}
+
+		// Save permissions
+		update_option( 'mcpfowo_user_permissions', $sanitized_permissions );
+		update_option( 'mcpfowo_role_permissions', $sanitized_role_permissions );
+
+		wp_send_json_success( array(
+			'message' => __( 'User permissions saved successfully.', 'mcp-for-woocommerce' ),
+		) );
 	}
 }

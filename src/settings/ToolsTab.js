@@ -7,9 +7,10 @@ import {
 	CardBody,
 	Spinner,
 	ToggleControl,
+	SelectControl,
 } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { useState, useEffect } from '@wordpress/element';
+import { useState, useEffect, useMemo } from '@wordpress/element';
 import apiFetch from '@wordpress/api-fetch';
 
 /**
@@ -20,6 +21,8 @@ const ToolsTab = () => {
 	const [ loading, setLoading ] = useState( true );
 	const [ error, setError ] = useState( null );
 	const [ saving, setSaving ] = useState( false );
+	const [ filterType, setFilterType ] = useState( 'all' );
+	const [ searchQuery, setSearchQuery ] = useState( '' );
 
 	useEffect( () => {
 		const fetchTools = async () => {
@@ -35,9 +38,11 @@ const ToolsTab = () => {
 					},
 				} );
 
-				if ( response && response.tools ) {
-					setTools( response.tools );
-				} else {
+			if ( response && response.tools ) {
+				// Debug: Log first 3 tools to see their structure
+				console.log( '🔍 DEBUG: First 3 tools from API:', response.tools.slice( 0, 3 ) );
+				setTools( response.tools );
+			} else {
 					setError(
 						__( 'Failed to load tools data', 'mcp-for-woocommerce' )
 					);
@@ -109,6 +114,43 @@ const ToolsTab = () => {
 		}
 	};
 
+	// Get translated label for tool type
+	const getTypeLabel = ( type ) => {
+		const labels = {
+			read: __( 'Read', 'mcp-for-woocommerce' ),
+			create: __( 'Create', 'mcp-for-woocommerce' ),
+			update: __( 'Update', 'mcp-for-woocommerce' ),
+			delete: __( 'Delete', 'mcp-for-woocommerce' ),
+			write: __( 'Write', 'mcp-for-woocommerce' ),
+			action: __( 'Action', 'mcp-for-woocommerce' ),
+			edit: __( 'Edit', 'mcp-for-woocommerce' ),
+		};
+		return labels[ type ] || type;
+	};
+
+	// Get unique tool types for filter dropdown
+	const toolTypes = useMemo( () => {
+		const types = [ ...new Set( tools.map( ( tool ) => tool.type ) ) ];
+		return [
+			{ label: __( 'All Types', 'mcp-for-woocommerce' ), value: 'all' },
+			...types.map( ( type ) => ( {
+				label: getTypeLabel( type ),
+				value: type,
+			} ) ),
+		];
+	}, [ tools ] );
+
+	// Filter tools based on type and search query
+	const filteredTools = useMemo( () => {
+		return tools.filter( ( tool ) => {
+			const matchesType = filterType === 'all' || tool.type === filterType;
+			const matchesSearch = ! searchQuery || 
+				tool.name.toLowerCase().includes( searchQuery.toLowerCase() ) ||
+				( tool.description && tool.description.toLowerCase().includes( searchQuery.toLowerCase() ) );
+			return matchesType && matchesSearch;
+		} );
+	}, [ tools, filterType, searchQuery ] );
+
 	return (
 		<Card>
 			<CardHeader>
@@ -121,6 +163,32 @@ const ToolsTab = () => {
 						'mcp-for-woocommerce'
 					) }
 				</p>
+
+				{/* Filters */}
+				{ tools.length > 0 && (
+					<div style={ { marginBottom: '20px', display: 'flex', gap: '15px', flexWrap: 'wrap', alignItems: 'center' } }>
+						<div style={ { flex: '1', minWidth: '200px' } }>
+							<SelectControl
+								label={ __( 'Filter by Type', 'mcp-for-woocommerce' ) }
+								value={ filterType }
+								options={ toolTypes }
+								onChange={ setFilterType }
+							/>
+						</div>
+						<div style={ { flex: '1', minWidth: '200px' } }>
+							<input
+								type="text"
+								placeholder={ __( 'Search tools...', 'mcp-for-woocommerce' ) }
+								value={ searchQuery }
+								onChange={ ( e ) => setSearchQuery( e.target.value ) }
+								style={ { width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '4px' } }
+							/>
+						</div>
+						<div style={ { paddingTop: '24px' } }>
+							{ __( 'Total:', 'mcp-for-woocommerce' ) } { filteredTools.length } / { tools.length }
+						</div>
+					</div>
+				) }
 
 				{ loading ? (
 					<div className="mcpfowo-loading">
@@ -135,6 +203,13 @@ const ToolsTab = () => {
 					<p>
 						{ __(
 							'No tools are currently registered.',
+							'mcp-for-woocommerce'
+						) }
+					</p>
+				) : filteredTools.length === 0 ? (
+					<p>
+						{ __(
+							'No tools match your filters.',
 							'mcp-for-woocommerce'
 						) }
 					</p>
@@ -156,13 +231,15 @@ const ToolsTab = () => {
 							</tr>
 						</thead>
 						<tbody>
-							{ tools.map( ( tool ) => (
+							{ filteredTools.map( ( tool ) => (
 								<tr key={ tool.name }>
 									<td>
 										<strong>{ tool.name }</strong>
 									</td>
 									<td>{ tool.description }</td>
-									<td>{ tool.type }</td>
+									<td>
+										{ getTypeLabel( tool.type ) }
+									</td>
 									<td>
 										<ToggleControl
 											checked={

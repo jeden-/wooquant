@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 02:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/settings/UserPermissionsTab.js:83
+msgid "Error loading data: "
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:128
+msgid "Failed to update permission."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:133
+msgid "Error updating permission: "
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:176
+msgid "Failed to update permissions."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:181
+msgid "Error updating permissions: "
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:218
+msgid "Loading permissions..."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:241
+msgid "User Permissions Management"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:247
+msgid ""
+"Manage which tools each user can access. When a user has permission to a "
+"tool, they can use it via MCP. When disabled, the tool will be unavailable "
+"for that user."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:255
+msgid "Select User"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:262
+msgid "Select a user..."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:288
+msgid "Managing permissions for:"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:293
+msgid "Role:"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:304
+msgid "Enable All"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:311
+msgid "Disable All"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:320
+msgid "Search tools..."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:340
+msgid "Saving..."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:348
+msgid "No tools found matching your search."
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:357
+msgid "Name"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:360
+msgid "Description"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:364
+msgid "Functionality Type"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:369
+msgid "Permission"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:386
+msgid "No description available"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:392
+msgid "Read"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:394
+msgid "Edit"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:396
+msgid "Write"
+msgstr ""
+
+#: src/settings/UserPermissionsTab.js:425
+msgid "Please select a user to manage permissions."
+msgstr ""

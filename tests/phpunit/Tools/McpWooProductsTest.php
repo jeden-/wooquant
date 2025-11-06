@@ -39,8 +39,8 @@ final class McpWooProductsTest extends WP_UnitTestCase {
 	/**
 	 * Set up the test.
 	 */
-	public function set_up(): void {
-		parent::set_up();
+	public function setUp(): void {
+		parent::setUp();
 
 		// Create an admin user.
 		$this->admin_user = $this->factory->user->create_and_get(
@@ -69,8 +69,8 @@ final class McpWooProductsTest extends WP_UnitTestCase {
 	/**
 	 * Tear down the test.
 	 */
-	public function tear_down(): void {
-		parent::tear_down();
+	public function tearDown(): void {
+		parent::tearDown();
 
 		// Deactivate WooCommerce after tests.
 		deactivate_plugins( 'woocommerce' );

@@ -32,7 +32,7 @@ class WpFeaturesApiAdapterTest extends WP_UnitTestCase {
 	 * Set up the test.
 	 */
 	public function setUp(): void {
-		parent::set_up();
+		parent::setUp();
 
 		// Create an admin user.
 		$this->admin_user = $this->factory->user->create_and_get(

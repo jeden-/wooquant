@@ -35,8 +35,8 @@ final class McpCustomPostTypeTest extends WP_UnitTestCase {
 	/**
 	 * Set up the test.
 	 */
-	public function set_up(): void {
-		parent::set_up();
+	public function setUp(): void {
+		parent::setUp();
 
 		// Create an admin user.
 		$this->admin_user = $this->factory->user->create_and_get(

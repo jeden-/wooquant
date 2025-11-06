@@ -62,7 +62,7 @@ function _manually_load_plugin() {
 	// }
 
 	// Load the plugin.
-	require_once dirname( __DIR__ ) . '/wordpress-mcp.php';
+	require_once dirname( __DIR__ ) . '/mcp-for-woocommerce.php';
 }
 
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );

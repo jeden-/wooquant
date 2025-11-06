@@ -35,8 +35,8 @@ final class McpMediaToolsTest extends WP_UnitTestCase {
 	/**
 	 * Set up the test.
 	 */
-	public function set_up(): void {
-		parent::set_up();
+	public function setUp(): void {
+		parent::setUp();
 
 		// Enable MCP in settings
 		update_option(

@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import re
+
+translations = {
+    "https://github.com/iOSDevSK/mcp-for-woocommerce": "https://github.com/iOSDevSK/mcp-for-woocommerce",
+    "Filip Dvoran": "Filip Dvoran",
+    "https://github.com/iOSDevSK": "https://github.com/iOSDevSK",
+    "When JWT Authentication is disabled, this plugin can be used as a connector in Claude.ai Desktop. A proxy file will be automatically generated for easy setup.": "Gdy uwierzytelnianie JWT jest wyłączone, ta wtyczka może być używana jako konektor w Claude.ai Desktop. Plik proxy zostanie automatycznie wygenerowany dla łatwej konfiguracji.",
+    "MCP Proxy file generated at:": "Plik proxy MCP wygenerowany w:",
+    "To use with Claude.ai Desktop, add this configuration to your claude_desktop_config.json:": "Aby użyć z Claude.ai Desktop, dodaj tę konfigurację do swojego pliku claude_desktop_config.json:",
+    "Invalid nonce. Please refresh the page and try again.": "Nieprawidłowy nonce. Odśwież stronę i spróbuj ponownie.",
+    "Tool name is required.": "Nazwa narzędzia jest wymagana.",
+    "Failed to toggle tool state.": "Nie udało się przełączyć stanu narzędzia.",
+    "You need to be logged in as an administrator to access JWT tokens.": "Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT.",
+    "The input schema must be an object type.": "Schemat wejściowy musi być typu obiekt.",
+    "Property '%s' must have a type field.": "Właściwość '%s' musi mieć pole type.",
+    "Property '%1$s' has invalid type '%2$s'.": "Właściwość '%1$s' ma nieprawidłowy typ '%2$s'.",
+    "Array property '%s' must have an items field.": "Właściwość tablicy '%s' musi mieć pole items.",
+    "The required field must be an array.": "Pole required musi być tablicą.",
+    "Required property '%s' does not exist in properties.": "Wymagana właściwość '%s' nie istnieje we właściwościach.",
+    "⚠️ WordPress REST API Disabled": "⚠️ WordPress REST API Wyłączone",
+    "WordPress REST API appears to be disabled. This plugin requires REST API to function properly. Please contact your administrator to ensure the WordPress REST API is enabled.": "WordPress REST API wydaje się być wyłączone. Ta wtyczka wymaga REST API do prawidłowego działania. Skontaktuj się z administratorem, aby upewnić się, że WordPress REST API jest włączone.",
+    "⚠️ Incorrect Permalinks Configuration": "⚠️ Nieprawidłowa Konfiguracja Permalinków",
+    "WordPress permalinks are not set to \"Post name\" structure. For proper product link generation, please go to WordPress Admin → Settings → Permalinks and select \"Post name\" structure.": "Permalinki WordPress nie są ustawione na strukturę \"Nazwa wpisu\". Aby prawidłowo generować linki do produktów, przejdź do WordPress Admin → Ustawienia → Permalinki i wybierz strukturę \"Nazwa wpisu\".",
+    "Failed to load tools data": "Nie udało się załadować danych narzędzi",
+    "Registered Tools": "Zarejestrowane Narzędzia",
+    "List of all registered tools in the system. Use the toggles to enable or disable individual tools.": "Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników, aby włączyć lub wyłączyć poszczególne narzędzia.",
+    "No tools are currently registered.": "Obecnie nie ma zarejestrowanych narzędzi.",
+    "Functionality Type": "Typ Funkcjonalności",
+    "Failed to load resources data": "Nie udało się załadować danych zasobów",
+    "Error loading resources: ": "Błąd ładowania zasobów: ",
+    "List of all available resources in the system.": "Lista wszystkich dostępnych zasobów w systemie.",
+    "No resources are currently available.": "Obecnie nie ma dostępnych zasobów.",
+    "URI": "URI",
+    "Error loading resource details: ": "Błąd ładowania szczegółów zasobu: ",
+    "Loading resource details...": "Ładowanie szczegółów zasobu...",
+    "Full Resource Data": "Pełne Dane Zasobu",
+    "No details available for this resource.": "Brak dostępnych szczegółów dla tego zasobu.",
+    "Failed to load prompts data": "Nie udało się załadować danych podpowiedzi",
+    "Error loading prompts: ": "Błąd ładowania podpowiedzi: ",
+    "List of all available prompts in the system.": "Lista wszystkich dostępnych podpowiedzi w systemie.",
+    "No prompts are currently available.": "Obecnie nie ma dostępnych podpowiedzi.",
+}
+
+print("Translations loaded:", len(translations))

@@ -73,7 +73,12 @@ function init_mcpfowo() {
 	// Initialize the JWT authentication.
 	new JwtAuth();
 
-	// Text domain is automatically loaded by WordPress for WordPress.org hosted plugins
+	// Load plugin text domain for translations
+	load_plugin_textdomain(
+		'mcp-for-woocommerce',
+		false,
+		dirname( plugin_basename( __FILE__ ) ) . '/languages'
+	);
 }
 
 /**

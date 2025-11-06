@@ -37,7 +37,7 @@ class McpToolsRegistrationTest extends WP_UnitTestCase {
 	 * Set up the test.
 	 */
 	public function setUp(): void {
-		parent::set_up();
+		parent::setUp();
 
 		// Enable MCP in settings
 		update_option(

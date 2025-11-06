@@ -23,6 +23,25 @@ use McpForWoo\Tools\McpWooTaxes;
 use McpForWoo\Tools\McpWooPaymentGateways;
 use McpForWoo\Tools\McpWooSystemStatus;
 use McpForWoo\Tools\McpWooIntelligentSearch;
+use McpForWoo\Tools\McpWooReports;
+
+// Write operations classes
+use McpForWoo\Tools\Write\McpWooProductsWrite;
+use McpForWoo\Tools\Write\McpWooOrdersWrite;
+use McpForWoo\Tools\Write\McpWordPressContentWrite;
+use McpForWoo\Tools\Write\McpWooCategoriesWrite;
+use McpForWoo\Tools\Write\McpWooTagsWrite;
+use McpForWoo\Tools\Write\McpWooAttributesWrite;
+use McpForWoo\Tools\Write\McpWooCouponsWrite;
+use McpForWoo\Tools\Write\McpWooReviewsWrite;
+use McpForWoo\Tools\Write\McpWooCustomersWrite;
+use McpForWoo\Tools\Write\McpWordPressUsersWrite;
+use McpForWoo\Tools\Write\McpWordPressMediaWrite;
+use McpForWoo\Tools\Write\McpWordPressMenuWrite;
+use McpForWoo\Tools\Write\McpWooBulkOperations;
+use McpForWoo\Tools\Write\McpWooImportExport;
+use McpForWoo\Tools\Write\McpSettingsWrite;
+use McpForWoo\Tools\Write\McpBackupRestore;
 
 /**
  * WordPress MCP - WooCommerce Only
@@ -135,6 +154,7 @@ class WpMcp {
 			if ( $this->is_mcp_enabled() ) {
 				$this->init_default_resources();
 				$this->init_default_tools();
+				$this->init_write_operations();
 				$this->init_default_prompts();
 				$this->init_features_as_tools();
 				// Register the MCP assets earlier in the rest_api_init hook to prevent timeouts with Claude.ai web app.
@@ -194,6 +214,7 @@ class WpMcp {
 		new McpWooTaxes();
 		new McpWooPaymentGateways();
 		new McpWooSystemStatus();
+		new McpWooReports();
 
 		// WordPress Core tools - READ ONLY
     	new McpWordPressPosts();
@@ -210,6 +231,39 @@ class WpMcp {
 		// new McpAnalyzeSales(); // Disabled - sales analysis prompt not used in MCP for WooCommerce
 		
 		// Add future prompts here when needed
+	}
+
+	/**
+	 * Initialize write operations (WooCommerce and WordPress).
+	 */
+	private function init_write_operations(): void {
+		// WooCommerce write operations
+		new McpWooProductsWrite();
+		new McpWooOrdersWrite();
+		new McpWooCategoriesWrite();
+		new McpWooTagsWrite();
+		new McpWooAttributesWrite();
+		new McpWooCouponsWrite();
+		new McpWooReviewsWrite();
+		new McpWooCustomersWrite();
+
+		// WooCommerce bulk operations
+		new McpWooBulkOperations();
+
+		// WooCommerce import/export
+		new McpWooImportExport();
+
+		// WordPress write operations
+		new McpWordPressContentWrite();
+		new McpWordPressUsersWrite();
+		new McpWordPressMediaWrite();
+		new McpWordPressMenuWrite();
+
+		// Settings write operations
+		new McpSettingsWrite();
+
+		// Backup and restore operations
+		new McpBackupRestore();
 	}
 
 	/**
@@ -398,7 +452,7 @@ class WpMcp {
 		$tool_states = get_option( self::TOOL_STATES_OPTION, array() );
 		$tools       = $this->all_tools;
 
-		// Add enabled state to each tool.
+		// Add enabled state to each tool and translate descriptions.
 		foreach ( $tools as &$tool ) {
 			// Handle integer storage: if not set, default enabled (true)
 			// If set: 0, '0', '' = disabled, 1, '1' = enabled
@@ -407,6 +461,11 @@ class WpMcp {
 			} else {
 				$state = $tool_states[ $tool['name'] ];
 				$tool['enabled'] = ! empty( $state ) && $state !== '0' && $state !== 0;
+			}
+
+			// Translate tool description if it exists.
+			if ( ! empty( $tool['description'] ) ) {
+				$tool['description'] = apply_filters( 'mcpfowo_tool_description', $tool['description'], $tool['name'] );
 			}
 		}
 

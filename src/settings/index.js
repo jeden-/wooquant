@@ -12,6 +12,7 @@ import ResourcesTab from './ResourcesTab.js';
 import PromptsTab from './PromptsTab.js';
 import AuthenticationTokensTab from './AuthenticationTokensTab.js';
 import DocumentationTab from './DocumentationTab.js';
+import UserPermissionsTab from './UserPermissionsTab.js';
 
 /**
  * Settings App Component
@@ -52,6 +53,12 @@ export const SettingsApp = () => {
 				title: __( 'Authentication Tokens', 'mcp-for-woocommerce' ),
 				className: 'authentication-tokens-tab',
 				disabled: ! jwtRequired,
+			},
+			{
+				name: 'user-permissions',
+				title: __( 'User Permissions', 'mcp-for-woocommerce' ),
+				className: 'mcpfowo-user-permissions-tab',
+				disabled: ! settings.enabled,
 			},
 			{
 				name: 'documentation',
@@ -360,6 +367,8 @@ export const SettingsApp = () => {
 							);
 						case 'authentication-tokens':
 							return <AuthenticationTokensTab />;
+						case 'user-permissions':
+							return <UserPermissionsTab />;
 						case 'documentation':
 							return <DocumentationTab />;
 						case 'tools':

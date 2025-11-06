@@ -1,28 +1,74 @@
-# Claude AI instructions file - keep local only
-CLAUDE.md
+# WordPress
+.htaccess
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
 
-# SVN credentials - keep secure!
-SVN-CREDENTIALS.md
-svn-helper.sh
-svn-deploy.sh
-
-# Build outputs
-*.zip
-mcp-for-woocommerce-*.zip
-
-# Development files
-.DS_Store
-*.log
-
-# Node modules
+# Node.js
 node_modules/
+npm-debug.log
+yarn-error.log
+.pnp
+.pnp.js
 
-# Composer vendor (will be rebuilt)
-vendor/
+# Build artifacts
+/build/*.asset.php
+/build/*.js
+/build/*.css
+/build/*.map
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Composer
+/vendor/
 composer.lock
 
-# Build assets (will be rebuilt)
-build/
+# Testing
+/tests/wordpress/
+/tests/wordpress-tests-lib/
+phpunit.xml
+.phpunit.result.cache
+/coverage/
 
-# SVN directory
-.svn/
+# Logs
+*.log
+error_log
+debug.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Translations (compiled - keep .po, ignore .mo and .json)
+languages/*.mo
+# Note: We keep .json files for React translations
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# WordPress specific
+sitemap.xml
+sitemap.xml.gz
