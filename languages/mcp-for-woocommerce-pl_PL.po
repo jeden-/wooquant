@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: WooQuant 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mcp-for-"
 "woocommerce\n"
-"POT-Creation-Date: 2025-11-04T07:31:27+00:00\n"
-"PO-Revision-Date: 2025-11-06 17:05+0000\n"
+"POT-Creation-Date: 2025-11-06 18:22+0100\n"
+"PO-Revision-Date: 2025-11-06 18:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -83,9 +83,15 @@ msgstr ""
 msgid "Administrator email"
 msgstr "Email administratora"
 
+#: wordpress-mcp.php
+msgid ""
+"Advanced AI integration plugin that connects WooCommerce & WordPress with "
+"Model Context Protocol (MCP)"
+msgstr "Zaawansowana wtyczka integracji AI łącząca WooCommerce i WordPress z protokołem Model Context Protocol (MCP)"
+
 #: build/index.js:1 src/settings/ToolsTab.js:133
 msgid "All Types"
-msgstr "Wszystkie Typy"
+msgstr "Wszystkie typy"
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:180
 msgid "Alt text"
@@ -199,21 +205,31 @@ msgstr "Slug atrybutu"
 msgid "Attribute type"
 msgstr "Typ atrybutu"
 
+#: includes/Admin/Settings.php
+msgid "Authentication"
+msgstr "Uwierzytelnianie"
+
+#: includes/Auth/JwtAuth.php
+msgid "Authentication required."
+msgstr "Wymagane uwierzytelnianie."
+
 #: build/index.js:1 src/settings/SettingsTab.js:80
 msgid "Authentication Settings"
-msgstr "Uwierzytelnienie"
+msgstr "Ustawienia uwierzytelniania"
+
+#: includes/Auth/JwtAuth.php
+msgid "Authentication token expired."
+msgstr "Token uwierzytelniania wygasł."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:275
 #: src/settings/index.js:53
 msgid "Authentication Tokens"
-msgstr "Tokeny Uwierzytelniania"
+msgstr "Tokeny uwierzytelniania"
 
 #: build/index.js:1 src/settings/index.js:321
 msgid ""
 "Authentication tokens are only available when JWT authentication is enabled."
-msgstr ""
-"Tokeny uwierzytelniania są dostępne tylko gdy uwierzytelnianie JWT jest "
-"włączone."
+msgstr "Tokeny uwierzytelniania są dostępne tylko gdy uwierzytelnianie JWT jest włączone."
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:76
 #: includes/Tools/Write/McpWordPressContentWrite.php:246
@@ -222,11 +238,11 @@ msgstr "ID użytkownika autora"
 
 #: build/index.js:1 src/settings/PromptsTab.js:115
 msgid "Available Prompts"
-msgstr "Dostępne Prompty"
+msgstr "Dostępne prompty"
 
 #: build/index.js:1 src/settings/ResourcesTab.js:179
 msgid "Available Resources"
-msgstr "Dostępne Zasoby"
+msgstr "Dostępne zasoby"
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:101
 msgid "Base64 encoded file data or file URL (required)"
@@ -339,17 +355,7 @@ msgid ""
 "seamlessly interact with your e-commerce data and content. Acts as a "
 "WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a "
 "WooCommerce AI Chatbot/Agent to your site."
-msgstr ""
-"serwer WooCommerce MCP dla klientów MCP; połącz z Webtalkbot, aby dodać "
-"chatbota/agenta AI WooCommerce do swojej witryny.Plugin integracji AI "
-"rozwijany przez społeczność, który łączy WooCommerce i WordPress z "
-"protokołem Model Context Protocol (MCP). Niezależny od Automattic. Zapewnia "
-"kompleksowe interfejsy dostępne dla AI do produktów WooCommerce, zamówień, "
-"kategorii, wysyłki, płatności oraz postów/stron WordPress poprzez "
-"standaryzowane narzędzia, zasoby i podpowiedzi. Umożliwia asystentom AI "
-"płynną interakcję z danymi i treścią Twojego e-commerce. Działa jako serwer "
-"WooCommerce MCP dla klientów MCP; połącz z Webtalkbot, aby dodać "
-"chatbota/agenta AI WooCommerce do swojej witryny."
+msgstr "Wtyczka integracji AI rozwijana przez społeczność, która łączy WooCommerce i WordPress z protokołem Model Context Protocol (MCP). Nie jest powiązana z Automattic. Zapewnia kompleksowe interfejsy dostępne dla AI do produktów WooCommerce, zamówień, kategorii, wysyłki, płatności oraz wpisów/stron WordPress poprzez ustandaryzowane narzędzia, zasoby i prompty. Umożliwia asystentom AI płynną interakcję z danymi i treściami e-commerce. Działa jako serwer MCP WooCommerce dla klientów MCP; połącz z Webtalkbot, aby dodać chatbot/agenta AI WooCommerce do swojej witryny."
 
 #: build/index.js:1 src/settings/DocumentationTab.js:201
 msgid "Configuration copied to clipboard!"
@@ -357,7 +363,7 @@ msgstr "Konfiguracja skopiowana do schowka!"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:414
 msgid "Consider using long-lived tokens (24 hours) instead"
-msgstr "Zamiast tego rozważ użycie tokenów o długim czasie życia (24 godziny)"
+msgstr "Rozważ użycie tokenów długotrwałych (24 godziny) zamiast tego"
 
 #: build/index.js:1 src/settings/PromptsTab.js:217
 msgid "Content:"
@@ -367,9 +373,7 @@ msgstr "Treść:"
 msgid ""
 "Control which users and roles can access MCP functionality. By default, only "
 "administrators have access."
-msgstr ""
-"Kontroluj, którzy użytkownicy i role mogą mieć dostęp do funkcjonalności MCP."
-" Domyślnie tylko administratorzy mają dostęp."
+msgstr "Kontroluj, którzy użytkownicy i role mogą uzyskać dostęp do funkcjonalności MCP. Domyślnie tylko administratorzy mają dostęp."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:580
 msgid "Copy"
@@ -431,6 +435,7 @@ msgstr ""
 #: includes/Tools/Write/McpWooCustomersWrite.php:40
 msgid "Create a new WooCommerce customer with billing and shipping addresses."
 msgstr ""
+"Utwórz nowego klienta WooCommerce z adresami rozliczeniowymi i wysyłkowymi."
 "Utwórz nowego klienta WooCommerce z adresami rozliczeniowymi i wysyłkowymi."
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:33
@@ -551,7 +556,7 @@ msgstr "Format daty"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:264
 msgid "days"
-msgstr "dni"
+msgstr ""
 
 #: build/index.js:1 src/settings/ToolsTab.js:121
 msgid "Delete"
@@ -637,11 +642,11 @@ msgstr "Opis"
 
 #: build/index.js:1 src/settings/PromptsTab.js:203
 msgid "Description:"
-msgstr "Opis"
+msgstr "Opis:"
 
 #: build/index.js:1 src/settings/ToolsTab.js:264
 msgid "Disabled"
-msgstr "Wyłączony"
+msgstr "Wyłączone"
 
 #: includes/Admin/Settings.php:310
 msgid "disabled"
@@ -662,9 +667,7 @@ msgstr "Dokumentacja"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:322
 msgid "Each token is unique and can be revoked individually if compromised"
-msgstr ""
-"Każdy token jest unikalny i może być odwołany indywidualnie jeśli został "
-"naruszony"
+msgstr "Każdy token jest unikalny i może być indywidualnie odwołany, jeśli zostanie naruszony"
 
 #: build/index.js:1 src/settings/ToolsTab.js:124
 msgid "Edit"
@@ -672,7 +675,7 @@ msgstr "Edytuj"
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:207
 msgid "Email"
-msgstr "E-mail"
+msgstr "Email"
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:102
 msgid "Email address"
@@ -696,8 +699,6 @@ msgid ""
 "Enable MCP access for entire user roles. Individual user permissions "
 "override role permissions."
 msgstr ""
-"Włącz dostęp do MCP dla całych ról użytkowników. Indywidualne uprawnienia "
-"użytkowników nadpisują uprawnienia ról."
 
 #: includes/Admin/Settings.php:158 build/index.js:1
 #: src/settings/SettingsTab.js:57
@@ -711,7 +712,7 @@ msgstr "Włącz zarządzanie magazynem"
 
 #: build/index.js:1 src/settings/ToolsTab.js:260
 msgid "Enabled"
-msgstr "Włączony"
+msgstr "Włączone"
 
 #: includes/Admin/Settings.php:310
 msgid "enabled"
@@ -723,39 +724,39 @@ msgstr "Data zakończenia (wymagana jeśli okres to \"niestandardowy\")"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:88
 msgid "Error fetching tokens"
-msgstr "Błąd pobierania tokenów"
+msgstr "Błąd podczas pobierania tokenów"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:143
 msgid "Error generating token"
-msgstr "Błąd generowania tokenu"
+msgstr "Błąd podczas generowania tokenu"
 
 #: build/index.js:1 src/settings/DocumentationTab.js:175
 msgid "Error loading documentation:"
-msgstr "Błąd ładowania dokumentacji:"
+msgstr "Błąd podczas ładowania dokumentacji:"
 
 #: build/index.js:1 src/settings/PromptsTab.js:98
 msgid "Error loading prompt details: "
-msgstr "Błąd ładowania szczegółów promptu: "
+msgstr "Błąd podczas ładowania szczegółów promptu: "
 
 #: build/index.js:1 src/settings/PromptsTab.js:51
 msgid "Error loading prompts: "
-msgstr "Błąd ładowania promptów: "
+msgstr "Błąd podczas ładowania promptów: "
 
 #: build/index.js:1 src/settings/ResourcesTab.js:148
 msgid "Error loading resource details: "
-msgstr "Błąd ładowania szczegółów zasobu: "
+msgstr "Błąd podczas ładowania szczegółów zasobu: "
 
 #: build/index.js:1 src/settings/ResourcesTab.js:93
 msgid "Error loading resources: "
-msgstr "Błąd ładowania zasobów: "
+msgstr "Błąd podczas ładowania zasobów: "
 
 #: build/index.js:1 src/settings/ToolsTab.js:50
 msgid "Error loading tools: "
-msgstr "Błąd ładowania narzędzi: "
+msgstr "Błąd podczas ładowania narzędzi: "
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:194
 msgid "Error revoking token"
-msgstr "Błąd odwoływania tokenu"
+msgstr "Błąd podczas odwoływania tokenu"
 
 #: includes/Admin/Settings.php:162
 msgid "Error saving settings. Please try again."
@@ -763,7 +764,7 @@ msgstr "Błąd podczas zapisywania ustawień. Spróbuj ponownie."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:669
 msgid "Expired"
-msgstr "Wygasł"
+msgstr "Wygasły"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:628
 msgid "Expires At"
@@ -771,7 +772,7 @@ msgstr "Wygasa"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:596
 msgid "Expires in"
-msgstr "Wygasa"
+msgstr "Wygasa za"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:602
 msgid "Expires in 1 hour"
@@ -781,7 +782,8 @@ msgstr "Wygasa za 1 godzinę"
 msgid "Export WooCommerce orders to CSV format. Returns CSV content as string."
 msgstr ""
 "Eksportuj zamówienia WooCommerce do formatu CSV. Zwraca zawartość CSV jako "
-"string."
+"string.Eksportuj zamówienia WooCommerce do formatu CSV. Zwraca zawartość CSV "
+"jako string."
 
 #: includes/Tools/Write/McpWooImportExport.php:72
 msgid ""
@@ -793,7 +795,7 @@ msgstr ""
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:237
 #: src/settings/DocumentationTab.js:141
 msgid "Failed to copy to clipboard"
-msgstr "Token skopiowany do schowka!"
+msgstr "Nie udało się skopiować do schowka"
 
 #: build/index.js:1 src/settings/PromptsTab.js:93
 msgid "Failed to load prompt details"
@@ -818,12 +820,12 @@ msgstr "Nie udało się załadować danych narzędzi"
 #: build/index.js:1 src/settings/UserPermissionsTab.js:52
 #: src/settings/UserPermissionsTab.js:59
 msgid "Failed to load user permissions."
-msgstr "Nie udało się załadować uprawnień użytkowników."
+msgstr "Nie udało się załadować uprawnień użytkownika."
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:117
 #: src/settings/UserPermissionsTab.js:124
 msgid "Failed to save user permissions."
-msgstr "Nie udało się zapisać uprawnień użytkowników."
+msgstr "Nie udało się zapisać uprawnień użytkownika."
 
 #: includes/Admin/Settings.php:301
 msgid "Failed to toggle tool state."
@@ -851,7 +853,7 @@ msgstr "Nazwa pliku dla obrazu"
 #. Author of the plugin
 #: mcp-for-woocommerce.php
 msgid "Filip Dvoran"
-msgstr "Filip Dvoran (autor)"
+msgstr "Filip Dvoran"
 
 #: includes/Tools/McpWooReports.php:92
 msgid "Filter by stock status"
@@ -859,7 +861,7 @@ msgstr "Filtruj według stanu magazynowego"
 
 #: build/index.js:1 src/settings/ToolsTab.js:170
 msgid "Filter by Type"
-msgstr "Filtruj po Typie"
+msgstr "Filtruj według typu"
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:62
 #: includes/Tools/Write/McpWordPressUsersWrite.php:106
@@ -868,11 +870,11 @@ msgstr "Imię"
 
 #: build/index.js:1 src/settings/ResourcesTab.js:270
 msgid "Full Resource Data"
-msgstr "Pełne Dane Zasobu"
+msgstr "Pełne dane zasobu"
 
 #: build/index.js:1 src/settings/ToolsTab.js:223
 msgid "Functionality Type"
-msgstr "Typ Funkcjonalności"
+msgstr "Typ funkcjonalności"
 
 #: includes/Tools/Write/McpSettingsWrite.php:169
 msgid "Gateway-specific settings (title, description, etc.)"
@@ -880,23 +882,21 @@ msgstr "Ustawienia specyficzne dla bramki (tytuł, opis, itp.)"
 
 #: build/index.js:1 src/settings/SettingsTab.js:22
 msgid "General Settings"
-msgstr "Ustawienia Ogólne"
+msgstr "Ustawienia ogólne"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:548
 msgid "Generate New Token"
-msgstr "Wygeneruj Nowy Token"
+msgstr "Wygeneruj nowy token"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:469
 msgid ""
 "Generate tokens below to allow secure access to your WordPress content "
 "through the MCP protocol."
-msgstr ""
-"Wygeneruj tokeny poniżej, aby umożliwić bezpieczny dostęp do Twojej treści "
-"WordPress przez protokół MCP."
+msgstr "Wygeneruj tokeny poniżej, aby umożliwić bezpieczny dostęp do treści WordPress poprzez protokół MCP."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
 msgid "Generated Token"
-msgstr "Wygeneruj token"
+msgstr "Wygenerowany token"
 
 #: includes/Tools/McpWooReports.php:34
 msgid ""
@@ -926,9 +926,7 @@ msgstr ""
 msgid ""
 "Grant or revoke MCP access for specific users. These settings override role-"
 "based permissions."
-msgstr ""
-"Przyznaj lub odbierz dostęp do MCP dla konkretnych użytkowników. Te "
-"ustawienia nadpisują uprawnienia oparte na rolach."
+msgstr "Przyznaj lub odbierz dostęp MCP dla konkretnych użytkowników. Te ustawienia nadpisują uprawnienia oparte na rolach."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:268
 msgid "hours"
@@ -951,12 +949,12 @@ msgstr "Jak działają"
 #. Author URI of the plugin
 #: mcp-for-woocommerce.php
 msgid "https://github.com/iOSDevSK"
-msgstr "GitHub: https://github.com/iOSDevSK"
+msgstr "https://github.com/iOSDevSK"
 
 #. Plugin URI of the plugin
 #: mcp-for-woocommerce.php
 msgid "https://github.com/iOSDevSK/mcp-for-woocommerce"
-msgstr "Repozytorium: https://github.com/iOSDevSK/mcp-for-woocommerce"
+msgstr "https://github.com/iOSDevSK/mcp-for-woocommerce"
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:69
 #: includes/Tools/Write/McpWooCouponsWrite.php:173
@@ -1003,7 +1001,11 @@ msgstr ""
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:196
 msgid "Individual User Permissions"
-msgstr "Indywidualne Uprawnienia Użytkowników"
+msgstr "Indywidualne uprawnienia użytkownika"
+
+#: includes/Auth/JwtAuth.php
+msgid "Invalid authentication token."
+msgstr "Nieprawidłowy token uwierzytelniania."
 
 #: includes/Admin/Settings.php:388 includes/Admin/Settings.php:456
 msgid "Invalid nonce"
@@ -1016,7 +1018,7 @@ msgstr ""
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:625
 msgid "Issued At"
-msgstr "Wydany"
+msgstr "Wydano"
 
 #: includes/Tools/Write/McpBackupRestore.php:84
 #: includes/Tools/Write/McpBackupRestore.php:150
@@ -1027,9 +1029,7 @@ msgstr "String JSON zawierający dane kopii zapasowej (wymagane)"
 msgid ""
 "JWT Authentication is recommended if you want to create a WooCommerce AI "
 "Agent in"
-msgstr ""
-"Uwierzytelnianie JWT jest zalecane jeśli chcesz utworzyć agenta AI "
-"WooCommerce w"
+msgstr "Uwierzytelnianie JWT jest zalecane, jeśli chcesz utworzyć agenta AI WooCommerce w"
 
 #: includes/Admin/Settings.php:177
 msgid ""
@@ -1060,9 +1060,7 @@ msgstr "Lista wszystkich dostępnych zasobów w systemie."
 msgid ""
 "List of all registered tools in the system. Use the toggles to enable or "
 "disable individual tools."
-msgstr ""
-"Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników "
-"aby włączyć lub wyłączyć poszczególne narzędzia."
+msgstr "Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników, aby włączyć lub wyłączyć poszczególne narzędzia."
 
 #: build/index.js:1 src/settings/DocumentationTab.js:155
 msgid "Loading documentation..."
@@ -1090,7 +1088,7 @@ msgstr "Ładowanie narzędzi..."
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:135
 msgid "Loading user permissions..."
-msgstr "Ładowanie uprawnień użytkowników..."
+msgstr "Ładowanie uprawnień użytkownika..."
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:92
 #: includes/Tools/Write/McpWooCouponsWrite.php:195
@@ -1104,12 +1102,7 @@ msgid ""
 "the limit, oldest revoked tokens will be automatically removed to make room. "
 "If no revoked tokens exist, new token generation will be blocked - you must "
 "revoke some existing active tokens first."
-msgstr ""
-"Maksymalnie 10 aktywnych tokenów dozwolonych na użytkownika. Przy "
-"generowaniu nowego tokenu przy limicie, najstarsze odwołane tokeny zostaną "
-"automatycznie usunięte aby zrobić miejsce. Jeśli nie ma odwołanych tokenów, "
-"generowanie nowego tokenu zostanie zablokowane - musisz najpierw odwołać "
-"niektóre istniejące aktywne tokeny."
+msgstr "Maksymalnie 10 aktywnych tokenów na użytkownika. Podczas generowania nowego tokenu przy limicie, najstarsze odwołane tokeny zostaną automatycznie usunięte, aby zwolnić miejsce. Jeśli nie ma odwołanych tokenów, generowanie nowego tokenu zostanie zablokowane - musisz najpierw odwołać niektóre istniejące aktywne tokeny."
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:120
 #: includes/Tools/Write/McpWooCouponsWrite.php:221
@@ -1119,15 +1112,13 @@ msgstr "Maksymalna kwota zamówienia dozwolona do użycia kuponu"
 #: build/index.js:1 src/settings/UserPermissionsTab.js:171
 #: src/settings/UserPermissionsTab.js:208
 msgid "MCP Access"
-msgstr "Dostęp do MCP"
+msgstr "Dostęp MCP"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:294
 msgid ""
 "MCP authentication tokens are secure, temporary credentials that allow "
 "external MCP clients to the WordPress MCP server"
-msgstr ""
-"Tokeny uwierzytelniania MCP to bezpieczne, tymczasowe dane uwierzytelniające "
-"które umożliwiają zewnętrznym klientom MCP dostęp do serwera WordPress MCP"
+msgstr "Tokeny uwierzytelniania MCP to bezpieczne, tymczasowe dane uwierzytelniające, które umożliwiają zewnętrznym klientom MCP dostęp do serwera MCP WordPress"
 
 #. Plugin Name of the plugin
 #: mcp-for-woocommerce.php includes/Admin/Settings.php:72
@@ -1137,6 +1128,10 @@ msgstr "MCP dla WooCommerce"
 #: includes/Admin/Settings.php:180
 msgid "MCP Proxy file generated at:"
 msgstr "Plik proxy MCP wygenerowany w:"
+
+#: includes/Admin/Settings.php
+msgid "MCP Server Configuration"
+msgstr "Konfiguracja serwera MCP"
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:172
 msgid "Media attachment ID (required)"
@@ -1195,7 +1190,7 @@ msgstr "Minimalna kwota zamówienia wymagana do użycia kuponu"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:408
 msgid "Must be manually revoked if compromised"
-msgstr "Muszą być ręcznie unieważniane w przypadku naruszenia"
+msgstr "Musi być ręcznie odwołany, jeśli zostanie naruszony"
 
 #: build/index.js:1 src/settings/PromptsTab.js:145
 #: src/settings/ResourcesTab.js:209 src/settings/ToolsTab.js:218
@@ -1215,9 +1210,7 @@ msgstr "Nigdy nie wygasa"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:360
 msgid "Never share tokens in public repositories, emails, or chat messages"
-msgstr ""
-"Nigdy nie udostępniaj tokenów w publicznych repozytoriach, emailach lub "
-"wiadomościach czatu"
+msgstr "Nigdy nie udostępniaj tokenów w publicznych repozytoriach, e-mailach ani wiadomościach czatu"
 
 #: includes/Admin/Settings.php:168 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:533
@@ -1253,8 +1246,8 @@ msgid ""
 "New price (for set), amount to add/subtract (for fixed), or percentage (for "
 "percentage, e.g., \"10\" for +10%, \"-5\" for -5%)"
 msgstr ""
-"Nowa cena (dla set), kwota do dodania/odjęcia (dla fixed), lub procent "
-"(dla percentage, np. \"10\" dla +10%, \"-5\" dla -5%)"
+"Nowa cena (dla set), kwota do dodania/odjęcia (dla fixed), lub procent (dla "
+"percentage, np. \"10\" dla +10%, \"-5\" dla -5%)"
 
 #: includes/Tools/Write/McpWordPressUsersWrite.php:176
 msgid "New role (required)"
@@ -1274,7 +1267,7 @@ msgstr "Brak dostępnego opisu"
 
 #: build/index.js:1 src/settings/ResourcesTab.js:282
 msgid "No details available for this resource."
-msgstr "Brak dostępnych szczegółów dla tego zasobu."
+msgstr "Brak szczegółów dla tego zasobu."
 
 #: build/index.js:1 src/settings/PromptsTab.js:136
 msgid "No prompts are currently available."
@@ -1294,7 +1287,7 @@ msgstr "Obecnie nie ma zarejestrowanych narzędzi."
 
 #: build/index.js:1 src/settings/ToolsTab.js:209
 msgid "No tools match your filters."
-msgstr "Brak narzędzi pasujących do filtrów."
+msgstr "Żadne narzędzia nie pasują do filtrów."
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:233
 msgid "No users found."
@@ -1558,7 +1551,7 @@ msgstr "Waga produktu"
 
 #: build/index.js:1 src/settings/PromptsTab.js:180
 msgid "Prompt Details"
-msgstr "Szczegóły Promptu"
+msgstr "Szczegóły promptu"
 
 #: build/index.js:1 src/settings/index.js:82
 msgid "Prompts"
@@ -1592,24 +1585,21 @@ msgstr "Odczyt"
 
 #: build/index.js:1 src/settings/ToolsTab.js:155
 msgid "Registered Tools"
-msgstr "Zarejestrowane Narzędzia"
+msgstr "Zarejestrowane narzędzia"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:420
 msgid "Regularly audit and rotate never-expiring tokens"
-msgstr "Regularnie audytuj i rotuj tokeny bez terminu ważności"
+msgstr "Regularnie audytuj i rotuj tokeny bez wygaśnięcia"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:378
 msgid "Regularly review and clean up unused or expired tokens"
-msgstr "Regularnie przeglądaj i usuwaj nieużywane lub wygasłe tokeny"
+msgstr "Regularnie przeglądaj i czyść nieużywane lub wygasłe tokeny"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:461
 msgid ""
 "Remember: These tokens provide access based on your user permissions. If you "
 "can see it in WordPress, applications using your token can see it too."
-msgstr ""
-"Pamiętaj: Te tokeny zapewniają dostęp na podstawie Twoich uprawnień "
-"użytkownika. Jeśli możesz to zobaczyć w WordPress, aplikacje używające "
-"Twojego tokenu również mogą to zobaczyć."
+msgstr "Pamiętaj: Te tokeny zapewniają dostęp na podstawie uprawnień użytkownika. Jeśli możesz to zobaczyć w WordPress, aplikacje używające Twojego tokenu również mogą to zobaczyć."
 
 #: includes/Admin/Settings.php:174 build/index.js:1
 #: src/settings/SettingsTab.js:102
@@ -1624,7 +1614,7 @@ msgstr "Wymagana właściwość '%s' nie istnieje we właściwościach."
 
 #: build/index.js:1 src/settings/ResourcesTab.js:243
 msgid "Resource Details"
-msgstr "Szczegóły Zasobu"
+msgstr "Szczegóły zasobu"
 
 #: build/index.js:1 src/settings/index.js:76
 msgid "Resources"
@@ -1681,16 +1671,15 @@ msgstr "Nazwa recenzenta (wymagana)"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:690
 msgid "Revoke"
-msgstr "Unieważnij"
+msgstr "Odwołaj"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:372
 msgid "Revoke tokens immediately if you suspect they may be compromised"
-msgstr ""
-"Odwołaj tokeny natychmiast jeśli podejrzewasz że mogły zostać naruszone"
+msgstr "Odwołaj tokeny natychmiast, jeśli podejrzewasz, że mogą być naruszone"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:659
 msgid "Revoked"
-msgstr "Unieważniony"
+msgstr "Odwołany"
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:170
 #: src/settings/UserPermissionsTab.js:206
@@ -1699,11 +1688,11 @@ msgstr "Rola"
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:161
 msgid "Role-Based Permissions"
-msgstr "Uprawnienia Oparte na Rolach"
+msgstr "Uprawnienia oparte na rolach"
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:243
 msgid "Save Permissions"
-msgstr "Zapisz Uprawnienia"
+msgstr "Zapisz uprawnienia"
 
 #: includes/Admin/Settings.php:160
 msgid "Save Settings"
@@ -1727,11 +1716,15 @@ msgstr "Ostrzeżenie bezpieczeństwa"
 
 #: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
 msgid "Settings"
-msgstr "Ustawienia MCP"
+msgstr "Ustawienia"
 
 #: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
 msgid "Settings saved successfully!"
 msgstr "Ustawienia zapisane pomyślnie!"
+
+#: includes/Admin/Settings.php
+msgid "Settings saved successfully."
+msgstr "Ustawienia zapisane pomyślnie."
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:92
 #: includes/Tools/Write/McpWooCustomersWrite.php:163
@@ -1741,7 +1734,7 @@ msgstr "Adres wysyłkowy"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:402
 msgid "Should only be used in highly controlled environments"
-msgstr "Powinny być używane tylko w wysoce kontrolowanych środowiskach"
+msgstr "Powinno być używane tylko w bardzo kontrolowanych środowiskach"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:705
 msgid "Showing first 10 tokens. Total tokens:"
@@ -1774,7 +1767,7 @@ msgstr "Początek tygodnia (0=niedziela, 1=poniedziałek, itp.)"
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:630
 #: src/settings/ToolsTab.js:228
 msgid "Status"
-msgstr "Stan"
+msgstr "Status"
 
 #: includes/Tools/Write/McpWooProductsWrite.php:222
 msgid "Stock quantity"
@@ -1843,26 +1836,22 @@ msgid "The required field must be an array."
 msgstr "Pole wymagane musi być tablicą."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:447
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:439
 msgid ""
 "These tokens are exclusively for MCP protocol access (stdio and "
 "streamable/HTTP). They will not work with WordPress REST API endpoints or "
 "other authentication systems."
-msgstr ""
-"Te tokeny są wyłącznie do dostępu przez protokół MCP (stdio i "
-"streamable/HTTP). Nie będą działać z endpointami WordPress REST API ani "
-"innymi systemami uwierzytelniania."
+msgstr "Te tokeny są wyłącznie do dostępu protokołu MCP (stdio i streamable/HTTP). Nie będą działać z punktami końcowymi REST API WordPress ani innymi systemami uwierzytelniania."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:301
 msgid ""
 "These tokens are implemented using JWT (JSON Web Tokens), providing secure "
 "and stateless authentication."
-msgstr ""
-"Te tokeny są implementowane przy użyciu JWT (JSON Web Tokens), zapewniając "
-"bezpieczne i bezstanowe uwierzytelnianie."
+msgstr "Te tokeny są implementowane przy użyciu JWT (JSON Web Tokens), zapewniając bezpieczne i bezstanowe uwierzytelnianie."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:316
 msgid "They provide access to MCP route endpoints for your WordPress content"
-msgstr "Zapewniają dostęp do endpointów tras MCP dla Twojej treści WordPress"
+msgstr "Zapewniają dostęp do punktów końcowych tras MCP dla treści WordPress"
 
 #: build/index.js:1 src/settings/index.js:330
 msgid "This feature is only available when MCP functionality is enabled."
@@ -1904,23 +1893,21 @@ msgstr "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP.
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:584
 msgid "Token copied!"
-msgstr "Token skopiowany do schowka!"
+msgstr "Token skopiowany!"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:501
 msgid "Token Duration"
-msgstr "Czas Trwania Tokenu"
+msgstr "Czas trwania tokenu"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:310
 msgid ""
 "Tokens are generated with your current user permissions and expire "
 "automatically"
-msgstr ""
-"Tokeny są generowane z Twoimi aktualnymi uprawnieniami użytkownika i "
-"wygasają automatycznie"
+msgstr "Tokeny są generowane z aktualnymi uprawnieniami użytkownika i wygasają automatycznie"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:328
 msgid "Tokens automatically inherit your user role and capabilities"
-msgstr "Tokeny automatycznie dziedziczą Twoją rolę użytkownika i uprawnienia"
+msgstr "Tokeny automatycznie dziedziczą rolę użytkownika i możliwości"
 
 #. translators: %1$s is the tool name, %2$s is the status (enabled/disabled).
 #: includes/Admin/Settings.php:164 includes/Admin/Settings.php:166
@@ -2094,7 +2081,7 @@ msgstr "URL dla elementu menu"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:366
 msgid "Use the shortest expiration time that meets your needs"
-msgstr "Używaj najkrótszego czasu wygaśnięcia który spełnia Twoje potrzeby"
+msgstr "Użyj najkrótszego czasu wygaśnięcia, który spełnia Twoje potrzeby"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:623
 #: src/settings/UserPermissionsTab.js:205
@@ -2120,11 +2107,11 @@ msgstr "ID użytkownika do którego przypisać wpisy i komentarze"
 
 #: build/index.js:1 src/settings/index.js:59
 msgid "User Permissions"
-msgstr "Uprawnienia Użytkowników"
+msgstr "Uprawnienia użytkownika"
 
 #: build/index.js:1 src/settings/UserPermissionsTab.js:154
 msgid "User Permissions for MCP"
-msgstr "Uprawnienia Użytkowników dla MCP"
+msgstr "Uprawnienia użytkownika dla MCP"
 
 #: includes/Admin/Settings.php:486 build/index.js:1
 #: src/settings/UserPermissionsTab.js:112
@@ -2142,11 +2129,11 @@ msgstr "Nazwa użytkownika (wymagana)"
 #: build/index.js:1 src/settings/PromptsTab.js:166
 #: src/settings/ResourcesTab.js:232
 msgid "View"
-msgstr "Zobacz"
+msgstr "Wyświetl"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:288
 msgid "What are Authentication Tokens?"
-msgstr "Czym są Tokeny Uwierzytelniania?"
+msgstr "Czym są tokeny uwierzytelniania?"
 
 #: includes/Admin/Settings.php:175
 msgid ""
@@ -2162,10 +2149,7 @@ msgstr ""
 msgid ""
 "When enabled, all MCP requests must include a valid JWT token. When disabled,"
 " MCP endpoints are accessible without authentication (readonly mode only)."
-msgstr ""
-"Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy "
-"wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb "
-"tylko do odczytu)."
+msgstr "Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb tylko do odczytu)."
 
 #: includes/Admin/Settings.php:179
 msgid ""
@@ -2242,26 +2226,27 @@ msgstr "Czy aktualizować istniejące wpisy/strony po tytule"
 msgid "Whether to update existing products by SKU"
 msgstr "Czy aktualizować istniejące produkty po SKU"
 
+#: wordpress-mcp.php
+msgid "Woo MCP"
+msgstr "Woo MCP"
+
+#: includes/Admin/Settings.php
+msgid "Woo MCP Settings"
+msgstr "Ustawienia Woo MCP"
+
 #: build/index.js:1 src/settings/SettingsTab.js:47
 msgid ""
 "WordPress permalinks are not set to \"Post name\" structure. For proper "
 "product link generation, please go to WordPress Admin → Settings → "
 "Permalinks and select \"Post name\" structure."
-msgstr ""
-"Bezpośrednie odnośniki WordPress nie są ustawione na strukturę \"Nazwa "
-"wpisu\". Dla prawidłowego generowania linków produktów, przejdź do WordPress "
-"Admin → Ustawienia → Bezpośrednie odnośniki i wybierz strukturę \"Nazwa "
-"wpisu\"."
+msgstr "Stałe linki WordPress nie są ustawione na strukturę \"Nazwa wpisu\". Aby prawidłowo generować linki produktów, przejdź do WordPress Admin → Ustawienia → Stałe linki i wybierz strukturę \"Nazwa wpisu\"."
 
 #: build/index.js:1 src/settings/SettingsTab.js:35
 msgid ""
 "WordPress REST API appears to be disabled. This plugin requires REST API to "
 "function properly. Please contact your administrator to ensure the WordPress "
 "REST API is enabled."
-msgstr ""
-"WordPress REST API wydaje się być wyłączone. Ta wtyczka wymaga REST API do "
-"prawidłowego działania. Skontaktuj się z administratorem, aby upewnić się, "
-"że WordPress REST API jest włączone."
+msgstr "REST API WordPress wydaje się być wyłączone. Ta wtyczka wymaga REST API do prawidłowego działania. Skontaktuj się z administratorem, aby upewnić się, że REST API WordPress jest włączone."
 
 #: build/index.js:1 src/settings/ToolsTab.js:122
 msgid "Write"
@@ -2270,9 +2255,7 @@ msgstr "Zapis"
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:85
 msgid ""
 "You do not have permission to access JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do dostępu do tokenów JWT. Wymagane są uprawnienia "
-"administratora."
+msgstr "Nie masz uprawnień do dostępu do tokenów JWT. Wymagane uprawnienia administratora."
 
 #: includes/Admin/Settings.php:394 includes/Admin/Settings.php:462
 msgid "You do not have permission to access this."
@@ -2281,9 +2264,7 @@ msgstr "Nie masz uprawnień do zarządzania tokenami."
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:140
 msgid ""
 "You do not have permission to generate JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do generowania tokenów JWT. Wymagane są uprawnienia "
-"administratora."
+msgstr "Nie masz uprawnień do generowania tokenów JWT. Wymagane uprawnienia administratora."
 
 #: includes/Admin/Settings.php:192 includes/Admin/Settings.php:283
 msgid "You do not have permission to perform this action."
@@ -2292,9 +2273,7 @@ msgstr "Nie masz uprawnień do zarządzania tokenami."
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:191
 msgid ""
 "You do not have permission to revoke JWT tokens. Admin privileges required."
-msgstr ""
-"Nie masz uprawnień do odwoływania tokenów JWT. Wymagane są uprawnienia "
-"administratora."
+msgstr "Nie masz uprawnień do odwoływania tokenów JWT. Wymagane uprawnienia administratora."
 
 #: includes/Auth/JwtAuth.php:212 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:82
@@ -2304,7 +2283,7 @@ msgstr ""
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:137
 msgid "You need to be logged in as an administrator to generate JWT tokens."
-msgstr "Musisz być zalogowany jako administrator, aby wygenerować tokeny JWT."
+msgstr "Musisz być zalogowany jako administrator, aby generować tokeny JWT."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:188
 msgid "You need to be logged in as an administrator to revoke JWT tokens."
@@ -2312,7 +2291,7 @@ msgstr "Musisz być zalogowany jako administrator, aby odwołać tokeny JWT."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:619
 msgid "Your Active Tokens"
-msgstr "Twoje Aktywne Tokeny"
+msgstr "Twoje aktywne tokeny"
 
 #: includes/Tools/Write/McpSettingsWrite.php:108
 msgid "Zone ID (0 to create new zone)"
@@ -2328,28 +2307,28 @@ msgstr "Kolejność strefy"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:439
 msgid "ℹ️ Important Note:"
-msgstr "Ważna uwaga:"
+msgstr "ℹ️ Ważna uwaga:"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:486
 msgid "ℹ️ Token Limit:"
-msgstr "Limit tokenów:"
+msgstr "ℹ️ Limit tokenów:"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:348
 msgid "⚠️ Important Security Notes:"
-msgstr "Ważne Wskazówki Bezpieczeństwa:"
+msgstr "⚠️ Ważne uwagi bezpieczeństwa:"
 
 #: build/index.js:1 src/settings/SettingsTab.js:44
 msgid "⚠️ Incorrect Permalinks Configuration"
-msgstr "⚠️ Nieprawidłowa konfiguracja bezpośrednich odnośników"
+msgstr "⚠️ Nieprawidłowa konfiguracja stałych linków"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:527
 msgid "⚠️ Security Warning:"
-msgstr "Ostrzeżenie bezpieczeństwa"
+msgstr "⚠️ Ostrzeżenie bezpieczeństwa:"
 
 #: build/index.js:1 src/settings/SettingsTab.js:32
 msgid "⚠️ WordPress REST API Disabled"
-msgstr "⚠️ WordPress REST API wyłączone"
+msgstr "⚠️ REST API WordPress wyłączone"
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:398
 msgid "🚨 Never-Expiring Tokens:"
-msgstr "Tokeny bez wygaśnięcia:"
+msgstr "🚨 Tokeny bez wygaśnięcia:"
