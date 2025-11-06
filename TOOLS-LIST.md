@@ -1,205 +1,311 @@
-# Pełna lista narzędzi MCP for WooCommerce
+# Complete List of MCP Tools - WooQuant
 
-Ten dokument zawiera kompletną listę wszystkich dostępnych narzędzi MCP w wtyczce WooQuant (rozszerzona wersja mcp-for-woocommerce).
+This document contains a complete list of all 99 MCP tools available in the WooQuant plugin (extended version of mcp-for-woocommerce).
 
-## Narzędzia tylko do odczytu (Read) - 36 narzędzi
-
-### Produkty WooCommerce
-
-1. **wc_products_search** - Główne narzędzie wyszukiwania produktów (uniwersalne dla wszystkich typów sklepów)
-2. **wc_get_product** - Pobierz produkt po ID
-3. **wc_get_product_variations** - Pobierz wszystkie warianty produktu
-4. **wc_get_product_variation** - Pobierz konkretny wariant po ID
-5. **wc_intelligent_search** - Zaawansowane inteligentne wyszukiwanie produktów
-6. **wc_analyze_search_intent** - Analiza intencji wyszukiwania użytkownika
-7. **wc_analyze_search_intent_helper** - Pomocnik do analizy intencji wyszukiwania
-8. **wc_get_products_by_brand** - Produkty według marki
-9. **wc_get_products_by_category** - Produkty według kategorii
-10. **wc_get_products_by_attributes** - Produkty według atrybutów
-11. **wc_get_products_filtered** - Produkty z wieloma filtrami
-12. **wc_get_product_detailed** - Szczegółowe informacje o produkcie
-
-### Kategorie, tagi i atrybuty
-
-13. **wc_get_categories** - Lista kategorii produktów
-14. **wc_get_tags** - Lista tagów produktów
-15. **wc_get_product_attributes** - Definicje atrybutów produktów
-16. **wc_get_product_attribute** - Atrybut po ID
-17. **wc_get_attribute_terms** - Terminy atrybutów (np. Czerwony, Niebieski dla Koloru)
-
-### Zamówienia
-
-18. **wc_get_orders** - Lista zamówień WooCommerce
-19. **wc_get_order** - Zamówienie po ID
-
-### Recenzje
-
-20. **wc_get_product_reviews** - Lista recenzji produktu
-21. **wc_get_product_review** - Recenzja po ID
-
-### Wysyłka i płatności
-
-22. **wc_get_shipping_zones** - Strefy wysyłki
-23. **wc_get_shipping_zone** - Strefa wysyłki po ID
-24. **wc_get_shipping_methods** - Metody wysyłki
-25. **wc_get_shipping_locations** - Lokalizacje wysyłki
-26. **wc_get_payment_gateways** - Bramki płatności
-27. **wc_get_payment_gateway** - Bramka płatności po ID
-
-### Podatki i system
-
-28. **wc_get_tax_classes** - Klasy podatkowe
-29. **wc_get_tax_rates** - Stawki podatkowe
-30. **wc_get_system_status** - Status systemu WooCommerce
-31. **wc_get_system_tools** - Narzędzia systemowe
-
-### Treść WordPress
-
-32. **wordpress_posts_list** - Lista postów WordPress
-33. **wordpress_posts_get** - Post po ID
-34. **wordpress_pages_list** - Lista stron WordPress
-35. **wordpress_pages_get** - Strona po ID
-
-### Inne
-
-36. **wordpress_site_info** - Informacje o witrynie WordPress
+**For Polish version:** See [TOOLS-LIST.pl.md](TOOLS-LIST.pl.md)
 
 ---
 
-## Narzędzia zapisu (Write) - 63 narzędzia
+## Read-Only Tools - 36 tools
 
-**UWAGA:** Narzędzia Write są dostępne tylko po włączeniu opcji "Włącz operacje zapisu" w ustawieniach wtyczki.
+These tools only retrieve information and never modify your data. Safe to use anytime!
 
-### Produkty WooCommerce (4 narzędzia)
+### WooCommerce Products
 
-1. **wc_create_product** - Utwórz nowy produkt
-2. **wc_update_product** - Aktualizuj istniejący produkt
-3. **wc_delete_product** - Usuń produkt
-4. **wc_bulk_update_products** - Masowa aktualizacja produktów
+1. **wc_products_search** - Main product search tool (universal for all store types)
+2. **wc_get_product** - Get product by ID
+3. **wc_get_product_variations** - Get all product variations
+4. **wc_get_product_variation** - Get specific variation by ID
+5. **wc_intelligent_search** - Advanced intelligent product search
+6. **wc_analyze_search_intent** - Analyze user search intent
+7. **wc_analyze_search_intent_helper** - Helper for search intent analysis
+8. **wc_get_products_by_brand** - Products by brand
+9. **wc_get_products_by_category** - Products by category
+10. **wc_get_products_by_attributes** - Products by attributes
+11. **wc_get_products_filtered** - Products with multiple filters
+12. **wc_get_product_detailed** - Detailed product information
 
-### Zamówienia WooCommerce (3 narzędzia)
+### Categories, Tags & Attributes
 
-5. **wc_create_order** - Utwórz nowe zamówienie
-6. **wc_update_order_status** - Aktualizuj status zamówienia
-7. **wc_add_order_note** - Dodaj notatkę do zamówienia
+13. **wc_get_categories** - List product categories
+14. **wc_get_tags** - List product tags
+15. **wc_get_product_attributes** - Product attribute definitions
+16. **wc_get_product_attribute** - Get attribute by ID
+17. **wc_get_attribute_terms** - Attribute terms (e.g., Red, Blue for Color)
 
-### Kategorie produktów (4 narzędzia)
+### Orders
 
-8. **wc_create_category** - Utwórz kategorię
-9. **wc_update_category** - Aktualizuj kategorię
-10. **wc_delete_category** - Usuń kategorię
-11. **wc_reorder_categories** - Zmień kolejność kategorii
+18. **wc_get_orders** - List WooCommerce orders
+19. **wc_get_order** - Get order by ID
 
-### Tagi produktów (3 narzędzia)
+### Reviews
 
-12. **wc_create_tag** - Utwórz tag
-13. **wc_update_tag** - Aktualizuj tag
-14. **wc_delete_tag** - Usuń tag
+20. **wc_get_product_reviews** - List product reviews
+21. **wc_get_product_review** - Get review by ID
 
-### Atrybuty produktów (4 narzędzia)
+### Shipping & Payment
 
-15. **wc_create_attribute** - Utwórz atrybut globalny
-16. **wc_update_attribute** - Aktualizuj atrybut
-17. **wc_delete_attribute** - Usuń atrybut
-18. **wc_add_attribute_terms** - Dodaj terminy do atrybutu
+22. **wc_get_shipping_zones** - Shipping zones
+23. **wc_get_shipping_zone** - Get shipping zone by ID
+24. **wc_get_shipping_methods** - Shipping methods
+25. **wc_get_shipping_locations** - Shipping locations
+26. **wc_get_payment_gateways** - Payment gateways
+27. **wc_get_payment_gateway** - Get payment gateway by ID
 
-### Kupcy (3 narzędzia)
+### Tax & System
 
-19. **wc_create_customer** - Utwórz klienta
-20. **wc_update_customer** - Aktualizuj klienta
-21. **wc_delete_customer** - Usuń klienta
+28. **wc_get_tax_classes** - Tax classes
+29. **wc_get_tax_rates** - Tax rates
+30. **wc_get_system_status** - WooCommerce system status
+31. **wc_get_system_tools** - System tools
 
-### Kupony (3 narzędzia)
+### WordPress Content
 
-22. **wc_create_coupon** - Utwórz kupon
-23. **wc_update_coupon** - Aktualizuj kupon
-24. **wc_delete_coupon** - Usuń kupon
+32. **wordpress_posts_list** - List WordPress posts
+33. **wordpress_posts_get** - Get post by ID
+34. **wordpress_pages_list** - List WordPress pages
+35. **wordpress_pages_get** - Get page by ID
 
-### Recenzje (4 narzędzia)
+### Other
 
-25. **wc_create_review** - Utwórz recenzję
-26. **wc_update_review** - Aktualizuj recenzję
-27. **wc_delete_review** - Usuń recenzję
-28. **wc_approve_review** - Zatwierdź recenzję
-
-### Operacje masowe (4 narzędzia)
-
-29. **wc_bulk_create_products** - Masowe tworzenie produktów
-30. **wc_bulk_delete_products** - Masowe usuwanie produktów
-31. **wc_bulk_update_prices** - Masowa aktualizacja cen
-32. **wc_bulk_update_stock** - Masowa aktualizacja stanu magazynowego
-
-### Import/Eksport (4 narzędzia)
-
-33. **wc_import_products_csv** - Import produktów z CSV
-34. **wc_export_products_csv** - Eksport produktów do CSV
-35. **wc_import_orders_csv** - Import zamówień z CSV
-36. **wc_export_orders_csv** - Eksport zamówień do CSV
-
-### Posty WordPress (4 narzędzia)
-
-37. **wp_create_post** - Utwórz post
-38. **wp_update_post** - Aktualizuj post
-39. **wp_delete_post** - Usuń post
-40. **wp_publish_post** - Opublikuj post
-
-### Strony WordPress (3 narzędzia)
-
-41. **wp_create_page** - Utwórz stronę
-42. **wp_update_page** - Aktualizuj stronę
-43. **wp_delete_page** - Usuń stronę
-
-### Media WordPress (4 narzędzia)
-
-44. **wp_upload_image** - Prześlij obraz
-45. **wp_upload_file** - Prześlij plik
-46. **wp_delete_media** - Usuń media
-47. **wp_update_media_metadata** - Aktualizuj metadane mediów
-
-### Użytkownicy WordPress (4 narzędzia)
-
-48. **wp_create_user** - Utwórz użytkownika
-49. **wp_update_user** - Aktualizuj użytkownika
-50. **wp_delete_user** - Usuń użytkownika
-51. **wp_change_user_role** - Zmień rolę użytkownika
-
-### Menu WordPress (4 narzędzia)
-
-52. **wp_create_menu** - Utwórz menu
-53. **wp_add_menu_item** - Dodaj element menu
-54. **wp_update_menu** - Aktualizuj menu
-55. **wp_delete_menu** - Usuń menu
-
-### Ustawienia (4 narzędzia)
-
-56. **wc_update_settings** - Aktualizuj ustawienia WooCommerce
-57. **wp_update_settings** - Aktualizuj ustawienia WordPress
-58. **wc_update_shipping_zone** - Aktualizuj strefę wysyłki
-59. **wc_update_payment_gateway** - Aktualizuj bramkę płatności
-
-### Backup i przywracanie (4 narzędzia)
-
-60. **wc_backup_products** - Kopia zapasowa produktów
-61. **wc_restore_products** - Przywróć produkty z kopii
-62. **wp_backup_content** - Kopia zapasowa treści WordPress
-63. **wp_restore_content** - Przywróć treść z kopii
+36. **wordpress_site_info** - WordPress site information
 
 ---
 
-## Podsumowanie
+## Write/Action Tools - 63 tools
 
-- **Narzędzia Read:** 36
-- **Narzędzia Write:** 63
-- **Razem:** 99 narzędzi MCP
+**WARNING:** Write tools can create, modify, or delete data. Only available when "Enable Write Operations" is turned ON in plugin settings.
 
-## Typy funkcjonalności
+### WooCommerce Products (4 tools)
 
-- **read** - Tylko odczyt (36 narzędzi)
-- **write** - Zapis/edycja/usuwanie (63 narzędzia)
+1. **wc_create_product** - Create new product
+2. **wc_update_product** - Update existing product
+3. **wc_delete_product** - Delete product
+4. **wc_bulk_update_products** - Bulk update products
 
-## Uwagi
+### WooCommerce Orders (3 tools)
 
-1. Wszystkie narzędzia Write wymagają włączenia opcji "Włącz operacje zapisu" w ustawieniach wtyczki.
-2. Narzędzia Write wymagają odpowiednich uprawnień użytkownika (np. `manage_woocommerce`, `edit_posts`).
-3. Niektóre narzędzia Write mogą być destrukcyjne (np. `wc_delete_product`, `wp_delete_user`) - używaj z ostrożnością.
+5. **wc_create_order** - Create new order
+6. **wc_update_order_status** - Update order status
+7. **wc_add_order_note** - Add note to order
 
+### Product Categories (4 tools)
+
+8. **wc_create_category** - Create category
+9. **wc_update_category** - Update category
+10. **wc_delete_category** - Delete category
+11. **wc_reorder_categories** - Reorder categories
+
+### Product Tags (3 tools)
+
+12. **wc_create_tag** - Create tag
+13. **wc_update_tag** - Update tag
+14. **wc_delete_tag** - Delete tag
+
+### Product Attributes (4 tools)
+
+15. **wc_create_attribute** - Create global attribute
+16. **wc_update_attribute** - Update attribute
+17. **wc_delete_attribute** - Delete attribute
+18. **wc_add_attribute_terms** - Add terms to attribute
+
+### Customers (3 tools)
+
+19. **wc_create_customer** - Create customer
+20. **wc_update_customer** - Update customer
+21. **wc_delete_customer** - Delete customer
+
+### Coupons (3 tools)
+
+22. **wc_create_coupon** - Create coupon
+23. **wc_update_coupon** - Update coupon
+24. **wc_delete_coupon** - Delete coupon
+
+### Reviews (4 tools)
+
+25. **wc_create_review** - Create review
+26. **wc_update_review** - Update review
+27. **wc_delete_review** - Delete review
+28. **wc_approve_review** - Approve review
+
+### Bulk Operations (4 tools)
+
+29. **wc_bulk_create_products** - Bulk create products
+30. **wc_bulk_delete_products** - Bulk delete products
+31. **wc_bulk_update_prices** - Bulk update prices
+32. **wc_bulk_update_stock** - Bulk update stock levels
+
+### Import/Export (4 tools)
+
+33. **wc_import_products_csv** - Import products from CSV
+34. **wc_export_products_csv** - Export products to CSV
+35. **wc_import_orders_csv** - Import orders from CSV
+36. **wc_export_orders_csv** - Export orders to CSV
+
+### WordPress Posts (4 tools)
+
+37. **wp_create_post** - Create post
+38. **wp_update_post** - Update post
+39. **wp_delete_post** - Delete post
+40. **wp_publish_post** - Publish post
+
+### WordPress Pages (3 tools)
+
+41. **wp_create_page** - Create page
+42. **wp_update_page** - Update page
+43. **wp_delete_page** - Delete page
+
+### WordPress Media (4 tools)
+
+44. **wp_upload_image** - Upload image
+45. **wp_upload_file** - Upload file
+46. **wp_delete_media** - Delete media
+47. **wp_update_media_metadata** - Update media metadata
+
+### WordPress Users (4 tools)
+
+48. **wp_create_user** - Create user
+49. **wp_update_user** - Update user
+50. **wp_delete_user** - Delete user
+51. **wp_change_user_role** - Change user role
+
+### WordPress Menus (4 tools)
+
+52. **wp_create_menu** - Create menu
+53. **wp_add_menu_item** - Add menu item
+54. **wp_update_menu** - Update menu
+55. **wp_delete_menu** - Delete menu
+
+### Settings (4 tools)
+
+56. **wc_update_settings** - Update WooCommerce settings
+57. **wp_update_settings** - Update WordPress settings
+58. **wc_update_shipping_zone** - Update shipping zone
+59. **wc_update_payment_gateway** - Update payment gateway
+
+### Backup & Restore (4 tools)
+
+60. **wc_backup_products** - Backup products
+61. **wc_restore_products** - Restore products from backup
+62. **wp_backup_content** - Backup WordPress content
+63. **wp_restore_content** - Restore content from backup
+
+---
+
+## Summary
+
+- **Read Tools:** 36
+- **Write Tools:** 63
+- **Total:** 99 MCP tools
+
+## Functionality Types
+
+- **read** - Read-only (36 tools) - Safe, no modifications
+- **create** - Create new items
+- **update** - Modify existing items
+- **delete** - Remove items
+- **action** - Perform specific actions
+
+---
+
+## Important Notes
+
+1. **All Write tools** require "Enable Write Operations" to be turned ON in plugin settings.
+2. **Write tools require proper permissions** (e.g., `manage_woocommerce`, `edit_posts`).
+3. **Some Write tools are destructive** (e.g., `wc_delete_product`, `wp_delete_user`) - use with caution!
+4. **Always backup before** using destructive operations.
+5. **Test in staging environment** first for bulk operations.
+
+---
+
+## Tool Categories by Function
+
+### Product Management
+- Search & find products (12 read tools)
+- Create, update, delete products (4 write tools)
+- Bulk operations (4 tools)
+- Categories, tags, attributes management (11 write tools)
+
+### Order Management
+- View orders and details (2 read tools)
+- Create orders, update status, add notes (3 write tools)
+
+### Customer Management
+- Customer data (included in orders)
+- Create, update, delete customers (3 write tools)
+
+### Marketing & Sales
+- Coupons management (3 write tools)
+- Reviews management (2 read + 4 write tools)
+- Sales analytics (via AI prompts)
+
+### Content Management
+- Posts and pages (4 read + 7 write tools)
+- Media library (4 write tools)
+- Menus (4 write tools)
+
+### Store Configuration
+- Shipping & payment (8 read + 2 write tools)
+- Tax settings (2 read tools)
+- System info (2 read tools)
+- General settings (2 write tools)
+
+### Data Operations
+- Import/Export CSV (4 tools)
+- Backup/Restore (4 tools)
+
+---
+
+## How AI Uses These Tools
+
+AI assistants like Claude and Cursor automatically use these tools when you ask questions:
+
+**Examples:**
+
+**You ask:** "Show me products on sale"  
+**AI uses:** `wc_products_search` with sale filter
+
+**You ask:** "Create a blog post about new products"  
+**AI uses:** `wc_products_search` to find products, then `wp_create_post` to create content
+
+**You ask:** "What's the status of order 12345?"  
+**AI uses:** `wc_get_order` with ID 12345
+
+**You ask:** "Export all products to CSV"  
+**AI uses:** `wc_export_products_csv`
+
+You don't need to remember tool names - just ask in natural language!
+
+---
+
+## Safety Features
+
+### Built-in Protection:
+- ✅ **Read-only by default** - Write operations must be explicitly enabled
+- ✅ **WordPress capabilities** - Respects user permissions
+- ✅ **Confirmation prompts** - AI asks before destructive operations
+- ✅ **Backup recommendations** - AI suggests backups before risky operations
+- ✅ **Audit trail** - WordPress logs all changes
+
+### Best Practices:
+1. Start with read-only mode
+2. Enable writes only when needed
+3. Test in staging first
+4. Keep regular backups
+5. Limit MCP access to trusted users only
+
+---
+
+## Need Help?
+
+- 📖 **Full Documentation:** [README.md](README.md)
+- 🚀 **Quick Start Guide:** [QUICK-START.md](QUICK-START.md)
+- 🤖 **Prompt Guide:** [PROMPTS-LIST.md](PROMPTS-LIST.md)
+- 🐛 **Report Issues:** [GitHub Issues](https://github.com/jeden-/wooquant/issues)
+
+---
+
+**Version:** 1.1.9  
+**Last Updated:** 2025-01-06
+
+Made with ❤️ for the WordPress & WooCommerce community
