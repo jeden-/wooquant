@@ -64,14 +64,14 @@ class Settings {
 		$plugin_data = get_file_data( MCPFOWO_PATH . 'mcp-for-woocommerce.php', array( 'Version' => 'Version' ) );
 		$version = ! empty( $plugin_data['Version'] ) ? $plugin_data['Version'] : '';
 		
-		// Create page title with version
-		$page_title = trim( sprintf( 'MCP for WooCommerce %s', $version ) );
+	// Create page title with version
+	$page_title = trim( sprintf( 'WooQuant %s', $version ) );
 		
-		add_options_page(
-			$page_title,
-			__( 'MCP for WooCommerce', 'mcp-for-woocommerce' ),
-			'manage_options',
-			'mcpfowo-settings',
+	add_options_page(
+		$page_title,
+		__( 'WooQuant', 'mcp-for-woocommerce' ),
+		'manage_options',
+		'mcpfowo-settings',
 			array( $this, 'render_settings_page' )
 		);
 	}
@@ -259,12 +259,12 @@ class Settings {
 			$sanitized['enable_write_operations'] = 0;
 		}
 
-		// Hardcode the removed settings for MCP for WooCommerce functionality
-		$sanitized['features_adapter_enabled'] = false;     // WordPress Features Adapter disabled for MCP for WooCommerce
-		$sanitized['enable_create_tools'] = true;           // Create tools always enabled for MCP for WooCommerce
-		$sanitized['enable_update_tools'] = true;           // Update tools always enabled for MCP for WooCommerce
-		$sanitized['enable_delete_tools'] = true;           // Delete tools always enabled for MCP for WooCommerce
-		$sanitized['enable_rest_api_crud_tools'] = false;   // REST API CRUD tools always disabled for MCP for WooCommerce
+	// Hardcode the removed settings for WooQuant functionality
+	$sanitized['features_adapter_enabled'] = false;     // WordPress Features Adapter disabled for WooQuant
+	$sanitized['enable_create_tools'] = true;           // Create tools always enabled for WooQuant
+	$sanitized['enable_update_tools'] = true;           // Update tools always enabled for WooQuant
+	$sanitized['enable_delete_tools'] = true;           // Delete tools always enabled for WooQuant
+	$sanitized['enable_rest_api_crud_tools'] = false;   // REST API CRUD tools always disabled for WooQuant
 
 		return $sanitized;
 	}
