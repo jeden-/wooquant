@@ -201,6 +201,11 @@ class Settings {
 		// Sanitize the settings input.
 		$settings_raw = isset( $_POST['settings'] ) ? sanitize_text_field( wp_unslash( $_POST['settings'] ) ) : '{}';
 		$settings     = $this->sanitize_settings( json_decode( $settings_raw, true ) );
+		
+		// Check if write operations were just enabled
+		$old_settings = get_option( self::OPTION_NAME, array() );
+		$write_ops_just_enabled = empty( $old_settings['enable_write_operations'] ) && ! empty( $settings['enable_write_operations'] );
+		
 		update_option( self::OPTION_NAME, $settings );
 
 		// Handle JWT required setting separately
@@ -220,7 +225,15 @@ class Settings {
 			}
 		}
 
-		wp_send_json_success( array( 'message' => __( 'Settings saved successfully!', 'mcp-for-woocommerce' ) ) );
+		$response_message = __( 'Settings saved successfully!', 'mcp-for-woocommerce' );
+		if ( $write_ops_just_enabled ) {
+			$response_message = __( 'Settings saved successfully! The page will refresh to load Write tools.', 'mcp-for-woocommerce' );
+		}
+		
+		wp_send_json_success( array( 
+			'message' => $response_message,
+			'write_ops_enabled' => $write_ops_just_enabled,
+		) );
 	}
 
 	/**

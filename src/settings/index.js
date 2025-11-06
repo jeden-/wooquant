@@ -229,10 +229,14 @@ export const SettingsApp = () => {
 			} );
 	};
 
-	// Save settings with specific data
+		// Save settings with specific data
 	const handleSaveSettingsWithData = ( settingsData ) => {
 		setIsSaving( true );
 		setNotice( null );
+		
+		// Check if write operations were just enabled
+		const writeOpsEnabled = settingsData.enable_write_operations;
+		const wasWriteOpsEnabled = settings.enable_write_operations;
 
 		// Create form data for AJAX request
 		const formData = new FormData();
@@ -257,6 +261,14 @@ export const SettingsApp = () => {
 							data.data.message ||
 							window.mcpfowoSettings.strings.settingsSaved,
 					} );
+					
+					// If write operations were just enabled, refresh page after 2 seconds
+					// to reload tools list with Write tools
+					if ( writeOpsEnabled && ! wasWriteOpsEnabled ) {
+						setTimeout( () => {
+							window.location.reload();
+						}, 2000 );
+					}
 				} else {
 					setNotice( {
 						status: 'error',
@@ -372,7 +384,7 @@ export const SettingsApp = () => {
 						case 'documentation':
 							return <DocumentationTab />;
 						case 'tools':
-							return <ToolsTab settings={ settings } />;
+							return <ToolsTab />;
 						case 'resources':
 							return <ResourcesTab />;
 						case 'prompts':

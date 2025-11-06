@@ -2377,3 +2377,8 @@ msgstr "Włącz operacje zapisu"
 #: src/settings/SettingsTab.js:120
 msgid "If you want to use this plugin for local development without JWT, you can disable JWT authentication. A local proxy file will be generated for Claude Desktop."
 msgstr "Jeśli chcesz używać tej wtyczki do lokalnego rozwoju bez JWT, możesz wyłączyć uwierzytelnianie JWT. Zostanie wygenerowany lokalny plik proxy dla Claude Desktop."
+
+#: includes/Admin/Settings.php:230
+msgid "Settings saved successfully! The page will refresh to load Write tools."
+msgstr "Ustawienia zapisane pomyślnie! Strona odświeży się automatycznie, aby załadować narzędzia zapisu."
+

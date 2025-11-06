@@ -16,7 +16,7 @@ import apiFetch from '@wordpress/api-fetch';
 /**
  * Tools Tab Component
  */
-const ToolsTab = ( { settings } ) => {
+const ToolsTab = () => {
 	const [ tools, setTools ] = useState( [] );
 	const [ loading, setLoading ] = useState( true );
 	const [ error, setError ] = useState( null );
@@ -57,7 +57,7 @@ const ToolsTab = ( { settings } ) => {
 		};
 
 		fetchTools();
-	}, [ settings.enabled, settings.enable_write_operations ] );
+	}, [] );
 
 	const handleToggleChange = async ( toolName, newState ) => {
 		try {
