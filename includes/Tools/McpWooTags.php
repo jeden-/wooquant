@@ -25,19 +25,19 @@ class McpWooTags {
 
         new RegisterMcpTool([
             'name' => 'wc_get_tags',
-            'description' => 'Get all available WooCommerce product tags dynamically',
+            'description' => __( 'Get all available WooCommerce product tags dynamically', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'inputSchema' => [
                 'type' => 'object',
                 'properties' => [
                     'per_page' => [
                         'type' => 'integer',
-                        'description' => 'Number of tags to retrieve (default: 100)',
+                        'description' => __( 'Number of tags to retrieve (default: 100)', 'mcp-for-woocommerce' ),
                         'default' => 100
                     ],
                     'hide_empty' => [
                         'type' => 'boolean',
-                        'description' => 'Whether to hide tags with no products (default: false)', 
+                        'description' => __( 'Whether to hide tags with no products (default: false)', 'mcp-for-woocommerce' ), 
                         'default' => false
                     ]
                 ]

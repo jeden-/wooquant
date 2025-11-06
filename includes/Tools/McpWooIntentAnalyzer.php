@@ -25,18 +25,18 @@ class McpWooIntentAnalyzer {
 
         new RegisterMcpTool([
             'name' => 'wc_analyze_search_intent',
-            'description' => 'Analyze user search query and suggest optimal WooCommerce search parameters',
+            'description' => __( 'Analyze user search query and suggest optimal WooCommerce search parameters', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'inputSchema' => [
                 'type' => 'object',
                 'properties' => [
                     'user_query' => [
                         'type' => 'string',
-                        'description' => 'The user search query to analyze'
+                        'description' => __( 'The user search query to analyze', 'mcp-for-woocommerce' )
                     ],
                     'available_categories' => [
                         'type' => 'array',
-                        'description' => 'Available product categories from wc_get_categories',
+                        'description' => __( 'Available product categories from wc_get_categories', 'mcp-for-woocommerce' ),
                         'items' => [
                             'type' => 'object'
                         ],
@@ -44,7 +44,7 @@ class McpWooIntentAnalyzer {
                     ],
                     'available_tags' => [
                         'type' => 'array', 
-                        'description' => 'Available product tags from wc_get_tags',
+                        'description' => __( 'Available product tags from wc_get_tags', 'mcp-for-woocommerce' ),
                         'items' => [
                             'type' => 'object'
                         ],

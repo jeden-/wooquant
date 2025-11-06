@@ -45,6 +45,9 @@ class Settings {
 		
 		// Translate tool descriptions
 		add_filter( 'mcpfowo_tool_description', array( $this, 'translate_tool_description' ), 10, 2 );
+		
+		// Load translations early with high priority
+		add_filter( 'pre_load_script_translations', array( $this, 'force_load_all_translations' ), 10, 3 );
 	}
 	
 	/**
@@ -114,6 +117,9 @@ class Settings {
 			true
 		);
 
+		// Load translations first
+		// (Filter already added in constructor for early loading)
+		
 		// Set script translations for JavaScript i18n.
 		wp_set_script_translations(
 			'mcpfowo-settings',
@@ -146,6 +152,7 @@ class Settings {
 				'jwtApiUrl'           => rest_url( 'jwt-auth/v1' ),
 				'restFallbackUrl'     => home_url( '/index.php?rest_route=' ),
 				'nonce'               => wp_create_nonce( 'mcpfowo_settings' ),
+				'locale'              => get_locale(),
 				'settings'            => get_option( self::OPTION_NAME, array() ),
 				'toolStates'          => get_option( self::TOOL_STATES_OPTION, array() ),
 				'jwtRequired'         => get_option( self::JWT_REQUIRED_OPTION, true ),
@@ -506,5 +513,62 @@ class Settings {
 		wp_send_json_success( array(
 			'message' => __( 'User permissions saved successfully.', 'mcp-for-woocommerce' ),
 		) );
+	}
+
+	/**
+	 * Force load all translations from JSON file
+	 *
+	 * @param string|false $translations JSON-encoded translation data. Default false.
+	 * @param string       $file          Path to the translation file to load.
+	 * @param string       $handle        Name of the script to register a translation domain to.
+	 * @return string|false
+	 */
+	public function force_load_all_translations( $translations, $file, $handle ) {
+		// Only apply to our script
+		if ( 'mcpfowo-settings' !== $handle ) {
+			return $translations;
+		}
+
+		// Get current locale
+		$locale = determine_locale();
+		if ( ! $locale || 'en_US' === $locale ) {
+			return $translations;
+		}
+
+		// Get the JSON file path based on the asset file version
+		$asset_file = require MCPFOWO_PATH . 'build/index.asset.php';
+		$version = $asset_file['version'];
+		
+		// Try versioned file first
+		$json_file = MCPFOWO_PATH . 'languages/mcp-for-woocommerce-' . $locale . '-' . $version . '.json';
+
+		// If the versioned file doesn't exist, try without version (fallback)
+		if ( ! file_exists( $json_file ) ) {
+			// Try to find any JSON file for this locale
+			$pattern = MCPFOWO_PATH . 'languages/mcp-for-woocommerce-' . $locale . '-*.json';
+			$files = glob( $pattern );
+			if ( ! empty( $files ) ) {
+				$json_file = $files[0]; // Use the first matching file
+			}
+		}
+
+		// Load all translations from JSON file
+		if ( file_exists( $json_file ) ) {
+			$json_data = file_get_contents( $json_file );
+			if ( $json_data ) {
+				$translations_data = json_decode( $json_data, true );
+				if ( $translations_data && isset( $translations_data['locale_data']['mcp-for-woocommerce'] ) ) {
+					// Return the full JSON structure that WordPress expects
+					$full_translations = array(
+						'locale_data' => array(
+							'mcp-for-woocommerce' => $translations_data['locale_data']['mcp-for-woocommerce'],
+						),
+					);
+					return wp_json_encode( $full_translations );
+				}
+			}
+		}
+
+		return $translations;
 	}
 }

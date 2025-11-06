@@ -28,19 +28,19 @@ class McpWooCategories {
 
         new RegisterMcpTool([
             'name' => 'wc_get_categories',
-            'description' => 'Get all available WooCommerce product categories dynamically',
+            'description' => __( 'Get all available WooCommerce product categories dynamically', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'inputSchema' => [
                 'type' => 'object',
                 'properties' => [
                     'per_page' => [
                         'type' => 'integer',
-                        'description' => 'Number of categories to retrieve (default: 100)',
+                        'description' => __( 'Number of categories to retrieve (default: 100)', 'mcp-for-woocommerce' ),
                         'default' => 100
                     ],
                     'hide_empty' => [
                         'type' => 'boolean', 
-                        'description' => 'Whether to hide categories with no products (default: false)',
+                        'description' => __( 'Whether to hide categories with no products (default: false)', 'mcp-for-woocommerce' ),
                         'default' => false
                     ]
                 ]

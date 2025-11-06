@@ -29,9 +29,15 @@ const DocumentationTab = () => {
 				setIsLoading( true );
 				setError( null );
 
+				// Determine which language file to load
+				// WordPress locale format: pl_PL, en_US, etc.
+				const locale = window.mcpfowoSettings?.locale || 'en_US';
+				const langCode = locale.split( '_' )[0]; // Extract 'pl' from 'pl_PL'
+				const docFile = langCode === 'pl' ? 'QUICK-START.pl.md' : 'QUICK-START.md';
+
 				// Fetch the markdown file from the plugin directory
 				const response = await fetch(
-					`${ window.mcpfowoSettings.pluginUrl }/QUICK-START.md`
+					`${ window.mcpfowoSettings.pluginUrl }/${ docFile }`
 				);
 
 				if ( ! response.ok ) {

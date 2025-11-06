@@ -26,7 +26,7 @@ class McpWooReviews {
 
         new RegisterMcpTool([
             'name' => 'wc_get_product_reviews',
-            'description' => 'Get all WooCommerce product reviews with filtering and pagination',
+            'description' => __( 'Get all WooCommerce product reviews with filtering and pagination', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_product_reviews'],
             'permission_callback' => '__return_true',
@@ -35,11 +35,11 @@ class McpWooReviews {
                 'properties' => [
                     'product_id' => [
                         'type' => 'integer',
-                        'description' => 'Product ID to filter reviews'
+                        'description' => __( 'Product ID to filter reviews', 'mcp-for-woocommerce' )
                     ],
                     'per_page' => [
                         'type' => 'integer',
-                        'description' => 'Number of reviews per page',
+                        'description' => __( 'Number of reviews per page', 'mcp-for-woocommerce' ),
                         'default' => 10,
                         'minimum' => 1,
                         'maximum' => 100
@@ -55,7 +55,7 @@ class McpWooReviews {
 
         new RegisterMcpTool([
             'name' => 'wc_get_product_review',
-            'description' => 'Get a specific WooCommerce product review by ID',
+            'description' => __( 'Get a specific WooCommerce product review by ID', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_product_review'],
             'permission_callback' => '__return_true',
@@ -64,7 +64,7 @@ class McpWooReviews {
                 'properties' => [
                     'id' => [
                         'type' => 'integer',
-                        'description' => 'Review ID',
+                        'description' => __( 'Review ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],

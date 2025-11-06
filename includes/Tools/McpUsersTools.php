@@ -26,7 +26,7 @@ class McpUsersTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_users_search',
-				'description' => 'Search and filter WordPress users with pagination',
+				'description' => __( 'Search and filter WordPress users with pagination', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'                   => '/wp/v2/users',
@@ -54,7 +54,7 @@ class McpUsersTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_user',
-				'description' => 'Get a WordPress user by ID',
+				'description' => __( 'Get a WordPress user by ID', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/users/(?P<id>[\d]+)',
@@ -74,7 +74,7 @@ class McpUsersTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_current_user',
-				'description' => 'Get the current logged-in user',
+				'description' => __( 'Get the current logged-in user', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/users/me',

@@ -39,7 +39,7 @@ class McpWooProducts {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_products_search',
-				'description' => 'PRIMARY PRODUCT SEARCH TOOL: Universal product search for ANY store type (electronics, food, pets, pharmacy, automotive, etc.). CRITICAL: This is the main search tool - use this FIRST for all product searches. When searching for specific products by name, ALWAYS use this tool FIRST to get the correct product ID, then use other tools with that ID. DO NOT use hardcoded product IDs. IMPORTANT: Each product includes a "permalink" field with the direct link to the product page - ALWAYS include these links when presenting products to users.',
+				'description' => __( 'PRIMARY PRODUCT SEARCH TOOL: Universal product search for ANY store type (electronics, food, pets, pharmacy, automotive, etc.). CRITICAL: This is the main search tool - use this FIRST for all product searches. When searching for specific products by name, ALWAYS use this tool FIRST to get the correct product ID, then use other tools with that ID. DO NOT use hardcoded product IDs. IMPORTANT: Each product includes a "permalink" field with the direct link to the product page - ALWAYS include these links when presenting products to users.', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'callback'    => array( $this, 'search_products' ),
 				'permission_callback' => '__return_true',
@@ -56,21 +56,21 @@ class McpWooProducts {
 					'properties' => array(
 						'search' => array(
 							'type'        => 'string',
-							'description' => 'Search term for product name or description',
+							'description' => __( 'Search term for product name or description', 'mcp-for-woocommerce' ),
 						),
 						'category' => array(
 							'type'        => 'string',
-							'description' => 'Product category slug',
+							'description' => __( 'Product category slug', 'mcp-for-woocommerce' ),
 						),
 						'per_page' => array(
 							'type'        => 'integer',
-							'description' => 'Number of products per page (default: 10)',
+							'description' => __( 'Number of products per page (default: 10)', 'mcp-for-woocommerce' ),
 							'minimum'     => 1,
 							'maximum'     => 100,
 						),
 						'page' => array(
 							'type'        => 'integer',
-							'description' => 'Page number (default: 1)',
+							'description' => __( 'Page number (default: 1)', 'mcp-for-woocommerce' ),
 							'minimum'     => 1,
 						),
 					),
@@ -81,7 +81,7 @@ class McpWooProducts {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_get_product',
-				'description' => 'SECONDARY TOOL: Get a WooCommerce product by ID after using wc_products_search. Use this tool when you have a specific product ID from search results to get detailed product information. IMPORTANT: The product includes a "permalink" field with the direct link to the product page - ALWAYS include this link when presenting the product to users.',
+				'description' => __( 'SECONDARY TOOL: Get a WooCommerce product by ID after using wc_products_search. Use this tool when you have a specific product ID from search results to get detailed product information. IMPORTANT: The product includes a "permalink" field with the direct link to the product page - ALWAYS include this link when presenting the product to users.', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'callback'    => array( $this, 'get_product' ),
 				'permission_callback' => '__return_true',
@@ -98,7 +98,7 @@ class McpWooProducts {
 					'properties' => array(
 						'id' => array(
 							'type'        => 'integer',
-							'description' => 'Product ID',
+							'description' => __( 'Product ID', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required' => array( 'id' ),
@@ -110,7 +110,7 @@ class McpWooProducts {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_get_product_variations',
-				'description' => 'Get all variations (colors, sizes, etc.) for a variable WooCommerce product. CRITICAL: You MUST get the product_id from wc_products_search first. DO NOT use hardcoded product IDs like 42. Each variation includes specific attributes like color, size, price, and stock status. IMPORTANT: Each variation includes a "permalink" field with the direct link to the variation page - ALWAYS include these links when presenting variations to users.',
+				'description' => __( 'Get all variations (colors, sizes, etc.) for a variable WooCommerce product. CRITICAL: You MUST get the product_id from wc_products_search first. DO NOT use hardcoded product IDs like 42. Each variation includes specific attributes like color, size, price, and stock status. IMPORTANT: Each variation includes a "permalink" field with the direct link to the variation page - ALWAYS include these links when presenting variations to users.', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'callback'    => array( $this, 'get_product_variations' ),
 				'permission_callback' => '__return_true',
@@ -125,7 +125,7 @@ class McpWooProducts {
 					'properties' => array(
 						'product_id' => array(
 							'type'        => 'integer',
-							'description' => 'Variable product ID',
+							'description' => __( 'Variable product ID', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required' => array( 'product_id' ),
@@ -136,7 +136,7 @@ class McpWooProducts {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_get_product_variation',
-				'description' => 'Get a specific product variation by ID. IMPORTANT: The variation includes a "permalink" field with the direct link to the variation page - ALWAYS include this link when presenting the variation to users.',
+				'description' => __( 'Get a specific product variation by ID. IMPORTANT: The variation includes a "permalink" field with the direct link to the variation page - ALWAYS include this link when presenting the variation to users.', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'callback'    => array( $this, 'get_product_variation' ),
 				'permission_callback' => '__return_true',
@@ -151,11 +151,11 @@ class McpWooProducts {
 					'properties' => array(
 						'product_id' => array(
 							'type'        => 'integer',
-							'description' => 'Parent product ID',
+							'description' => __( 'Parent product ID', 'mcp-for-woocommerce' ),
 						),
 						'id' => array(
 							'type'        => 'integer',
-							'description' => 'Variation ID',
+							'description' => __( 'Variation ID', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required' => array( 'product_id', 'id' ),

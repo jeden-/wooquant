@@ -37,7 +37,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_orders_search',
-				'description' => 'Get a list of WooCommerce orders',
+				'description' => __( 'Get a list of WooCommerce orders', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/orders',
@@ -55,7 +55,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_coupons_totals',
-				'description' => 'Get WooCommerce coupons totals report',
+				'description' => __( 'Get WooCommerce coupons totals report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/coupons/totals',
@@ -72,7 +72,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_customers_totals',
-				'description' => 'Get WooCommerce customers totals report',
+				'description' => __( 'Get WooCommerce customers totals report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/customers/totals',
@@ -89,7 +89,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_orders_totals',
-				'description' => 'Get WooCommerce orders totals report',
+				'description' => __( 'Get WooCommerce orders totals report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/orders/totals',
@@ -106,7 +106,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_products_totals',
-				'description' => 'Get WooCommerce products totals report',
+				'description' => __( 'Get WooCommerce products totals report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/products/totals',
@@ -123,7 +123,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_reviews_totals',
-				'description' => 'Get WooCommerce reviews totals report',
+				'description' => __( 'Get WooCommerce reviews totals report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/reviews/totals',
@@ -140,7 +140,7 @@ class McpWooOrders {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wc_reports_sales',
-				'description' => 'Get WooCommerce sales report',
+				'description' => __( 'Get WooCommerce sales report', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wc/v3/reports/sales',

@@ -36,7 +36,7 @@ class McpUserInfoResource {
 			array(
 				'uri'         => 'WordPress://user-info',
 				'name'        => 'user-info',
-				'description' => 'Provides detailed information about registered WordPress users and their roles',
+				'description' => __( 'Provides detailed information about registered WordPress users and their roles', 'mcp-for-woocommerce' ),
 				'mimeType'    => 'application/json',
 			),
 			array( $this, 'get_user_info' )

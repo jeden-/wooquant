@@ -26,7 +26,7 @@ class McpMediaTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_list_media',
-				'description' => 'List WordPress media items with pagination and filtering',
+				'description' => __( 'List WordPress media items with pagination and filtering', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/media',
@@ -43,7 +43,7 @@ class McpMediaTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_media',
-				'description' => 'Get a WordPress media item details by ID',
+				'description' => __( 'Get a WordPress media item details by ID', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'                   => '/wp/v2/media/(?P<id>[\d]+)',
@@ -66,7 +66,7 @@ class McpMediaTools {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'wp_get_media_file',
-				'description'         => 'Get the actual file content (blob) of a WordPress media item',
+				'description' => __( 'Get the actual file content (blob) of a WordPress media item', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'callback'            => array( $this, 'wp_get_media_file' ),
 				'permission_callback' => '__return_true',
@@ -75,11 +75,11 @@ class McpMediaTools {
 					'properties' => array(
 						'id'   => array(
 							'type'        => 'integer',
-							'description' => 'The ID of the media item',
+							'description' => __( 'The ID of the media item', 'mcp-for-woocommerce' ),
 						),
 						'size' => array(
 							'type'        => 'string',
-							'description' => 'Optional. The size of the image to retrieve (thumbnail, medium, large, full). Defaults to full/original size.',
+							'description' => __( 'Optional. The size of the image to retrieve (thumbnail, medium, large, full). Defaults to full/original size.', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required'   => array(
@@ -101,7 +101,7 @@ class McpMediaTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_search_media',
-				'description' => 'Search WordPress media items by title, caption, or description',
+				'description' => __( 'Search WordPress media items by title, caption, or description', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'                   => '/wp/v2/media',
@@ -110,23 +110,23 @@ class McpMediaTools {
 						'properties' => array(
 							'search'     => array(
 								'type'        => 'string',
-								'description' => 'Search term to look for in media titles, captions, and descriptions',
+								'description' => __( 'Search term to look for in media titles, captions, and descriptions', 'mcp-for-woocommerce' ),
 							),
 							'media_type' => array(
 								'type'        => 'string',
-								'description' => 'Filter by media type (image, video, audio, application)',
+								'description' => __( 'Filter by media type (image, video, audio, application)', 'mcp-for-woocommerce' ),
 							),
 							'mime_type'  => array(
 								'type'        => 'string',
-								'description' => 'Filter by MIME type (e.g., image/jpeg, video/mp4)',
+								'description' => __( 'Filter by MIME type (e.g., image/jpeg, video/mp4)', 'mcp-for-woocommerce' ),
 							),
 							'author'     => array(
 								'type'        => 'integer',
-								'description' => 'Filter by author ID',
+								'description' => __( 'Filter by author ID', 'mcp-for-woocommerce' ),
 							),
 							'parent'     => array(
 								'type'        => 'integer',
-								'description' => 'Filter by parent post ID',
+								'description' => __( 'Filter by parent post ID', 'mcp-for-woocommerce' ),
 							),
 						),
 					),

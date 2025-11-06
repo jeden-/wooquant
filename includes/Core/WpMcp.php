@@ -486,7 +486,16 @@ class WpMcp {
 	 * @return array
 	 */
 	public function get_tools(): array {
-		return $this->tools;
+		$tools = $this->tools;
+		
+		// Translate tool descriptions.
+		foreach ( $tools as &$tool ) {
+			if ( ! empty( $tool['description'] ) ) {
+				$tool['description'] = __( $tool['description'], 'mcp-for-woocommerce' );
+			}
+		}
+		
+		return $tools;
 	}
 
 	/**
@@ -511,7 +520,7 @@ class WpMcp {
 
 			// Translate tool description if it exists.
 			if ( ! empty( $tool['description'] ) ) {
-				$tool['description'] = apply_filters( 'mcpfowo_tool_description', $tool['description'], $tool['name'] );
+				$tool['description'] = __( $tool['description'], 'mcp-for-woocommerce' );
 			}
 		}
 
@@ -533,7 +542,16 @@ class WpMcp {
 	 * @return array
 	 */
 	public function get_resources(): array {
-		return $this->resources;
+		$resources = $this->resources;
+		
+		// Translate resource descriptions.
+		foreach ( $resources as &$resource ) {
+			if ( ! empty( $resource['description'] ) ) {
+				$resource['description'] = __( $resource['description'], 'mcp-for-woocommerce' );
+			}
+		}
+		
+		return $resources;
 	}
 
 	/**
@@ -551,7 +569,25 @@ class WpMcp {
 	 * @return array
 	 */
 	public function get_prompts(): array {
-		return $this->prompts;
+		$prompts = $this->prompts;
+		
+		// Translate prompt descriptions.
+		foreach ( $prompts as &$prompt ) {
+			if ( ! empty( $prompt['description'] ) ) {
+				$prompt['description'] = __( $prompt['description'], 'mcp-for-woocommerce' );
+			}
+			
+			// Translate argument descriptions if they exist.
+			if ( ! empty( $prompt['arguments'] ) && is_array( $prompt['arguments'] ) ) {
+				foreach ( $prompt['arguments'] as &$argument ) {
+					if ( ! empty( $argument['description'] ) ) {
+						$argument['description'] = __( $argument['description'], 'mcp-for-woocommerce' );
+					}
+				}
+			}
+		}
+		
+		return $prompts;
 	}
 
 	/**
@@ -561,7 +597,25 @@ class WpMcp {
 	 * @return array|null
 	 */
 	public function get_prompt_by_name( string $name ): ?array {
-		return $this->prompts[ $name ] ?? null;
+		$prompt = $this->prompts[ $name ] ?? null;
+		
+		if ( $prompt ) {
+			// Translate prompt description.
+			if ( ! empty( $prompt['description'] ) ) {
+				$prompt['description'] = __( $prompt['description'], 'mcp-for-woocommerce' );
+			}
+			
+			// Translate argument descriptions if they exist.
+			if ( ! empty( $prompt['arguments'] ) && is_array( $prompt['arguments'] ) ) {
+				foreach ( $prompt['arguments'] as &$argument ) {
+					if ( ! empty( $argument['description'] ) ) {
+						$argument['description'] = __( $argument['description'], 'mcp-for-woocommerce' );
+					}
+				}
+			}
+		}
+		
+		return $prompt;
 	}
 
 	/**

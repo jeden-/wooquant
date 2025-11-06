@@ -26,7 +26,7 @@ class McpWooPaymentGateways {
 
         new RegisterMcpTool([
             'name' => 'wc_get_payment_gateways',
-            'description' => 'Get all available WooCommerce payment gateways (PayPal, Stripe, Bank Transfer, etc.)',
+            'description' => __( 'Get all available WooCommerce payment gateways (PayPal, Stripe, Bank Transfer, etc.)', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_payment_gateways'],
             'permission_callback' => '__return_true',
@@ -43,7 +43,7 @@ class McpWooPaymentGateways {
 
         new RegisterMcpTool([
             'name' => 'wc_get_payment_gateway',
-            'description' => 'Get details about a specific WooCommerce payment gateway by ID',
+            'description' => __( 'Get details about a specific WooCommerce payment gateway by ID', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_payment_gateway'],
             'permission_callback' => '__return_true',
@@ -52,7 +52,7 @@ class McpWooPaymentGateways {
                 'properties' => [
                     'id' => [
                         'type' => 'string',
-                        'description' => 'Payment Gateway ID',
+                        'description' => __( 'Payment Gateway ID', 'mcp-for-woocommerce' ),
                         'pattern' => '^[a-zA-Z0-9_-]+$'
                     ]
                 ],

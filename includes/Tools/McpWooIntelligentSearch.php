@@ -29,7 +29,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_intelligent_search',
-                'description' => 'FALLBACK SEARCH TOOL: Advanced intelligent product search with automatic fallback strategies. Use this tool ONLY when wc_products_search and wc_get_product do not provide satisfactory results. This tool handles complex queries and multiple fallback strategies but should be used as a last resort. WORKFLOW: 1) Try wc_products_search first, 2) Use wc_get_product for details, 3) Only use this tool if needed. CRITICAL: Each product includes a "permalink" field with the direct link to the product page - ALWAYS include these links when presenting products to users.',
+                'description' => __( 'FALLBACK SEARCH TOOL: Advanced intelligent product search with automatic fallback strategies. Use this tool ONLY when wc_products_search and wc_get_product do not provide satisfactory results. This tool handles complex queries and multiple fallback strategies but should be used as a last resort. WORKFLOW: 1) Try wc_products_search first, 2) Use wc_get_product for details, 3) Only use this tool if needed. CRITICAL: Each product includes a "permalink" field with the direct link to the product page - ALWAYS include these links when presenting products to users.', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'intelligent_search' ),
                 'permission_callback' => '__return_true',
@@ -47,24 +47,24 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'query' => array(
                             'type'        => 'string',
-                            'description' => 'Search query (e.g., "cheapest perfumes on sale", "latest electronics")',
+                            'description' => __( 'Search query (e.g., "cheapest perfumes on sale", "latest electronics")', 'mcp-for-woocommerce' ),
                         ),
                         'per_page' => array(
                             'type'        => 'integer',
-                            'description' => 'Number of results per page (default: 20)',
+                            'description' => __( 'Number of results per page (default: 20)', 'mcp-for-woocommerce' ),
                             'default'     => 20,
                             'minimum'     => 1,
                             'maximum'     => 100,
                         ),
                         'page' => array(
                             'type'        => 'integer',
-                            'description' => 'Page number (default: 1)',
+                            'description' => __( 'Page number (default: 1)', 'mcp-for-woocommerce' ),
                             'default'     => 1,
                             'minimum'     => 1,
                         ),
                         'debug' => array(
                             'type'        => 'boolean',
-                            'description' => 'Show debug information about search strategy used',
+                            'description' => __( 'Show debug information about search strategy used', 'mcp-for-woocommerce' ),
                             'default'     => false,
                         ),
                     ),
@@ -77,7 +77,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_analyze_search_intent_helper',
-                'description' => 'Analyze user search query and return optimized search parameters with category matching',
+                'description' => __( 'Analyze user search query and return optimized search parameters with category matching', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'analyze_search_intent' ),
                 'permission_callback' => '__return_true',
@@ -91,16 +91,16 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'user_query' => array(
                             'type'        => 'string',
-                            'description' => 'The original user search query',
+                            'description' => __( 'The original user search query', 'mcp-for-woocommerce' ),
                         ),
                         'available_categories' => array(
                             'type'        => 'array',
-                            'description' => 'Array of available categories from wc_get_categories',
+                            'description' => __( 'Array of available categories from wc_get_categories', 'mcp-for-woocommerce' ),
                             'items'       => array( 'type' => 'object' ),
                         ),
                         'available_tags' => array(
                             'type'        => 'array',
-                            'description' => 'Array of available tags from wc_get_tags',
+                            'description' => __( 'Array of available tags from wc_get_tags', 'mcp-for-woocommerce' ),
                             'items'       => array( 'type' => 'object' ),
                         ),
                     ),
@@ -113,7 +113,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_get_products_by_brand',
-                'description' => 'Get products by brand name. Automatically detects if brand is implemented as attribute, category, or custom taxonomy.',
+                'description' => __( 'Get products by brand name. Automatically detects if brand is implemented as attribute, category, or custom taxonomy.', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'get_products_by_brand' ),
                 'permission_callback' => '__return_true',
@@ -122,15 +122,15 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'brand_name' => array(
                             'type'        => 'string',
-                            'description' => 'Brand name to search for',
+                            'description' => __( 'Brand name to search for', 'mcp-for-woocommerce' ),
                         ),
                         'brand' => array(
                             'type'        => 'string',
-                            'description' => 'Brand name (alias for brand_name)',
+                            'description' => __( 'Brand name (alias for brand_name)', 'mcp-for-woocommerce' ),
                         ),
                         'query' => array(
                             'type'        => 'string',
-                            'description' => 'Brand name or search query',
+                            'description' => __( 'Brand name or search query', 'mcp-for-woocommerce' ),
                         ),
                         'per_page' => array('type' => 'integer', 'default' => 20, 'minimum' => 1, 'maximum' => 100),
                         'page' => array('type' => 'integer', 'default' => 1, 'minimum' => 1),
@@ -144,7 +144,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_get_products_by_category',
-                'description' => 'Get products by category name or slug.',
+                'description' => __( 'Get products by category name or slug.', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'get_products_by_category' ),
                 'permission_callback' => '__return_true',
@@ -153,11 +153,11 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'category' => array(
                             'type'        => 'string',
-                            'description' => 'Category name or slug',
+                            'description' => __( 'Category name or slug', 'mcp-for-woocommerce' ),
                         ),
                         'query' => array(
                             'type'        => 'string',
-                            'description' => 'Category name, slug, or search query',
+                            'description' => __( 'Category name, slug, or search query', 'mcp-for-woocommerce' ),
                         ),
                         'per_page' => array('type' => 'integer', 'default' => 20),
                         'page' => array('type' => 'integer', 'default' => 1),
@@ -171,7 +171,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_get_products_by_attributes',
-                'description' => 'Get products by custom attributes (color, size, etc.)',
+                'description' => __( 'Get products by custom attributes (color, size, etc.)', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'get_products_by_attributes' ),
                 'permission_callback' => '__return_true',
@@ -180,11 +180,11 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'attributes' => array(
                             'type'        => 'object',
-                            'description' => 'Key-value pairs of attributes (e.g., {"color": "red", "size": "large"})',
+                            'description' => __( 'Key-value pairs of attributes (e.g., {"color": "red", "size": "large"})', 'mcp-for-woocommerce' ),
                         ),
                         'query' => array(
                             'type'        => 'string',
-                            'description' => 'Attribute search query (will be parsed for key-value pairs)',
+                            'description' => __( 'Attribute search query (will be parsed for key-value pairs)', 'mcp-for-woocommerce' ),
                         ),
                         'per_page' => array('type' => 'integer', 'default' => 20),
                         'page' => array('type' => 'integer', 'default' => 1),
@@ -198,18 +198,18 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_get_products_filtered',
-                'description' => 'Get products with multiple filters: brand, category, price range, and attributes.',
+                'description' => __( 'Get products with multiple filters: brand, category, price range, and attributes.', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'get_products_filtered' ),
                 'permission_callback' => '__return_true',
                 'inputSchema' => array(
                     'type'       => 'object',
                     'properties' => array(
-                        'brand' => array('type' => 'string', 'description' => 'Brand name'),
-                        'category' => array('type' => 'string', 'description' => 'Category name or slug'),
+                        'brand' => array('type' => 'string', 'description' => __( 'Brand name', 'mcp-for-woocommerce' )),
+                        'category' => array('type' => 'string', 'description' => __( 'Category name or slug', 'mcp-for-woocommerce' )),
                         'query' => array(
                             'type' => 'string',
-                            'description' => 'General search query (will be parsed for filters)',
+                            'description' => __( 'General search query (will be parsed for filters)', 'mcp-for-woocommerce' ),
                         ),
                         'price_range' => array(
                             'type' => 'object',
@@ -220,7 +220,7 @@ class McpWooIntelligentSearch {
                         ),
                         'attributes' => array(
                             'type' => 'object',
-                            'description' => 'Key-value pairs of attributes',
+                            'description' => __( 'Key-value pairs of attributes', 'mcp-for-woocommerce' ),
                         ),
                         'per_page' => array('type' => 'integer', 'default' => 20),
                         'page' => array('type' => 'integer', 'default' => 1),
@@ -233,7 +233,7 @@ class McpWooIntelligentSearch {
         new RegisterMcpTool(
             array(
                 'name'        => 'wc_get_product_detailed',
-                'description' => 'Get single product by ID with complete details.',
+                'description' => __( 'Get single product by ID with complete details.', 'mcp-for-woocommerce' ),
                 'type'        => 'read',
                 'callback'    => array( $this, 'get_product_by_id' ),
                 'permission_callback' => '__return_true',
@@ -242,11 +242,11 @@ class McpWooIntelligentSearch {
                     'properties' => array(
                         'id' => array(
                             'type'        => 'integer',
-                            'description' => 'Product ID',
+                            'description' => __( 'Product ID', 'mcp-for-woocommerce' ),
                         ),
                         'query' => array(
                             'type'        => 'string',
-                            'description' => 'Product ID as string or search term',
+                            'description' => __( 'Product ID as string or search term', 'mcp-for-woocommerce' ),
                         ),
                     ),
                     'required' => array(),

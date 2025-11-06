@@ -26,7 +26,7 @@ class McpWooSystemStatus {
 
         new RegisterMcpTool([
             'name' => 'wc_get_system_status',
-            'description' => 'Get WooCommerce system status information (versions, settings, environment)',
+            'description' => __( 'Get WooCommerce system status information (versions, settings, environment)', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_system_status'],
             'permission_callback' => '__return_true',
@@ -43,7 +43,7 @@ class McpWooSystemStatus {
 
         new RegisterMcpTool([
             'name' => 'wc_get_system_tools',
-            'description' => 'Get available WooCommerce system tools and utilities',
+            'description' => __( 'Get available WooCommerce system tools and utilities', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_system_tools'],
             'permission_callback' => '__return_true',
@@ -124,37 +124,37 @@ class McpWooSystemStatus {
                 'id' => 'clear_transients',
                 'name' => 'Clear transients',
                 'action' => 'Clear all WooCommerce transients',
-                'description' => 'This tool will clear the product/shop transients cache.'
+                'description' => __( 'This tool will clear the product/shop transients cache.', 'mcp-for-woocommerce' )
             ],
             [
                 'id' => 'clear_expired_transients',
                 'name' => 'Clear expired transients',
                 'action' => 'Clear expired transients',
-                'description' => 'This tool will clear ALL expired transients from WordPress.'
+                'description' => __( 'This tool will clear ALL expired transients from WordPress.', 'mcp-for-woocommerce' )
             ],
             [
                 'id' => 'delete_orphaned_variations',
                 'name' => 'Delete orphaned variations',
                 'action' => 'Delete orphaned variations',
-                'description' => 'This tool will delete all variations which have no parent.'
+                'description' => __( 'This tool will delete all variations which have no parent.', 'mcp-for-woocommerce' )
             ],
             [
                 'id' => 'recount_terms',
                 'name' => 'Term counts',
                 'action' => 'Recount terms',
-                'description' => 'This tool will recount product terms - useful when changing your settings in a way which hides products from the catalog.'
+                'description' => __( 'This tool will recount product terms - useful when changing your settings in a way which hides products from the catalog.', 'mcp-for-woocommerce' )
             ],
             [
                 'id' => 'reset_roles',
                 'name' => 'Capabilities',
                 'action' => 'Reset capabilities',
-                'description' => 'This tool will reset the admin, customer and shop_manager roles to default. Use this if your users cannot access all of the WooCommerce admin pages.'
+                'description' => __( 'This tool will reset the admin, customer and shop_manager roles to default. Use this if your users cannot access all of the WooCommerce admin pages.', 'mcp-for-woocommerce' )
             ],
             [
                 'id' => 'clear_sessions',
                 'name' => 'Clear customer sessions',
                 'action' => 'Clear all sessions',
-                'description' => 'This tool will delete all customer session data from the database.'
+                'description' => __( 'This tool will delete all customer session data from the database.', 'mcp-for-woocommerce' )
             ]
         ];
         

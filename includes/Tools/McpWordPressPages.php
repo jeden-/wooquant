@@ -27,7 +27,7 @@ class McpWordPressPages {
         // List WordPress pages
         $mcp->register_tool([
             'name' => 'wordpress_pages_list',
-            'description' => 'List WordPress pages with filtering and search options',
+            'description' => __( 'List WordPress pages with filtering and search options', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => array($this, 'list_pages'),
             'permission_callback' => '__return_true',
@@ -36,40 +36,40 @@ class McpWordPressPages {
                 'properties' => [
                     'status' => [
                         'type' => 'string',
-                        'description' => 'Page status filter',
+                        'description' => __( 'Page status filter', 'mcp-for-woocommerce' ),
                         'enum' => ['publish', 'draft', 'private', 'future', 'pending', 'any'],
                         'default' => 'publish'
                     ],
                     'per_page' => [
                         'type' => 'integer',
-                        'description' => 'Number of pages per page',
+                        'description' => __( 'Number of pages per page', 'mcp-for-woocommerce' ),
                         'default' => 10,
                         'minimum' => 1,
                         'maximum' => 100
                     ],
                     'page' => [
                         'type' => 'integer',
-                        'description' => 'Page number',
+                        'description' => __( 'Page number', 'mcp-for-woocommerce' ),
                         'default' => 1,
                         'minimum' => 1
                     ],
                     'search' => [
                         'type' => 'string',
-                        'description' => 'Search term'
+                        'description' => __( 'Search term', 'mcp-for-woocommerce' )
                     ],
                     'parent' => [
                         'type' => 'integer',
-                        'description' => 'Parent page ID (0 for top-level pages)'
+                        'description' => __( 'Parent page ID (0 for top-level pages)', 'mcp-for-woocommerce' )
                     ],
                     'orderby' => [
                         'type' => 'string',
-                        'description' => 'Order by field',
+                        'description' => __( 'Order by field', 'mcp-for-woocommerce' ),
                         'enum' => ['date', 'title', 'menu_order', 'author', 'modified'],
                         'default' => 'menu_order'
                     ],
                     'order' => [
                         'type' => 'string',
-                        'description' => 'Order direction',
+                        'description' => __( 'Order direction', 'mcp-for-woocommerce' ),
                         'enum' => ['ASC', 'DESC'],
                         'default' => 'ASC'
                     ]
@@ -80,7 +80,7 @@ class McpWordPressPages {
         // Get single WordPress page
         $mcp->register_tool([
             'name' => 'wordpress_pages_get',
-            'description' => 'Get a single WordPress page by ID',
+            'description' => __( 'Get a single WordPress page by ID', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => array($this, 'get_page'),
             'permission_callback' => '__return_true',
@@ -89,7 +89,7 @@ class McpWordPressPages {
                 'properties' => [
                     'id' => [
                         'type' => 'integer',
-                        'description' => 'Page ID',
+                        'description' => __( 'Page ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],

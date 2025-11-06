@@ -27,7 +27,7 @@ class McpWordPressPosts {
         // List WordPress posts
         $mcp->register_tool([
             'name' => 'wordpress_posts_list',
-            'description' => 'List WordPress posts with filtering and search options',
+            'description' => __( 'List WordPress posts with filtering and search options', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => array($this, 'list_posts'),
             'permission_callback' => '__return_true',
@@ -36,48 +36,48 @@ class McpWordPressPosts {
                 'properties' => [
                     'status' => [
                         'type' => 'string',
-                        'description' => 'Post status filter',
+                        'description' => __( 'Post status filter', 'mcp-for-woocommerce' ),
                         'enum' => ['publish', 'draft', 'private', 'future', 'pending', 'any'],
                         'default' => 'publish'
                     ],
                     'per_page' => [
                         'type' => 'integer',
-                        'description' => 'Number of posts per page',
+                        'description' => __( 'Number of posts per page', 'mcp-for-woocommerce' ),
                         'default' => 10,
                         'minimum' => 1,
                         'maximum' => 100
                     ],
                     'page' => [
                         'type' => 'integer',
-                        'description' => 'Page number',
+                        'description' => __( 'Page number', 'mcp-for-woocommerce' ),
                         'default' => 1,
                         'minimum' => 1
                     ],
                     'search' => [
                         'type' => 'string',
-                        'description' => 'Search term'
+                        'description' => __( 'Search term', 'mcp-for-woocommerce' )
                     ],
                     'category' => [
                         'type' => 'string',
-                        'description' => 'Category slug or ID'
+                        'description' => __( 'Category slug or ID', 'mcp-for-woocommerce' )
                     ],
                     'tag' => [
                         'type' => 'string',
-                        'description' => 'Tag slug or ID'
+                        'description' => __( 'Tag slug or ID', 'mcp-for-woocommerce' )
                     ],
                     'author' => [
                         'type' => 'integer',
-                        'description' => 'Author ID'
+                        'description' => __( 'Author ID', 'mcp-for-woocommerce' )
                     ],
                     'orderby' => [
                         'type' => 'string',
-                        'description' => 'Order by field',
+                        'description' => __( 'Order by field', 'mcp-for-woocommerce' ),
                         'enum' => ['date', 'title', 'menu_order', 'author', 'modified'],
                         'default' => 'date'
                     ],
                     'order' => [
                         'type' => 'string',
-                        'description' => 'Order direction',
+                        'description' => __( 'Order direction', 'mcp-for-woocommerce' ),
                         'enum' => ['ASC', 'DESC'],
                         'default' => 'DESC'
                     ]
@@ -88,7 +88,7 @@ class McpWordPressPosts {
         // Get single WordPress post
         $mcp->register_tool([
             'name' => 'wordpress_posts_get',
-            'description' => 'Get a single WordPress post by ID',
+            'description' => __( 'Get a single WordPress post by ID', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => array($this, 'get_post'),
             'permission_callback' => '__return_true',
@@ -97,7 +97,7 @@ class McpWordPressPosts {
                 'properties' => [
                     'id' => [
                         'type' => 'integer',
-                        'description' => 'Post ID',
+                        'description' => __( 'Post ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],

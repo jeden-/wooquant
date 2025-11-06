@@ -1,15 +1,7 @@
 {
-  "translation-revision-date": "2025-01-06 15:00+0000",
-  "generator": "Manual",
-  "source": "build/index.js",
   "domain": "mcp-for-woocommerce",
   "locale_data": {
     "mcp-for-woocommerce": {
-      "": {
-        "domain": "mcp-for-woocommerce",
-        "lang": "pl_PL",
-        "plural-forms": "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);"
-      },
       "1 day": [
         "1 dzień"
       ],
@@ -73,6 +65,9 @@
       "Array of image URLs or attachment IDs": [
         "Tablica URL obrazów lub ID załączników"
       ],
+      "Array of location codes (e.g., [\\\"US\\\", \\\"CA\\\"])": [
+        "Tablica kodów lokalizacji (np. [\\\"US\\\", \\\"CA\\\"])"
+      ],
       "Array of menu item IDs in desired order": [
         "Tablica ID elementów menu w pożądanej kolejności"
       ],
@@ -107,19 +102,19 @@
         "Tablica ID tagów"
       ],
       "Array of term names to add (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Tablica nazw terminów do dodania (wymagane)"
       ],
       "Array property '%s' must have an items field.": [
         "Właściwość tablicowa '%s' musi mieć pole items."
       ],
       "Attribute ID (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "ID atrybutu (wymagane)"
       ],
       "Attribute name": [
         "Nazwa atrybutu"
       ],
       "Attribute name (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Nazwa atrybutu (wymagane)"
       ],
       "Attribute slug": [
         "Slug atrybutu"
@@ -132,6 +127,9 @@
       ],
       "Authentication Tokens": [
         "Tokeny Uwierzytelniania"
+      ],
+      "Authentication tokens are only available when JWT authentication is enabled.": [
+        "Tokeny uwierzytelniania są dostępne tylko gdy uwierzytelnianie JWT jest włączone."
       ],
       "Author user ID": [
         "ID użytkownika autora"
@@ -151,17 +149,20 @@
       "Billing address": [
         "Adres rozliczeniowy"
       ],
+      "Bulk update multiple products at once. Useful for updating prices, stock, or other fields for multiple products.": [
+        "Masowa aktualizacja wielu produktów jednocześnie. Przydatne do aktualizacji cen, stanu magazynowego lub innych pól dla wielu produktów."
+      ],
       "Caption": [
-        "Akcja"
+        "Podpis"
       ],
       "Category description": [
-        "Opis"
+        "Opis kategorii"
       ],
       "Category display type": [
         "Typ wyświetlania kategorii"
       ],
       "Category ID to delete (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "ID kategorii do usunięcia (wymagane)"
       ],
       "Category ID to update (required)": [
         "ID kategorii do aktualizacji (wymagane)"
@@ -179,10 +180,10 @@
         "ID załącznika obrazu kategorii"
       ],
       "Category name": [
-        "Opis"
+        "Nazwa kategorii"
       ],
       "Category name (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Nazwa kategorii (wymagane)"
       ],
       "Category slug": [
         "Slug kategorii"
@@ -205,6 +206,9 @@
       "Close": [
         "Zamknij"
       ],
+      "Community-developed AI integration plugin that connects WooCommerce & WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. Provides comprehensive AI-accessible interfaces to WooCommerce products, orders, categories, shipping, payments, and WordPress posts/pages through standardized tools, resources, and prompts. Enables AI assistants to seamlessly interact with your e-commerce data and content. Acts as a WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a WooCommerce AI Chatbot/Agent to your site.": [
+        "serwer WooCommerce MCP dla klientów MCP; połącz z Webtalkbot, aby dodać chatbota/agenta AI WooCommerce do swojej witryny.Plugin integracji AI rozwijany przez społeczność, który łączy WooCommerce i WordPress z protokołem Model Context Protocol (MCP). Niezależny od Automattic. Zapewnia kompleksowe interfejsy dostępne dla AI do produktów WooCommerce, zamówień, kategorii, wysyłki, płatności oraz postów/stron WordPress poprzez standaryzowane narzędzia, zasoby i podpowiedzi. Umożliwia asystentom AI płynną interakcję z danymi i treścią Twojego e-commerce. Działa jako serwer WooCommerce MCP dla klientów MCP; połącz z Webtalkbot, aby dodać chatbota/agenta AI WooCommerce do swojej witryny."
+      ],
       "Configuration copied to clipboard!": [
         "Konfiguracja skopiowana do schowka!"
       ],
@@ -214,6 +218,9 @@
       "Content:": [
         "Treść:"
       ],
+      "Control which users and roles can access MCP functionality. By default, only administrators have access.": [
+        "Kontroluj, którzy użytkownicy i role mogą mieć dostęp do funkcjonalności MCP. Domyślnie tylko administratorzy mają dostęp."
+      ],
       "Copy": [
         "Kopiuj"
       ],
@@ -221,58 +228,79 @@
         "Kod kuponu"
       ],
       "Coupon code (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Kod kuponu (wymagane)"
       ],
       "Coupon expiration date (YYYY-MM-DD format)": [
         "Data wygaśnięcia kuponu (format YYYY-MM-DD)"
       ],
       "Coupon ID to delete (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "ID kuponu do usunięcia (wymagane)"
       ],
       "Coupon ID to update (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "ID kuponu do aktualizacji (wymagane)"
       ],
       "Create": [
         "Utwórz"
       ],
       "Create a backup of WooCommerce products. Returns JSON data with all product information that can be restored later.": [
-        "Create a backup of WooCommerce products. Returns JSON data with all product information that can be restored later."
+        "Utwórz kopię zapasową produktów WooCommerce. Zwraca dane JSON ze wszystkimi informacjami o produktach które mogą być później przywrócone."
+      ],
+      "Create a backup of WordPress content (posts, pages, media). Returns JSON data with all content that can be restored later.": [
+        "Utwórz kopię zapasową treści WordPress (wpisy, strony, media). Zwraca dane JSON ze wszystkimi treściami które mogą być później przywrócone."
       ],
       "Create a new global product attribute (e.g., Color, Size).": [
         "Utwórz nowy globalny atrybut produktu (np. Kolor, Rozmiar)."
+      ],
+      "Create a new WooCommerce coupon with discount rules, usage limits, and restrictions.": [
+        "Utwórz nowy kupon WooCommerce z regułami rabatu, limitami użycia i ograniczeniami."
       ],
       "Create a new WooCommerce customer with billing and shipping addresses.": [
         "Utwórz nowego klienta WooCommerce z adresami rozliczeniowymi i wysyłkowymi."
       ],
       "Create a new WooCommerce order with customer information, products, and payment details.": [
-        "Create a new WooCommerce order with customer information, products, and payment details."
+        "Utwórz nowe zamówienie WooCommerce z informacjami o kliencie, produktach i szczegółach płatności."
+      ],
+      "Create a new WooCommerce product category with name, slug, description, parent category, and image.": [
+        "Utwórz nową kategorię produktu WooCommerce z nazwą, slugiem, opisem, kategorią nadrzędną i obrazem."
       ],
       "Create a new WooCommerce product review with rating, content, and reviewer information.": [
-        "Create a new WooCommerce product review with rating, content, and reviewer information."
+        "Utwórz nową recenzję produktu WooCommerce z oceną, treścią i informacjami o recenzencie."
       ],
       "Create a new WooCommerce product tag with name, slug, and description.": [
         "Utwórz nowy tag produktu WooCommerce z nazwą, slugiem i opisem."
       ],
+      "Create a new WooCommerce product. Supports simple and variable products with full configuration including pricing, inventory, images, categories, tags, and attributes.": [
+        "Utwórz nowy produkt WooCommerce. Obsługuje proste i zmienne produkty z pełną konfiguracją obejmującą ceny, magazyn, obrazy, kategorie, tagi i atrybuty."
+      ],
       "Create a new WordPress navigation menu.": [
         "Utwórz nowe menu nawigacyjne WordPress."
+      ],
+      "Create a new WordPress page with content, featured image, and parent page.": [
+        "Utwórz nową stronę WordPress z treścią, obrazem wyróżnionym i stroną nadrzędną."
+      ],
+      "Create a new WordPress post with content, categories, tags, and featured image.": [
+        "Utwórz nowy wpis WordPress z treścią, kategoriami, tagami i obrazem wyróżnionym."
       ],
       "Create a new WordPress user with username, email, password, and role.": [
         "Utwórz nowego użytkownika WordPress z nazwą użytkownika, emailem, hasłem i rolą."
       ],
+      "Create multiple WooCommerce products at once. Accepts array of product data.": [
+        "Utwórz wiele produktów WooCommerce jednocześnie. Akceptuje tablicę danych produktów."
+      ],
       "CSV content as string (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Zawartość CSV jako string (wymagane)"
       ],
       "Customer email": [
         "Email klienta"
       ],
       "Customer email (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "Email klienta (wymagane)"
       ],
       "Customer first name": [
         "Imię klienta"
       ],
       "Customer ID (required)": [
-        "Nazwa użytkownika i hasło są wymagane."
+        "ID klienta (wymagane)"
       ],
       "Customer ID to delete (required)": [
         "ID klienta do usunięcia (wymagane)"
@@ -307,23 +335,35 @@
       "Delete a WooCommerce coupon. DESTRUCTIVE OPERATION.": [
         "Usuń kupon WooCommerce. OPERACJA DESTRUKCYJNA."
       ],
+      "Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes associated WordPress user.": [
+        "Usuń klienta WooCommerce. OPERACJA DESTRUKCYJNA - również usuwa powiązanego użytkownika WordPress."
+      ],
+      "Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will be uncategorized.": [
+        "Usuń kategorię produktu WooCommerce. OPERACJA DESTRUKCYJNA - produkty będą bez kategorii."
+      ],
       "Delete a WooCommerce product review. DESTRUCTIVE OPERATION.": [
         "Usuń recenzję produktu WooCommerce. OPERACJA DESTRUKCYJNA."
       ],
+      "Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose this tag.": [
+        "Usuń tag produktu WooCommerce. OPERACJA DESTRUKCYJNA - produkty stracą ten tag."
+      ],
+      "Delete a WooCommerce product. Can permanently delete or move to trash. DESTRUCTIVE OPERATION - use with caution.": [
+        "Usuń produkt WooCommerce. Może trwale usunąć lub przenieść do kosza. OPERACJA DESTRUKCYJNA - używaj ostrożnie."
+      ],
       "Delete a WordPress navigation menu. DESTRUCTIVE OPERATION.": [
-        "Wyświetl posty WordPress"
+        "Usuń menu nawigacyjne WordPress. OPERACJA DESTRUKCYJNA."
       ],
       "Delete a WordPress page. DESTRUCTIVE OPERATION.": [
         "Usuń stronę WordPress. OPERACJA DESTRUKCYJNA."
       ],
       "Delete a WordPress post. DESTRUCTIVE OPERATION.": [
-        "Wyświetl posty WordPress"
+        "Usuń wpis WordPress. OPERACJA DESTRUKCYJNA."
       ],
       "Delete a WordPress user. DESTRUCTIVE OPERATION.": [
-        "Wyświetl posty WordPress"
+        "Usuń użytkownika WordPress. OPERACJA DESTRUKCYJNA."
       ],
       "Delete multiple WooCommerce products at once. DESTRUCTIVE OPERATION.": [
-        "Wyświetl posty WordPress"
+        "Usuń wiele produktów WooCommerce jednocześnie. OPERACJA DESTRUKCYJNA."
       ],
       "Description": [
         "Opis"
@@ -349,6 +389,9 @@
       "Each token is unique and can be revoked individually if compromised": [
         "Każdy token jest unikalny i może być odwołany indywidualnie jeśli został naruszony"
       ],
+      "Edit": [
+        "Edytuj"
+      ],
       "Email": [
         "Email"
       ],
@@ -364,8 +407,17 @@
       "Enable archives": [
         "Włącz archiwa"
       ],
+      "Enable MCP access for entire user roles. Individual user permissions override role permissions.": [
+        "Włącz dostęp do MCP dla całych ról użytkowników. Indywidualne uprawnienia użytkowników nadpisują uprawnienia ról."
+      ],
       "Enable MCP functionality": [
         "Włącz funkcjonalność MCP"
+      ],
+      "Enable Write Operations": [
+        "Włącz operacje zapisu"
+      ],
+      "Allow tools to create, update, or delete data. Use with caution.": [
+        "Zezwól narzędziom na tworzenie, aktualizację lub usuwanie danych. Używaj ostrożnie."
       ],
       "Enable stock management": [
         "Włącz zarządzanie magazynem"
@@ -375,6 +427,9 @@
       ],
       "enabled": [
         "włączone"
+      ],
+      "End date (required if period is \\\"custom\\\")": [
+        "Data zakończenia (wymagana jeśli okres to \\\"niestandardowy\\\")"
       ],
       "Error fetching tokens": [
         "Błąd pobierania tokenów"
@@ -419,10 +474,10 @@
         "Wygasa za 1 godzinę"
       ],
       "Export WooCommerce orders to CSV format. Returns CSV content as string.": [
-        "Export WooCommerce orders to CSV format. Returns CSV content as string."
+        "Eksportuj zamówienia WooCommerce do formatu CSV. Zwraca zawartość CSV jako string."
       ],
       "Export WooCommerce products to CSV format. Returns CSV content as string.": [
-        "Export WooCommerce products to CSV format. Returns CSV content as string."
+        "Eksportuj produkty WooCommerce do formatu CSV. Zwraca zawartość CSV jako string."
       ],
       "Failed to copy to clipboard": [
         "Token skopiowany do schowka!"
@@ -463,6 +518,9 @@
       "Filename for the image": [
         "Nazwa pliku dla obrazu"
       ],
+      "Filip Dvoran": [
+        "Filip Dvoran"
+      ],
       "Filter by stock status": [
         "Stan"
       ],
@@ -487,8 +545,23 @@
       "Generate New Token": [
         "Wygeneruj Nowy Token"
       ],
+      "Generate tokens below to allow secure access to your WordPress content through the MCP protocol.": [
+        "Wygeneruj tokeny poniżej, aby umożliwić bezpieczny dostęp do Twojej treści WordPress przez protokół MCP."
+      ],
       "Generated Token": [
         "Wygeneruj token"
+      ],
+      "Get detailed WooCommerce sales report with totals, order counts, average order value, and period breakdown.": [
+        "Pobierz szczegółowy raport sprzedaży WooCommerce z sumami, liczbą zamówień, średnią wartością zamówienia i podziałem okresowym."
+      ],
+      "Get WooCommerce customer report with purchase statistics, lifetime value, and order history.": [
+        "Pobierz raport klientów WooCommerce ze statystykami zakupów, wartością życiową i historią zamówień."
+      ],
+      "Get WooCommerce stock status report with low stock alerts, out of stock items, and stock levels.": [
+        "Pobierz raport stanu magazynowego WooCommerce z alertami niskiego stanu, produktami wyprzedanymi i poziomami magazynowymi."
+      ],
+      "Grant or revoke MCP access for specific users. These settings override role-based permissions.": [
+        "Przyznaj lub odbierz dostęp do MCP dla konkretnych użytkowników. Te ustawienia nadpisują uprawnienia oparte na rolach."
       ],
       "hours": [
         "godziny"
@@ -502,11 +575,35 @@
       "How They Work": [
         "Jak działają"
       ],
+      "https://github.com/iOSDevSK": [
+        "https://github.com/iOSDevSK"
+      ],
+      "https://github.com/iOSDevSK/mcp-for-woocommerce": [
+        "https://github.com/iOSDevSK/mcp-for-woocommerce"
+      ],
       "If true, coupon cannot be used with other coupons": [
         "Jeśli prawda, kupon nie może być używany z innymi kuponami"
       ],
+      "If true, enables free shipping": [
+        "Jeśli prawda, włącza darmową wysyłkę"
+      ],
+      "If true, sale items are excluded from coupon": [
+        "Jeśli prawda, produkty w promocji są wykluczone z kuponu"
+      ],
+      "Image caption": [
+        "Podpis obrazu"
+      ],
       "Image description": [
         "Opis"
+      ],
+      "Image title": [
+        "Tytuł obrazu"
+      ],
+      "Import WooCommerce orders from CSV file. CSV should contain order data (customer, products, amounts, etc.).": [
+        "Importuj zamówienia WooCommerce z pliku CSV. CSV powinien zawierać dane zamówień (klient, produkty, kwoty, itp.)."
+      ],
+      "Import WooCommerce products from CSV file. CSV should contain product data (name, SKU, price, stock, etc.).": [
+        "Importuj produkty WooCommerce z pliku CSV. CSV powinien zawierać dane produktów (nazwa, SKU, cena, magazyn, itp.)."
       ],
       "Individual User Permissions": [
         "Indywidualne Uprawnienia Użytkowników"
@@ -514,8 +611,23 @@
       "Invalid nonce": [
         "Nieprawidłowe dane uwierzytelniające."
       ],
+      "Invalid nonce. Please refresh the page and try again.": [
+        "Nieprawidłowe dane uwierzytelniające. Odśwież stronę i spróbuj ponownie."
+      ],
       "Issued At": [
         "Wydany"
+      ],
+      "JSON string containing backup data (required)": [
+        "String JSON zawierający dane kopii zapasowej (wymagane)"
+      ],
+      "JWT Authentication is recommended if you want to create a WooCommerce AI Agent in": [
+        "Uwierzytelnianie JWT jest zalecane jeśli chcesz utworzyć agenta AI WooCommerce w"
+      ],
+      "JWT Authentication must be enabled if you want to create a WooCommerce AI Agent in": [
+        "Uwierzytelnianie JWT musi być włączone jeśli chcesz utworzyć agenta AI WooCommerce w"
+      ],
+      "Key-value pairs of WooCommerce settings to update (required)": [
+        "Pary klucz-wartość ustawień WooCommerce do aktualizacji (wymagane)"
       ],
       "Last name": [
         "Nazwisko"
@@ -523,8 +635,14 @@
       "List of all available prompts in the system.": [
         "Lista wszystkich dostępnych promptów w systemie."
       ],
+      "Ready-to-use AI workflows and scenarios. Use prompts to quickly perform complex tasks like sales analysis, SEO optimization, or inventory management. Click \\\"View\\\" to see detailed instructions and parameters for each prompt.": [
+        "Gotowe do użycia przepływy pracy AI i scenariusze. Użyj promptów, aby szybko wykonać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO lub zarządzanie magazynem. Kliknij \\\"Zobacz\\\", aby zobaczyć szczegółowe instrukcje i parametry dla każdego promptu."
+      ],
       "List of all available resources in the system.": [
         "Lista wszystkich dostępnych zasobów w systemie."
+      ],
+      "List of all registered tools in the system. Use the toggles to enable or disable individual tools.": [
+        "Lista wszystkich zarejestrowanych narzędzi w systemie. Użyj przełączników aby włączyć lub wyłączyć poszczególne narzędzia."
       ],
       "Loading documentation...": [
         "Ładowanie dokumentacji..."
@@ -547,8 +665,23 @@
       "Loading user permissions...": [
         "Ładowanie uprawnień użytkowników..."
       ],
+      "Max number of items in cart the coupon can apply to": [
+        "Maksymalna liczba produktów w koszyku, do których kupon może być zastosowany"
+      ],
+      "Maximum 10 active tokens allowed per user. When generating a new token at the limit, oldest revoked tokens will be automatically removed to make room. If no revoked tokens exist, new token generation will be blocked - you must revoke some existing active tokens first.": [
+        "Maksymalnie 10 aktywnych tokenów dozwolonych na użytkownika. Przy generowaniu nowego tokenu przy limicie, najstarsze odwołane tokeny zostaną automatycznie usunięte aby zrobić miejsce. Jeśli nie ma odwołanych tokenów, generowanie nowego tokenu zostanie zablokowane - musisz najpierw odwołać niektóre istniejące aktywne tokeny."
+      ],
+      "Maximum order amount allowed to use coupon": [
+        "Maksymalna kwota zamówienia dozwolona do użycia kuponu"
+      ],
       "MCP Access": [
         "Dostęp do MCP"
+      ],
+      "MCP authentication tokens are secure, temporary credentials that allow external MCP clients to the WordPress MCP server": [
+        "Tokeny uwierzytelniania MCP to bezpieczne, tymczasowe dane uwierzytelniające które umożliwiają zewnętrznym klientom MCP dostęp do serwera WordPress MCP"
+      ],
+      "MCP for WooCommerce": [
+        "MCP for WooCommerce"
       ],
       "MCP Proxy file generated at:": [
         "Plik proxy MCP wygenerowany w:"
@@ -558,6 +691,9 @@
       ],
       "Media attachment ID to delete (required)": [
         "Nazwa użytkownika i hasło są wymagane."
+      ],
+      "Media title": [
+        "Tytuł mediów"
       ],
       "Menu ID (required)": [
         "Menu ID (wymagane)"
@@ -571,6 +707,24 @@
       "Menu name (required)": [
         "Nazwa użytkownika i hasło są wymagane."
       ],
+      "Menu order for sorting": [
+        "Kolejność menu do sortowania"
+      ],
+      "Menu order position": [
+        "Pozycja kolejności menu"
+      ],
+      "Method ID (e.g., \\\"flat_rate\\\")": [
+        "ID metody (np. \\\"flat_rate\\\")"
+      ],
+      "Method title": [
+        "Tytuł metody"
+      ],
+      "Method-specific settings": [
+        "Ustawienia specyficzne dla metody"
+      ],
+      "Minimum order amount required to use coupon": [
+        "Minimalna kwota zamówienia wymagana do użycia kuponu"
+      ],
       "Must be manually revoked if compromised": [
         "Muszą być ręcznie unieważniane w przypadku naruszenia"
       ],
@@ -583,11 +737,23 @@
       "Never expires": [
         "Nigdy nie wygasa"
       ],
+      "Never share tokens in public repositories, emails, or chat messages": [
+        "Nigdy nie udostępniaj tokenów w publicznych repozytoriach, emailach lub wiadomościach czatu"
+      ],
+      "Never-expiring tokens pose significant security risks. If compromised, they cannot be invalidated through expiration. Only use this option if you fully understand the security implications and have proper token management procedures in place.": [
+        "Tokeny bez wygaśnięcia stwarzają znaczne ryzyko bezpieczeństwa. Jeśli zostaną naruszone, nie można ich unieważnić poprzez wygaśnięcie. Używaj tej opcji tylko jeśli w pełni rozumiesz implikacje bezpieczeństwa i masz odpowiednie procedury zarządzania tokenami."
+      ],
       "Never-Expiring Tokens:": [
         "Tokeny bez wygaśnięcia:"
       ],
+      "New menu name": [
+        "Nowa nazwa menu"
+      ],
       "New order status (required)": [
         "Nazwa użytkownika i hasło są wymagane."
+      ],
+      "New password": [
+        "Nowe hasło"
       ],
       "New role (required)": [
         "Nazwa użytkownika i hasło są wymagane."
@@ -625,20 +791,44 @@
       "Number of customers to include in report": [
         "Wyświetl zamówienia WooCommerce"
       ],
+      "Object type": [
+        "Typ obiektu"
+      ],
       "Optional order note to add": [
         "Optional order note to add"
+      ],
+      "Order customers by": [
+        "Sortuj klientów według"
       ],
       "Order ID (required)": [
         "Order ID (wymagane)"
       ],
+      "Order status (default: pending)": [
+        "Status zamówienia (domyślnie: pending)"
+      ],
       "Order statuses to include": [
         "Statusy zamówień do uwzględnienia"
+      ],
+      "Page content": [
+        "Treść strony"
+      ],
+      "Page excerpt": [
+        "Skrót strony"
       ],
       "Page ID (required)": [
         "Page ID (wymagane)"
       ],
       "Page ID to delete (required)": [
         "Nazwa użytkownika i hasło są wymagane."
+      ],
+      "Page order": [
+        "Kolejność strony"
+      ],
+      "Page status": [
+        "Status strony"
+      ],
+      "Page title": [
+        "Tytuł strony"
       ],
       "Page title (required)": [
         "Nazwa użytkownika i hasło są wymagane."
@@ -649,17 +839,47 @@
       "Parent category ID": [
         "ID kategorii nadrzędnej"
       ],
+      "Parent category ID (0 for top-level)": [
+        "ID kategorii nadrzędnej (0 dla najwyższego poziomu)"
+      ],
+      "Parent menu item ID (for submenu items)": [
+        "ID elementu menu nadrzędnego (dla elementów podmenu)"
+      ],
+      "Parent page ID": [
+        "ID strony nadrzędnej"
+      ],
+      "Password (auto-generated if not provided)": [
+        "Hasło (automatycznie wygenerowane jeśli nie podano)"
+      ],
       "Payment gateway ID (e.g., \\\"bacs\\\", \\\"paypal\\\", \\\"stripe\\\") (required)": [
         "Payment gateway ID (e.g., \\\"bacs\\\", \\\"paypal\\\", \\\"stripe\\\") (wymagane)"
+      ],
+      "Payment method ID": [
+        "ID metody płatności"
       ],
       "Please check that the documentation file exists and is accessible.": [
         "Sprawdź, czy plik dokumentacji istnieje i jest dostępny."
       ],
+      "Please enable \\\"Require JWT Authentication\\\" in the Settings tab first.": [
+        "Najpierw włącz \\\"Wymagaj uwierzytelnienia JWT\\\" w zakładce Ustawienia."
+      ],
+      "Please enable MCP in the Settings tab first.": [
+        "Najpierw włącz MCP w zakładce Ustawienia."
+      ],
       "Post content": [
         "Treść wpisu"
       ],
+      "Post excerpt": [
+        "Skrót wpisu"
+      ],
       "Post ID (required)": [
         "Nazwa użytkownika i hasło są wymagane."
+      ],
+      "Post ID to attach file to": [
+        "ID wpisu do którego dołączyć plik"
+      ],
+      "Post ID to attach image to": [
+        "ID wpisu do którego dołączyć obraz"
       ],
       "Post ID to delete (required)": [
         "Nazwa użytkownika i hasło są wymagane."
@@ -676,6 +896,12 @@
       "Post title (required)": [
         "Nazwa użytkownika i hasło są wymagane."
       ],
+      "Post types to backup (default: post, page)": [
+        "Typy wpisów do kopii zapasowej (domyślnie: post, page)"
+      ],
+      "Post, page, or custom post type ID": [
+        "ID wpisu, strony lub niestandardowego typu wpisu"
+      ],
       "Product attributes": [
         "Wyświetl tagi produktów"
       ],
@@ -691,6 +917,12 @@
       "Product ID to update (required)": [
         "Product ID to update (wymagane)"
       ],
+      "Product IDs that the coupon applies to": [
+        "ID produktów, do których kupon ma zastosowanie"
+      ],
+      "Product IDs that the coupon does not apply to": [
+        "ID produktów, do których kupon nie ma zastosowania"
+      ],
       "Product long description": [
         "Opis"
       ],
@@ -703,11 +935,29 @@
       "Product name/title (required)": [
         "Wyświetl atrybuty produktów"
       ],
+      "Product regular price": [
+        "Cena regularna produktu"
+      ],
+      "Product sale price": [
+        "Cena promocyjna produktu"
+      ],
+      "Product short description": [
+        "Krótki opis produktu"
+      ],
       "Product SKU": [
         "Wyświetl tagi produktów"
       ],
+      "Product SKU (Stock Keeping Unit)": [
+        "SKU produktu (jednostka magazynowa)"
+      ],
       "Product status": [
         "Wyświetl tagi produktów"
+      ],
+      "Product status (default: publish)": [
+        "Status produktu (domyślnie: publish)"
+      ],
+      "Product type (default: simple)": [
+        "Typ produktu (domyślnie: simple)"
       ],
       "Product weight": [
         "Wyświetl atrybuty produktów"
@@ -727,6 +977,9 @@
       "Publish a WordPress post (change status to publish).": [
         "Wyświetl posty WordPress"
       ],
+      "Rating (1-5)": [
+        "Ocena (1-5)"
+      ],
       "Read": [
         "Odczyt"
       ],
@@ -738,6 +991,9 @@
       ],
       "Regularly review and clean up unused or expired tokens": [
         "Regularnie przeglądaj i usuwaj nieużywane lub wygasłe tokeny"
+      ],
+      "Remember: These tokens provide access based on your user permissions. If you can see it in WordPress, applications using your token can see it too.": [
+        "Pamiętaj: Te tokeny zapewniają dostęp na podstawie Twoich uprawnień użytkownika. Jeśli możesz to zobaczyć w WordPress, aplikacje używające Twojego tokenu również mogą to zobaczyć."
       ],
       "Require JWT Authentication": [
         "Wymagaj uwierzytelnienia JWT"
@@ -751,6 +1007,12 @@
       "Resources": [
         "Zasoby"
       ],
+      "Restore WordPress content (posts, pages) from backup JSON data.": [
+        "Przywróć treść WordPress (wpisy, strony) z danych kopii zapasowej JSON."
+      ],
+      "Review content": [
+        "Treść recenzji"
+      ],
       "Review content (required)": [
         "Nazwa użytkownika i hasło są wymagane."
       ],
@@ -763,11 +1025,23 @@
       "Review ID to delete (required)": [
         "Nazwa użytkownika i hasło są wymagane."
       ],
+      "Reviewer email": [
+        "Email recenzenta"
+      ],
+      "Reviewer email (required)": [
+        "Email recenzenta (wymagane)"
+      ],
+      "Reviewer name": [
+        "Nazwa recenzenta"
+      ],
       "Reviewer name (required)": [
         "Nazwa użytkownika i hasło są wymagane."
       ],
       "Revoke": [
         "Unieważnij"
+      ],
+      "Revoke tokens immediately if you suspect they may be compromised": [
+        "Odwołaj tokeny natychmiast jeśli podejrzewasz że mogły zostać naruszone"
       ],
       "Revoked": [
         "Unieważniony"
@@ -790,6 +1064,9 @@
       "Search tools...": [
         "Szukaj narzędzi..."
       ],
+      "Security Best Practices": [
+        "Najlepsze praktyki bezpieczeństwa"
+      ],
       "Security Warning": [
         "Ostrzeżenie bezpieczeństwa"
       ],
@@ -808,14 +1085,35 @@
       "Showing first 10 tokens. Total tokens:": [
         "Wyświetlanie pierwszych 10 tokenów. Łączna liczba tokenów:"
       ],
+      "Site tagline": [
+        "Slogan witryny"
+      ],
+      "Site title": [
+        "Tytuł witryny"
+      ],
+      "Sort order": [
+        "Kolejność sortowania"
+      ],
       "Specific customer ID (optional, for single customer report)": [
         "Konkretne ID klienta (opcjonalne, dla raportu pojedynczego klienta)"
+      ],
+      "Start date (required if period is \\\"custom\\\")": [
+        "Data rozpoczęcia (wymagana jeśli okres to \\\"niestandardowy\\\")"
+      ],
+      "Start of week (0=Sunday, 1=Monday, etc.)": [
+        "Początek tygodnia (0=niedziela, 1=poniedziałek, itp.)"
       ],
       "Status": [
         "Stan"
       ],
       "Stock quantity": [
         "Stan"
+      ],
+      "Stock quantity (if manage_stock is true)": [
+        "Ilość magazynowa (jeśli manage_stock jest prawda)"
+      ],
+      "Stock quantity to set (or null to only update status)": [
+        "Ilość magazynowa do ustawienia (lub null aby tylko zaktualizować status)"
       ],
       "Stock status": [
         "Stan"
@@ -832,6 +1130,9 @@
       "Tag ID to update (required)": [
         "Tag ID to update (wymagane)"
       ],
+      "Tag IDs or names": [
+        "ID tagów lub nazwy"
+      ],
       "Tag name": [
         "Nazwa tagu"
       ],
@@ -841,11 +1142,26 @@
       "Tag slug": [
         "Slug tagu"
       ],
+      "Tag slug (URL-friendly name). Auto-generated from name if not provided.": [
+        "Slug tagu (przyjazna dla URL nazwa). Automatycznie generowany z nazwy jeśli nie podano."
+      ],
       "The input schema must be an object type.": [
         "Schemat wejściowy musi być typem obiektu."
       ],
       "The required field must be an array.": [
         "Pole wymagane musi być tablicą."
+      ],
+      "These tokens are exclusively for MCP protocol access (stdio and streamable/HTTP). They will not work with WordPress REST API endpoints or other authentication systems.": [
+        "Te tokeny są wyłącznie do dostępu przez protokół MCP (stdio i streamable/HTTP). Nie będą działać z endpointami WordPress REST API ani innymi systemami uwierzytelniania."
+      ],
+      "These tokens are implemented using JWT (JSON Web Tokens), providing secure and stateless authentication.": [
+        "Te tokeny są implementowane przy użyciu JWT (JSON Web Tokens), zapewniając bezpieczne i bezstanowe uwierzytelnianie."
+      ],
+      "They provide access to MCP route endpoints for your WordPress content": [
+        "Zapewniają dostęp do endpointów tras MCP dla Twojej treści WordPress"
+      ],
+      "This feature is only available when MCP functionality is enabled.": [
+        "Ta funkcja jest dostępna tylko gdy funkcjonalność MCP jest włączona."
       ],
       "This token never expires": [
         "Ten token nigdy nie wygasa"
@@ -859,6 +1175,12 @@
       "Time period for the report": [
         "Okres czasu dla raportu"
       ],
+      "Timezone string": [
+        "String strefy czasowej"
+      ],
+      "To use with Claude.ai Desktop, add this configuration to your claude_desktop_config.json:": [
+        "Aby używać z Claude.ai Desktop, dodaj tę konfigurację do swojego claude_desktop_config.json:"
+      ],
       "Toggle to enable or disable the MCP plugin functionality.": [
         "Przełącz, aby włączyć lub wyłączyć funkcjonalność pluginu MCP."
       ],
@@ -867,6 +1189,9 @@
       ],
       "Token Duration": [
         "Czas Trwania Tokenu"
+      ],
+      "Tokens are generated with your current user permissions and expire automatically": [
+        "Tokeny są generowane z Twoimi aktualnymi uprawnieniami użytkownika i wygasają automatycznie"
       ],
       "Tokens automatically inherit your user role and capabilities": [
         "Tokeny automatycznie dziedziczą Twoją rolę użytkownika i uprawnienia"
@@ -883,8 +1208,14 @@
       "Total:": [
         "Razem:"
       ],
+      "Type of discount": [
+        "Typ rabatu"
+      ],
       "Update": [
         "Aktualizuj"
+      ],
+      "Update a WordPress navigation menu (rename or change menu items order).": [
+        "Aktualizuj menu nawigacyjne WordPress (zmień nazwę lub kolejność elementów menu)."
       ],
       "Update an existing product attribute.": [
         "Wyświetl produkty WooCommerce"
@@ -910,6 +1241,30 @@
       "Update an existing WordPress post.": [
         "Wyświetl posty WordPress"
       ],
+      "Update an existing WordPress user.": [
+        "Aktualizuj istniejącego użytkownika WordPress."
+      ],
+      "Update media metadata (title, alt text, caption, description).": [
+        "Aktualizuj metadane mediów (tytuł, tekst alternatywny, podpis, opis)."
+      ],
+      "Update stock quantities or stock status for multiple products at once.": [
+        "Aktualizuj ilości magazynowe lub status magazynowy dla wielu produktów jednocześnie."
+      ],
+      "Update WooCommerce settings. Accepts settings key-value pairs to update.": [
+        "Aktualizuj ustawienia WooCommerce. Akceptuje pary klucz-wartość ustawień do aktualizacji."
+      ],
+      "Update WordPress general settings (site title, tagline, admin email, etc.).": [
+        "Aktualizuj ogólne ustawienia WordPress (tytuł witryny, slogan, email administratora, itp.)."
+      ],
+      "URI": [
+        "URI"
+      ],
+      "URL for the menu item": [
+        "URL dla elementu menu"
+      ],
+      "Use the shortest expiration time that meets your needs": [
+        "Używaj najkrótszego czasu wygaśnięcia który spełnia Twoje potrzeby"
+      ],
       "User": [
         "Użytkownik"
       ],
@@ -921,6 +1276,9 @@
       ],
       "User ID to reassign orders to (optional)": [
         "User ID to reassign orders to (opcjonalne)"
+      ],
+      "User ID to reassign posts and comments to": [
+        "ID użytkownika do którego przypisać wpisy i komentarze"
       ],
       "User Permissions": [
         "Uprawnienia Użytkowników"
@@ -943,20 +1301,104 @@
       "What are Authentication Tokens?": [
         "Czym są Tokeny Uwierzytelniania?"
       ],
+      "When enabled, all MCP requests must include a valid JWT token. When disabled, MCP endpoints are accessible without authentication (readonly mode only) and can be used as a Claude.ai Desktop connector.": [
+        "Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb tylko do odczytu) i mogą być używane jako konektor Claude.ai Desktop."
+      ],
+      "When enabled, all MCP requests must include a valid JWT token. When disabled, MCP endpoints are accessible without authentication (readonly mode only).": [
+        "Gdy włączone, wszystkie żądania MCP muszą zawierać ważny token JWT. Gdy wyłączone, punkty końcowe MCP są dostępne bez uwierzytelnienia (tylko tryb tylko do odczytu)."
+      ],
+      "When JWT Authentication is disabled, this plugin can be used as a connector in Claude.ai Desktop. A proxy file will be automatically generated for easy setup.": [
+        "Gdy uwierzytelnianie JWT jest wyłączone, ta wtyczka może być używana jako konektor w Claude.ai Desktop. Plik proxy zostanie automatycznie wygenerowany dla łatwej konfiguracji."
+      ],
+      "Whether CSV has header row": [
+        "Czy CSV ma wiersz nagłówka"
+      ],
+      "Whether gateway is enabled": [
+        "Czy bramka jest włączona"
+      ],
+      "Whether method is enabled": [
+        "Czy metoda jest włączona"
+      ],
+      "Whether note is for customer (default: false)": [
+        "Czy notatka jest dla klienta (domyślnie: false)"
+      ],
+      "Whether the review is approved": [
+        "Czy recenzja jest zatwierdzona"
+      ],
+      "Whether to enable stock management": [
+        "Czy włączyć zarządzanie magazynem"
+      ],
+      "Whether to force delete even if category has products": [
+        "Czy wymusić usunięcie nawet jeśli kategoria ma produkty"
+      ],
+      "Whether to force delete even if tag is used by products": [
+        "Czy wymusić usunięcie nawet jeśli tag jest używany przez produkty"
+      ],
+      "Whether to force delete permanently": [
+        "Czy wymusić trwałe usunięcie"
+      ],
+      "Whether to include media metadata": [
+        "Czy uwzględnić metadane mediów"
+      ],
+      "Whether to include product metadata": [
+        "Czy uwzględnić metadane produktu"
+      ],
+      "Whether to notify customer (default: false)": [
+        "Czy powiadomić klienta (domyślnie: false)"
+      ],
+      "Whether to permanently delete (true) or move to trash (false, default)": [
+        "Czy trwale usunąć (true) lub przenieść do kosza (false, domyślnie)"
+      ],
+      "Whether to update existing posts/pages by title": [
+        "Czy aktualizować istniejące wpisy/strony po tytule"
+      ],
+      "Whether to update existing products by SKU": [
+        "Czy aktualizować istniejące produkty po SKU"
+      ],
+      "WordPress permalinks are not set to \\\"Post name\\\" structure. For proper product link generation, please go to WordPress Admin → Settings → Permalinks and select \\\"Post name\\\" structure.": [
+        "Bezpośrednie odnośniki WordPress nie są ustawione na strukturę \\\"Nazwa wpisu\\\". Dla prawidłowego generowania linków produktów, przejdź do WordPress Admin → Ustawienia → Bezpośrednie odnośniki i wybierz strukturę \\\"Nazwa wpisu\\\"."
+      ],
+      "WordPress REST API appears to be disabled. This plugin requires REST API to function properly. Please contact your administrator to ensure the WordPress REST API is enabled.": [
+        "WordPress REST API wydaje się być wyłączone. Ta wtyczka wymaga REST API do prawidłowego działania. Skontaktuj się z administratorem, aby upewnić się, że WordPress REST API jest włączone."
+      ],
       "Write": [
         "Zapis"
+      ],
+      "You do not have permission to access JWT tokens. Admin privileges required.": [
+        "Nie masz uprawnień do dostępu do tokenów JWT. Wymagane są uprawnienia administratora."
       ],
       "You do not have permission to access this.": [
         "Nie masz uprawnień do zarządzania tokenami."
       ],
+      "You do not have permission to generate JWT tokens. Admin privileges required.": [
+        "Nie masz uprawnień do generowania tokenów JWT. Wymagane są uprawnienia administratora."
+      ],
       "You do not have permission to perform this action.": [
         "Nie masz uprawnień do zarządzania tokenami."
+      ],
+      "You do not have permission to revoke JWT tokens. Admin privileges required.": [
+        "Nie masz uprawnień do odwoływania tokenów JWT. Wymagane są uprawnienia administratora."
+      ],
+      "You need to be logged in as an administrator to access JWT tokens.": [
+        "Musisz być zalogowany jako administrator, aby uzyskać dostęp do tokenów JWT."
+      ],
+      "You need to be logged in as an administrator to generate JWT tokens.": [
+        "Musisz być zalogowany jako administrator, aby wygenerować tokeny JWT."
+      ],
+      "You need to be logged in as an administrator to revoke JWT tokens.": [
+        "Musisz być zalogowany jako administrator, aby odwołać tokeny JWT."
       ],
       "Your Active Tokens": [
         "Twoje Aktywne Tokeny"
       ],
+      "Zone ID (0 to create new zone)": [
+        "ID strefy (0 aby utworzyć nową strefę)"
+      ],
       "Zone name (required for new zones)": [
         "Nazwa użytkownika i hasło są wymagane."
+      ],
+      "Zone order": [
+        "Kolejność strefy"
       ],
       "ℹ️ Important Note:": [
         "Ważna uwaga:"
@@ -967,20 +1409,437 @@
       "⚠️ Important Security Notes:": [
         "Ważne Wskazówki Bezpieczeństwa:"
       ],
+      "⚠️ Incorrect Permalinks Configuration": [
+        "⚠️ Nieprawidłowa konfiguracja bezpośrednich odnośników"
+      ],
       "⚠️ Security Warning:": [
         "Ostrzeżenie bezpieczeństwa"
+      ],
+      "⚠️ WordPress REST API Disabled": [
+        "⚠️ WordPress REST API wyłączone"
       ],
       "🚨 Never-Expiring Tokens:": [
         "Tokeny bez wygaśnięcia:"
       ],
-      "Enable Write Operations": [
-        "Włącz operacje zapisu"
+      "Search term for product name or description": [
+        "Termin wyszukiwania dla nazwy lub opisu produktu"
       ],
-      "Allow tools to create, update, or delete data. Use with caution.": [
-        "Zezwól narzędziom na tworzenie, aktualizację lub usuwanie danych. Używaj ostrożnie."
+      "Product category slug": [
+        "Slug kategorii produktu"
       ],
-      "Ready-to-use AI workflows and scenarios. Use prompts to quickly perform complex tasks like sales analysis, SEO optimization, or inventory management. Click \"View\" to see detailed instructions and parameters for each prompt.": [
-        "Gotowe do użycia przepływy pracy AI i scenariusze. Użyj promptów, aby szybko wykonać złożone zadania, takie jak analiza sprzedaży, optymalizacja SEO lub zarządzanie magazynem. Kliknij \"Zobacz\", aby zobaczyć szczegółowe instrukcje i parametry dla każdego promptu."
+      "Number of products per page (default: 10)": [
+        "Liczba produktów na stronę (domyślnie: 10)"
+      ],
+      "Page number (default: 1)": [
+        "Numer strony (domyślnie: 1)"
+      ],
+      "Variable product ID": [
+        "ID produktu zmiennego"
+      ],
+      "Parent product ID": [
+        "ID produktu nadrzędnego"
+      ],
+      "Variation ID": [
+        "ID wariantu"
+      ],
+      "List WordPress media items with pagination and filtering": [
+        "Lista elementów mediów WordPress z paginacją i filtrowaniem"
+      ],
+      "Get a WordPress media item details by ID": [
+        "Pobierz szczegóły elementu mediów WordPress po ID"
+      ],
+      "Get the actual file content (blob) of a WordPress media item": [
+        "Pobierz rzeczywistą zawartość pliku (blob) elementu mediów WordPress"
+      ],
+      "The ID of the media item": [
+        "ID elementu mediów"
+      ],
+      "Search WordPress media items by title, caption, or description": [
+        "Wyszukaj elementy mediów WordPress po tytule, podpisie lub opisie"
+      ],
+      "Search term to look for in media titles, captions, and descriptions": [
+        "Termin wyszukiwania do znalezienia w tytułach, podpisach i opisach mediów"
+      ],
+      "Filter by media type (image, video, audio, application)": [
+        "Filtruj według typu mediów (image, video, audio, application)"
+      ],
+      "Filter by MIME type (e.g., image/jpeg, video/mp4)": [
+        "Filtruj według typu MIME (np. image/jpeg, video/mp4)"
+      ],
+      "Filter by author ID": [
+        "Filtruj według ID autora"
+      ],
+      "Filter by parent post ID": [
+        "Filtruj według ID wpisu nadrzędnego"
+      ],
+      "The user search query to analyze": [
+        "Zapytanie wyszukiwania użytkownika do analizy"
+      ],
+      "Available product categories from wc_get_categories": [
+        "Dostępne kategorie produktów z wc_get_categories"
+      ],
+      "Available product tags from wc_get_tags": [
+        "Dostępne tagi produktów z wc_get_tags"
+      ],
+      "Number of results per page (default: 20)": [
+        "Liczba wyników na stronę (domyślnie: 20)"
+      ],
+      "Show debug information about search strategy used": [
+        "Pokaż informacje debugowania o użytej strategii wyszukiwania"
+      ],
+      "The original user search query": [
+        "Oryginalne zapytanie wyszukiwania użytkownika"
+      ],
+      "Array of available categories from wc_get_categories": [
+        "Tablica dostępnych kategorii z wc_get_categories"
+      ],
+      "Array of available tags from wc_get_tags": [
+        "Tablica dostępnych tagów z wc_get_tags"
+      ],
+      "Brand name to search for": [
+        "Nazwa marki do wyszukania"
+      ],
+      "Brand name (alias for brand_name)": [
+        "Nazwa marki (alias dla brand_name)"
+      ],
+      "Brand name or search query": [
+        "Nazwa marki lub zapytanie wyszukiwania"
+      ],
+      "Get products by category name or slug.": [
+        "Pobierz produkty według nazwy kategorii lub slug."
+      ],
+      "Category name or slug": [
+        "Nazwa kategorii lub slug"
+      ],
+      "Category name, slug, or search query": [
+        "Nazwa kategorii, slug lub zapytanie wyszukiwania"
+      ],
+      "Get products by custom attributes (color, size, etc.)": [
+        "Pobierz produkty według niestandardowych atrybutów (kolor, rozmiar, itp.)"
+      ],
+      "Attribute search query (will be parsed for key-value pairs)": [
+        "Zapytanie wyszukiwania atrybutu (zostanie przeanalizowane pod kątem par klucz-wartość)"
+      ],
+      "Brand name": [
+        "Nazwa marki"
+      ],
+      "General search query (will be parsed for filters)": [
+        "Ogólne zapytanie wyszukiwania (zostanie przeanalizowane pod kątem filtrów)"
+      ],
+      "Key-value pairs of attributes": [
+        "Pary klucz-wartość atrybutów"
+      ],
+      "Get single product by ID with complete details.": [
+        "Pobierz pojedynczy produkt po ID ze szczegółowymi informacjami."
+      ],
+      "Product ID as string or search term": [
+        "ID produktu jako ciąg znaków lub termin wyszukiwania"
+      ],
+      "Get a specific WooCommerce product attribute by ID": [
+        "Pobierz konkretny atrybut produktu WooCommerce po ID"
+      ],
+      "Search and filter WordPress users with pagination": [
+        "Wyszukaj i filtruj użytkowników WordPress z paginacją"
+      ],
+      "Get a WordPress user by ID": [
+        "Pobierz użytkownika WordPress po ID"
+      ],
+      "Get the current logged-in user": [
+        "Pobierz aktualnie zalogowanego użytkownika"
+      ],
+      "Tax class slug to filter by": [
+        "Slug klasy podatkowej do filtrowania"
+      ],
+      "Country code to filter by": [
+        "Country code to filter by"
+      ],
+      "State code to filter by": [
+        "State code to filter by"
+      ],
+      "Get available WooCommerce system tools and utilities": [
+        "Pobierz available WooCommerce system tools and utilities"
+      ],
+      "This tool will clear the product/shop transients cache.": [
+        "This tool will clear the product/shop transients cache."
+      ],
+      "This tool will clear ALL expired transients from WordPress.": [
+        "This tool will clear ALL expired transients from WordPress."
+      ],
+      "This tool will delete all variations which have no parent.": [
+        "This tool will delete all variations which have no parent."
+      ],
+      "This tool will delete all customer session data from the database.": [
+        "This tool will delete all customer session data from the database."
+      ],
+      "List WordPress posts with filtering and search options": [
+        "Lista WordPress posts with filtering and search options"
+      ],
+      "Post status filter": [
+        "Wpis status filter"
+      ],
+      "Number of posts per page": [
+        "Liczba posts per page"
+      ],
+      "Page number": [
+        "Strona number"
+      ],
+      "Search term": [
+        "Wyszukaj term"
+      ],
+      "Category slug or ID": [
+        "Category slug or ID"
+      ],
+      "Tag slug or ID": [
+        "Tag slug or ID"
+      ],
+      "Author ID": [
+        "ID autora"
+      ],
+      "Order by field": [
+        "Zamówienie by field"
+      ],
+      "Order direction": [
+        "Zamówienie direction"
+      ],
+      "Get a single WordPress post by ID": [
+        "Get a single WordPress post by ID"
+      ],
+      "The HTTP method to retrieve metadata for": [
+        "HTTP method to retrieve metadata for"
+      ],
+      "The HTTP method to use: Only GET is allowed": [
+        "HTTP method to use: Only GET is allowed"
+      ],
+      "Query parameters for GET requests.": [
+        "Query parameters for GET requests."
+      ],
+      "List WordPress pages with filtering and search options": [
+        "Lista WordPress pages with filtering and search options"
+      ],
+      "Page status filter": [
+        "Strona status filter"
+      ],
+      "Number of pages per page": [
+        "Liczba pages per page"
+      ],
+      "Parent page ID (0 for top-level pages)": [
+        "Nadrzędny page ID (0 for top-level pages)"
+      ],
+      "Get a single WordPress page by ID": [
+        "Get a single WordPress page by ID"
+      ],
+      "Get all WooCommerce product reviews with filtering and pagination": [
+        "Pobierz all WooCommerce product reviews with filtering and pagination"
+      ],
+      "Product ID to filter reviews": [
+        "Produkt ID to filter reviews"
+      ],
+      "Number of reviews per page": [
+        "Liczba reviews per page"
+      ],
+      "Get a specific WooCommerce product review by ID": [
+        "Get a specific WooCommerce product review by ID"
+      ],
+      "Search and filter WordPress pages with pagination": [
+        "Wyszukaj and filter WordPress pages with pagination"
+      ],
+      "Get a WordPress page by ID": [
+        "Get a WordPress page by ID"
+      ],
+      "Get all available WooCommerce product tags dynamically": [
+        "Pobierz all available WooCommerce product tags dynamically"
+      ],
+      "Number of tags to retrieve (default: 100)": [
+        "Number of tags to retrieve (domyślnie: 100)"
+      ],
+      "Whether to hide tags with no products (default: false)": [
+        "Whether to hide tags with no products (domyślnie: false)"
+      ],
+      "Get WordPress general site settings": [
+        "Pobierz WordPress general site settings"
+      ],
+      "Search and filter WordPress posts with pagination": [
+        "Wyszukaj and filter WordPress posts with pagination"
+      ],
+      "Get a WordPress post by ID": [
+        "Get a WordPress post by ID"
+      ],
+      "List all WordPress post categories": [
+        "Lista all WordPress post categories"
+      ],
+      "List all WordPress post tags": [
+        "Lista all WordPress post tags"
+      ],
+      "Get details about a specific WooCommerce payment gateway by ID": [
+        "Get details about a specific WooCommerce payment gateway by ID"
+      ],
+      "Payment Gateway ID": [
+        "Payment Gateway ID"
+      ],
+      "Get a list of WooCommerce orders": [
+        "Pobierz a list of WooCommerce orders"
+      ],
+      "Get WooCommerce coupons totals report": [
+        "Pobierz WooCommerce coupons totals report"
+      ],
+      "Get WooCommerce customers totals report": [
+        "Pobierz WooCommerce customers totals report"
+      ],
+      "Get WooCommerce orders totals report": [
+        "Pobierz WooCommerce orders totals report"
+      ],
+      "Get WooCommerce products totals report": [
+        "Pobierz WooCommerce products totals report"
+      ],
+      "Get WooCommerce reviews totals report": [
+        "Pobierz WooCommerce reviews totals report"
+      ],
+      "Get WooCommerce sales report": [
+        "Pobierz WooCommerce sales report"
+      ],
+      "List all available WordPress custom post types": [
+        "Lista all available WordPress custom post types"
+      ],
+      "Search and filter WordPress custom post types including": [
+        "Wyszukaj and filter WordPress custom post types including"
+      ],
+      "The custom post type to search": [
+        "custom post type to search"
+      ],
+      "Search term to look for in post titles and content": [
+        "Wyszukaj term to look for in post titles and content"
+      ],
+      "Filter by post status (publish, draft, pending, etc.)": [
+        "Filtruj by post status (publish, draft, pending, etc.)"
+      ],
+      "Page number for pagination (starts from 1)": [
+        "Strona number for pagination (starts from 1)"
+      ],
+      "Get a WordPress custom post type by ID": [
+        "Get a WordPress custom post type by ID"
+      ],
+      "The custom post type to get": [
+        "custom post type to get"
+      ],
+      "The ID of the post to get": [
+        "ID of the post to get"
+      ],
+      "Get all available WooCommerce product categories dynamically": [
+        "Pobierz all available WooCommerce product categories dynamically"
+      ],
+      "Number of categories to retrieve (default: 100)": [
+        "Number of categories to retrieve (domyślnie: 100)"
+      ],
+      "Whether to hide categories with no products (default: false)": [
+        "Whether to hide categories with no products (domyślnie: false)"
+      ],
+      "Get all WooCommerce shipping zones and their coverage areas": [
+        "Pobierz all WooCommerce shipping zones and their coverage areas"
+      ],
+      "Get details about a specific WooCommerce shipping zone": [
+        "Pobierz details about a specific WooCommerce shipping zone"
+      ],
+      "Shipping Zone ID": [
+        "Shipping Zone ID"
+      ],
+      "Get all shipping methods available for a specific shipping zone": [
+        "Pobierz all shipping methods available for a specific shipping zone"
+      ],
+      "Understand the available tools and workflow": [
+        "Understand the available tools and workflow"
+      ],
+      "Use the universal intent analyzer to get optimal search parameters": [
+        "Use the universal intent analyzer to get optimal search parameters"
+      ],
+      "Search with all intent analysis parameters (full search)": [
+        "Wyszukaj with all intent analysis parameters (full search)"
+      ],
+      "IF stage_2 returns 0 results → Search in related/parent categories": [
+        "IF stage_2 returns 0 results → Search in related/parent categories"
+      ],
+      "How to get product colors, sizes, and other variations correctly": [
+        "How to get product colors, sizes, and other variations correctly"
+      ],
+      "Show available options with prices and stock status": [
+        "Show available options with prices and stock status"
+      ],
+      "Provides detailed information about the active WordPress theme": [
+        "Provides detailed information about the active WordPress theme"
+      ],
+      "Provides detailed information about active WordPress plugins": [
+        "Provides detailed information about active WordPress plugins"
+      ],
+      "Provides detailed information about WordPress site settings": [
+        "Provides detailed information about WordPress site settings"
+      ],
+      "Create and optimize WordPress navigation menus for better UX": [
+        "Utwórz and optimize WordPress navigation menus for better UX"
+      ],
+      "Import, export, backup, and migrate WooCommerce and WordPress data": [
+        "Import, export, backup, and migrate WooCommerce and WordPress data"
+      ],
+      "Source file path or description (for import/restore)": [
+        "Source file path or description (for import/restore)"
+      ],
+      "Analyze WooCommerce orders with filtering and insights": [
+        "Analyze WooCommerce orders with filtering and insights"
+      ],
+      "Manage WordPress users, roles, permissions, and security": [
+        "Manage WordPress users, roles, permissions, and security"
+      ],
+      "Task-specific details (user info, role, criteria)": [
+        "Task-specific details (user info, role, criteria)"
+      ],
+      "Upload, organize, optimize, and manage WordPress media library": [
+        "Upload, organize, optimize, and manage WordPress media library"
+      ],
+      "Task-specific details (file path, organization criteria, etc.)": [
+        "Task-specific details (file path, organization criteria, etc.)"
+      ],
+      "Analyze customer behavior, create segments, and personalize marketing": [
+        "Analyze customer behavior, create segments, and personalize marketing"
+      ],
+      "Specific customer segment to focus on (optional)": [
+        "Specific customer segment to focus on (opcjonalne)"
+      ],
+      "Specific region or zone (optional)": [
+        "Specific region or zone (opcjonalne)"
+      ],
+      "Target keyword for optimization (optional)": [
+        "Target keyword for optimization (opcjonalne)"
+      ],
+      "Get detailed information about the WordPress site": [
+        "Pobierz detailed information about the WordPress site"
+      ],
+      "Create or optimize WordPress content (posts, pages)": [
+        "Utwórz or optimize WordPress content (posts, pages)"
+      ],
+      "Topic or title for the content": [
+        "Topic or title for the treść"
+      ],
+      "Provide customer support for WooCommerce store inquiries": [
+        "Provide customer support for WooCommerce store inquiries"
+      ],
+      "Order ID if the query is about a specific order": [
+        "Zamówienie ID if the query is about a specific order"
+      ],
+      "Search for WooCommerce products intelligently with filters and sorting": [
+        "Wyszukaj for WooCommerce products intelligently with filters and sorting"
+      ],
+      "Create and manage WooCommerce coupons and promotional campaigns": [
+        "Utwórz and manage WooCommerce coupons and promotional campaigns"
+      ],
+      "Campaign details or analysis criteria": [
+        "Szczegóły kampanii lub kryteria analizy"
+      ],
+      "Analyze and manage WooCommerce product inventory": [
+        "Analyze and manage WooCommerce product inventory"
+      ],
+      "Low stock threshold (default: 5)": [
+        "Próg niskiego stanu magazynowego (domyślnie: 5)"
+      ],
+      "Analyze WooCommerce sales data": [
+        "Analyze WooCommerce sales data"
       ]
     }
   }

@@ -27,7 +27,7 @@ class McpWooSearchGuide {
           [
               'uri' => 'woocommerce://search-guide',
               'name' => 'woocommerce-search-guide',
-              'description' => 'Universal guide for AI assistants on how to perform intelligent WooCommerce product searches using the available tools',
+              'description' => __( 'Universal guide for AI assistants on how to perform intelligent WooCommerce product searches using the available tools', 'mcp-for-woocommerce' ),
               'mimeType' => 'application/json'
           ],
           [$this, 'get_search_guide']
@@ -38,7 +38,7 @@ class McpWooSearchGuide {
       return [
           'title' => 'WooCommerce Universal Search Guide',
           'version' => '2.0',
-          'description' => 'Universal step-by-step guide for AI assistants to perform optimal product searches with automatic fallback strategies for ANY store type: electronics, food, pets, pharmacy, automotive, clothing, books, tools, beauty, sports, etc. Handles multiple products with same name.',
+          'description' => __( 'Universal step-by-step guide for AI assistants to perform optimal product searches with automatic fallback strategies for ANY store type: electronics, food, pets, pharmacy, automotive, clothing, books, tools, beauty, sports, etc. Handles multiple products with same name.', 'mcp-for-woocommerce' ),
           
           'workflow' => [
               'overview' => 'Always follow this 4-step process for ANY product search query with intelligent fallbacks',
@@ -49,14 +49,14 @@ class McpWooSearchGuide {
                   [
                       'step' => 1,
                       'action' => 'Read this guide',
-                      'description' => 'Understand the available tools and workflow',
+                      'description' => __( 'Understand the available tools and workflow', 'mcp-for-woocommerce' ),
                       'tool' => 'resources/read',
                       'uri' => 'woocommerce://search-guide'
                   ],
                   [
                       'step' => 2,
                       'action' => 'Discover available categories and tags',
-                      'description' => 'Get the current store categories and tags to understand what products are available',
+                      'description' => __( 'Get the current store categories and tags to understand what products are available', 'mcp-for-woocommerce' ),
                       'tools' => [
                           'wc_get_categories' => 'Get all product categories with IDs, names, and counts',
                           'wc_get_tags' => 'Get all product tags with IDs, names, and counts'
@@ -69,7 +69,7 @@ class McpWooSearchGuide {
                   [
                       'step' => 3,
                       'action' => 'Analyze search intent',
-                      'description' => 'Use the universal intent analyzer to get optimal search parameters',
+                      'description' => __( 'Use the universal intent analyzer to get optimal search parameters', 'mcp-for-woocommerce' ),
                       'tool' => 'wc_analyze_search_intent',
                       'required_parameters' => [
                           'user_query' => 'The original user search query'
@@ -82,39 +82,39 @@ class McpWooSearchGuide {
                   [
                       'step' => 4,
                       'action' => 'Execute intelligent search with automatic fallbacks',
-                      'description' => 'Multi-stage search strategy that automatically falls back when no results found',
+                      'description' => __( 'Multi-stage search strategy that automatically falls back when no results found', 'mcp-for-woocommerce' ),
                       'primary_tool' => 'wc_products_search',
                       'mandatory_rule' => 'NEVER return empty results - always try fallback strategies',
                       'fallback_strategy' => [
                           'stage_1_primary' => [
-                              'description' => 'Search with all intent analysis parameters (full search)',
+                              'description' => __( 'Search with all intent analysis parameters (full search)', 'mcp-for-woocommerce' ),
                               'tool' => 'wc_products_search',
                               'use_parameters' => 'Complete parameters from wc_analyze_search_intent including filters',
                               'example' => 'Search for "[product] on sale" with matched category + sale filter + price sorting'
                           ],
                           'stage_2_category_only' => [
-                              'description' => 'IF stage_1 returns 0 results → Remove promotional/price filters, keep only categories',
+                              'description' => __( 'IF stage_1 returns 0 results → Remove promotional/price filters, keep only categories', 'mcp-for-woocommerce' ),
                               'tool' => 'wc_products_search',
                               'use_parameters' => 'Only category filters, remove on_sale, price sorting, meta_query filters',
                               'trigger' => 'When primary search returns empty array',
                               'example' => 'Search for "[product]" category only, ignore sale/price filters'
                           ],
                           'stage_3_broader_categories' => [
-                              'description' => 'IF stage_2 returns 0 results → Search in related/parent categories',
+                              'description' => __( 'IF stage_2 returns 0 results → Search in related/parent categories', 'mcp-for-woocommerce' ),
                               'tool' => 'wc_products_search',
                               'use_parameters' => 'Broader category terms, parent categories, related categories',
                               'trigger' => 'When category-only search returns empty array',
                               'example' => 'If "[specific_category]" empty, try "[parent_category]" or related categories'
                           ],
                           'stage_4_general_search' => [
-                              'description' => 'IF stage_3 returns 0 results → General text search without category filters',
+                              'description' => __( 'IF stage_3 returns 0 results → General text search without category filters', 'mcp-for-woocommerce' ),
                               'tool' => 'wc_products_search',
                               'use_parameters' => 'Only search parameter with original query terms, no filters',
                               'trigger' => 'When broader categories return empty array',
                               'example' => 'Search for "[search_term]" as general text search across all products'
                           ],
                           'stage_5_show_alternatives' => [
-                              'description' => 'IF all stages return 0 results → Show available categories or popular products',
+                              'description' => __( 'IF all stages return 0 results → Show available categories or popular products', 'mcp-for-woocommerce' ),
                               'tool' => 'wc_get_categories',
                               'use_parameters' => 'Show available categories that contain products',
                               'trigger' => 'When all product searches return empty',
@@ -322,7 +322,7 @@ class McpWooSearchGuide {
           ],
 
           'product_variations_workflow' => [
-              'description' => 'How to get product colors, sizes, and other variations correctly',
+              'description' => __( 'How to get product colors, sizes, and other variations correctly', 'mcp-for-woocommerce' ),
               'critical_rule' => 'NEVER use hardcoded product IDs - always search first',
               'correct_workflow' => [
                   'step_1' => [
@@ -333,7 +333,7 @@ class McpWooSearchGuide {
                   ],
                   'step_2' => [
                       'action' => 'Handle multiple products if found',
-                      'description' => 'If multiple products have same name (e.g., Men/Women versions), present all options',
+                      'description' => __( 'If multiple products have same name (e.g., Men/Women versions), present all options', 'mcp-for-woocommerce' ),
                       'example' => 'Found 2 "Ramie Shirt with Pockets": ID 1169 (Men), ID 1170 (Women)'
                   ],
                   'step_3' => [
@@ -344,7 +344,7 @@ class McpWooSearchGuide {
                   ],
                   'step_4' => [
                       'action' => 'Present colors/sizes to user',
-                      'description' => 'Show available options with prices and stock status',
+                      'description' => __( 'Show available options with prices and stock status', 'mcp-for-woocommerce' ),
                       'example' => 'Men Ramie Shirt available in: White (€39.99), Yellow (€39.99)'
                   ]
               ],

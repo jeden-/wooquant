@@ -32,7 +32,7 @@ class McpSiteInfo {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'get_site_info',
-				'description'         => 'Provides detailed information about the WordPress site like site name, url, description, admin email, plugins, themes, users, and more',
+				'description' => __( 'Provides detailed information about the WordPress site like site name, url, description, admin email, plugins, themes, users, and more', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'inputSchema'         => array(
 					'type'       => 'object',

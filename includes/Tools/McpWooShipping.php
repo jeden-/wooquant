@@ -26,7 +26,7 @@ class McpWooShipping {
 
         new RegisterMcpTool([
             'name' => 'wc_get_shipping_zones',
-            'description' => 'Get all WooCommerce shipping zones and their coverage areas',
+            'description' => __( 'Get all WooCommerce shipping zones and their coverage areas', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_shipping_zones'],
             'permission_callback' => '__return_true',
@@ -43,7 +43,7 @@ class McpWooShipping {
 
         new RegisterMcpTool([
             'name' => 'wc_get_shipping_zone',
-            'description' => 'Get details about a specific WooCommerce shipping zone',
+            'description' => __( 'Get details about a specific WooCommerce shipping zone', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_shipping_zone'],
             'permission_callback' => '__return_true',
@@ -52,7 +52,7 @@ class McpWooShipping {
                 'properties' => [
                     'id' => [
                         'type' => 'integer',
-                        'description' => 'Shipping Zone ID',
+                        'description' => __( 'Shipping Zone ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],
@@ -67,7 +67,7 @@ class McpWooShipping {
 
         new RegisterMcpTool([
             'name' => 'wc_get_shipping_methods',
-            'description' => 'Get all shipping methods available for a specific shipping zone',
+            'description' => __( 'Get all shipping methods available for a specific shipping zone', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_shipping_methods'],
             'permission_callback' => '__return_true',
@@ -76,7 +76,7 @@ class McpWooShipping {
                 'properties' => [
                     'zone_id' => [
                         'type' => 'integer',
-                        'description' => 'Shipping Zone ID',
+                        'description' => __( 'Shipping Zone ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],
@@ -91,7 +91,7 @@ class McpWooShipping {
 
         new RegisterMcpTool([
             'name' => 'wc_get_shipping_locations',
-            'description' => 'Get all locations (countries/states) covered by a specific shipping zone',
+            'description' => __( 'Get all locations (countries/states) covered by a specific shipping zone', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_shipping_locations'],
             'permission_callback' => '__return_true',
@@ -100,7 +100,7 @@ class McpWooShipping {
                 'properties' => [
                     'zone_id' => [
                         'type' => 'integer',
-                        'description' => 'Shipping Zone ID',
+                        'description' => __( 'Shipping Zone ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],

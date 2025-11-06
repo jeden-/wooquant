@@ -35,7 +35,7 @@ class McpSiteSettingsResource {
 			array(
 				'uri'         => 'WordPress://site-settings',
 				'name'        => 'site-settings',
-				'description' => 'Provides detailed information about WordPress site settings',
+				'description' => __( 'Provides detailed information about WordPress site settings', 'mcp-for-woocommerce' ),
 				'mimeType'    => 'application/json',
 			),
 			array( $this, 'get_site_settings' )

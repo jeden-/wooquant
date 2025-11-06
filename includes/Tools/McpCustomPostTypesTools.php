@@ -36,7 +36,7 @@ class McpCustomPostTypesTools {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'wp_list_post_types',
-				'description'         => 'List all available WordPress custom post types',
+				'description' => __( 'List all available WordPress custom post types', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'callback'            => array( $this, 'list_post_types' ),
 				'permission_callback' => '__return_true',
@@ -55,7 +55,7 @@ class McpCustomPostTypesTools {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'wp_cpt_search',
-				'description'         => 'Search and filter WordPress custom post types including ' . $post_types_list . ' with pagination',
+				'description' => __( 'Search and filter WordPress custom post types including ', 'mcp-for-woocommerce' ) . $post_types_list . ' with pagination',
 				'type'                => 'read',
 				'callback'            => array( $this, 'search_custom_post_types' ),
 				'permission_callback' => '__return_true',
@@ -65,28 +65,28 @@ class McpCustomPostTypesTools {
 					'properties' => array(
 						'post_type' => array(
 							'type'        => 'string',
-							'description' => 'The custom post type to search',
+							'description' => __( 'The custom post type to search', 'mcp-for-woocommerce' ),
 						),
 						'search'    => array(
 							'type'        => 'string',
-							'description' => 'Search term to look for in post titles and content',
+							'description' => __( 'Search term to look for in post titles and content', 'mcp-for-woocommerce' ),
 						),
 						'author'    => array(
 							'type'        => 'integer',
-							'description' => 'Filter by author ID',
+							'description' => __( 'Filter by author ID', 'mcp-for-woocommerce' ),
 						),
 						'status'    => array(
 							'type'        => 'string',
-							'description' => 'Filter by post status (publish, draft, pending, etc.)',
+							'description' => __( 'Filter by post status (publish, draft, pending, etc.)', 'mcp-for-woocommerce' ),
 						),
 						'page'      => array(
 							'type'        => 'integer',
-							'description' => 'Page number for pagination (starts from 1)',
+							'description' => __( 'Page number for pagination (starts from 1)', 'mcp-for-woocommerce' ),
 							'default'     => 1,
 						),
 						'per_page'  => array(
 							'type'        => 'integer',
-							'description' => 'Number of posts per page',
+							'description' => __( 'Number of posts per page', 'mcp-for-woocommerce' ),
 							'default'     => 10,
 						),
 					),
@@ -105,7 +105,7 @@ class McpCustomPostTypesTools {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'wp_get_cpt',
-				'description'         => 'Get a WordPress custom post type by ID',
+				'description' => __( 'Get a WordPress custom post type by ID', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'callback'            => array( $this, 'get_custom_post_type' ),
 				'permission_callback' => '__return_true',
@@ -115,11 +115,11 @@ class McpCustomPostTypesTools {
 					'properties' => array(
 						'post_type' => array(
 							'type'        => 'string',
-							'description' => 'The custom post type to get',
+							'description' => __( 'The custom post type to get', 'mcp-for-woocommerce' ),
 						),
 						'id'        => array(
 							'type'        => 'integer',
-							'description' => 'The ID of the post to get',
+							'description' => __( 'The ID of the post to get', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required'   => array(

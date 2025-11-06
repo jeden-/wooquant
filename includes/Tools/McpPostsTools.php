@@ -26,7 +26,7 @@ class McpPostsTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_posts_search',
-				'description' => 'Search and filter WordPress posts with pagination',
+				'description' => __( 'Search and filter WordPress posts with pagination', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/posts',
@@ -43,7 +43,7 @@ class McpPostsTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_post',
-				'description' => 'Get a WordPress post by ID',
+				'description' => __( 'Get a WordPress post by ID', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/posts/(?P<id>[\d]+)',
@@ -63,7 +63,7 @@ class McpPostsTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_list_categories',
-				'description' => 'List all WordPress post categories',
+				'description' => __( 'List all WordPress post categories', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/categories',
@@ -83,7 +83,7 @@ class McpPostsTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_list_tags',
-				'description' => 'List all WordPress post tags',
+				'description' => __( 'List all WordPress post tags', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/tags',

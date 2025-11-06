@@ -26,7 +26,7 @@ class McpWooAttributes {
 
         new RegisterMcpTool([
             'name' => 'wc_get_product_attributes',
-            'description' => 'Get all GLOBAL product attribute definitions (like Color, Size, Material) available in the store. WARNING: This shows attribute types, NOT specific product colors/sizes. To get available colors/sizes for a specific product, use: 1) wc_products_search to find the product, 2) wc_get_product_variations with that product ID.',
+            'description' => __( 'Get all GLOBAL product attribute definitions (like Color, Size, Material) available in the store. WARNING: This shows attribute types, NOT specific product colors/sizes. To get available colors/sizes for a specific product, use: 1) wc_products_search to find the product, 2) wc_get_product_variations with that product ID.', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_product_attributes'],
             'permission_callback' => '__return_true',
@@ -43,7 +43,7 @@ class McpWooAttributes {
 
         new RegisterMcpTool([
             'name' => 'wc_get_product_attribute',
-            'description' => 'Get a specific WooCommerce product attribute by ID',
+            'description' => __( 'Get a specific WooCommerce product attribute by ID', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_product_attribute'],
             'permission_callback' => '__return_true',
@@ -52,7 +52,7 @@ class McpWooAttributes {
                 'properties' => [
                     'id' => [
                         'type' => 'integer',
-                        'description' => 'Attribute ID',
+                        'description' => __( 'Attribute ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],
@@ -67,7 +67,7 @@ class McpWooAttributes {
 
         new RegisterMcpTool([
             'name' => 'wc_get_attribute_terms',
-            'description' => 'Get all terms for a specific product attribute (e.g., Red, Blue for Color attribute)',
+            'description' => __( 'Get all terms for a specific product attribute (e.g., Red, Blue for Color attribute)', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_attribute_terms'],
             'permission_callback' => '__return_true',
@@ -76,7 +76,7 @@ class McpWooAttributes {
                 'properties' => [
                     'attribute_id' => [
                         'type' => 'integer',
-                        'description' => 'Attribute ID',
+                        'description' => __( 'Attribute ID', 'mcp-for-woocommerce' ),
                         'minimum' => 1
                     ]
                 ],

@@ -26,7 +26,7 @@ class McpWooTaxes {
 
         new RegisterMcpTool([
             'name' => 'wc_get_tax_classes',
-            'description' => 'Get all WooCommerce tax classes (Standard, Reduced Rate, Zero Rate, etc.)',
+            'description' => __( 'Get all WooCommerce tax classes (Standard, Reduced Rate, Zero Rate, etc.)', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_tax_classes'],
             'permission_callback' => '__return_true',
@@ -43,7 +43,7 @@ class McpWooTaxes {
 
         new RegisterMcpTool([
             'name' => 'wc_get_tax_rates',
-            'description' => 'Get all WooCommerce tax rates with filtering by class, country, state, etc.',
+            'description' => __( 'Get all WooCommerce tax rates with filtering by class, country, state, etc.', 'mcp-for-woocommerce' ),
             'type' => 'read',
             'callback' => [$this, 'get_tax_rates'],
             'permission_callback' => '__return_true',
@@ -52,15 +52,15 @@ class McpWooTaxes {
                 'properties' => [
                     'class' => [
                         'type' => 'string',
-                        'description' => 'Tax class slug to filter by'
+                        'description' => __( 'Tax class slug to filter by', 'mcp-for-woocommerce' )
                     ],
                     'country' => [
                         'type' => 'string',
-                        'description' => 'Country code to filter by'
+                        'description' => __( 'Country code to filter by', 'mcp-for-woocommerce' )
                     ],
                     'state' => [
                         'type' => 'string',
-                        'description' => 'State code to filter by'
+                        'description' => __( 'State code to filter by', 'mcp-for-woocommerce' )
                     ]
                 ]
             ],

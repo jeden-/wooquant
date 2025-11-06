@@ -48,7 +48,7 @@ class McpRestApiCrud {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'list_api_functions',
-				'description'         => 'List all available WordPress REST API endpoints that support CRUD operations (Create, Read, Update, Delete). Use this first to discover what API functions are available before inspecting or calling them.',
+				'description' => __( 'List all available WordPress REST API endpoints that support CRUD operations (Create, Read, Update, Delete). Use this first to discover what API functions are available before inspecting or calling them.', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'inputSchema'         => array(
 					'type'       => 'object',
@@ -68,19 +68,19 @@ class McpRestApiCrud {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'get_function_details',
-				'description'         => 'Get detailed metadata for a specific WordPress REST API endpoint and HTTP method. Includes available parameters, required fields, authentication needs, and expected response structure. Use this to get the details of a specific function before calling it.',
+				'description' => __( 'Get detailed metadata for a specific WordPress REST API endpoint and HTTP method. Includes available parameters, required fields, authentication needs, and expected response structure. Use this to get the details of a specific function before calling it.', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'inputSchema'         => array(
 					'type'       => 'object',
 					'properties' => array(
 						'route'  => array(
 							'type'        => 'string',
-							'description' => 'The REST API route (e.g., "/wp/v2/posts", "/wp/v2/users")',
+							'description' => __( 'The REST API route (e.g., "/wp/v2/posts", "/wp/v2/users")', 'mcp-for-woocommerce' ),
 						),
 						'method' => array(
 							'type'        => 'string',
 							'enum'        => array( 'GET', 'POST', 'PATCH', 'DELETE' ),
-							'description' => 'The HTTP method to retrieve metadata for',
+							'description' => __( 'The HTTP method to retrieve metadata for', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required'   => array( 'route', 'method' ),
@@ -98,23 +98,23 @@ class McpRestApiCrud {
 		new RegisterMcpTool(
 			array(
 				'name'                => 'run_api_function',
-				'description'         => 'Execute read-only WordPress REST API functions by providing the endpoint route. Only supports GET operations for security reasons.',
+				'description' => __( 'Execute read-only WordPress REST API functions by providing the endpoint route. Only supports GET operations for security reasons.', 'mcp-for-woocommerce' ),
 				'type'                => 'read',
 				'inputSchema'         => array(
 					'type'       => 'object',
 					'properties' => array(
 						'route'  => array(
 							'type'        => 'string',
-							'description' => 'The REST API route (e.g., "/wp/v2/posts", "/wp/v2/users/123")',
+							'description' => __( 'The REST API route (e.g., "/wp/v2/posts", "/wp/v2/users/123")', 'mcp-for-woocommerce' ),
 						),
 						'method' => array(
 							'type'        => 'string',
 							'enum'        => array( 'GET' ),
-							'description' => 'The HTTP method to use: Only GET is allowed',
+							'description' => __( 'The HTTP method to use: Only GET is allowed', 'mcp-for-woocommerce' ),
 						),
 						'data'   => array(
 							'type'        => 'object',
-							'description' => 'Query parameters for GET requests.',
+							'description' => __( 'Query parameters for GET requests.', 'mcp-for-woocommerce' ),
 						),
 					),
 					'required'   => array( 'route', 'method' ),

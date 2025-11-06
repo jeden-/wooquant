@@ -44,7 +44,7 @@ class McpPluginInfoResource {
 			array(
 				'uri'         => 'WordPress://plugin-info',
 				'name'        => 'plugin-info',
-				'description' => 'Provides detailed information about active WordPress plugins',
+				'description' => __( 'Provides detailed information about active WordPress plugins', 'mcp-for-woocommerce' ),
 				'mimeType'    => 'application/json',
 			),
 			array( $this, 'get_plugin_info' )

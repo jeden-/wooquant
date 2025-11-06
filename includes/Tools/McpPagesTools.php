@@ -26,7 +26,7 @@ class McpPagesTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_pages_search',
-				'description' => 'Search and filter WordPress pages with pagination',
+				'description' => __( 'Search and filter WordPress pages with pagination', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/pages',
@@ -43,7 +43,7 @@ class McpPagesTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_page',
-				'description' => 'Get a WordPress page by ID',
+				'description' => __( 'Get a WordPress page by ID', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/pages/(?P<id>[\d]+)',

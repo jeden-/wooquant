@@ -26,7 +26,7 @@ class McpSettingsTools {
 		new RegisterMcpTool(
 			array(
 				'name'        => 'wp_get_general_settings',
-				'description' => 'Get WordPress general site settings',
+				'description' => __( 'Get WordPress general site settings', 'mcp-for-woocommerce' ),
 				'type'        => 'read',
 				'rest_alias'  => array(
 					'route'  => '/wp/v2/settings',

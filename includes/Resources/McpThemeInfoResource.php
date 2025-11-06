@@ -36,7 +36,7 @@ class McpThemeInfoResource {
 			array(
 				'uri'         => 'WordPress://theme-info',
 				'name'        => 'theme-info',
-				'description' => 'Provides detailed information about the active WordPress theme',
+				'description' => __( 'Provides detailed information about the active WordPress theme', 'mcp-for-woocommerce' ),
 				'mimeType'    => 'application/json',
 			),
 			array( $this, 'get_theme_info' )

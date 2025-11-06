@@ -35,7 +35,7 @@ class McpGeneralSiteInfo {
 			array(
 				'uri'         => 'WordPress://site-info',
 				'name'        => 'site-info',
-				'description' => 'Provides general information about the WordPress site including site details, plugins, themes, and users',
+				'description' => __( 'Provides general information about the WordPress site including site details, plugins, themes, and users', 'mcp-for-woocommerce' ),
 				'mimeType'    => 'application/json',
 			),
 			array( $this, 'get_site_info' )
