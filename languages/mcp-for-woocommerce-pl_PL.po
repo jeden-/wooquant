@@ -680,6 +680,8 @@ msgid ""
 "Enable MCP access for entire user roles. Individual user permissions "
 "override role permissions."
 msgstr ""
+"Włącz dostęp do MCP dla całych ról użytkowników. Indywidualne uprawnienia użytkowników "
+"nadpisują uprawnienia ról."
 
 #: includes/Admin/Settings.php:158 build/index.js:1
 #: src/settings/SettingsTab.js:57
@@ -870,6 +872,8 @@ msgid ""
 "Generate tokens below to allow secure access to your WordPress content "
 "through the MCP protocol."
 msgstr ""
+"Wygeneruj tokeny poniżej, aby umożliwić bezpieczny dostęp do Twojej treści WordPress "
+"poprzez protokół MCP."
 
 #: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
 msgid "Generated Token"
@@ -1002,12 +1006,16 @@ msgid ""
 "JWT Authentication is recommended if you want to create a WooCommerce AI "
 "Agent in"
 msgstr ""
+"Uwierzytelnianie JWT jest zalecane jeśli chcesz utworzyć agenta AI WooCommerce "
+"w"
 
 #: includes/Admin/Settings.php:177
 msgid ""
 "JWT Authentication must be enabled if you want to create a WooCommerce AI "
 "Agent in"
 msgstr ""
+"Uwierzytelnianie JWT musi być włączone jeśli chcesz utworzyć agenta AI WooCommerce "
+"w"
 
 #: includes/Tools/Write/McpSettingsWrite.php:50
 msgid "Key-value pairs of WooCommerce settings to update (required)"
@@ -1829,6 +1837,8 @@ msgid ""
 "To use with Claude.ai Desktop, add this configuration to your "
 "claude_desktop_config.json:"
 msgstr ""
+"Aby używać z Claude.ai Desktop, dodaj tę konfigurację do swojego "
+"claude_desktop_config.json:"
 
 #: includes/Admin/Settings.php:159 build/index.js:1
 #: src/settings/SettingsTab.js:61
