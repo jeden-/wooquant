@@ -252,6 +252,13 @@ class Settings {
 			$sanitized['enabled'] = 0;
 		}
 
+		// Handle enable_write_operations setting
+		if ( isset( $input['enable_write_operations'] ) ) {
+			$sanitized['enable_write_operations'] = $input['enable_write_operations'] ? 1 : 0;
+		} else {
+			$sanitized['enable_write_operations'] = 0;
+		}
+
 		// Hardcode the removed settings for MCP for WooCommerce functionality
 		$sanitized['features_adapter_enabled'] = false;     // WordPress Features Adapter disabled for MCP for WooCommerce
 		$sanitized['enable_create_tools'] = true;           // Create tools always enabled for MCP for WooCommerce

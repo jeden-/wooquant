@@ -27,6 +27,7 @@ export const SettingsApp = () => {
 	// State for settings
 	const [ settings, setSettings ] = useState( {
 		enabled: false,
+		enable_write_operations: false,
 	} );
 
 	// State for JWT authentication
@@ -97,6 +98,7 @@ export const SettingsApp = () => {
 			setSettings( ( prev ) => ( {
 				...prev,
 				enabled: loaded.enabled || false,
+				enable_write_operations: loaded.enable_write_operations || false,
 			} ) );
 		}
 
