@@ -68,6 +68,18 @@ const SettingsTab = ( { settings, onToggleChange, isSaving, strings, systemStatu
 					/>
 				</div>
 
+				<CardBody>
+					<ToggleControl
+						label={ __( 'Enable Write Operations', 'mcp-for-woocommerce' ) }
+						help={ __(
+							'Allow tools to create, update, or delete data. Use with caution.',
+							'mcp-for-woocommerce'
+						) }
+						checked={ !! settings.enable_write_operations }
+						onChange={ () => onToggleChange( 'enable_write_operations' ) }
+						disabled={ isSaving }
+					/>
+				</CardBody>
 			</CardBody>
 		</Card>
 	);
