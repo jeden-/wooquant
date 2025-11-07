@@ -2,6 +2,23 @@
 
 All notable changes to WooQuant will be documented in this file.
 
+## [1.2.2] - 2025-11-07
+
+### Fixed
+- **Documentation**: Updated MCP configuration setup to use working npx adapter method
+  - Changed from direct URL connection to `npx @automattic/mcp-wordpress-remote@latest`
+  - Updated `CURSOR-MCP-SETUP.md` with verified working configuration
+  - Updated `client-setup.md` for Cursor IDE, VS Code, and Claude Desktop
+  - Added explanation why npx method is preferred (stability, compatibility)
+  - Updated JWT token expiration recommendations (Never expire for local development)
+  - Configuration now properly loads 99 tools, 16 prompts, and 6 resources
+  - Fixed false token expiration messages with correct adapter setup
+
+### Improved
+- Documentation consistency across all setup guides
+- Clearer instructions for finding JWT_TOKEN in WordPress admin
+- Better troubleshooting guidance for MCP connection issues
+
 ## [1.2.1] - 2025-11-07
 
 ### Added

@@ -117,15 +117,8 @@ class Settings {
 			true
 		);
 
-		// Load translations first
-		// (Filter already added in constructor for early loading)
-		
-		// Set script translations for JavaScript i18n.
-		wp_set_script_translations(
-			'mcpfowo-settings',
-			'mcp-for-woocommerce',
-			MCPFOWO_PATH . 'languages'
-		);
+		// Set up script translations
+		wp_set_script_translations( 'mcpfowo-settings', 'mcp-for-woocommerce', MCPFOWO_PATH . 'languages' );
 
 		// Enqueue the WordPress components styles CSS.
 		wp_enqueue_style(

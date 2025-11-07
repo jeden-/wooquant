@@ -3,7 +3,7 @@
         'name' => 'filipdvoran/mcp-for-woocommerce',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2ff000bbd587ff6043a66068e6b2fbbd71119415',
+        'reference' => 'e8ef0e74cc934f217c1539f4535856cd1f1176af',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'filipdvoran/mcp-for-woocommerce' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2ff000bbd587ff6043a66068e6b2fbbd71119415',
+            'reference' => 'e8ef0e74cc934f217c1539f4535856cd1f1176af',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

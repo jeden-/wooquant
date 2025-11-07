@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "wooquant-local": {
+      "url": "http://wooquant.local/wp-json/wp/v2/wpmcp/streamable",
+      "headers": {
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vd29vcXVhbnQubG9jYWwiLCJpYXQiOjE3NjI0NjY5NjIsInVzZXJfaWQiOjEsImp0aSI6IlJLbHViRGVSd0RsbEthSzZNU2I3eW9TdFJVZkdHOEluIiwiZXhwIjoxNzYyNDcwNTYyfQ.jnNByEX7u1xbqdg4j_R7hymHpQE3djQj9tiwAt6xq6Y"
+      }
+    }
+  }
+}
+
+
+
+
+
+

@@ -3,7 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MCP for WooCommerce 1.1.9\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mcp-for-woocommerce\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mcp-for-"
+"woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +16,7 @@ msgstr ""
 "X-Domain: mcp-for-woocommerce\n"
 
 #. Plugin Name of the plugin
-#: mcp-for-woocommerce.php
-#: includes/Admin/Settings.php:72
+#: mcp-for-woocommerce.php includes/Admin/Settings.php:72
 msgid "MCP for WooCommerce"
 msgstr ""
 
@@ -27,7 +27,15 @@ msgstr ""
 
 #. Description of the plugin
 #: mcp-for-woocommerce.php
-msgid "Community-developed AI integration plugin that connects WooCommerce & WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. Provides comprehensive AI-accessible interfaces to WooCommerce products, orders, categories, shipping, payments, and WordPress posts/pages through standardized tools, resources, and prompts. Enables AI assistants to seamlessly interact with your e-commerce data and content. Acts as a WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a WooCommerce AI Chatbot/Agent to your site."
+msgid ""
+"Community-developed AI integration plugin that connects WooCommerce & "
+"WordPress with Model Context Protocol (MCP). Not affiliated with Automattic. "
+"Provides comprehensive AI-accessible interfaces to WooCommerce products, "
+"orders, categories, shipping, payments, and WordPress posts/pages through "
+"standardized tools, resources, and prompts. Enables AI assistants to "
+"seamlessly interact with your e-commerce data and content. Acts as a "
+"WooCommerce MCP Server for MCP clients; pair with Webtalkbot to add a "
+"WooCommerce AI Chatbot/Agent to your site."
 msgstr ""
 
 #. Author of the plugin
@@ -40,14 +48,12 @@ msgstr ""
 msgid "https://github.com/iOSDevSK"
 msgstr ""
 
-#: includes/Admin/Settings.php:158
-#: build/index.js:1
+#: includes/Admin/Settings.php:158 build/index.js:1
 #: src/settings/SettingsTab.js:57
 msgid "Enable MCP functionality"
 msgstr ""
 
-#: includes/Admin/Settings.php:159
-#: build/index.js:1
+#: includes/Admin/Settings.php:159 build/index.js:1
 #: src/settings/SettingsTab.js:61
 msgid "Toggle to enable or disable the MCP plugin functionality."
 msgstr ""
@@ -56,8 +62,7 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: includes/Admin/Settings.php:161
-#: includes/Admin/Settings.php:222
+#: includes/Admin/Settings.php:161 includes/Admin/Settings.php:222
 msgid "Settings saved successfully!"
 msgstr ""
 
@@ -66,35 +71,34 @@ msgid "Error saving settings. Please try again."
 msgstr ""
 
 #. translators: %1$s is the tool name, %2$s is the status (enabled/disabled).
-#: includes/Admin/Settings.php:164
-#: includes/Admin/Settings.php:166
+#: includes/Admin/Settings.php:164 includes/Admin/Settings.php:166
 #: includes/Admin/Settings.php:308
 #, php-format
 msgid "Tool %1$s has been %2$s."
 msgstr ""
 
-#: includes/Admin/Settings.php:168
-#: build/index.js:1
+#: includes/Admin/Settings.php:168 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:533
-msgid "Never-expiring tokens pose significant security risks. If compromised, they cannot be invalidated through expiration. Only use this option if you fully understand the security implications and have proper token management procedures in place."
+msgid ""
+"Never-expiring tokens pose significant security risks. If compromised, they "
+"cannot be invalidated through expiration. Only use this option if you fully "
+"understand the security implications and have proper token management "
+"procedures in place."
 msgstr ""
 
-#: includes/Admin/Settings.php:169
-#: build/index.js:1
+#: includes/Admin/Settings.php:169 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:251
 #: src/settings/AuthenticationTokensTab.js:256
 #: src/settings/AuthenticationTokensTab.js:652
 msgid "Never expires"
 msgstr ""
 
-#: includes/Admin/Settings.php:170
-#: build/index.js:1
+#: includes/Admin/Settings.php:170 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:664
 msgid "Active (Never expires)"
 msgstr ""
 
-#: includes/Admin/Settings.php:171
-#: build/index.js:1
+#: includes/Admin/Settings.php:171 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:594
 msgid "This token never expires"
 msgstr ""
@@ -107,24 +111,27 @@ msgstr ""
 msgid "Never-Expiring Tokens:"
 msgstr ""
 
-#: includes/Admin/Settings.php:174
-#: build/index.js:1
+#: includes/Admin/Settings.php:174 build/index.js:1
 #: src/settings/SettingsTab.js:102
 msgid "Require JWT Authentication"
 msgstr ""
 
 #: includes/Admin/Settings.php:175
-msgid "When enabled, all MCP requests must include a valid JWT token. When disabled, MCP endpoints are accessible without authentication (readonly mode only) and can be used as a Claude.ai Desktop connector."
+msgid ""
+"When enabled, all MCP requests must include a valid JWT token. When "
+"disabled, MCP endpoints are accessible without authentication (readonly mode "
+"only) and can be used as a Claude.ai Desktop connector."
 msgstr ""
 
-#: includes/Admin/Settings.php:176
-#: build/index.js:1
+#: includes/Admin/Settings.php:176 build/index.js:1
 #: src/settings/SettingsTab.js:86
 msgid "Note for Webtalkbot users:"
 msgstr ""
 
 #: includes/Admin/Settings.php:177
-msgid "JWT Authentication must be enabled if you want to create a WooCommerce AI Agent in"
+msgid ""
+"JWT Authentication must be enabled if you want to create a WooCommerce AI "
+"Agent in"
 msgstr ""
 
 #: includes/Admin/Settings.php:178
@@ -132,7 +139,10 @@ msgid "Claude.ai Desktop Connector:"
 msgstr ""
 
 #: includes/Admin/Settings.php:179
-msgid "When JWT Authentication is disabled, this plugin can be used as a connector in Claude.ai Desktop. A proxy file will be automatically generated for easy setup."
+msgid ""
+"When JWT Authentication is disabled, this plugin can be used as a connector "
+"in Claude.ai Desktop. A proxy file will be automatically generated for easy "
+"setup."
 msgstr ""
 
 #: includes/Admin/Settings.php:180
@@ -140,22 +150,20 @@ msgid "MCP Proxy file generated at:"
 msgstr ""
 
 #: includes/Admin/Settings.php:181
-msgid "To use with Claude.ai Desktop, add this configuration to your claude_desktop_config.json:"
+msgid ""
+"To use with Claude.ai Desktop, add this configuration to your "
+"claude_desktop_config.json:"
 msgstr ""
 
-#: includes/Admin/Settings.php:192
-#: includes/Admin/Settings.php:283
+#: includes/Admin/Settings.php:192 includes/Admin/Settings.php:283
 msgid "You do not have permission to perform this action."
 msgstr ""
 
-#: includes/Admin/Settings.php:197
-#: includes/Admin/Settings.php:288
+#: includes/Admin/Settings.php:197 includes/Admin/Settings.php:288
 msgid "Invalid nonce. Please refresh the page and try again."
 msgstr ""
 
-#: includes/Admin/Settings.php:273
-#: build/index.js:1
-#: src/settings/index.js:48
+#: includes/Admin/Settings.php:273 build/index.js:1 src/settings/index.js:48
 msgid "Settings"
 msgstr ""
 
@@ -175,24 +183,20 @@ msgstr ""
 msgid "disabled"
 msgstr ""
 
-#: includes/Admin/Settings.php:388
-#: includes/Admin/Settings.php:456
+#: includes/Admin/Settings.php:388 includes/Admin/Settings.php:456
 msgid "Invalid nonce"
 msgstr ""
 
-#: includes/Admin/Settings.php:394
-#: includes/Admin/Settings.php:462
+#: includes/Admin/Settings.php:394 includes/Admin/Settings.php:462
 msgid "You do not have permission to access this."
 msgstr ""
 
-#: includes/Admin/Settings.php:486
-#: build/index.js:1
+#: includes/Admin/Settings.php:486 build/index.js:1
 #: src/settings/UserPermissionsTab.js:112
 msgid "User permissions saved successfully."
 msgstr ""
 
-#: includes/Auth/JwtAuth.php:212
-#: build/index.js:1
+#: includes/Auth/JwtAuth.php:212 build/index.js:1
 #: src/settings/AuthenticationTokensTab.js:82
 msgid "You need to be logged in as an administrator to access JWT tokens."
 msgstr ""
@@ -230,7 +234,9 @@ msgid "Required property '%s' does not exist in properties."
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:34
-msgid "Get detailed WooCommerce sales report with totals, order counts, average order value, and period breakdown."
+msgid ""
+"Get detailed WooCommerce sales report with totals, order counts, average "
+"order value, and period breakdown."
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:49
@@ -250,7 +256,9 @@ msgid "Order statuses to include"
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:77
-msgid "Get WooCommerce stock status report with low stock alerts, out of stock items, and stock levels."
+msgid ""
+"Get WooCommerce stock status report with low stock alerts, out of stock "
+"items, and stock levels."
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:92
@@ -262,7 +270,9 @@ msgid "Threshold for low stock alert"
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:109
-msgid "Get WooCommerce customer report with purchase statistics, lifetime value, and order history."
+msgid ""
+"Get WooCommerce customer report with purchase statistics, lifetime value, "
+"and order history."
 msgstr ""
 
 #: includes/Tools/McpWooReports.php:123
@@ -278,7 +288,9 @@ msgid "Order customers by"
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:37
-msgid "Create a backup of WooCommerce products. Returns JSON data with all product information that can be restored later."
+msgid ""
+"Create a backup of WooCommerce products. Returns JSON data with all product "
+"information that can be restored later."
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:52
@@ -290,7 +302,9 @@ msgid "Whether to include product metadata"
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:69
-msgid "Restore WooCommerce products from backup JSON data. Can create new products or update existing ones."
+msgid ""
+"Restore WooCommerce products from backup JSON data. Can create new products "
+"or update existing ones."
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:84
@@ -303,7 +317,9 @@ msgid "Whether to update existing products by SKU"
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:102
-msgid "Create a backup of WordPress content (posts, pages, media). Returns JSON data with all content that can be restored later."
+msgid ""
+"Create a backup of WordPress content (posts, pages, media). Returns JSON "
+"data with all content that can be restored later."
 msgstr ""
 
 #: includes/Tools/Write/McpBackupRestore.php:117
@@ -323,7 +339,8 @@ msgid "Whether to update existing posts/pages by title"
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:35
-msgid "Update WooCommerce settings. Accepts settings key-value pairs to update."
+msgid ""
+"Update WooCommerce settings. Accepts settings key-value pairs to update."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:50
@@ -331,7 +348,8 @@ msgid "Key-value pairs of WooCommerce settings to update (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:63
-msgid "Update WordPress general settings (site title, tagline, admin email, etc.)."
+msgid ""
+"Update WordPress general settings (site title, tagline, admin email, etc.)."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:76
@@ -363,7 +381,9 @@ msgid "Start of week (0=Sunday, 1=Monday, etc.)"
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:93
-msgid "Update WooCommerce shipping zone settings. Create or update shipping zone with methods."
+msgid ""
+"Update WooCommerce shipping zone settings. Create or update shipping zone "
+"with methods."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:108
@@ -403,7 +423,9 @@ msgid "Method-specific settings"
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:146
-msgid "Update WooCommerce payment gateway settings. Enable/disable and configure payment gateways."
+msgid ""
+"Update WooCommerce payment gateway settings. Enable/disable and configure "
+"payment gateways."
 msgstr ""
 
 #: includes/Tools/Write/McpSettingsWrite.php:161
@@ -462,7 +484,9 @@ msgid "Delete a product attribute. DESTRUCTIVE OPERATION."
 msgstr ""
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:111
-msgid "Add terms (values) to a product attribute (e.g., add Red, Blue, Green to Color attribute)."
+msgid ""
+"Add terms (values) to a product attribute (e.g., add Red, Blue, Green to "
+"Color attribute)."
 msgstr ""
 
 #: includes/Tools/Write/McpWooAttributesWrite.php:127
@@ -470,7 +494,8 @@ msgid "Array of term names to add (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:40
-msgid "Create multiple WooCommerce products at once. Accepts array of product data."
+msgid ""
+"Create multiple WooCommerce products at once. Accepts array of product data."
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:55
@@ -498,7 +523,9 @@ msgid "Whether to force delete permanently"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:119
-msgid "Update prices for multiple products at once. Supports percentage or fixed amount changes."
+msgid ""
+"Update prices for multiple products at once. Supports percentage or fixed "
+"amount changes."
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:134
@@ -507,15 +534,21 @@ msgid "Array of product IDs to update (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:140
-msgid "Type of price update: percentage (increase/decrease by %), fixed (add/subtract amount), or set (set exact price)"
+msgid ""
+"Type of price update: percentage (increase/decrease by %), fixed (add/"
+"subtract amount), or set (set exact price)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:145
-msgid "New price (for set), amount to add/subtract (for fixed), or percentage (for percentage, e.g., \"10\" for +10%, \"-5\" for -5%)"
+msgid ""
+"New price (for set), amount to add/subtract (for fixed), or percentage (for "
+"percentage, e.g., \"10\" for +10%, \"-5\" for -5%)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:149
-msgid "New sale price (for set), amount to add/subtract (for fixed), or percentage (for percentage)"
+msgid ""
+"New sale price (for set), amount to add/subtract (for fixed), or percentage "
+"(for percentage)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooBulkOperations.php:161
@@ -535,7 +568,9 @@ msgid "Whether to enable stock management"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:39
-msgid "Create a new WooCommerce product category with name, slug, description, parent category, and image."
+msgid ""
+"Create a new WooCommerce product category with name, slug, description, "
+"parent category, and image."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:54
@@ -591,7 +626,9 @@ msgid "Parent category ID"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:150
-msgid "Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will be uncategorized."
+msgid ""
+"Delete a WooCommerce product category. DESTRUCTIVE OPERATION - products will "
+"be uncategorized."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCategoriesWrite.php:165
@@ -611,7 +648,9 @@ msgid "Array of category IDs in desired order"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:40
-msgid "Create a new WooCommerce coupon with discount rules, usage limits, and restrictions."
+msgid ""
+"Create a new WooCommerce coupon with discount rules, usage limits, and "
+"restrictions."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCouponsWrite.php:55
@@ -772,7 +811,9 @@ msgid "Customer email"
 msgstr ""
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:186
-msgid "Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes associated WordPress user."
+msgid ""
+"Delete a WooCommerce customer. DESTRUCTIVE OPERATION - also removes "
+"associated WordPress user."
 msgstr ""
 
 #: includes/Tools/Write/McpWooCustomersWrite.php:201
@@ -784,7 +825,9 @@ msgid "User ID to reassign orders to (optional)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:40
-msgid "Import WooCommerce products from CSV file. CSV should contain product data (name, SKU, price, stock, etc.)."
+msgid ""
+"Import WooCommerce products from CSV file. CSV should contain product data "
+"(name, SKU, price, stock, etc.)."
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:55
@@ -798,7 +841,8 @@ msgid "Whether CSV has header row"
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:72
-msgid "Export WooCommerce products to CSV format. Returns CSV content as string."
+msgid ""
+"Export WooCommerce products to CSV format. Returns CSV content as string."
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:87
@@ -806,7 +850,9 @@ msgid "Array of product IDs to export (optional, empty for all)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:99
-msgid "Import WooCommerce orders from CSV file. CSV should contain order data (customer, products, amounts, etc.)."
+msgid ""
+"Import WooCommerce orders from CSV file. CSV should contain order data "
+"(customer, products, amounts, etc.)."
 msgstr ""
 
 #: includes/Tools/Write/McpWooImportExport.php:131
@@ -818,7 +864,9 @@ msgid "Array of order IDs to export (optional, empty for all)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:33
-msgid "Create a new WooCommerce order with customer information, products, and payment details."
+msgid ""
+"Create a new WooCommerce order with customer information, products, and "
+"payment details."
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:48
@@ -838,7 +886,9 @@ msgid "Payment method ID"
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:109
-msgid "Update WooCommerce order status. Can add order notes and trigger customer notifications."
+msgid ""
+"Update WooCommerce order status. Can add order notes and trigger customer "
+"notifications."
 msgstr ""
 
 #: includes/Tools/Write/McpWooOrdersWrite.php:124
@@ -871,7 +921,10 @@ msgid "Whether note is for customer (default: false)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:47
-msgid "Create a new WooCommerce product. Supports simple and variable products with full configuration including pricing, inventory, images, categories, tags, and attributes."
+msgid ""
+"Create a new WooCommerce product. Supports simple and variable products with "
+"full configuration including pricing, inventory, images, categories, tags, "
+"and attributes."
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:63
@@ -951,7 +1004,9 @@ msgid "Product dimensions"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:169
-msgid "Update an existing WooCommerce product. Can update any product field including name, description, price, stock, images, categories, etc."
+msgid ""
+"Update an existing WooCommerce product. Can update any product field "
+"including name, description, price, stock, images, categories, etc."
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:185
@@ -975,7 +1030,9 @@ msgid "Stock quantity"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:249
-msgid "Delete a WooCommerce product. Can permanently delete or move to trash. DESTRUCTIVE OPERATION - use with caution."
+msgid ""
+"Delete a WooCommerce product. Can permanently delete or move to trash. "
+"DESTRUCTIVE OPERATION - use with caution."
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:265
@@ -987,7 +1044,9 @@ msgid "Whether to permanently delete (true) or move to trash (false, default)"
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:282
-msgid "Bulk update multiple products at once. Useful for updating prices, stock, or other fields for multiple products."
+msgid ""
+"Bulk update multiple products at once. Useful for updating prices, stock, or "
+"other fields for multiple products."
 msgstr ""
 
 #: includes/Tools/Write/McpWooProductsWrite.php:298
@@ -995,7 +1054,9 @@ msgid "Array of products to update with their IDs and fields"
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:39
-msgid "Create a new WooCommerce product review with rating, content, and reviewer information."
+msgid ""
+"Create a new WooCommerce product review with rating, content, and reviewer "
+"information."
 msgstr ""
 
 #: includes/Tools/Write/McpWooReviewsWrite.php:54
@@ -1077,7 +1138,9 @@ msgid "Tag description"
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:78
-msgid "Update an existing WooCommerce product tag. Can update name, slug, and description."
+msgid ""
+"Update an existing WooCommerce product tag. Can update name, slug, and "
+"description."
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:94
@@ -1093,7 +1156,9 @@ msgid "Tag slug"
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:118
-msgid "Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose this tag."
+msgid ""
+"Delete a WooCommerce product tag. DESTRUCTIVE OPERATION - products will lose "
+"this tag."
 msgstr ""
 
 #: includes/Tools/Write/McpWooTagsWrite.php:134
@@ -1105,7 +1170,9 @@ msgid "Whether to force delete even if tag is used by products"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:29
-msgid "Create a new WordPress post with content, categories, tags, and featured image."
+msgid ""
+"Create a new WordPress post with content, categories, tags, and featured "
+"image."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:44
@@ -1178,7 +1245,8 @@ msgid "Post ID to publish (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:205
-msgid "Create a new WordPress page with content, featured image, and parent page."
+msgid ""
+"Create a new WordPress page with content, featured image, and parent page."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressContentWrite.php:220
@@ -1231,7 +1299,9 @@ msgid "Page ID to delete (required)"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:35
-msgid "Upload an image file to WordPress media library. Accepts base64 encoded image data or URL."
+msgid ""
+"Upload an image file to WordPress media library. Accepts base64 encoded "
+"image data or URL."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:50
@@ -1263,7 +1333,9 @@ msgid "Post ID to attach image to"
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:86
-msgid "Upload a file to WordPress media library. Accepts base64 encoded file data or URL."
+msgid ""
+"Upload a file to WordPress media library. Accepts base64 encoded file data "
+"or URL."
 msgstr ""
 
 #: includes/Tools/Write/McpWordPressMediaWrite.php:101
@@ -1310,10 +1382,8 @@ msgstr ""
 msgid "Caption"
 msgstr ""
 
-#: includes/Tools/Write/McpWordPressMediaWrite.php:188
-#: build/index.js:1
-#: src/settings/PromptsTab.js:147
-#: src/settings/ResourcesTab.js:212
+#: includes/Tools/Write/McpWordPressMediaWrite.php:188 build/index.js:1
+#: src/settings/PromptsTab.js:147 src/settings/ResourcesTab.js:212
 #: src/settings/ToolsTab.js:220
 msgid "Description"
 msgstr ""
@@ -1446,778 +1516,701 @@ msgstr ""
 msgid "New role (required)"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:80
+#: build/index.js:1 src/settings/SettingsTab.js:80
 msgid "Authentication Settings"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:86
-msgid "JWT Authentication is recommended if you want to create a WooCommerce AI Agent in"
+#: build/index.js:1 src/settings/SettingsTab.js:86
+msgid ""
+"JWT Authentication is recommended if you want to create a WooCommerce AI "
+"Agent in"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:106
-msgid "When enabled, all MCP requests must include a valid JWT token. When disabled, MCP endpoints are accessible without authentication (readonly mode only)."
+#: build/index.js:1 src/settings/SettingsTab.js:106
+msgid ""
+"When enabled, all MCP requests must include a valid JWT token. When "
+"disabled, MCP endpoints are accessible without authentication (readonly mode "
+"only)."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:122
+#: build/index.js:1 src/settings/SettingsTab.js:122
 msgid "Saving..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:22
+#: build/index.js:1 src/settings/SettingsTab.js:22
 msgid "General Settings"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:32
+#: build/index.js:1 src/settings/SettingsTab.js:32
 msgid "⚠️ WordPress REST API Disabled"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:35
-msgid "WordPress REST API appears to be disabled. This plugin requires REST API to function properly. Please contact your administrator to ensure the WordPress REST API is enabled."
+#: build/index.js:1 src/settings/SettingsTab.js:35
+msgid ""
+"WordPress REST API appears to be disabled. This plugin requires REST API to "
+"function properly. Please contact your administrator to ensure the WordPress "
+"REST API is enabled."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:44
+#: build/index.js:1 src/settings/SettingsTab.js:44
 msgid "⚠️ Incorrect Permalinks Configuration"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/SettingsTab.js:47
-msgid "WordPress permalinks are not set to \"Post name\" structure. For proper product link generation, please go to WordPress Admin → Settings → Permalinks and select \"Post name\" structure."
+#: build/index.js:1 src/settings/SettingsTab.js:47
+msgid ""
+"WordPress permalinks are not set to \"Post name\" structure. For proper "
+"product link generation, please go to WordPress Admin → Settings → "
+"Permalinks and select \"Post name\" structure."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:45
+#: build/index.js:1 src/settings/ToolsTab.js:45
 msgid "Failed to load tools data"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:50
+#: build/index.js:1 src/settings/ToolsTab.js:50
 msgid "Error loading tools: "
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:118
+#: build/index.js:1 src/settings/ToolsTab.js:118
 msgid "Read"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:119
+#: build/index.js:1 src/settings/ToolsTab.js:119
 msgid "Create"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:120
+#: build/index.js:1 src/settings/ToolsTab.js:120
 msgid "Update"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:121
+#: build/index.js:1 src/settings/ToolsTab.js:121
 msgid "Delete"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:122
+#: build/index.js:1 src/settings/ToolsTab.js:122
 msgid "Write"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:123
+#: build/index.js:1 src/settings/ToolsTab.js:123
 msgid "Action"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:124
+#: build/index.js:1 src/settings/ToolsTab.js:124
 msgid "Edit"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:133
+#: build/index.js:1 src/settings/ToolsTab.js:133
 msgid "All Types"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:155
+#: build/index.js:1 src/settings/ToolsTab.js:155
 msgid "Registered Tools"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:159
-msgid "List of all registered tools in the system. Use the toggles to enable or disable individual tools."
+#: build/index.js:1 src/settings/ToolsTab.js:159
+msgid ""
+"List of all registered tools in the system. Use the toggles to enable or "
+"disable individual tools."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:170
+#: build/index.js:1 src/settings/ToolsTab.js:170
 msgid "Filter by Type"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:179
+#: build/index.js:1 src/settings/ToolsTab.js:179
 msgid "Search tools..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:186
+#: build/index.js:1 src/settings/ToolsTab.js:186
 msgid "Total:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:194
+#: build/index.js:1 src/settings/ToolsTab.js:194
 msgid "Loading tools..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:202
+#: build/index.js:1 src/settings/ToolsTab.js:202
 msgid "No tools are currently registered."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:209
+#: build/index.js:1 src/settings/ToolsTab.js:209
 msgid "No tools match your filters."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:145
-#: src/settings/ResourcesTab.js:209
-#: src/settings/ToolsTab.js:218
+#: build/index.js:1 src/settings/PromptsTab.js:145
+#: src/settings/ResourcesTab.js:209 src/settings/ToolsTab.js:218
 msgid "Name"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:223
+#: build/index.js:1 src/settings/ToolsTab.js:223
 msgid "Functionality Type"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:630
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:630
 #: src/settings/ToolsTab.js:228
 msgid "Status"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:260
+#: build/index.js:1 src/settings/ToolsTab.js:260
 msgid "Enabled"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ToolsTab.js:264
+#: build/index.js:1 src/settings/ToolsTab.js:264
 msgid "Disabled"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:88
+#: build/index.js:1 src/settings/ResourcesTab.js:88
 msgid "Failed to load resources data"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:93
+#: build/index.js:1 src/settings/ResourcesTab.js:93
 msgid "Error loading resources: "
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:179
+#: build/index.js:1 src/settings/ResourcesTab.js:179
 msgid "Available Resources"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:183
+#: build/index.js:1 src/settings/ResourcesTab.js:183
 msgid "List of all available resources in the system."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:192
+#: build/index.js:1 src/settings/ResourcesTab.js:192
 msgid "Loading resources..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:200
+#: build/index.js:1 src/settings/ResourcesTab.js:200
 msgid "No resources are currently available."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:210
+#: build/index.js:1 src/settings/ResourcesTab.js:210
 msgid "URI"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:632
-#: src/settings/PromptsTab.js:149
-#: src/settings/ResourcesTab.js:214
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:632
+#: src/settings/PromptsTab.js:149 src/settings/ResourcesTab.js:214
 msgid "Actions"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:143
+#: build/index.js:1 src/settings/ResourcesTab.js:143
 msgid "Failed to load resource details"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:148
+#: build/index.js:1 src/settings/ResourcesTab.js:148
 msgid "Error loading resource details: "
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:166
+#: build/index.js:1 src/settings/PromptsTab.js:166
 #: src/settings/ResourcesTab.js:232
 msgid "View"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:243
+#: build/index.js:1 src/settings/ResourcesTab.js:243
 msgid "Resource Details"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:251
+#: build/index.js:1 src/settings/ResourcesTab.js:251
 msgid "Loading resource details..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:270
+#: build/index.js:1 src/settings/ResourcesTab.js:270
 msgid "Full Resource Data"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/ResourcesTab.js:282
+#: build/index.js:1 src/settings/ResourcesTab.js:282
 msgid "No details available for this resource."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:46
+#: build/index.js:1 src/settings/PromptsTab.js:46
 msgid "Failed to load prompts data"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:51
+#: build/index.js:1 src/settings/PromptsTab.js:51
 msgid "Error loading prompts: "
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:115
+#: build/index.js:1 src/settings/PromptsTab.js:115
 msgid "Available Prompts"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:119
+#: build/index.js:1 src/settings/PromptsTab.js:119
 msgid "List of all available prompts in the system."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:128
+#: build/index.js:1 src/settings/PromptsTab.js:128
 msgid "Loading prompts..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:136
+#: build/index.js:1 src/settings/PromptsTab.js:136
 msgid "No prompts are currently available."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:93
+#: build/index.js:1 src/settings/PromptsTab.js:93
 msgid "Failed to load prompt details"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:98
+#: build/index.js:1 src/settings/PromptsTab.js:98
 msgid "Error loading prompt details: "
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:180
+#: build/index.js:1 src/settings/PromptsTab.js:180
 msgid "Prompt Details"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:189
+#: build/index.js:1 src/settings/PromptsTab.js:189
 msgid "Loading prompt details..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:203
+#: build/index.js:1 src/settings/PromptsTab.js:203
 msgid "Description:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:209
+#: build/index.js:1 src/settings/PromptsTab.js:209
 msgid "No description available"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:217
+#: build/index.js:1 src/settings/PromptsTab.js:217
 msgid "Content:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:228
+#: build/index.js:1 src/settings/PromptsTab.js:228
 msgid "Parameters:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/PromptsTab.js:249
+#: build/index.js:1 src/settings/PromptsTab.js:249
 msgid "Close"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:25
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:25
 #: src/settings/AuthenticationTokensTab.js:267
 msgid "1 hour"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:26
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:26
 msgid "2 hours"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:27
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:27
 msgid "6 hours"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:28
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:28
 msgid "12 hours"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:29
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:29
 msgid "24 hours (1 day)"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:30
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:30
 msgid "Never expire"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:85
-msgid "You do not have permission to access JWT tokens. Admin privileges required."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:85
+msgid ""
+"You do not have permission to access JWT tokens. Admin privileges required."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:88
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:88
 msgid "Error fetching tokens"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:237
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:237
 #: src/settings/DocumentationTab.js:141
 msgid "Failed to copy to clipboard"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:275
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:275
 #: src/settings/index.js:53
 msgid "Authentication Tokens"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:288
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:288
 msgid "What are Authentication Tokens?"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:294
-msgid "MCP authentication tokens are secure, temporary credentials that allow external MCP clients to the WordPress MCP server"
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:294
+msgid ""
+"MCP authentication tokens are secure, temporary credentials that allow "
+"external MCP clients to the WordPress MCP server"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:301
-msgid "These tokens are implemented using JWT (JSON Web Tokens), providing secure and stateless authentication."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:301
+msgid ""
+"These tokens are implemented using JWT (JSON Web Tokens), providing secure "
+"and stateless authentication."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:307
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:307
 msgid "How They Work"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:310
-msgid "Tokens are generated with your current user permissions and expire automatically"
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:310
+msgid ""
+"Tokens are generated with your current user permissions and expire "
+"automatically"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:316
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:316
 msgid "They provide access to MCP route endpoints for your WordPress content"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:322
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:322
 msgid "Each token is unique and can be revoked individually if compromised"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:328
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:328
 msgid "Tokens automatically inherit your user role and capabilities"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:336
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:336
 msgid "Security Best Practices"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:348
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:348
 msgid "⚠️ Important Security Notes:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:360
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:360
 msgid "Never share tokens in public repositories, emails, or chat messages"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:366
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:366
 msgid "Use the shortest expiration time that meets your needs"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:372
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:372
 msgid "Revoke tokens immediately if you suspect they may be compromised"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:378
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:378
 msgid "Regularly review and clean up unused or expired tokens"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:398
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:398
 msgid "🚨 Never-Expiring Tokens:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:402
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:402
 msgid "Should only be used in highly controlled environments"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:408
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:408
 msgid "Must be manually revoked if compromised"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:414
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:414
 msgid "Consider using long-lived tokens (24 hours) instead"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:420
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:420
 msgid "Regularly audit and rotate never-expiring tokens"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:439
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:439
 msgid "ℹ️ Important Note:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:447
-msgid "These tokens are exclusively for MCP protocol access (stdio and streamable/HTTP). They will not work with WordPress REST API endpoints or other authentication systems."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:447
+msgid ""
+"These tokens are exclusively for MCP protocol access (stdio and streamable/"
+"HTTP). They will not work with WordPress REST API endpoints or other "
+"authentication systems."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:461
-msgid "Remember: These tokens provide access based on your user permissions. If you can see it in WordPress, applications using your token can see it too."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:461
+msgid ""
+"Remember: These tokens provide access based on your user permissions. If you "
+"can see it in WordPress, applications using your token can see it too."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:469
-msgid "Generate tokens below to allow secure access to your WordPress content through the MCP protocol."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:469
+msgid ""
+"Generate tokens below to allow secure access to your WordPress content "
+"through the MCP protocol."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:486
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:486
 msgid "ℹ️ Token Limit:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:492
-msgid "Maximum 10 active tokens allowed per user. When generating a new token at the limit, oldest revoked tokens will be automatically removed to make room. If no revoked tokens exist, new token generation will be blocked - you must revoke some existing active tokens first."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:492
+msgid ""
+"Maximum 10 active tokens allowed per user. When generating a new token at "
+"the limit, oldest revoked tokens will be automatically removed to make room. "
+"If no revoked tokens exist, new token generation will be blocked - you must "
+"revoke some existing active tokens first."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:501
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:501
 msgid "Token Duration"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:508
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:508
 msgid "Choose how long the token will remain valid"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:527
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:527
 msgid "⚠️ Security Warning:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:137
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:137
 msgid "You need to be logged in as an administrator to generate JWT tokens."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:140
-msgid "You do not have permission to generate JWT tokens. Admin privileges required."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:140
+msgid ""
+"You do not have permission to generate JWT tokens. Admin privileges required."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:143
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:143
 msgid "Error generating token"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:548
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:548
 msgid "Generate New Token"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:560
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:560
 msgid "Generated Token"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:580
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:580
 msgid "Copy"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:584
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:584
 msgid "Token copied!"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:596
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:596
 msgid "Expires in"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:263
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:263
 msgid "1 day"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:264
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:264
 msgid "days"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:268
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:268
 msgid "hours"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:602
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:602
 msgid "Expires in 1 hour"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:619
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:619
 msgid "Your Active Tokens"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:623
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:623
 #: src/settings/UserPermissionsTab.js:205
 msgid "User"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:625
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:625
 msgid "Issued At"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:628
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:628
 msgid "Expires At"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:659
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:659
 msgid "Revoked"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:669
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:669
 msgid "Expired"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:673
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:673
 msgid "Active"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:188
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:188
 msgid "You need to be logged in as an administrator to revoke JWT tokens."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:191
-msgid "You do not have permission to revoke JWT tokens. Admin privileges required."
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:191
+msgid ""
+"You do not have permission to revoke JWT tokens. Admin privileges required."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:194
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:194
 msgid "Error revoking token"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:690
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:690
 msgid "Revoke"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/AuthenticationTokensTab.js:705
+#: build/index.js:1 src/settings/AuthenticationTokensTab.js:705
 msgid "Showing first 10 tokens. Total tokens:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/DocumentationTab.js:155
+#: build/index.js:1 src/settings/DocumentationTab.js:155
 msgid "Loading documentation..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/DocumentationTab.js:170
-#: src/settings/DocumentationTab.js:196
-#: src/settings/index.js:65
+#: build/index.js:1 src/settings/DocumentationTab.js:170
+#: src/settings/DocumentationTab.js:196 src/settings/index.js:65
 msgid "Documentation"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/DocumentationTab.js:175
+#: build/index.js:1 src/settings/DocumentationTab.js:175
 msgid "Error loading documentation:"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/DocumentationTab.js:182
+#: build/index.js:1 src/settings/DocumentationTab.js:182
 msgid "Please check that the documentation file exists and is accessible."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/DocumentationTab.js:201
+#: build/index.js:1 src/settings/DocumentationTab.js:201
 msgid "Configuration copied to clipboard!"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:52
+#: build/index.js:1 src/settings/UserPermissionsTab.js:52
 #: src/settings/UserPermissionsTab.js:59
 msgid "Failed to load user permissions."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:135
+#: build/index.js:1 src/settings/UserPermissionsTab.js:135
 msgid "Loading user permissions..."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:154
+#: build/index.js:1 src/settings/UserPermissionsTab.js:154
 msgid "User Permissions for MCP"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:158
-msgid "Control which users and roles can access MCP functionality. By default, only administrators have access."
+#: build/index.js:1 src/settings/UserPermissionsTab.js:158
+msgid ""
+"Control which users and roles can access MCP functionality. By default, only "
+"administrators have access."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:161
+#: build/index.js:1 src/settings/UserPermissionsTab.js:161
 msgid "Role-Based Permissions"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:163
-msgid "Enable MCP access for entire user roles. Individual user permissions override role permissions."
+#: build/index.js:1 src/settings/UserPermissionsTab.js:163
+msgid ""
+"Enable MCP access for entire user roles. Individual user permissions "
+"override role permissions."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:170
+#: build/index.js:1 src/settings/UserPermissionsTab.js:170
 #: src/settings/UserPermissionsTab.js:206
 msgid "Role"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:171
+#: build/index.js:1 src/settings/UserPermissionsTab.js:171
 #: src/settings/UserPermissionsTab.js:208
 msgid "MCP Access"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:192
+#: build/index.js:1 src/settings/UserPermissionsTab.js:192
 msgid "No roles found."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:196
+#: build/index.js:1 src/settings/UserPermissionsTab.js:196
 msgid "Individual User Permissions"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:198
-msgid "Grant or revoke MCP access for specific users. These settings override role-based permissions."
+#: build/index.js:1 src/settings/UserPermissionsTab.js:198
+msgid ""
+"Grant or revoke MCP access for specific users. These settings override role-"
+"based permissions."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:207
+#: build/index.js:1 src/settings/UserPermissionsTab.js:207
 msgid "Email"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:233
+#: build/index.js:1 src/settings/UserPermissionsTab.js:233
 msgid "No users found."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:117
+#: build/index.js:1 src/settings/UserPermissionsTab.js:117
 #: src/settings/UserPermissionsTab.js:124
 msgid "Failed to save user permissions."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/UserPermissionsTab.js:243
+#: build/index.js:1 src/settings/UserPermissionsTab.js:243
 msgid "Save Permissions"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:59
+#: build/index.js:1 src/settings/index.js:59
 msgid "User Permissions"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:70
+#: build/index.js:1 src/settings/index.js:70
 msgid "Tools"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:76
+#: build/index.js:1 src/settings/index.js:76
 msgid "Resources"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:82
+#: build/index.js:1 src/settings/index.js:82
 msgid "Prompts"
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:321
-msgid "Authentication tokens are only available when JWT authentication is enabled."
+#: build/index.js:1 src/settings/index.js:321
+msgid ""
+"Authentication tokens are only available when JWT authentication is enabled."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:325
+#: build/index.js:1 src/settings/index.js:325
 msgid "Please enable \"Require JWT Authentication\" in the Settings tab first."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:330
+#: build/index.js:1 src/settings/index.js:330
 msgid "This feature is only available when MCP functionality is enabled."
 msgstr ""
 
-#: build/index.js:1
-#: src/settings/index.js:334
+#: build/index.js:1 src/settings/index.js:334
 msgid "Please enable MCP in the Settings tab first."
+msgstr ""
+
+#: wordpress-mcp.php
+msgid "Woo MCP"
+msgstr ""
+
+#: wordpress-mcp.php
+msgid ""
+"Advanced AI integration plugin that connects WooCommerce & WordPress with "
+"Model Context Protocol (MCP)"
+msgstr ""
+
+#: includes/Admin/Settings.php
+msgid "Woo MCP Settings"
+msgstr ""
+
+#: includes/Admin/Settings.php
+msgid "MCP Server Configuration"
+msgstr ""
+
+#: includes/Admin/Settings.php
+msgid "Authentication"
+msgstr ""
+
+#: includes/Admin/Settings.php
+msgid "Settings saved successfully."
+msgstr ""
+
+#: includes/Auth/JwtAuth.php
+msgid "Invalid authentication token."
+msgstr ""
+
+#: includes/Auth/JwtAuth.php
+msgid "Authentication token expired."
+msgstr ""
+
+#: includes/Auth/JwtAuth.php
+msgid "Authentication required."
 msgstr ""

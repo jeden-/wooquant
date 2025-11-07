@@ -1,5 +1,21 @@
 === MCP for WooCommerce Plugin Changelog ===
 
+= Version 1.2.2 - Release #000016 - November 7, 2025 @ CET =
+
+**DOCUMENTATION FIX**
+
+* #000028 - Updated MCP configuration documentation to use working npx adapter
+  Date: November 7, 2025
+  - FIXED: MCP setup documentation now uses npx @automattic/mcp-wordpress-remote@latest
+  - FIXED: Configuration properly loads 99 tools, 16 prompts, and 6 resources
+  - FIXED: False token expiration messages with correct adapter setup
+  - UPDATED: CURSOR-MCP-SETUP.md with verified working configuration
+  - UPDATED: client-setup.md for Cursor IDE, VS Code, and Claude Desktop
+  - IMPROVED: Added explanation why npx method is preferred (stability, compatibility)
+  - IMPROVED: JWT token expiration recommendations (Never expire for local development)
+  - IMPROVED: Clearer instructions for finding JWT_TOKEN in WordPress admin
+  - IMPROVED: Better troubleshooting guidance for MCP connection issues
+
 = Version 1.2.1 - Release #000015 - November 7, 2025 @ CET =
 
 **AUTOMATIC UPDATES SYSTEM**

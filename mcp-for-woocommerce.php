@@ -2,7 +2,7 @@
 /**
  * Plugin name:       WooQuant
  * Description:       AI-powered WooCommerce & WordPress management through Model Context Protocol (MCP). Extended community version with full internationalization (EN/PL), 16 intelligent prompts, 99 tools, advanced admin panel, and user permissions. Connect with Claude Desktop, Cursor IDE, or any MCP client. Based on mcp-for-woocommerce by iOSDevSK.
- * Version:           1.2.1
+ * Version:           1.2.2
  * Requires at least: 6.4
  * Tested up to:      6.8
  * Requires PHP:      8.0
@@ -47,7 +47,7 @@ use McpForWoo\Auth\JwtAuth;
 use McpForWoo\CLI\ValidateToolsCommand;
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-define( 'MCPFOWO_VERSION', '1.2.1' );
+define( 'MCPFOWO_VERSION', '1.2.2' );
 define( 'MCPFOWO_PATH', plugin_dir_path( __FILE__ ) );
 define( 'MCPFOWO_URL', plugin_dir_url( __FILE__ ) );
 define( 'MCPFOWO_PLUGIN_FILE', __FILE__ );

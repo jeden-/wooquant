@@ -4,15 +4,15 @@
  * Automatically generated - connects Claude.ai Desktop to WordPress MCP endpoints
  *
  * Generated on: 2025-01-08T23:30:00+01:00
- * WordPress Site: https://woo.webtalkbot.com
- * MCP Endpoint: https://woo.webtalkbot.com/wp-json/wp/v2/wpmcp/streamable
+ * WordPress Site: http://wooquant.local
+ * MCP Endpoint: http://wooquant.local/wp-json/wp/v2/wpmcp/streamable
  */
 
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { ListToolsRequestSchema, CallToolRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 
-const WORDPRESS_MCP_URL = 'https://woo.webtalkbot.com/wp-json/wp/v2/wpmcp/streamable';
+const WORDPRESS_MCP_URL = 'http://wooquant.local/wp-json/wp/v2/wpmcp/streamable';
 
 class McpProxy {
   constructor() {
