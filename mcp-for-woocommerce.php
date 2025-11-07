@@ -2,7 +2,7 @@
 /**
  * Plugin name:       WooQuant
  * Description:       AI-powered WooCommerce & WordPress management through Model Context Protocol (MCP). Extended community version with full internationalization (EN/PL), 16 intelligent prompts, 99 tools, advanced admin panel, and user permissions. Connect with Claude Desktop, Cursor IDE, or any MCP client. Based on mcp-for-woocommerce by iOSDevSK.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Requires at least: 6.4
  * Tested up to:      6.8
  * Requires PHP:      8.0
@@ -10,8 +10,9 @@
  * Author:            @jeden- (Extended version)
  * Author URI:        https://github.com/jeden-
  * Plugin URI:        https://github.com/jeden-/wooquant
+ * GitHub Plugin URI: jeden-/wooquant
+ * GitHub Branch:     main
  * Original Author:   Filip Dvoran (iOSDevSK)
- * Original Plugin URI: https://github.com/iOSDevSK/mcp-for-woocommerce
  * License:           GPL-2.0-or-later
  * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
  * Text Domain:       mcp-for-woocommerce
@@ -44,8 +45,9 @@ use McpForWoo\Core\McpStdioTransport;
 use McpForWoo\Admin\Settings;
 use McpForWoo\Auth\JwtAuth;
 use McpForWoo\CLI\ValidateToolsCommand;
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-define( 'MCPFOWO_VERSION', '1.1.9' );
+define( 'MCPFOWO_VERSION', '1.2.1' );
 define( 'MCPFOWO_PATH', plugin_dir_path( __FILE__ ) );
 define( 'MCPFOWO_URL', plugin_dir_url( __FILE__ ) );
 define( 'MCPFOWO_PLUGIN_FILE', __FILE__ );
@@ -69,6 +71,23 @@ require_once MCPFOWO_PATH . 'vendor/autoload.php';
  */
 function WPMCP() { // phpcs:ignore
 	return WpMcp::instance();
+}
+
+/**
+ * Initialize automatic updates from GitHub
+ */
+function init_mcpfowo_updater() {
+	$updateChecker = PucFactory::buildUpdateChecker(
+		'https://github.com/jeden-/wooquant',
+		MCPFOWO_PLUGIN_FILE,
+		'mcp-for-woocommerce'
+	);
+
+	// Use main branch for updates
+	$updateChecker->setBranch('main');
+	
+	// Optional: Enable debug mode (uncomment for testing)
+	// $updateChecker->getDebugBarExtension();
 }
 
 /**
@@ -107,6 +126,9 @@ function register_mcpfowo_cli_commands() {
 
 	WP_CLI::add_command( 'mcp-for-woocommerce validate-tools', ValidateToolsCommand::class );
 }
+
+// Initialize automatic updates
+add_action( 'init', 'init_mcpfowo_updater' );
 
 // Initialize the plugin on plugins_loaded to ensure all dependencies are available.
 add_action( 'plugins_loaded', 'init_mcpfowo' );
