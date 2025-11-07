@@ -2,7 +2,29 @@
 
 All notable changes to WooQuant will be documented in this file.
 
-## [1.2.1] - 2025-01-06
+## [1.2.1] - 2025-11-07
+
+### Added
+- **Automatic Updates System**: Integrated Plugin Update Checker library
+  - Wtyczka automatycznie sprawdza aktualizacje z GitHub
+  - Zero konfiguracji dla użytkowników - system działa od razu
+  - Obsługa GitHub Releases - aktualizacje pobierane bezpośrednio z repozytorium
+  - Kompatybilność z GitHub Updater Plugin dla użytkowników preferujących to rozwiązanie
+- **GitHub Integration Headers**: Added GitHub Plugin URI and Branch headers
+  - Pełna kompatybilność z GitHub Updater Plugin
+  - Automatyczne wykrywanie nowych wersji z GitHub Releases
+
+### Changed
+- Updated version to 1.2.1
+- Added `yahnis-elsts/plugin-update-checker` ^5.0 to Composer dependencies
+
+### Technical Details
+- Plugin Update Checker monitors: https://github.com/jeden-/wooquant
+- Automatic update check every 12 hours
+- Updates available through WordPress Admin → Dashboard → Updates
+- Supports both automatic update system (built-in) and GitHub Updater plugin (optional)
+
+## [1.2.1-beta] - 2025-01-06
 
 ### Fixed
 - **Critical**: Fixed PHP syntax errors in all 16 prompt definition files (`includes/Prompts/*.php`)

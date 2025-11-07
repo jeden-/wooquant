@@ -1,5 +1,20 @@
 === MCP for WooCommerce Plugin Changelog ===
 
+= Version 1.2.1 - Release #000015 - November 7, 2025 @ CET =
+
+**AUTOMATIC UPDATES SYSTEM**
+
+* #000027 - Integrated automatic update system from GitHub
+  Date: November 7, 2025
+  - ADDED: Plugin Update Checker library (yahnis-elsts/plugin-update-checker ^5.0)
+  - ADDED: Automatic update checks from GitHub Releases
+  - ADDED: GitHub Updater Plugin compatibility headers
+  - FEATURE: Zero configuration - updates work immediately after installation
+  - FEATURE: Automatic check every 12 hours for new versions
+  - FEATURE: Updates available through WordPress Admin → Updates
+  - TECHNICAL: Monitors https://github.com/jeden-/wooquant for new releases
+  - TECHNICAL: Supports both built-in updater and optional GitHub Updater plugin
+
 = Version 1.1.9 - Release #000014 - October 25, 2025 @ CET =
 
 **BUILD FILES DISTRIBUTION FIX**
