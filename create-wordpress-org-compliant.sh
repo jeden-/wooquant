@@ -34,6 +34,17 @@ cp composer.lock "${BUILD_DIR}/${PLUGIN_SLUG}/"
 cp package.json "${BUILD_DIR}/${PLUGIN_SLUG}/"
 cp client-setup.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
 
+# Copy documentation files
+cp Readme.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp README.pl.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp QUICK-START.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp QUICK-START.pl.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp PROMPTS-LIST.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp PROMPTS-LIST.pl.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp TOOLS-LIST.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp CHANGELOG.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+cp CONTRIBUTING.md "${BUILD_DIR}/${PLUGIN_SLUG}/"
+
 # Copy directories (excluding those in .distignore)
 # Create includes directory and copy contents properly
 mkdir -p "${BUILD_DIR}/${PLUGIN_SLUG}/includes"
@@ -50,6 +61,9 @@ cp -r build/* "${BUILD_DIR}/${PLUGIN_SLUG}/build/"
 # Create static-files directory and copy contents properly
 mkdir -p "${BUILD_DIR}/${PLUGIN_SLUG}/static-files"
 cp -r static-files/* "${BUILD_DIR}/${PLUGIN_SLUG}/static-files/"
+# Create docs directory and copy contents properly
+mkdir -p "${BUILD_DIR}/${PLUGIN_SLUG}/docs"
+cp -r docs/* "${BUILD_DIR}/${PLUGIN_SLUG}/docs/"
 
 # Copy PHP proxy files
 cp mcp-proxy.php "${BUILD_DIR}/${PLUGIN_SLUG}/"
