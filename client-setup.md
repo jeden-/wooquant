@@ -107,21 +107,24 @@ Dodaj do pliku `.cursorrules` w głównym katalogu projektu lub w ustawieniach C
 
 ### VS Code (Rozszerzenie MCP)
 
-Dodaj w ustawieniach VS Code:
+Dodaj w ustawieniach VS Code lub w pliku `.vscode/mcp.json`:
 
 ```json
 {
-	"mcp.servers": {
-		"mcp-for-woocommerce": {
-			"type": "http",
-			"url": "{{your-website.com}}/wp-json/wp/v2/wpmcp/streamable",
-			"headers": {
-				"Authorization": "Bearer your-jwt-token-here"
+	"mcpServers": {
+		"wooquant-shop": {
+			"command": "npx",
+			"args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+			"env": {
+				"WP_API_URL": "http://wooquant.local",
+				"JWT_TOKEN": "your-jwt-token-here"
 			}
 		}
 	}
 }
 ```
+
+> **Uwaga**: VS Code może wymagać zainstalowania rozszerzenia obsługującego MCP. Konfiguracja jest identyczna jak dla Cursor IDE.
 
 ### Claude Desktop
 
